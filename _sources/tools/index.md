@@ -1,0 +1,4 @@
+# Miscellaneous Tools
+
+```{tableofcontents}
+```

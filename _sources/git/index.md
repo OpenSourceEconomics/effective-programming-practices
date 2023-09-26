@@ -1,4 +1,4 @@
-# Version Control and collaboration with Git and Github
+# Git and Github
 
 ```{tableofcontents}
 ```
