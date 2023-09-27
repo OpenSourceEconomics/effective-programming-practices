@@ -179,6 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../git/installing_git/objectives_materials.html">Installing git and some useful shell commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/how_git_works/objectives_materials.html">How git works</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/creating_repos/objectives_materials.html">Creating repositiories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/cloning_repos/instructions.html">Cloning GitHub repos + Personal Access Tokens</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/staging/objectives_materials.html">Staging files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/committing/objectives_materials.html">Making commits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/undoing_things/objectives_materials.html">Undoing things</a></li>
@@ -376,7 +377,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-of-the-z-command">Installation of the z-command</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
@@ -402,6 +406,29 @@ document.write(`
 <li><p>Use ls to list directories</p></li>
 <li><p>Use the z command to navigate more efficiently between files</p></li>
 </ul>
+<section id="installation-of-the-z-command">
+<h3>Installation of the z-command<a class="headerlink" href="#installation-of-the-z-command" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Download the <a class="reference external" href="https://raw.githubusercontent.com/rupa/z/master/z.sh">z.sh file</a> and
+save it as <code class="docutils literal notranslate"><span class="pre">z.sh</span></code> into the downloads folder.</p></li>
+<li><p>Move the file to <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code>. If you saved the file in the downloads folder you
+can open a terminal and run the command:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mv</span> <span class="o">~/</span><span class="n">Downloads</span><span class="o">/</span><span class="n">z</span><span class="o">.</span><span class="n">sh</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Open the file <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> (or <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> if you use bash) in a text editor and append
+the line:</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">. /usr/local/bin/z.sh</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Close and reopen your terminal. You can test if you have succefully installed the
+command by typing in <code class="docutils literal notranslate"><span class="pre">z</span></code>.</p></li>
+</ol>
+</section>
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
@@ -413,13 +440,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="RABYlWerCxSk" data-shufflequestions="False"
+<div class="output text_html"><div id="cfDmAKoAqrMK" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#RABYlWerCxSk {
+#cfDmAKoAqrMK {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -589,7 +616,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsRABYlWerCxSk=[{"question": "What does pwd do", "type": "multiple_choice", "answers": [{"answer": "Print the current working directory", "correct": true, "feedback": "Correct."}, {"answer": "Switch to your home directory", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a new directory called pwd", "correct": false, "feedback": "Incorrect."}, {"answer": "Print all files in the present working directory", "correct": false, "feedback": "Incorrect."}]}, {"question": "What can you do with the z command", "type": "many_choice", "answers": [{"answer": "Save typing when switching to a directory", "correct": true, "feedback": "Correct."}, {"answer": "Create files more efficiently", "correct": false, "feedback": "Incorrect."}, {"answer": "Print the entire directory tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Switch to a directory of which you only know the approximate name", "correct": true, "feedback": "Correct."}]}, {"question": "What does `cd ..` do", "type": "multiple_choice", "answers": [{"answer": "Move to a directory called `..`", "correct": false, "feedback": "Incorrect."}, {"answer": "Move to the parent directory", "correct": true, "feedback": "Correct."}, {"answer": "Move to the home directory", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionscfDmAKoAqrMK=[{"question": "What does pwd do", "type": "multiple_choice", "answers": [{"answer": "Print the current working directory", "correct": true, "feedback": "Correct."}, {"answer": "Switch to your home directory", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a new directory called pwd", "correct": false, "feedback": "Incorrect."}, {"answer": "Print all files in the present working directory", "correct": false, "feedback": "Incorrect."}]}, {"question": "What can you do with the z command", "type": "many_choice", "answers": [{"answer": "Save typing when switching to a directory", "correct": true, "feedback": "Correct."}, {"answer": "Create files more efficiently", "correct": false, "feedback": "Incorrect."}, {"answer": "Print the entire directory tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Switch to a directory of which you only know the approximate name", "correct": true, "feedback": "Correct."}]}, {"question": "What does `cd ..` do", "type": "multiple_choice", "answers": [{"answer": "Move to a directory called `..`", "correct": false, "feedback": "Incorrect."}, {"answer": "Move to the parent directory", "correct": true, "feedback": "Correct."}, {"answer": "Move to the home directory", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1338,8 +1365,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("RABYlWerCxSk")) {
-            show_questions(questionsRABYlWerCxSk,  RABYlWerCxSk); 
+          if(document.getElementById("cfDmAKoAqrMK")) {
+            show_questions(questionscfDmAKoAqrMK,  cfDmAKoAqrMK); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1348,8 +1375,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("RABYlWerCxSk");
-        // console.log(document.getElementById("RABYlWerCxSk"));
+        //console.log("cfDmAKoAqrMK");
+        // console.log(document.getElementById("cfDmAKoAqrMK"));
 
         try_show();
         }
@@ -1425,7 +1452,10 @@ if (typeof version == 'undefined') {
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-of-the-z-command">Installation of the z-command</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>

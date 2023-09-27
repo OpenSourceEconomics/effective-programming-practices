@@ -179,6 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../installing_git/objectives_materials.html">Installing git and some useful shell commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_git_works/objectives_materials.html">How git works</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../creating_repos/objectives_materials.html">Creating repositiories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cloning_repos/instructions.html">Cloning GitHub repos + Personal Access Tokens</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../staging/objectives_materials.html">Staging files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../committing/objectives_materials.html">Making commits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../undoing_things/objectives_materials.html">Undoing things</a></li>
@@ -412,13 +413,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="FeWSOZYcbetO" data-shufflequestions="False"
+<div class="output text_html"><div id="qnvvBbxxdzBR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#FeWSOZYcbetO {
+#qnvvBbxxdzBR {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -588,7 +589,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsFeWSOZYcbetO=[{"question": "What are branches used for?", "type": "multiple_choice", "answers": [{"answer": "Try out changes to the code without                     breaking the current stable version", "correct": true, "feedback": "Correct."}, {"answer": "Split large changes into multiple commits.", "correct": false, "feedback": "Incorrect."}, {"answer": "Work on multiple projects in the same\n                repository.", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you create a new branch?", "type": "many_choice", "answers": [{"answer": "`git commit`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git checkout -b`", "correct": true, "feedback": "Correct."}, {"answer": "`git status`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git branch`", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsqnvvBbxxdzBR=[{"question": "What are branches used for?", "type": "multiple_choice", "answers": [{"answer": "Try out changes to the code without                     breaking the current stable version", "correct": true, "feedback": "Correct."}, {"answer": "Split large changes into multiple commits.", "correct": false, "feedback": "Incorrect."}, {"answer": "Work on multiple projects in the same\n                repository.", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you create a new branch?", "type": "many_choice", "answers": [{"answer": "`git commit`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git checkout -b`", "correct": true, "feedback": "Correct."}, {"answer": "`git status`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git branch`", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1337,8 +1338,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("FeWSOZYcbetO")) {
-            show_questions(questionsFeWSOZYcbetO,  FeWSOZYcbetO); 
+          if(document.getElementById("qnvvBbxxdzBR")) {
+            show_questions(questionsqnvvBbxxdzBR,  qnvvBbxxdzBR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1347,8 +1348,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("FeWSOZYcbetO");
-        // console.log(document.getElementById("FeWSOZYcbetO"));
+        //console.log("qnvvBbxxdzBR");
+        // console.log(document.getElementById("qnvvBbxxdzBR"));
 
         try_show();
         }

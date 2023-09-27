@@ -179,6 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../installing_git/objectives_materials.html">Installing git and some useful shell commands</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">How git works</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../creating_repos/objectives_materials.html">Creating repositiories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cloning_repos/instructions.html">Cloning GitHub repos + Personal Access Tokens</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../staging/objectives_materials.html">Staging files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../committing/objectives_materials.html">Making commits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../undoing_things/objectives_materials.html">Undoing things</a></li>
@@ -411,13 +412,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="mFTxxBbuskUS" data-shufflequestions="False"
+<div class="output text_html"><div id="mlHlWCCHInVu" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#mFTxxBbuskUS {
+#mlHlWCCHInVu {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -587,7 +588,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsmFTxxBbuskUS=[{"question": "What is a git repository?", "type": "multiple_choice", "answers": [{"answer": "A folder containing a `.git` directory", "correct": true, "feedback": "Correct."}, {"answer": "A folder that gets automatically                     synced to the cloud", "correct": false, "feedback": "Incorrect."}, {"answer": "A place where the configurations for git                     are stored", "correct": false, "feedback": "Incorrect."}, {"answer": "A folder containing all files that                 belong to your project", "correct": true, "feedback": "Correct."}]}, {"question": "What is a git commit?", "type": "multiple_choice", "answers": [{"answer": "A snapshot that git creates in                 fixed time intervals", "correct": false, "feedback": "Incorrect."}, {"answer": "A snapshot that you create after                     you have made some changes that belong together", "correct": true, "feedback": "Correct."}, {"answer": "Something you can come back to                     at a later stage", "correct": true, "feedback": "Correct."}, {"answer": "A new folder that contains a                     copy of the repo", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsmlHlWCCHInVu=[{"question": "What is a git repository?", "type": "multiple_choice", "answers": [{"answer": "A folder containing a `.git` directory", "correct": true, "feedback": "Correct."}, {"answer": "A folder that gets automatically                     synced to the cloud", "correct": false, "feedback": "Incorrect."}, {"answer": "A place where the configurations for git                     are stored", "correct": false, "feedback": "Incorrect."}, {"answer": "A folder containing all files that                 belong to your project", "correct": true, "feedback": "Correct."}]}, {"question": "What is a git commit?", "type": "multiple_choice", "answers": [{"answer": "A snapshot that git creates in                 fixed time intervals", "correct": false, "feedback": "Incorrect."}, {"answer": "A snapshot that you create after                     you have made some changes that belong together", "correct": true, "feedback": "Correct."}, {"answer": "Something you can come back to                     at a later stage", "correct": true, "feedback": "Correct."}, {"answer": "A new folder that contains a                     copy of the repo", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1336,8 +1337,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("mFTxxBbuskUS")) {
-            show_questions(questionsmFTxxBbuskUS,  mFTxxBbuskUS); 
+          if(document.getElementById("mlHlWCCHInVu")) {
+            show_questions(questionsmlHlWCCHInVu,  mlHlWCCHInVu); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1346,8 +1347,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("mFTxxBbuskUS");
-        // console.log(document.getElementById("mFTxxBbuskUS"));
+        //console.log("mlHlWCCHInVu");
+        // console.log(document.getElementById("mlHlWCCHInVu"));
 
         try_show();
         }

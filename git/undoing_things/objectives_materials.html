@@ -179,6 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../installing_git/objectives_materials.html">Installing git and some useful shell commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_git_works/objectives_materials.html">How git works</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../creating_repos/objectives_materials.html">Creating repositiories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cloning_repos/instructions.html">Cloning GitHub repos + Personal Access Tokens</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../staging/objectives_materials.html">Staging files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../committing/objectives_materials.html">Making commits</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Undoing things</a></li>
@@ -446,13 +447,13 @@ GitHub. Instead of removing commits you will rather add new commits that undo ch
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="HJLuxykACFyq" data-shufflequestions="False"
+<div class="output text_html"><div id="KpPkNnyeRwal" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#HJLuxykACFyq {
+#KpPkNnyeRwal {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -622,7 +623,7 @@ GitHub. Instead of removing commits you will rather add new commits that undo ch
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsHJLuxykACFyq=[{"question": "What do you need to checkout a             previous commit?", "type": "multiple_choice", "answers": [{"answer": "The unique id (hash number)                     of the commit", "correct": true, "feedback": "Correct."}, {"answer": "The commit message", "correct": false, "feedback": "Incorrect."}, {"answer": "The timestamp of the commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "Checking out a previous commit puts             you in a detached head mode. How can you             go back?", "type": "multiple_choice", "answers": [{"answer": "Use `git checkout main` or                 `git checkout SOME_BRANCH`", "correct": true, "feedback": "Correct."}, {"answer": "Panic and type random git commands", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git revert` do?", "type": "multiple_choice", "answers": [{"answer": "Delete a commit from the commit history", "correct": false, "feedback": "Incorrect."}, {"answer": "Add a new commit to the commit                 history that undoes the changes of a previous                 commit", "correct": true, "feedback": "Correct."}, {"answer": "Undo all commits that come                 after the specified commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git reset --hard` do?", "type": "many_choice", "answers": [{"answer": "Delete all commits after the                 specified commit and reset the local files                 to the specified commit", "correct": true, "feedback": "Correct."}, {"answer": "Permanently delete things that                 were in your commit history", "correct": true, "feedback": "Correct."}, {"answer": "Let you safely browse an                 earlier version of your files", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsKpPkNnyeRwal=[{"question": "What do you need to checkout a             previous commit?", "type": "multiple_choice", "answers": [{"answer": "The unique id (hash number)                     of the commit", "correct": true, "feedback": "Correct."}, {"answer": "The commit message", "correct": false, "feedback": "Incorrect."}, {"answer": "The timestamp of the commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "Checking out a previous commit puts             you in a detached head mode. How can you             go back?", "type": "multiple_choice", "answers": [{"answer": "Use `git checkout main` or                 `git checkout SOME_BRANCH`", "correct": true, "feedback": "Correct."}, {"answer": "Panic and type random git commands", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git revert` do?", "type": "multiple_choice", "answers": [{"answer": "Delete a commit from the commit history", "correct": false, "feedback": "Incorrect."}, {"answer": "Add a new commit to the commit                 history that undoes the changes of a previous                 commit", "correct": true, "feedback": "Correct."}, {"answer": "Undo all commits that come                 after the specified commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git reset --hard` do?", "type": "many_choice", "answers": [{"answer": "Delete all commits after the                 specified commit and reset the local files                 to the specified commit", "correct": true, "feedback": "Correct."}, {"answer": "Permanently delete things that                 were in your commit history", "correct": true, "feedback": "Correct."}, {"answer": "Let you safely browse an                 earlier version of your files", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1371,8 +1372,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("HJLuxykACFyq")) {
-            show_questions(questionsHJLuxykACFyq,  HJLuxykACFyq); 
+          if(document.getElementById("KpPkNnyeRwal")) {
+            show_questions(questionsKpPkNnyeRwal,  KpPkNnyeRwal); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1381,8 +1382,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("HJLuxykACFyq");
-        // console.log(document.getElementById("HJLuxykACFyq"));
+        //console.log("KpPkNnyeRwal");
+        // console.log(document.getElementById("KpPkNnyeRwal"));
 
         try_show();
         }

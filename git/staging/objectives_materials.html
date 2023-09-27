@@ -73,7 +73,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Making commits" href="../committing/objectives_materials.html" />
-    <link rel="prev" title="Creating repositiories" href="../creating_repos/objectives_materials.html" />
+    <link rel="prev" title="Cloning GitHub repos + Personal Access Tokens" href="../cloning_repos/instructions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -179,6 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../installing_git/objectives_materials.html">Installing git and some useful shell commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_git_works/objectives_materials.html">How git works</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../creating_repos/objectives_materials.html">Creating repositiories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cloning_repos/instructions.html">Cloning GitHub repos + Personal Access Tokens</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Staging files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../committing/objectives_materials.html">Making commits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../undoing_things/objectives_materials.html">Undoing things</a></li>
@@ -417,13 +418,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="BLNQdNARonyX" data-shufflequestions="False"
+<div class="output text_html"><div id="WJQOefjJVXNS" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#BLNQdNARonyX {
+#WJQOefjJVXNS {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -593,7 +594,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsBLNQdNARonyX=[{"question": "What does it mean that a file is staged?", "type": "multiple_choice", "answers": [{"answer": "It will be included in the next                     commit", "correct": true, "feedback": "Correct."}, {"answer": "The file is included in a                     snapshot to which you can always come back", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot make further                 changes to that file", "correct": false, "feedback": "Incorrect."}, {"answer": "The file is marked as                 unfinished and will not yet be committed", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you find out which         files have been staged?", "type": "many_choice", "answers": [{"answer": "Use `git status`", "correct": true, "feedback": "Correct."}, {"answer": "Check the side-bar of any                     modern editor", "correct": true, "feedback": "Correct."}, {"answer": "Look into the `.git` folder", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git add ...`", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to                 a central repository since the last                 synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                 the next commit", "correct": true, "feedback": "Correct."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsWJQOefjJVXNS=[{"question": "What does it mean that a file is staged?", "type": "multiple_choice", "answers": [{"answer": "It will be included in the next                     commit", "correct": true, "feedback": "Correct."}, {"answer": "The file is included in a                     snapshot to which you can always come back", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot make further                 changes to that file", "correct": false, "feedback": "Incorrect."}, {"answer": "The file is marked as                 unfinished and will not yet be committed", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you find out which         files have been staged?", "type": "many_choice", "answers": [{"answer": "Use `git status`", "correct": true, "feedback": "Correct."}, {"answer": "Check the side-bar of any                     modern editor", "correct": true, "feedback": "Correct."}, {"answer": "Look into the `.git` folder", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git add ...`", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to                 a central repository since the last                 synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                 the next commit", "correct": true, "feedback": "Correct."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1342,8 +1343,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("BLNQdNARonyX")) {
-            show_questions(questionsBLNQdNARonyX,  BLNQdNARonyX); 
+          if(document.getElementById("WJQOefjJVXNS")) {
+            show_questions(questionsWJQOefjJVXNS,  WJQOefjJVXNS); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1352,8 +1353,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("BLNQdNARonyX");
-        // console.log(document.getElementById("BLNQdNARonyX"));
+        //console.log("WJQOefjJVXNS");
+        // console.log(document.getElementById("WJQOefjJVXNS"));
 
         try_show();
         }
@@ -1394,12 +1395,12 @@ if (typeof version == 'undefined') {
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../creating_repos/objectives_materials.html"
+       href="../cloning_repos/instructions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Creating repositiories</p>
+        <p class="prev-next-title">Cloning GitHub repos + Personal Access Tokens</p>
       </div>
     </a>
     <a class="right-next"
