@@ -389,7 +389,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further Reading</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -418,24 +417,23 @@ document.write(`
 <p>Here is the
 <a class="reference external" href="https://player.uni-bonn.educast.nrw/c7b347e8-3b4d-4b15-b787-ee355a93de63">screencast</a>
 and these are the <a class="reference download internal" download="" href="../../_downloads/0f33f4cb8a10352106b283c781a3e269/python_basics-functions_basics.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="further-reading">
-<h2>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<!-- 
+## Further Reading
+
+- 
+ -->
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="IbnFpIAJjHbO" data-shufflequestions="False"
+<div class="output text_html"><div id="ZBPsLbLnHXcz" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#IbnFpIAJjHbO {
+#ZBPsLbLnHXcz {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -605,7 +603,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsIbnFpIAJjHbO=[{"question": "What does pwd do", "type": "multiple_choice", "answers": [{"answer": "Print the current working directory", "correct": true, "feedback": "Correct."}, {"answer": "Switch to your home directory", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a new directory called pwd", "correct": false, "feedback": "Incorrect."}, {"answer": "Print all files in the present working directory", "correct": false, "feedback": "Incorrect."}]}, {"question": "What can you do with the z command", "type": "many_choice", "answers": [{"answer": "Save typing when switching to a directory", "correct": true, "feedback": "Correct."}, {"answer": "Create files more efficiently", "correct": false, "feedback": "Incorrect."}, {"answer": "Print the entire directory tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Switch to a directory of which you only know the approximate name", "correct": true, "feedback": "Correct."}]}, {"question": "What does `cd ..` do", "type": "multiple_choice", "answers": [{"answer": "Move to a directory called `..`", "correct": false, "feedback": "Incorrect."}, {"answer": "Move to the parent directory", "correct": true, "feedback": "Correct."}, {"answer": "Move to the home directory", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsZBPsLbLnHXcz=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1354,8 +1352,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("IbnFpIAJjHbO")) {
-            show_questions(questionsIbnFpIAJjHbO,  IbnFpIAJjHbO); 
+          if(document.getElementById("ZBPsLbLnHXcz")) {
+            show_questions(questionsZBPsLbLnHXcz,  ZBPsLbLnHXcz); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1364,8 +1362,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("IbnFpIAJjHbO");
-        // console.log(document.getElementById("IbnFpIAJjHbO"));
+        //console.log("ZBPsLbLnHXcz");
+        // console.log(document.getElementById("ZBPsLbLnHXcz"));
 
         try_show();
         }
@@ -1439,7 +1437,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further Reading</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>
