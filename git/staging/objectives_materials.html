@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -84,6 +85,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -196,7 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/lists_tuples_sets/objectives_materials.html">Lists, Tuples and Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/dicts/objectives_materials.html">Dictionaries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/for_loops/objectives_materials.html">For loops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../python_basics/if_conditions/objectives_materials.html">if conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/if_conditions/objectives_materials.html">If conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/functions_basics/objectives_materials.html">Defining Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/functions_principles/objectives_materials.html">Principles for Good Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/tracebacks/objectives_materials.html">Tracebacks and Asking for Help</a></li>
@@ -339,10 +349,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -350,7 +360,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -418,13 +428,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="WJQOefjJVXNS" data-shufflequestions="False"
+<div class="output text_html"><div id="ZqnZuDelsehM" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#WJQOefjJVXNS {
+#ZqnZuDelsehM {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -594,7 +604,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsWJQOefjJVXNS=[{"question": "What does it mean that a file is staged?", "type": "multiple_choice", "answers": [{"answer": "It will be included in the next                     commit", "correct": true, "feedback": "Correct."}, {"answer": "The file is included in a                     snapshot to which you can always come back", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot make further                 changes to that file", "correct": false, "feedback": "Incorrect."}, {"answer": "The file is marked as                 unfinished and will not yet be committed", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you find out which         files have been staged?", "type": "many_choice", "answers": [{"answer": "Use `git status`", "correct": true, "feedback": "Correct."}, {"answer": "Check the side-bar of any                     modern editor", "correct": true, "feedback": "Correct."}, {"answer": "Look into the `.git` folder", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git add ...`", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to                 a central repository since the last                 synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                 the next commit", "correct": true, "feedback": "Correct."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsZqnZuDelsehM=[{"question": "What does it mean that a file is staged?", "type": "multiple_choice", "answers": [{"answer": "It will be included in the next                     commit", "correct": true, "feedback": "Correct."}, {"answer": "The file is included in a                     snapshot to which you can always come back", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot make further                 changes to that file", "correct": false, "feedback": "Incorrect."}, {"answer": "The file is marked as                 unfinished and will not yet be committed", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you find out which         files have been staged?", "type": "many_choice", "answers": [{"answer": "Use `git status`", "correct": true, "feedback": "Correct."}, {"answer": "Check the side-bar of any                     modern editor", "correct": true, "feedback": "Correct."}, {"answer": "Look into the `.git` folder", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git add ...`", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to                 a central repository since the last                 synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                 the next commit", "correct": true, "feedback": "Correct."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1343,8 +1353,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("WJQOefjJVXNS")) {
-            show_questions(questionsWJQOefjJVXNS,  WJQOefjJVXNS); 
+          if(document.getElementById("ZqnZuDelsehM")) {
+            show_questions(questionsZqnZuDelsehM,  ZqnZuDelsehM); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1353,8 +1363,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("WJQOefjJVXNS");
-        // console.log(document.getElementById("WJQOefjJVXNS"));
+        //console.log("ZqnZuDelsehM");
+        // console.log(document.getElementById("ZqnZuDelsehM"));
 
         try_show();
         }
@@ -1388,11 +1398,10 @@ if (typeof version == 'undefined') {
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../cloning_repos/instructions.html"
@@ -1412,10 +1421,7 @@ if (typeof version == 'undefined') {
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1489,8 +1495,8 @@ This work is licensed under a <a
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

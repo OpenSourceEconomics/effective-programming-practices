@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>if conditions &#8212; Effective Programming Practices for Economists: Topics</title>
+    <title>If conditions &#8212; Effective Programming Practices for Economists: Topics</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -84,6 +85,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -196,7 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../lists_tuples_sets/objectives_materials.html">Lists, Tuples and Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dicts/objectives_materials.html">Dictionaries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../for_loops/objectives_materials.html">For loops</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">if conditions</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">If conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functions_basics/objectives_materials.html">Defining Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functions_principles/objectives_materials.html">Principles for Good Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tracebacks/objectives_materials.html">Tracebacks and Asking for Help</a></li>
@@ -339,10 +349,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -350,7 +360,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -367,7 +377,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>if conditions</h1>
+    <h1>If conditions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,7 +403,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="if-conditions">
-<h1>if conditions<a class="headerlink" href="#if-conditions" title="Permalink to this heading">#</a></h1>
+<h1>If conditions<a class="headerlink" href="#if-conditions" title="Permalink to this heading">#</a></h1>
 <section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
 <p>After working through this topic, you should be able to:</p>
@@ -419,13 +429,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="FbbQicWMXTJG" data-shufflequestions="False"
+<div class="output text_html"><div id="FhlnTImiiUfR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#FbbQicWMXTJG {
+#FhlnTImiiUfR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -595,7 +605,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsFbbQicWMXTJG=[{"question": "If you need to represent 'hello world', in Python you would use ...", "type": "multiple_choice", "answers": [{"answer": "A string", "correct": true, "feedback": "Correct."}, {"answer": "A float", "correct": false, "feedback": "Incorrect."}, {"answer": "An integer", "correct": false, "feedback": "Incorrect."}, {"answer": "A Boolean", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsFhlnTImiiUfR=[{"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n    print(2)\nelif c:\n    print(3)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive", "correct": false}, {"answer": "Exactly one print function will be executed.", "correct": false}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print function will be executed.", "correct": true}]}, {"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n        print(2)\nelif c:\n        print(3)\nelse:\n        print(4)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive.", "correct": true}, {"answer": "Exactly one print function will be executed.", "correct": true}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print functionwill be executed.", "correct": false}]}, {"question": "if/elif/elif/else-blocks in Python are ...", "type": "many_choice", "answers": [{"answer": "using Boolean logic, i.e., the inclusive or, meaning that all blocks following conditions evaluating to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": false}, {"answer": "short-circuit, meaning that only the block following the first condition that evaluates to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": true}]}, {"question": "Tick all conditions that imply that 'Yes' will be printed to the screen. (assume correct indentation)", "type": "many_choice", "answers": [{"code": "if True:\n    print('Yes')", "correct": true}, {"code": "if (0,):\n    print('Yes')", "correct": true}, {"code": "if [0]:\n    print('Yes')", "correct": true}, {"code": "if []:\n    print('Yes')", "correct": false}, {"code": "if (0):\n    print('Yes')", "correct": false}, {"code": "if -5:\n    print('Yes')", "correct": true}, {"code": "if '0':\n    print('Yes')", "correct": true}, {"code": "if '':\n    print('Yes')", "correct": false}]}, {"question": "It is easy to filter dictionaries based on conditions for both  keys and values. (with correct explanation)", "type": "many_choice", "answers": [{"answer": "Yes, in particular one may loop over key-value pairs using the '.items()' method directly. It is then easy to apply conditions to keys and/or values.", "correct": true}, {"answer": "No, looping over a dictionary always loops over the keys alone. It is then difficult to access the corresponding values.", "correct": false}, {"answer": "Yes, because looping over a dictionary always loops over key-value pairs. It is then easy to apply conditions to keys and/or values.", "correct": false}, {"answer": "No, because conditions can only ever be applied to the values.", "correct": false}]}, {"question": "The following code will yield ...", "code": "if a = 0:\n    print(7)", "type": "many_choice", "answers": [{"answer": "SyntaxError: invalid syntax", "correct": true}, {"answer": "7", "correct": false}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1344,8 +1354,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("FbbQicWMXTJG")) {
-            show_questions(questionsFbbQicWMXTJG,  FbbQicWMXTJG); 
+          if(document.getElementById("FhlnTImiiUfR")) {
+            show_questions(questionsFhlnTImiiUfR,  FhlnTImiiUfR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1354,8 +1364,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("FbbQicWMXTJG");
-        // console.log(document.getElementById("FbbQicWMXTJG"));
+        //console.log("FhlnTImiiUfR");
+        // console.log(document.getElementById("FhlnTImiiUfR"));
 
         try_show();
         }
@@ -1389,11 +1399,10 @@ if (typeof version == 'undefined') {
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../for_loops/objectives_materials.html"
@@ -1413,10 +1422,7 @@ if (typeof version == 'undefined') {
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1490,8 +1496,8 @@ This work is licensed under a <a
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

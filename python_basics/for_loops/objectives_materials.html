@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -72,7 +73,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'python_basics/for_loops/objectives_materials';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="if conditions" href="../if_conditions/objectives_materials.html" />
+    <link rel="next" title="If conditions" href="../if_conditions/objectives_materials.html" />
     <link rel="prev" title="Dictionaries" href="../dicts/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -84,6 +85,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -196,7 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../lists_tuples_sets/objectives_materials.html">Lists, Tuples and Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dicts/objectives_materials.html">Dictionaries</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">For loops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../if_conditions/objectives_materials.html">if conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../if_conditions/objectives_materials.html">If conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functions_basics/objectives_materials.html">Defining Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functions_principles/objectives_materials.html">Principles for Good Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tracebacks/objectives_materials.html">Tracebacks and Asking for Help</a></li>
@@ -339,10 +349,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -350,7 +360,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -399,14 +409,14 @@ document.write(`
 <p>After working through this topic, you should be able to:</p>
 <ul class="simple">
 <li><p>Explain what a for loop is and list examples where it can be useful</p></li>
-<li><p>Write for loops that list over:</p>
+<li><p>Write for loops that iterate over:</p>
 <ul>
 <li><p>Elements in lists and tuples</p></li>
 <li><p>Keys, values or keys and values in a dictionary</p></li>
 </ul>
 </li>
-<li><p>Write a for loop to apply a manipulation to all elements in a container</p></li>
-<li><p>Use loops to sum up numbers in a list</p></li>
+<li><p>Write for loops applying a manipulation to all elements in a container</p></li>
+<li><p>Use for loops to sum up numbers in a list</p></li>
 </ul>
 </section>
 <section id="materials">
@@ -418,20 +428,21 @@ and these are the <a class="reference download internal" download="" href="../..
 <section id="further-reading">
 <h2>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://realpython.com/python-for-loop/">realpython tutorial</a> on for loops. Note that this contains many things you do not need to know!</p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-for-loop/">Real Python tutorial</a> on for loops. Note
+that this contains many things you do not need to know!</p></li>
 </ul>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="XbzGUdSdDhUG" data-shufflequestions="False"
+<div class="output text_html"><div id="MeuehIABkkoJ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#XbzGUdSdDhUG {
+#MeuehIABkkoJ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -601,7 +612,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXbzGUdSdDhUG=[{"question": "If you need to represent 'hello world', in Python you would use ...", "type": "multiple_choice", "answers": [{"answer": "A string", "correct": true, "feedback": "Correct."}, {"answer": "A float", "correct": false, "feedback": "Incorrect."}, {"answer": "An integer", "correct": false, "feedback": "Incorrect."}, {"answer": "A Boolean", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsMeuehIABkkoJ=[{"question": "Repeating code snippets should be avoided because ...", "type": "many_choice", "answers": [{"answer": "programme runtime generally rises.", "correct": false, "feedback": "Incorrect."}, {"answer": "it is easy to forget about fixing bugs in all places, leading to extra work.", "correct": true, "feedback": "Correct."}, {"answer": "when changing behaviour of the code, one often misses out on some places, leading potentially subtle bugs.", "correct": true, "feedback": "Correct."}, {"answer": "the extra amount of disk space used often is problematic.", "correct": false, "feedback": "Incorrect."}]}, {"question": "For loops are to be avoided like the plague because ...", "type": "multiple_choice", "answers": [{"answer": "not true.", "correct": true, "feedback": "Correct."}, {"answer": "they are always slower than readily available alternatives.", "correct": false, "feedback": "Incorrect."}, {"answer": "they will cause bottlenecks in your programmes.", "correct": false, "feedback": "Incorrect."}, {"answer": "they always lead to trouble with mutable objects.", "correct": false, "feedback": "Incorrect."}]}, {"question": "`for i in []:` `print(i)` will output", "type": "multiple_choice", "answers": [{"answer": "Nothing", "correct": true, "feedback": "Correct."}, {"answer": "0", "correct": false, "feedback": "Incorrect."}]}, {"question": "`for i in [1, 2, 3]:` `print(i)` will output", "type": "multiple_choice", "answers": [{"answer": "0 1 2", "correct": false, "feedback": "Incorrect."}, {"answer": "1 2 3", "correct": true, "feedback": "Correct."}]}, {"question": "Three important types of loops and correct descriptions are", "type": "many_choice", "answers": [{"answer": "Meshing loops, which are used to create sparse grids.", "correct": false, "feedback": "Incorrect."}, {"answer": "Reduction loops, which are used to aggregate out some dimension(s) from a list of inputs.", "correct": true, "feedback": "Correct."}, {"answer": "Filtering loops, which are used to remove elements from a list.", "correct": true, "feedback": "Correct."}, {"answer": "Mapping loops, which are used to put values on a map.", "correct": false, "feedback": "Incorrect."}, {"answer": "Reduction loops, which are used to remove elements from a list.", "correct": false, "feedback": "Incorrect."}, {"answer": "Mapping loops, which are used to apply a function to a list of inputs.", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1350,8 +1361,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("XbzGUdSdDhUG")) {
-            show_questions(questionsXbzGUdSdDhUG,  XbzGUdSdDhUG); 
+          if(document.getElementById("MeuehIABkkoJ")) {
+            show_questions(questionsMeuehIABkkoJ,  MeuehIABkkoJ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1360,8 +1371,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("XbzGUdSdDhUG");
-        // console.log(document.getElementById("XbzGUdSdDhUG"));
+        //console.log("MeuehIABkkoJ");
+        // console.log(document.getElementById("MeuehIABkkoJ"));
 
         try_show();
         }
@@ -1395,11 +1406,10 @@ if (typeof version == 'undefined') {
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../dicts/objectives_materials.html"
@@ -1415,14 +1425,11 @@ if (typeof version == 'undefined') {
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">if conditions</p>
+        <p class="prev-next-title">If conditions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1496,8 +1503,8 @@ This work is licensed under a <a
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

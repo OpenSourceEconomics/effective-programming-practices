@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -84,6 +85,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -196,7 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/lists_tuples_sets/objectives_materials.html">Lists, Tuples and Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/dicts/objectives_materials.html">Dictionaries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/for_loops/objectives_materials.html">For loops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../python_basics/if_conditions/objectives_materials.html">if conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/if_conditions/objectives_materials.html">If conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/functions_basics/objectives_materials.html">Defining Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/functions_principles/objectives_materials.html">Principles for Good Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/tracebacks/objectives_materials.html">Tracebacks and Asking for Help</a></li>
@@ -339,10 +349,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -350,7 +360,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -466,13 +476,13 @@ accessible material around.</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="XzgrXTgLKWyM" data-shufflequestions="False"
+<div class="output text_html"><div id="DUOdVuANhNgN" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#XzgrXTgLKWyM {
+#DUOdVuANhNgN {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -642,7 +652,7 @@ accessible material around.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXzgrXTgLKWyM=[{"question": "In which of the following Operating Systems can you find\n            the following path \"/Users/username/Documents\"?", "type": "multiple_choice", "answers": [{"answer": "Linux-based OS", "correct": false, "feedback": "Incorrect. While Linux-based OS\n                use almost the same  ."}, {"answer": "MacOS", "correct": true, "feedback": "Correct."}, {"answer": "Windows", "correct": false, "feedback": "Incorrect. Windows uses a different File System\n                than this. Windows File System starts with the physical drive\n                (e.g. C:\\) and then uses backslashes \"\\\" to separate the\n                directories."}]}, {"question": "What are the key differences\n              between UNIX-based and Windows-based File Systems?", "type": "many_choice", "answers": [{"answer": "Windows-systems use backslashes \"\\\" to separate\n                directories,\n            while UNIX-based systems use forward slashes \"/\".", "correct": true, "feedback": "Correct."}, {"answer": "Windows-systems have a more nested structure, with a\n                larger number\n                of directories.", "correct": false, "feedback": "Incorrect. The directories are not necessarily more\n                numerous or nested in Windows."}, {"answer": "Windows-systems have a separate directory tree for each\n                physical drive,\n            while UNIX-based systems have a single directory tree.", "correct": true, "feedback": "Correct. For example many computers have a C:\\ and a\n                D:\\ drive."}, {"answer": "Windows-systems have a single directory tree, while\n                UNIX-based\n            systems have a separate directory tree for each physical drive.", "correct": false, "feedback": "Incorrect. The answer is the opposite of this."}]}, {"question": "J\u00f6rn, Maria and Vinayak are working on a project together. J\u00f6rn is\n            running Windows\n             on his laptop,\n            while Maria and Vinayak have laptops that run MacOS. For reasons that will\n            become apparent\n            to you in the next lectures of this course, they need to decide whether to\n            use paths\n             with forward slashes \"/\" or\n            backslashes \"\\\" to separate directories, and they cannot\n            each use the path type\n            that is native to their\n            operating system. What do you think they should do?", "type": "multiple_choice", "answers": [{"answer": "They should use forward slashes \"/\".", "correct": true, "feedback": "Correct. The reason for this is that while\n                    UNIX-based systems cannot use backslashes \"\\\" in paths,\n                    modern Windows-based systems can use forward slashes \"/\".\n                    In fact, forward slashes are the \"standard\" for OS and\n                    programming languages. The story behind why Windows uses\n                    backslashes \"\\\" is quite interesting if you want to\n                    google it."}, {"answer": "They should use backslashes \"\\\".", "correct": false, "feedback": "Incorrect. The reason for this is that UNIX-based\n                systems cannot use backslashes \"\\\" in paths."}, {"answer": " It does not really matter which they use,\n                 as long as they are consistent.", "correct": false, "feedback": "Incorrect. It is very important to be consistent,\n                but\n                it does matter\n                which type of path they use, because UNIX-based\n          systems cannot use backslashes \"\\\" in paths."}]}, {"question": " What is the root directory,\n            and how is it\n            represented in a UNIX-based system?", "type": "multiple_choice", "answers": [{"answer": "The root directory is the directory that\n                contains all other directories (the top-level\n                directory in the folder structure),\n                and  is represented by a forward slash \"/\" in UNIX.", "correct": true, "feedback": "Correct."}, {"answer": "The root directory is the directory\n                that contains all other directories (the top-level\n                directory in the folder structure),\n                and is represented by a backslash \"\\\" in UNIX.", "correct": false, "feedback": "Incorrect. The correct symbol is a forward\n                slash \"/\"."}, {"answer": "The root directory is the directory that\n                contains all the user files, and is represented\n                by a forward slash \"/\" in UNIX.", "correct": false, "feedback": "Incorrect. The root directory contains all\n                directories, not\n                only the user files."}, {"answer": "The root directory is the directory that\n                contains all other directories\n                (the top-level\n                directory in the folder structure),\n                 and is represented by \" C:\\ \".", "correct": false, "feedback": "Incorrect. \" C:\\ \" is the root directory in\n                Windows-based File Systems,\n                not in UNIX-based systems."}]}];
+</style></div><script type="application/javascript">var questionsDUOdVuANhNgN=[{"question": "In which of the following Operating Systems can you find\n            the following path \"/Users/username/Documents\"?", "type": "multiple_choice", "answers": [{"answer": "Linux-based OS", "correct": false, "feedback": "Incorrect. While Linux-based OS\n                use almost the same  ."}, {"answer": "MacOS", "correct": true, "feedback": "Correct."}, {"answer": "Windows", "correct": false, "feedback": "Incorrect. Windows uses a different File System\n                than this. Windows File System starts with the physical drive\n                (e.g. C:\\) and then uses backslashes \"\\\" to separate the\n                directories."}]}, {"question": "What are the key differences\n              between UNIX-based and Windows-based File Systems?", "type": "many_choice", "answers": [{"answer": "Windows-systems use backslashes \"\\\" to separate\n                directories,\n            while UNIX-based systems use forward slashes \"/\".", "correct": true, "feedback": "Correct."}, {"answer": "Windows-systems have a more nested structure, with a\n                larger number\n                of directories.", "correct": false, "feedback": "Incorrect. The directories are not necessarily more\n                numerous or nested in Windows."}, {"answer": "Windows-systems have a separate directory tree for each\n                physical drive,\n            while UNIX-based systems have a single directory tree.", "correct": true, "feedback": "Correct. For example many computers have a C:\\ and a\n                D:\\ drive."}, {"answer": "Windows-systems have a single directory tree, while\n                UNIX-based\n            systems have a separate directory tree for each physical drive.", "correct": false, "feedback": "Incorrect. The answer is the opposite of this."}]}, {"question": "J\u00f6rn, Maria and Vinayak are working on a project together. J\u00f6rn is\n            running Windows\n             on his laptop,\n            while Maria and Vinayak have laptops that run MacOS. For reasons that will\n            become apparent\n            to you in the next lectures of this course, they need to decide whether to\n            use paths\n             with forward slashes \"/\" or\n            backslashes \"\\\" to separate directories, and they cannot\n            each use the path type\n            that is native to their\n            operating system. What do you think they should do?", "type": "multiple_choice", "answers": [{"answer": "They should use forward slashes \"/\".", "correct": true, "feedback": "Correct. The reason for this is that while\n                    UNIX-based systems cannot use backslashes \"\\\" in paths,\n                    modern Windows-based systems can use forward slashes \"/\".\n                    In fact, forward slashes are the \"standard\" for OS and\n                    programming languages. The story behind why Windows uses\n                    backslashes \"\\\" is quite interesting if you want to\n                    google it."}, {"answer": "They should use backslashes \"\\\".", "correct": false, "feedback": "Incorrect. The reason for this is that UNIX-based\n                systems cannot use backslashes \"\\\" in paths."}, {"answer": " It does not really matter which they use,\n                 as long as they are consistent.", "correct": false, "feedback": "Incorrect. It is very important to be consistent,\n                but\n                it does matter\n                which type of path they use, because UNIX-based\n          systems cannot use backslashes \"\\\" in paths."}]}, {"question": " What is the root directory,\n            and how is it\n            represented in a UNIX-based system?", "type": "multiple_choice", "answers": [{"answer": "The root directory is the directory that\n                contains all other directories (the top-level\n                directory in the folder structure),\n                and  is represented by a forward slash \"/\" in UNIX.", "correct": true, "feedback": "Correct."}, {"answer": "The root directory is the directory\n                that contains all other directories (the top-level\n                directory in the folder structure),\n                and is represented by a backslash \"\\\" in UNIX.", "correct": false, "feedback": "Incorrect. The correct symbol is a forward\n                slash \"/\"."}, {"answer": "The root directory is the directory that\n                contains all the user files, and is represented\n                by a forward slash \"/\" in UNIX.", "correct": false, "feedback": "Incorrect. The root directory contains all\n                directories, not\n                only the user files."}, {"answer": "The root directory is the directory that\n                contains all other directories\n                (the top-level\n                directory in the folder structure),\n                 and is represented by \" C:\\ \".", "correct": false, "feedback": "Incorrect. \" C:\\ \" is the root directory in\n                Windows-based File Systems,\n                not in UNIX-based systems."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1391,8 +1401,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("XzgrXTgLKWyM")) {
-            show_questions(questionsXzgrXTgLKWyM,  XzgrXTgLKWyM); 
+          if(document.getElementById("DUOdVuANhNgN")) {
+            show_questions(questionsDUOdVuANhNgN,  DUOdVuANhNgN); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1401,8 +1411,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("XzgrXTgLKWyM");
-        // console.log(document.getElementById("XzgrXTgLKWyM"));
+        //console.log("DUOdVuANhNgN");
+        // console.log(document.getElementById("DUOdVuANhNgN"));
 
         try_show();
         }
@@ -1436,11 +1446,10 @@ if (typeof version == 'undefined') {
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../graphs/objectives_materials.html"
@@ -1460,10 +1469,7 @@ if (typeof version == 'undefined') {
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1541,8 +1547,8 @@ This work is licensed under a <a
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

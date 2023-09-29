@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -84,6 +85,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -196,7 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../lists_tuples_sets/objectives_materials.html">Lists, Tuples and Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dicts/objectives_materials.html">Dictionaries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../for_loops/objectives_materials.html">For loops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../if_conditions/objectives_materials.html">if conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../if_conditions/objectives_materials.html">If conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functions_basics/objectives_materials.html">Defining Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functions_principles/objectives_materials.html">Principles for Good Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tracebacks/objectives_materials.html">Tracebacks and Asking for Help</a></li>
@@ -339,10 +349,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -350,7 +360,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -419,13 +429,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ptWAFYbuaPOz" data-shufflequestions="False"
+<div class="output text_html"><div id="pSTOQSkFkJgD" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ptWAFYbuaPOz {
+#pSTOQSkFkJgD {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -595,7 +605,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsptWAFYbuaPOz=[{"question": "If you need to represent 'hello world', in Python you would use ...", "type": "multiple_choice", "answers": [{"answer": "A string", "correct": true, "feedback": "Correct."}, {"answer": "A float", "correct": false, "feedback": "Incorrect."}, {"answer": "An integer", "correct": false, "feedback": "Incorrect."}, {"answer": "A Boolean", "correct": false, "feedback": "Incorrect."}]}, {"question": "What do you expect the following code to return?                 str(True) + str(False)", "type": "multiple_choice", "answers": [{"answer": "1", "correct": false, "feedback": "This is the result of True + False."}, {"answer": "10", "correct": false, "feedback": "This is not a str."}, {"answer": "\"10\"", "correct": false, "feedback": "This is the result of                 str(int(True)) + str(int(False))"}, {"answer": "None of the others", "correct": true, "feedback": "The code returns TrueFalse."}]}, {"question": "Which of the following is a string method?", "type": "many_choice", "answers": [{"answer": "capitalize()", "correct": true, "feedback": "Converts the first character to upper case."}, {"answer": "endswith()", "correct": true, "feedback": "Returns true if the string ends with the specified value"}, {"answer": "find()", "correct": true, "feedback": "Searches the string for a specified value and returns                 the position of where it was found"}, {"answer": "isbeta()", "correct": false, "feedback": "This is not a string method.                 isalpha() Returns True if all characters                 in the string are in the alphabet."}]}, {"question": "What do you expect the following code to return?                 course_name = \"EPP\" \n                f\"This is the \\{course_name\\} course.\"", "type": "multiple_choice", "answers": [{"answer": "This is the \\{course_name\\} course", "correct": false, "feedback": "Incorrect."}, {"answer": "This is the EPP course", "correct": true, "feedback": "Correct."}, {"answer": "Error stating that addition among strings is done with +.", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionspSTOQSkFkJgD=[{"question": "If you need to represent 'hello world', in Python you would use ...", "type": "multiple_choice", "answers": [{"answer": "A string", "correct": true, "feedback": "Correct."}, {"answer": "A float", "correct": false, "feedback": "Incorrect."}, {"answer": "An integer", "correct": false, "feedback": "Incorrect."}, {"answer": "A Boolean", "correct": false, "feedback": "Incorrect."}]}, {"question": "What do you expect the following code to return?str(True) + str(False)", "type": "multiple_choice", "answers": [{"answer": "1", "correct": false, "feedback": "This is the result of True + False."}, {"answer": "10", "correct": false, "feedback": "This is not a str."}, {"answer": "\"10\"", "correct": false, "feedback": "This is the result of                 str(int(True)) + str(int(False))"}, {"answer": "None of the others", "correct": true, "feedback": "The code returns TrueFalse."}]}, {"question": "Which of the following is a string method?", "type": "many_choice", "answers": [{"answer": "capitalize()", "correct": true, "feedback": "Converts the first character to upper case."}, {"answer": "endswith()", "correct": true, "feedback": "Returns true if the string ends with the specified value"}, {"answer": "find()", "correct": true, "feedback": "Searches the string for a specified value and returns                 the position of where it was found"}, {"answer": "isbeta()", "correct": false, "feedback": "This is not a string method.                 isalpha() Returns True if all characters                 in the string are in the alphabet."}]}, {"question": "What do you expect the following code to return? (if it were two lines) course_name = \"EPP\" f\"This is the {course_name} course.\"", "type": "multiple_choice", "answers": [{"answer": "This is the \\{course_name\\} course", "correct": false, "feedback": "Incorrect."}, {"answer": "This is the EPP course", "correct": true, "feedback": "Correct."}, {"answer": "Error stating that addition among strings is done with +.", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1344,8 +1354,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ptWAFYbuaPOz")) {
-            show_questions(questionsptWAFYbuaPOz,  ptWAFYbuaPOz); 
+          if(document.getElementById("pSTOQSkFkJgD")) {
+            show_questions(questionspSTOQSkFkJgD,  pSTOQSkFkJgD); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1354,8 +1364,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ptWAFYbuaPOz");
-        // console.log(document.getElementById("ptWAFYbuaPOz"));
+        //console.log("pSTOQSkFkJgD");
+        // console.log(document.getElementById("pSTOQSkFkJgD"));
 
         try_show();
         }
@@ -1389,11 +1399,10 @@ if (typeof version == 'undefined') {
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../assignment_and_scalar_types/objectives_materials.html"
@@ -1413,10 +1422,7 @@ if (typeof version == 'undefined') {
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1490,8 +1496,8 @@ This work is licensed under a <a
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
