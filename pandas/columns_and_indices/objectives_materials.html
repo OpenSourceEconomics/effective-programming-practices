@@ -439,112 +439,15 @@ and these are the <a class="reference download internal" download="" href="../..
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">content</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;question&quot;</span><span class="p">:</span> <span class="s2">&quot;Using a meaningful index...&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;many_choice&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;answers&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="s2">&quot;makes combining datasets safer.&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;You are less likely to introduce bugs due to misaligned data &quot;</span>
-                    <span class="s2">&quot;because the hurdles for calling `.reset_index()` are higher.&quot;</span>
-                <span class="p">),</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;means that you will never have duplicate values in the index.&quot;</span>
-                <span class="p">),</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;In a country x panel, setting the country name as the only index &quot;</span>
-                    <span class="s2">&quot;would mean we have a meaningful index with duplicated values. &quot;</span>
-                    <span class="s2">&quot;The index should be set to both country and year to avoid &quot;</span>
-                    <span class="s2">&quot;duplicates.&quot;</span>
-                <span class="p">),</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="s2">&quot;means that we are never going to use floats. &quot;</span><span class="p">,</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;Using income as an index might be meaningful. But it is not a &quot;</span>
-                    <span class="s2">&quot;good idea at all because of floating point imprecisions and the &quot;</span>
-                    <span class="s2">&quot;fact that you will hardly be able to avoid duplicates. &quot;</span>
-                <span class="p">),</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;means that we will not end up with MultiIndex objects.&quot;</span><span class="p">),</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;Not at all. MultiIndex objects come up as soon as you have more &quot;</span>
-                    <span class="s2">&quot;than one dimension in the rows (e.g., panel data).&quot;</span>
-                <span class="p">),</span>
-            <span class="p">},</span>
-        <span class="p">],</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;question&quot;</span><span class="p">:</span> <span class="s2">&quot;What will the output of the following code be?&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;&quot;&gt;&gt;&gt; df.columns</span>
-<span class="s2">Index([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], dtype=&#39;string&#39;)</span>
-
-<span class="s2">&gt;&gt;&gt; df = df.rename(columns={&quot;b&quot;: &quot;B&quot;, &quot;x&quot;: &quot;u&quot;})</span>
-<span class="s2">&gt;&gt;&gt; df.columns</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;multiple_choice&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;answers&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;Index([&#39;a&#39;, &#39;B&#39;, &#39;c&#39;], dtype=&#39;string&#39;)&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;KeyError: &#39;x&#39;&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;The rename method will only consider the subset of keys in the &quot;</span>
-                    <span class="s2">&quot;dictionary that are also present among the columns.&quot;</span>
-                <span class="p">),</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;code&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;KeyError: &#39;a&#39; and &#39;c&#39; not found among dictionary keys {&#39;b&#39;, &#39;x&#39;}&quot;</span>
-                <span class="p">),</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;The rename method does not require that all columns are present &quot;</span>
-                    <span class="s2">&quot;among the dictionary keys.&quot;</span>
-                <span class="p">),</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;code&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Index([&#39;a&#39;, &#39;B&#39;, &#39;c&#39;, &#39;u&#39;], dtype=&#39;string&#39;)&quot;</span><span class="p">),</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="p">(</span>
-                    <span class="s2">&quot;How would you expect this to work? For example, how would you &quot;</span>
-                    <span class="s2">&quot;expect the column &#39;u&#39; be filled? This would lead to memory &quot;</span>
-                    <span class="s2">&quot;problems when you accidentally pass a large dictionary when `df` &quot;</span>
-                    <span class="s2">&quot;has many rows.&quot;</span>
-                <span class="p">),</span>
-            <span class="p">},</span>
-        <span class="p">],</span>
-    <span class="p">},</span>
-<span class="p">]</span>
-
-<span class="kn">from</span> <span class="nn">jupyterquiz</span> <span class="kn">import</span> <span class="n">display_quiz</span>
-
-<span class="n">display_quiz</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s2">&quot;fdsp&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="tvOyLRGkHEqB" data-shufflequestions="False"
+<div class="output text_html"><div id="WmxuLWyFlJLd" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#tvOyLRGkHEqB {
+#WmxuLWyFlJLd {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -714,7 +617,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionstvOyLRGkHEqB=[{"question": "Using a meaningful index...", "type": "many_choice", "answers": [{"answer": "makes combining datasets safer.", "correct": true, "feedback": "You are less likely to introduce bugs due to misaligned data because the hurdles for calling `.reset_index()` are higher."}, {"answer": "means that you will never have duplicate values in the index.", "correct": false, "feedback": "In a country x panel, setting the country name as the only index would mean we have a meaningful index with duplicated values. The index should be set to both country and year to avoid duplicates."}, {"answer": "means that we are never going to use floats. ", "correct": false, "feedback": "Using income as an index might be meaningful. But it is not a good idea at all because of floating point imprecisions and the fact that you will hardly be able to avoid duplicates. "}, {"answer": "means that we will not end up with MultiIndex objects.", "correct": false, "feedback": "Not at all. MultiIndex objects come up as soon as you have more than one dimension in the rows (e.g., panel data)."}]}, {"question": "What will the output of the following code be?", "code": ">>> df.columns\nIndex(['a', 'b', 'c'], dtype='string')\n\n>>> df = df.rename(columns={\"b\": \"B\", \"x\": \"u\"})\n>>> df.columns\n", "type": "multiple_choice", "answers": [{"code": "Index(['a', 'B', 'c'], dtype='string')", "correct": true}, {"code": "KeyError: 'x'", "correct": false, "feedback": "The rename method will only consider the subset of keys in the dictionary that are also present among the columns."}, {"code": "KeyError: 'a' and 'c' not found among dictionary keys {'b', 'x'}", "correct": false, "feedback": "The rename method does not require that all columns are present among the dictionary keys."}, {"code": "Index(['a', 'B', 'c', 'u'], dtype='string')", "correct": false, "feedback": "How would you expect this to work? For example, how would you expect the column 'u' be filled? This would lead to memory problems when you accidentally pass a large dictionary when `df` has many rows."}]}];
+</style></div><script type="application/javascript">var questionsWmxuLWyFlJLd=[{"question": "Using a meaningful index...", "type": "many_choice", "answers": [{"answer": "makes combining datasets safer.", "correct": true, "feedback": "You are less likely to introduce bugs due to misaligned data because the hurdles for calling `.reset_index()` are higher."}, {"answer": "means that you will never have duplicate values in the index.", "correct": false, "feedback": "In a country x panel, setting the country name as the only index would mean we have a meaningful index with duplicated values. The index should be set to both country and year to avoid duplicates."}, {"answer": "means that we are never going to use floats. ", "correct": false, "feedback": "Using income as an index might be meaningful. But it is not a good idea at all because of floating point imprecisions and the fact that you will hardly be able to avoid duplicates. "}, {"answer": "means that we will not end up with MultiIndex objects.", "correct": false, "feedback": "Not at all. MultiIndex objects come up as soon as you have more than one dimension in the rows (e.g., panel data)."}]}, {"question": "What will the output of the following code be?", "code": ">>> df.columns\nIndex(['a', 'b', 'c'], dtype='string')\n\n>>> df = df.rename(columns={\"b\": \"B\", \"x\": \"u\"})\n>>> df.columns\n", "type": "multiple_choice", "answers": [{"code": "Index(['a', 'B', 'c'], dtype='string')", "correct": true}, {"code": "KeyError: 'x'", "correct": false, "feedback": "The rename method will only consider the subset of keys in the dictionary that are also present among the columns."}, {"code": "KeyError: 'a' and 'c' not found among dictionary keys {'b', 'x'}", "correct": false, "feedback": "The rename method does not require that all columns are present among the dictionary keys."}, {"code": "Index(['a', 'B', 'c', 'u'], dtype='string')", "correct": false, "feedback": "How would you expect this to work? For example, how would you expect the column 'u' be filled? This would lead to memory problems when you accidentally pass a large dictionary when `df` has many rows."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1463,8 +1366,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("tvOyLRGkHEqB")) {
-            show_questions(questionstvOyLRGkHEqB,  tvOyLRGkHEqB); 
+          if(document.getElementById("WmxuLWyFlJLd")) {
+            show_questions(questionsWmxuLWyFlJLd,  WmxuLWyFlJLd); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1473,8 +1376,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("tvOyLRGkHEqB");
-        // console.log(document.getElementById("tvOyLRGkHEqB"));
+        //console.log("WmxuLWyFlJLd");
+        // console.log(document.getElementById("WmxuLWyFlJLd"));
 
         try_show();
         }

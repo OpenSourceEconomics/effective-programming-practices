@@ -442,13 +442,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="auqcSUowhrHo" data-shufflequestions="False"
+<div class="output text_html"><div id="APfyoduJTArR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#auqcSUowhrHo {
+#APfyoduJTArR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -618,7 +618,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsauqcSUowhrHo=[{"question": "Storing data in csv format is useful because", "type": "many_choice", "answers": [{"answer": "you can open the data in a text editor.", "correct": true, "feedback": "About the only reason and pointless for large datasets."}, {"answer": "actually, it is not useful at all in general.", "correct": true, "feedback": "Indeed!"}, {"answer": "it is easy to preserve categorical data types.", "correct": false, "feedback": "This is not easy at all."}, {"answer": "csv is a clearly defined standard.", "correct": false, "feedback": "Very much to the contrary."}]}];
+</style></div><script type="application/javascript">var questionsAPfyoduJTArR=[{"question": "Storing data in csv format is useful because", "type": "many_choice", "answers": [{"answer": "you can open the data in a text editor.", "correct": true, "feedback": "About the only reason and pointless for large datasets."}, {"answer": "actually, it is not useful at all in general.", "correct": true, "feedback": "Indeed!"}, {"answer": "it is easy to preserve categorical data types.", "correct": false, "feedback": "This is not easy at all."}, {"answer": "csv is a clearly defined standard.", "correct": false, "feedback": "Very much to the contrary."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1367,8 +1367,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("auqcSUowhrHo")) {
-            show_questions(questionsauqcSUowhrHo,  auqcSUowhrHo); 
+          if(document.getElementById("APfyoduJTArR")) {
+            show_questions(questionsAPfyoduJTArR,  APfyoduJTArR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1377,67 +1377,14 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("auqcSUowhrHo");
-        // console.log(document.getElementById("auqcSUowhrHo"));
+        //console.log("APfyoduJTArR");
+        // console.log(document.getElementById("APfyoduJTArR"));
 
         try_show();
         }
         </script></div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">content</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;intro&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;front&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Describe the format you would use for each of the following tasks.&quot;</span><span class="p">),</span>
-        <span class="s2">&quot;back&quot;</span><span class="p">:</span> <span class="p">(</span>
-            <span class="s2">&quot;Let&#39;s go through them step by step (click on next in the bottom right).&quot;</span>
-        <span class="p">),</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;share_with_stata&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;front&quot;</span><span class="p">:</span> <span class="s2">&quot;Share data with a Stata user.&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;back&quot;</span><span class="p">:</span> <span class="p">(</span>
-            <span class="s2">&quot;Use Stata&#39;s dta format. It is typically better to solve compatibility &quot;</span>
-            <span class="s2">&quot;issues on the Python side.&quot;</span>
-        <span class="p">),</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;share_with_R&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;front&quot;</span><span class="p">:</span> <span class="s2">&quot;Share data with a user of R.&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;back&quot;</span><span class="p">:</span> <span class="p">(</span>
-            <span class="s2">&quot;Use Apache Arrow&#39;s feather format. It can easily be read into R and it&quot;</span>
-            <span class="s2">&quot;is a very well-defined standard.&quot;</span>
-        <span class="p">),</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;re_use_in_workflow&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;front&quot;</span><span class="p">:</span> <span class="s2">&quot;Read in the data downstream in the project.&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;back&quot;</span><span class="p">:</span> <span class="p">(</span>
-            <span class="s2">&quot;Pickle the data. You are guaranteed to get the same thing back since &quot;</span>
-            <span class="s2">&quot;you will be using the same versions of Python and Pandas.&quot;</span>
-        <span class="p">),</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;share_with_python&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;front&quot;</span><span class="p">:</span> <span class="s2">&quot;Share data with a user of Python.&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;back&quot;</span><span class="p">:</span> <span class="p">(</span>
-            <span class="s2">&quot;Use Apache Arrow&#39;s feather format. It can easily be read into Python and &quot;</span>
-            <span class="s2">&quot;it is a very well-defined standard. Alternatively, pickle is also likely &quot;</span>
-            <span class="s2">&quot;to work, although there can be incompatibilities across versions of &quot;</span>
-            <span class="s2">&quot;Python and it is easy to include objects in a pickle file that require &quot;</span>
-            <span class="s2">&quot;the same import statements to work.&quot;</span>
-        <span class="p">),</span>
-    <span class="p">},</span>
-<span class="p">]</span>
-
-
-<span class="kn">from</span> <span class="nn">jupytercards</span> <span class="kn">import</span> <span class="n">display_flashcards</span>
-
-<span class="n">display_flashcards</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
@@ -1697,7 +1644,7 @@ if (typeof version == 'undefined') {
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="lMnbvhrFWEam" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="lMnbvhrFWEam-next" onclick="window.checkFlip('lMnbvhrFWEam')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="ygmGnWWMooHX" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="ygmGnWWMooHX-next" onclick="window.checkFlip('ygmGnWWMooHX')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -2044,17 +1991,17 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("lMnbvhrFWEam")) {
-            createCards("lMnbvhrFWEam", "True", "False");
+          if(document.getElementById("ygmGnWWMooHX")) {
+            createCards("ygmGnWWMooHX", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardslMnbvhrFWEam=[{"name": "intro", "front": "Describe the format you would use for each of the following tasks.", "back": "Let's go through them step by step (click on next in the bottom right)."}, {"name": "share_with_stata", "front": "Share data with a Stata user.", "back": "Use Stata's dta format. It is typically better to solve compatibility issues on the Python side."}, {"name": "share_with_R", "front": "Share data with a user of R.", "back": "Use Apache Arrow's feather format. It can easily be read into R and itis a very well-defined standard."}, {"name": "re_use_in_workflow", "front": "Read in the data downstream in the project.", "back": "Pickle the data. You are guaranteed to get the same thing back since you will be using the same versions of Python and Pandas."}, {"name": "share_with_python", "front": "Share data with a user of Python.", "back": "Use Apache Arrow's feather format. It can easily be read into Python and it is a very well-defined standard. Alternatively, pickle is also likely to work, although there can be incompatibilities across versions of Python and it is easy to include objects in a pickle file that require the same import statements to work."}];
-var frontColorslMnbvhrFWEam= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorslMnbvhrFWEam= ["var(--dark-blue-gray)" ];
-var textColorslMnbvhrFWEam= ["var(--snow)" ];
+var cardsygmGnWWMooHX=[{"name": "intro", "front": "Describe the format you would use for each of the following tasks.", "back": "Let's go through them step by step (click on next in the bottom right)."}, {"name": "share_with_stata", "front": "Share data with a Stata user.", "back": "Use Stata's dta format. It is typically better to solve compatibility issues on the Python side."}, {"name": "share_with_R", "front": "Share data with a user of R.", "back": "Use Apache Arrow's feather format. It can easily be read into R and itis a very well-defined standard."}, {"name": "re_use_in_workflow", "front": "Read in the data downstream in the project.", "back": "Pickle the data. You are guaranteed to get the same thing back since you will be using the same versions of Python and Pandas."}, {"name": "share_with_python", "front": "Share data with a user of Python.", "back": "Use Apache Arrow's feather format. It can easily be read into Python and it is a very well-defined standard. Alternatively, pickle is also likely to work, although there can be incompatibilities across versions of Python and it is easy to include objects in a pickle file that require the same import statements to work."}];
+var frontColorsygmGnWWMooHX= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsygmGnWWMooHX= ["var(--dark-blue-gray)" ];
+var textColorsygmGnWWMooHX= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 </section>
