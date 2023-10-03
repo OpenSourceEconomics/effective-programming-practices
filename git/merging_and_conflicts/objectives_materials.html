@@ -216,7 +216,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_py_vscode/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files in VS Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_pytask_pytest/objectives_materials.html">Running Python code via pytask or pytest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_pytask/objectives_materials.html">Running Python code via pytask</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -234,7 +234,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/content_objectives.html">Content and Learning Objectives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markup_languages/objectives_materials.html">Markup languages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_syntax/objectives_materials.html">Markdown syntax</a></li>
@@ -438,13 +443,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="XwrjtAYvgmKl" data-shufflequestions="False"
+<div class="output text_html"><div id="awopuFguzbfA" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#XwrjtAYvgmKl {
+#awopuFguzbfA {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -614,7 +619,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXwrjtAYvgmKl=[{"question": "Which steps are needed to fix a merge conflict?", "type": "many_choice", "answers": [{"answer": "modify the files manually", "correct": true, "feedback": "Correct."}, {"answer": "`git reset`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git add`", "correct": true, "feedback": "Correct."}, {"answer": "`git commit`", "correct": true, "feedback": "Correct."}, {"answer": "`git resolve conflict`", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsawopuFguzbfA=[{"question": "Which steps are needed to fix a merge conflict?", "type": "many_choice", "answers": [{"answer": "modify the files manually", "correct": true, "feedback": "Correct."}, {"answer": "`git reset`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git add`", "correct": true, "feedback": "Correct."}, {"answer": "`git commit`", "correct": true, "feedback": "Correct."}, {"answer": "`git resolve conflict`", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1363,8 +1368,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("XwrjtAYvgmKl")) {
-            show_questions(questionsXwrjtAYvgmKl,  XwrjtAYvgmKl); 
+          if(document.getElementById("awopuFguzbfA")) {
+            show_questions(questionsawopuFguzbfA,  awopuFguzbfA); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1373,8 +1378,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("XwrjtAYvgmKl");
-        // console.log(document.getElementById("XwrjtAYvgmKl"));
+        //console.log("awopuFguzbfA");
+        // console.log(document.getElementById("awopuFguzbfA"));
 
         try_show();
         }
@@ -1643,7 +1648,7 @@ if (typeof version == 'undefined') {
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="PVCuOHdOKdMO" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="PVCuOHdOKdMO-next" onclick="window.checkFlip('PVCuOHdOKdMO')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="MtBUYHobCozX" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="MtBUYHobCozX-next" onclick="window.checkFlip('MtBUYHobCozX')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -1990,17 +1995,17 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("PVCuOHdOKdMO")) {
-            createCards("PVCuOHdOKdMO", "True", "False");
+          if(document.getElementById("MtBUYHobCozX")) {
+            createCards("MtBUYHobCozX", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsPVCuOHdOKdMO=[{"name": "Intro", "front": "What are the correct commands         to merge branch `a` into branch `b`?", "back": "Let's go through them step by             step (click on next in the bottom right)."}, {"name": "git checkout b", "front": "git checkout b", "back": "This moves the HEAD from the             current branch to branch `b`."}, {"name": "git merge a", "front": "git merge a", "back": "This merges branch `a` into             the current branch `b`."}];
-var frontColorsPVCuOHdOKdMO= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsPVCuOHdOKdMO= ["var(--dark-blue-gray)" ];
-var textColorsPVCuOHdOKdMO= ["var(--snow)" ];
+var cardsMtBUYHobCozX=[{"name": "Intro", "front": "What are the correct commands         to merge branch `a` into branch `b`?", "back": "Let's go through them step by             step (click on next in the bottom right)."}, {"name": "git checkout b", "front": "git checkout b", "back": "This moves the HEAD from the             current branch to branch `b`."}, {"name": "git merge a", "front": "git merge a", "back": "This merges branch `a` into             the current branch `b`."}];
+var frontColorsMtBUYHobCozX= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsMtBUYHobCozX= ["var(--dark-blue-gray)" ];
+var textColorsMtBUYHobCozX= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 </section>

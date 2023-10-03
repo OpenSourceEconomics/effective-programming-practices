@@ -216,7 +216,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_py_vscode/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files in VS Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_pytask_pytest/objectives_materials.html">Running Python code via pytask or pytest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_pytask/objectives_materials.html">Running Python code via pytask</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Data management with pandas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -234,7 +234,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../functional/objectives_materials.html">Functional data management</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/content_objectives.html">Content and Learning Objectives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markup_languages/objectives_materials.html">Markup languages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_syntax/objectives_materials.html">Markdown syntax</a></li>
@@ -455,13 +460,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="oYSxpxxvvjrR" data-shufflequestions="False"
+<div class="output text_html"><div id="fDOBmKSHNoMV" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#oYSxpxxvvjrR {
+#fDOBmKSHNoMV {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -631,7 +636,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsoYSxpxxvvjrR=[{"question": "Pandas is very useful for the following tasks.", "type": "many_choice", "answers": [{"answer": "Preparing panel data for econometric analysis", "correct": true, "feedback": ""}, {"answer": "Extremely fast arithmetic operations on homogenous high-dimensional arrays.", "correct": false, "feedback": "We can debate about speed in two dimensions, but not more than that."}, {"answer": "Loading datasets from about any format you may think of.", "correct": true, "feedback": "We are sure you will find some exotic ones that are not supported, but still."}, {"answer": "Flexibly store data for plotting it in various different ways.", "correct": true, "feedback": ""}, {"answer": "Provide a range of standard statistical tools and methods for reducing dimensionality.", "correct": true, "feedback": "Mean, standard deviation, quantiles \u2014 all there."}, {"answer": "Directly run your favourite Machine Learning tool.", "correct": false, "feedback": "It may provide the way of storing the data, but this is a task for `scikit-learn`."}, {"answer": "Directly run complex regression models.", "correct": false, "feedback": "It may provide the way of storing the data, but this is a task for `statsmodels` or a future library."}]}, {"question": "Pandas has been developed with a clear philosophy in mind, which fits its current range of use cases.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "No, it has grown from a specialised tool for analysing panel data in the financial industry. Incidentally, this is also where its name comes from: PANel DAta analyiS."}, {"answer": "False", "correct": true, "feedback": "Indeed, it has grown from a specialised tool for analysing panel data in the financial industry. Incidentally, this is also where its name comes from: PANel DAta analyiS."}]}, {"question": "The development of Pandas has slowed down, so that it is not important to use the latest features.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "No, it currently is under very active development, with a large changes to come in the 3.0 release. The changes will improve many aspects, hence we should enable as many new features as possible."}, {"answer": "False", "correct": true, "feedback": "Indeed,, it currently is under very active development, with a large changes to come in the 3.0 release. The changes will improve many aspects, hence we should enable as many new features as possible."}]}];
+</style></div><script type="application/javascript">var questionsfDOBmKSHNoMV=[{"question": "Pandas is very useful for the following tasks.", "type": "many_choice", "answers": [{"answer": "Preparing panel data for econometric analysis", "correct": true, "feedback": ""}, {"answer": "Extremely fast arithmetic operations on homogenous high-dimensional arrays.", "correct": false, "feedback": "We can debate about speed in two dimensions, but not more than that."}, {"answer": "Loading datasets from about any format you may think of.", "correct": true, "feedback": "We are sure you will find some exotic ones that are not supported, but still."}, {"answer": "Flexibly store data for plotting it in various different ways.", "correct": true, "feedback": ""}, {"answer": "Provide a range of standard statistical tools and methods for reducing dimensionality.", "correct": true, "feedback": "Mean, standard deviation, quantiles \u2014 all there."}, {"answer": "Directly run your favourite Machine Learning tool.", "correct": false, "feedback": "It may provide the way of storing the data, but this is a task for `scikit-learn`."}, {"answer": "Directly run complex regression models.", "correct": false, "feedback": "It may provide the way of storing the data, but this is a task for `statsmodels` or a future library."}]}, {"question": "Pandas has been developed with a clear philosophy in mind, which fits its current range of use cases.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "No, it has grown from a specialised tool for analysing panel data in the financial industry. Incidentally, this is also where its name comes from: PANel DAta analyiS."}, {"answer": "False", "correct": true, "feedback": "Indeed, it has grown from a specialised tool for analysing panel data in the financial industry. Incidentally, this is also where its name comes from: PANel DAta analyiS."}]}, {"question": "The development of Pandas has slowed down, so that it is not important to use the latest features.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "No, it currently is under very active development, with a large changes to come in the 3.0 release. The changes will improve many aspects, hence we should enable as many new features as possible."}, {"answer": "False", "correct": true, "feedback": "Indeed,, it currently is under very active development, with a large changes to come in the 3.0 release. The changes will improve many aspects, hence we should enable as many new features as possible."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1380,8 +1385,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("oYSxpxxvvjrR")) {
-            show_questions(questionsoYSxpxxvvjrR,  oYSxpxxvvjrR); 
+          if(document.getElementById("fDOBmKSHNoMV")) {
+            show_questions(questionsfDOBmKSHNoMV,  fDOBmKSHNoMV); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1390,8 +1395,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("oYSxpxxvvjrR");
-        // console.log(document.getElementById("oYSxpxxvvjrR"));
+        //console.log("fDOBmKSHNoMV");
+        // console.log(document.getElementById("fDOBmKSHNoMV"));
 
         try_show();
         }

@@ -216,7 +216,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_py_vscode/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files in VS Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_pytask_pytest/objectives_materials.html">Running Python code via pytask or pytest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_pytask/objectives_materials.html">Running Python code via pytask</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Data management with pandas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -234,7 +234,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../functional/objectives_materials.html">Functional data management</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/content_objectives.html">Content and Learning Objectives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markup_languages/objectives_materials.html">Markup languages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_syntax/objectives_materials.html">Markdown syntax</a></li>
@@ -403,7 +408,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas-settings-for-getting-modern-behaviour-and-the-plotly-backend-for-graphs">pandas settings for getting “modern” behaviour and the plotly backend for graphs</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -433,21 +441,30 @@ document.write(`
 <p>Here is the
 <a class="reference external" href="https://player.uni-bonn.educast.nrw/c1284f96-a00c-4117-a12a-832040f34dd7">Screencast</a>
 and these are the <a class="reference download internal" download="" href="../../_downloads/7c891eb5cbacd6d67972dc6ab799bfdf/pandas-inspecting_and_summarizing.pdf"><span class="xref download myst">slides</span></a>.</p>
+<section id="pandas-settings-for-getting-modern-behaviour-and-the-plotly-backend-for-graphs">
+<h3>pandas settings for getting “modern” behaviour and the plotly backend for graphs<a class="headerlink" href="#pandas-settings-for-getting-modern-behaviour-and-the-plotly-backend-for-graphs" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">mode</span><span class="o">.</span><span class="n">copy_on_write</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">future</span><span class="o">.</span><span class="n">infer_string</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
 <!-- 
 ## Further Reading
- -->
+-->
+</section>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="zQkvTeOpskKn" data-shufflequestions="False"
+<div class="output text_html"><div id="wRieUuaAGQYq" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#zQkvTeOpskKn {
+#wRieUuaAGQYq {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -617,7 +634,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionszQkvTeOpskKn=[{"question": "The describe method of a dataset returns:", "type": "multiple_choice", "answers": [{"answer": "A table", "correct": false, "feedback": "Tables are not python objects."}, {"answer": "A DataFrame", "correct": true, "feedback": "Correct."}, {"answer": "A dictionary", "correct": false, "feedback": "Incorrect."}, {"answer": "An Array", "correct": false, "feedback": "Incorrect."}]}, {"question": "The report from calling `.describe()` on a DataFrame contains:", "type": "many_choice", "answers": [{"answer": "The count of missing values", "correct": false, "feedback": "This information is not explicitly reported."}, {"answer": "The count of non-missing values", "correct": true, "feedback": "Correct."}, {"answer": "The median", "correct": true, "feedback": "Correct. This is indexed with 50%."}, {"answer": "The max", "correct": true, "feedback": "Correct."}]}, {"question": "The plot method can be applied to:", "type": "multiple_choice", "answers": [{"answer": "Only to clean data", "correct": false, "feedback": "Plots of clean data provide useful information.                     Graphs that go into papers should be based on clean data.                     However, inspecting raw data can be very helpful."}, {"answer": "Any Series", "correct": true, "feedback": "Correct."}, {"answer": "Only summary statistics", "correct": false, "feedback": "Summary statistics of a single variable are rarely                     plotted. Summary statistics can be plotted to compare them                     across different variables."}, {"answer": "Only monotone series", "correct": false, "feedback": "Monotone series might have \"nicer\" graphs.                     However, the plot method can be applied also to                     non-monotone series."}]}, {"question": "Scatterplots are useful for:", "type": "multiple_choice", "answers": [{"answer": "presenting a large number of data points (thousands+).", "correct": false, "feedback": "Often scatterplots are not the best choice                     to present so many data points. It will be impossible to visually                     distinguish different observations."}, {"answer": "clearly presenting summary statistics.", "correct": false, "feedback": "This might give the wrong impression that (e.g.) means constitute data points. Also, it will be hard to communicate statistical uncertainty."}, {"answer": "identifying outliers", "correct": true, "feedback": "The interactive plot can be used to eyeball                     outliers in small and medium-sized datasets."}, {"answer": "scatterplots just are not very useful", "correct": false, "feedback": "Very much to the contrary! Just not useful for everything."}]}, {"question": "Suppose you are handling a dataset you are not familiar with and that it does not come with a description of the variables. The dataset has the variable \"group\". The easiest way to discover how many groups are there is to:", "type": "multiple_choice", "answers": [{"answer": "Open the dataset in data viewer,                     sort the data by the group variable and scroll down", "correct": false, "feedback": "This procedure is error prone."}, {"answer": "Convert the variable in a set and check the                     length of the set", "correct": false, "feedback": "This works but it is a bit cumbersome."}, {"answer": "Call `df['group'].unique()`.", "correct": true, "feedback": "Correct. This approach also identifies                     misspelled groups."}, {"answer": "Call `df['group'].value_counts()`.", "correct": false, "feedback": "Almost. This method reports the unique values,                     but these are not quite as easily accessible."}]}];
+</style></div><script type="application/javascript">var questionswRieUuaAGQYq=[{"question": "The describe method of a dataset returns:", "type": "multiple_choice", "answers": [{"answer": "A table", "correct": false, "feedback": "Tables are not python objects."}, {"answer": "A DataFrame", "correct": true, "feedback": "Correct."}, {"answer": "A dictionary", "correct": false, "feedback": "Incorrect."}, {"answer": "An Array", "correct": false, "feedback": "Incorrect."}]}, {"question": "The report from calling `.describe()` on a DataFrame contains:", "type": "many_choice", "answers": [{"answer": "The count of missing values", "correct": false, "feedback": "This information is not explicitly reported."}, {"answer": "The count of non-missing values", "correct": true, "feedback": "Correct."}, {"answer": "The median", "correct": true, "feedback": "Correct. This is indexed with 50%."}, {"answer": "The max", "correct": true, "feedback": "Correct."}]}, {"question": "The plot method can be applied to:", "type": "multiple_choice", "answers": [{"answer": "Only to clean data", "correct": false, "feedback": "Plots of clean data provide useful information.                     Graphs that go into papers should be based on clean data.                     However, inspecting raw data can be very helpful."}, {"answer": "Any Series", "correct": true, "feedback": "Correct."}, {"answer": "Only summary statistics", "correct": false, "feedback": "Summary statistics of a single variable are rarely                     plotted. Summary statistics can be plotted to compare them                     across different variables."}, {"answer": "Only monotone series", "correct": false, "feedback": "Monotone series might have \"nicer\" graphs.                     However, the plot method can be applied also to                     non-monotone series."}]}, {"question": "Scatterplots are useful for:", "type": "multiple_choice", "answers": [{"answer": "presenting a large number of data points (thousands+).", "correct": false, "feedback": "Often scatterplots are not the best choice                     to present so many data points. It will be impossible to visually                     distinguish different observations."}, {"answer": "clearly presenting summary statistics.", "correct": false, "feedback": "This might give the wrong impression that (e.g.) means constitute data points. Also, it will be hard to communicate statistical uncertainty."}, {"answer": "identifying outliers", "correct": true, "feedback": "The interactive plot can be used to eyeball                     outliers in small and medium-sized datasets."}, {"answer": "scatterplots just are not very useful", "correct": false, "feedback": "Very much to the contrary! Just not useful for everything."}]}, {"question": "Suppose you are handling a dataset you are not familiar with and that it does not come with a description of the variables. The dataset has the variable \"group\". The easiest way to discover how many groups are there is to:", "type": "multiple_choice", "answers": [{"answer": "Open the dataset in data viewer,                     sort the data by the group variable and scroll down", "correct": false, "feedback": "This procedure is error prone."}, {"answer": "Convert the variable in a set and check the                     length of the set", "correct": false, "feedback": "This works but it is a bit cumbersome."}, {"answer": "Call `df['group'].unique()`.", "correct": true, "feedback": "Correct. This approach also identifies                     misspelled groups."}, {"answer": "Call `df['group'].value_counts()`.", "correct": false, "feedback": "Almost. This method reports the unique values,                     but these are not quite as easily accessible."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1366,8 +1383,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("zQkvTeOpskKn")) {
-            show_questions(questionszQkvTeOpskKn,  zQkvTeOpskKn); 
+          if(document.getElementById("wRieUuaAGQYq")) {
+            show_questions(questionswRieUuaAGQYq,  wRieUuaAGQYq); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1376,8 +1393,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("zQkvTeOpskKn");
-        // console.log(document.getElementById("zQkvTeOpskKn"));
+        //console.log("wRieUuaAGQYq");
+        // console.log(document.getElementById("wRieUuaAGQYq"));
 
         try_show();
         }
@@ -1450,7 +1467,10 @@ if (typeof version == 'undefined') {
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas-settings-for-getting-modern-behaviour-and-the-plotly-backend-for-graphs">pandas settings for getting “modern” behaviour and the plotly backend for graphs</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

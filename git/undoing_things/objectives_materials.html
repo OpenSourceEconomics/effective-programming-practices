@@ -216,7 +216,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_py_vscode/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files in VS Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_pytask_pytest/objectives_materials.html">Running Python code via pytask or pytest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/executing_pytask/objectives_materials.html">Running Python code via pytask</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -234,7 +234,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/content_objectives.html">Content and Learning Objectives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markup_languages/objectives_materials.html">Markup languages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_syntax/objectives_materials.html">Markdown syntax</a></li>
@@ -472,13 +477,13 @@ GitHub. Instead of removing commits you will rather add new commits that undo ch
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="BDnIHVwAJzgQ" data-shufflequestions="False"
+<div class="output text_html"><div id="pZpwPCRxyXHZ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#BDnIHVwAJzgQ {
+#pZpwPCRxyXHZ {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -648,7 +653,7 @@ GitHub. Instead of removing commits you will rather add new commits that undo ch
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsBDnIHVwAJzgQ=[{"question": "What do you need to checkout a             previous commit?", "type": "multiple_choice", "answers": [{"answer": "The unique id (hash number)                     of the commit", "correct": true, "feedback": "Correct."}, {"answer": "The commit message", "correct": false, "feedback": "Incorrect."}, {"answer": "The timestamp of the commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "Checking out a previous commit puts             you in a detached head mode. How can you             go back?", "type": "multiple_choice", "answers": [{"answer": "Use `git checkout main` or                 `git checkout SOME_BRANCH`", "correct": true, "feedback": "Correct."}, {"answer": "Panic and type random git commands", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git revert` do?", "type": "multiple_choice", "answers": [{"answer": "Delete a commit from the commit history", "correct": false, "feedback": "Incorrect."}, {"answer": "Add a new commit to the commit                 history that undoes the changes of a previous                 commit", "correct": true, "feedback": "Correct."}, {"answer": "Undo all commits that come                 after the specified commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git reset --hard` do?", "type": "many_choice", "answers": [{"answer": "Delete all commits after the                 specified commit and reset the local files                 to the specified commit", "correct": true, "feedback": "Correct."}, {"answer": "Permanently delete things that                 were in your commit history", "correct": true, "feedback": "Correct."}, {"answer": "Let you safely browse an                 earlier version of your files", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionspZpwPCRxyXHZ=[{"question": "What do you need to checkout a             previous commit?", "type": "multiple_choice", "answers": [{"answer": "The unique id (hash number)                     of the commit", "correct": true, "feedback": "Correct."}, {"answer": "The commit message", "correct": false, "feedback": "Incorrect."}, {"answer": "The timestamp of the commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "Checking out a previous commit puts             you in a detached head mode. How can you             go back?", "type": "multiple_choice", "answers": [{"answer": "Use `git checkout main` or                 `git checkout SOME_BRANCH`", "correct": true, "feedback": "Correct."}, {"answer": "Panic and type random git commands", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git revert` do?", "type": "multiple_choice", "answers": [{"answer": "Delete a commit from the commit history", "correct": false, "feedback": "Incorrect."}, {"answer": "Add a new commit to the commit                 history that undoes the changes of a previous                 commit", "correct": true, "feedback": "Correct."}, {"answer": "Undo all commits that come                 after the specified commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git reset --hard` do?", "type": "many_choice", "answers": [{"answer": "Delete all commits after the                 specified commit and reset the local files                 to the specified commit", "correct": true, "feedback": "Correct."}, {"answer": "Permanently delete things that                 were in your commit history", "correct": true, "feedback": "Correct."}, {"answer": "Let you safely browse an                 earlier version of your files", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1397,8 +1402,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("BDnIHVwAJzgQ")) {
-            show_questions(questionsBDnIHVwAJzgQ,  BDnIHVwAJzgQ); 
+          if(document.getElementById("pZpwPCRxyXHZ")) {
+            show_questions(questionspZpwPCRxyXHZ,  pZpwPCRxyXHZ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1407,8 +1412,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("BDnIHVwAJzgQ");
-        // console.log(document.getElementById("BDnIHVwAJzgQ"));
+        //console.log("pZpwPCRxyXHZ");
+        // console.log(document.getElementById("pZpwPCRxyXHZ"));
 
         try_show();
         }
