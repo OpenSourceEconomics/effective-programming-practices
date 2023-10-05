@@ -229,14 +229,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../normal_forms/objectives_materials.html">Rules for data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../joins/objectives_materials.html">Joining datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rules/objectives_materials.html">Rules for data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../merging/objectives_materials.html">Merging datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functional/objectives_materials.html">Functional data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reproducibility/objectives_materials.html">What does reproducibility mean?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_simple_pytasks/objectives_materials.html">Writing simple (py)tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_pytasks_multiple_outputs/objectives_materials.html">Writing (py)tasks with multiple outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reusing_pytask_functions/objectives_materials.html">Re-using pytask functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/pytask_docs/objectives_materials.html">The pytask documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -446,13 +452,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="lfBuKMofXKsk" data-shufflequestions="False"
+<div class="output text_html"><div id="DHOpzPTLjgLS" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#lfBuKMofXKsk {
+#DHOpzPTLjgLS {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -622,7 +628,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionslfBuKMofXKsk=[{"question": "Using a meaningful index...", "type": "many_choice", "answers": [{"answer": "makes combining datasets safer.", "correct": true, "feedback": "You are less likely to introduce bugs due to misaligned data because the hurdles for calling `.reset_index()` are higher."}, {"answer": "means that you will never have duplicate values in the index.", "correct": false, "feedback": "In a country x panel, setting the country name as the only index would mean we have a meaningful index with duplicated values. The index should be set to both country and year to avoid duplicates."}, {"answer": "means that we are never going to use floats. ", "correct": false, "feedback": "Using income as an index might be meaningful. But it is not a good idea at all because of floating point imprecisions and the fact that you will hardly be able to avoid duplicates. "}, {"answer": "means that we will not end up with MultiIndex objects.", "correct": false, "feedback": "Not at all. MultiIndex objects come up as soon as you have more than one dimension in the rows (e.g., panel data)."}]}, {"question": "What will the output of the following code be?", "code": ">>> df.columns\nIndex(['a', 'b', 'c'], dtype='string')\n\n>>> df = df.rename(columns={\"b\": \"B\", \"x\": \"u\"})\n>>> df.columns\n", "type": "multiple_choice", "answers": [{"code": "Index(['a', 'B', 'c'], dtype='string')", "correct": true}, {"code": "KeyError: 'x'", "correct": false, "feedback": "The rename method will only consider the subset of keys in the dictionary that are also present among the columns."}, {"code": "KeyError: 'a' and 'c' not found among dictionary keys {'b', 'x'}", "correct": false, "feedback": "The rename method does not require that all columns are present among the dictionary keys."}, {"code": "Index(['a', 'B', 'c', 'u'], dtype='string')", "correct": false, "feedback": "How would you expect this to work? For example, how would you expect the column 'u' be filled? This would lead to memory problems when you accidentally pass a large dictionary when `df` has many rows."}]}];
+</style></div><script type="application/javascript">var questionsDHOpzPTLjgLS=[{"question": "Using a meaningful index...", "type": "many_choice", "answers": [{"answer": "makes combining datasets safer.", "correct": true, "feedback": "You are less likely to introduce bugs due to misaligned data because the hurdles for calling `.reset_index()` are higher."}, {"answer": "means that you will never have duplicate values in the index.", "correct": false, "feedback": "In a country x panel, setting the country name as the only index would mean we have a meaningful index with duplicated values. The index should be set to both country and year to avoid duplicates."}, {"answer": "means that we are never going to use floats. ", "correct": false, "feedback": "Using income as an index might be meaningful. But it is not a good idea at all because of floating point imprecisions and the fact that you will hardly be able to avoid duplicates. "}, {"answer": "means that we will not end up with MultiIndex objects.", "correct": false, "feedback": "Not at all. MultiIndex objects come up as soon as you have more than one dimension in the rows (e.g., panel data)."}]}, {"question": "What will the output of the following code be?", "code": ">>> df.columns\nIndex(['a', 'b', 'c'], dtype='string')\n\n>>> df = df.rename(columns={\"b\": \"B\", \"x\": \"u\"})\n>>> df.columns\n", "type": "multiple_choice", "answers": [{"code": "Index(['a', 'B', 'c'], dtype='string')", "correct": true}, {"code": "KeyError: 'x'", "correct": false, "feedback": "The rename method will only consider the subset of keys in the dictionary that are also present among the columns."}, {"code": "KeyError: 'a' and 'c' not found among dictionary keys {'b', 'x'}", "correct": false, "feedback": "The rename method does not require that all columns are present among the dictionary keys."}, {"code": "Index(['a', 'B', 'c', 'u'], dtype='string')", "correct": false, "feedback": "How would you expect this to work? For example, how would you expect the column 'u' be filled? This would lead to memory problems when you accidentally pass a large dictionary when `df` has many rows."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1371,8 +1377,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("lfBuKMofXKsk")) {
-            show_questions(questionslfBuKMofXKsk,  lfBuKMofXKsk); 
+          if(document.getElementById("DHOpzPTLjgLS")) {
+            show_questions(questionsDHOpzPTLjgLS,  DHOpzPTLjgLS); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1381,8 +1387,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("lfBuKMofXKsk");
-        // console.log(document.getElementById("lfBuKMofXKsk"));
+        //console.log("DHOpzPTLjgLS");
+        // console.log(document.getElementById("DHOpzPTLjgLS"));
 
         try_show();
         }

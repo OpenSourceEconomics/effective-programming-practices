@@ -229,14 +229,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/normal_forms/objectives_materials.html">Rules for data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/joins/objectives_materials.html">Joining datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reproducibility/objectives_materials.html">What does reproducibility mean?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_simple_pytasks/objectives_materials.html">Writing simple (py)tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_pytasks_multiple_outputs/objectives_materials.html">Writing (py)tasks with multiple outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reusing_pytask_functions/objectives_materials.html">Re-using pytask functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/pytask_docs/objectives_materials.html">The pytask documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -447,13 +453,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="MFOOOFsQGWBG" data-shufflequestions="False"
+<div class="output text_html"><div id="KnGkYptFISNa" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#MFOOOFsQGWBG {
+#KnGkYptFISNa {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -623,7 +629,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsMFOOOFsQGWBG=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
+</style></div><script type="application/javascript">var questionsKnGkYptFISNa=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1372,8 +1378,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("MFOOOFsQGWBG")) {
-            show_questions(questionsMFOOOFsQGWBG,  MFOOOFsQGWBG); 
+          if(document.getElementById("KnGkYptFISNa")) {
+            show_questions(questionsKnGkYptFISNa,  KnGkYptFISNa); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1382,8 +1388,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("MFOOOFsQGWBG");
-        // console.log(document.getElementById("MFOOOFsQGWBG"));
+        //console.log("KnGkYptFISNa");
+        // console.log(document.getElementById("KnGkYptFISNa"));
 
         try_show();
         }

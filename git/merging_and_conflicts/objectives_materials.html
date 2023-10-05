@@ -229,14 +229,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/normal_forms/objectives_materials.html">Rules for data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/joins/objectives_materials.html">Joining datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reproducibility/objectives_materials.html">What does reproducibility mean?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_simple_pytasks/objectives_materials.html">Writing simple (py)tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_pytasks_multiple_outputs/objectives_materials.html">Writing (py)tasks with multiple outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reusing_pytask_functions/objectives_materials.html">Re-using pytask functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/pytask_docs/objectives_materials.html">The pytask documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -443,13 +449,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="awopuFguzbfA" data-shufflequestions="False"
+<div class="output text_html"><div id="IWQbbVPfRsIR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#awopuFguzbfA {
+#IWQbbVPfRsIR {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -619,7 +625,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsawopuFguzbfA=[{"question": "Which steps are needed to fix a merge conflict?", "type": "many_choice", "answers": [{"answer": "modify the files manually", "correct": true, "feedback": "Correct."}, {"answer": "`git reset`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git add`", "correct": true, "feedback": "Correct."}, {"answer": "`git commit`", "correct": true, "feedback": "Correct."}, {"answer": "`git resolve conflict`", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsIWQbbVPfRsIR=[{"question": "Which steps are needed to fix a merge conflict?", "type": "many_choice", "answers": [{"answer": "modify the files manually", "correct": true, "feedback": "Correct."}, {"answer": "`git reset`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git add`", "correct": true, "feedback": "Correct."}, {"answer": "`git commit`", "correct": true, "feedback": "Correct."}, {"answer": "`git resolve conflict`", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1368,8 +1374,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("awopuFguzbfA")) {
-            show_questions(questionsawopuFguzbfA,  awopuFguzbfA); 
+          if(document.getElementById("IWQbbVPfRsIR")) {
+            show_questions(questionsIWQbbVPfRsIR,  IWQbbVPfRsIR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1378,8 +1384,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("awopuFguzbfA");
-        // console.log(document.getElementById("awopuFguzbfA"));
+        //console.log("IWQbbVPfRsIR");
+        // console.log(document.getElementById("IWQbbVPfRsIR"));
 
         try_show();
         }
@@ -1648,7 +1654,7 @@ if (typeof version == 'undefined') {
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="MtBUYHobCozX" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="MtBUYHobCozX-next" onclick="window.checkFlip('MtBUYHobCozX')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="BUnIBrdRJfOw" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="BUnIBrdRJfOw-next" onclick="window.checkFlip('BUnIBrdRJfOw')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -1995,17 +2001,17 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("MtBUYHobCozX")) {
-            createCards("MtBUYHobCozX", "True", "False");
+          if(document.getElementById("BUnIBrdRJfOw")) {
+            createCards("BUnIBrdRJfOw", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsMtBUYHobCozX=[{"name": "Intro", "front": "What are the correct commands         to merge branch `a` into branch `b`?", "back": "Let's go through them step by             step (click on next in the bottom right)."}, {"name": "git checkout b", "front": "git checkout b", "back": "This moves the HEAD from the             current branch to branch `b`."}, {"name": "git merge a", "front": "git merge a", "back": "This merges branch `a` into             the current branch `b`."}];
-var frontColorsMtBUYHobCozX= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsMtBUYHobCozX= ["var(--dark-blue-gray)" ];
-var textColorsMtBUYHobCozX= ["var(--snow)" ];
+var cardsBUnIBrdRJfOw=[{"name": "Intro", "front": "What are the correct commands         to merge branch `a` into branch `b`?", "back": "Let's go through them step by             step (click on next in the bottom right)."}, {"name": "git checkout b", "front": "git checkout b", "back": "This moves the HEAD from the             current branch to branch `b`."}, {"name": "git merge a", "front": "git merge a", "back": "This merges branch `a` into             the current branch `b`."}];
+var frontColorsBUnIBrdRJfOw= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsBUnIBrdRJfOw= ["var(--dark-blue-gray)" ];
+var textColorsBUnIBrdRJfOw= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 </section>

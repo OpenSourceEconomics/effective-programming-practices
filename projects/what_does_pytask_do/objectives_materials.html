@@ -73,8 +73,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'projects/what_does_pytask_do/objectives_materials';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Texts, Typesetting, and Text Data" href="../../texts/index.html" />
-    <link rel="prev" title="Content and Learning Objectives" href="../content_objectives.html" />
+    <link rel="next" title="Writing simple (py)tasks" href="../writing_simple_pytasks/objectives_materials.html" />
+    <link rel="prev" title="What does reproducibility mean?" href="../reproducibility/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -229,14 +229,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/normal_forms/objectives_materials.html">Rules for data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/joins/objectives_materials.html">Joining datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Reproducible Research</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reproducibility/objectives_materials.html">What does reproducibility mean?</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">What does pytask do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../writing_simple_pytasks/objectives_materials.html">Writing simple (py)tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../writing_pytasks_multiple_outputs/objectives_materials.html">Writing (py)tasks with multiple outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reusing_pytask_functions/objectives_materials.html">Re-using pytask functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pytask_docs/objectives_materials.html">The pytask documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -443,13 +449,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ezbnoSLurgro" data-shufflequestions="False"
+<div class="output text_html"><div id="aEAYdODMKcVd" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ezbnoSLurgro {
+#aEAYdODMKcVd {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -619,7 +625,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsezbnoSLurgro=[{"question": "What needs to be done to run a piece of Python code with pytask?", "type": "many_choice", "answers": [{"answer": "It needs te be inside a function whose name starts with 'task_'", "correct": true, "feedback": "Correct."}, {"answer": "It needs to be inside a file whose name starts with 'task_'", "correct": true, "feedback": "Correct."}, {"answer": "You need to register it with the pytask database", "correct": false, "feedback": "Incorrect."}, {"answer": "You need to specify the path to the `.py` file when you call pytask", "correct": false, "feedback": "Incorrect."}]}, {"question": "How does pytask create the dependency graph of your project?", "type": "multiple_choice", "answers": [{"answer": "You need to specify it manually", "correct": false, "feedback": "Incorrect."}, {"answer": "There is a graphical interface to draw the DAG", "correct": false, "feedback": "Incorrect."}, {"answer": "It inspects the function signatures and default arguments of your tasks", "correct": true, "feedback": "Correct."}, {"answer": "It requires a specific directory structure that implies the graph DAG", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsaEAYdODMKcVd=[{"question": "What needs to be done to run a piece of Python code with pytask?", "type": "many_choice", "answers": [{"answer": "It needs te be inside a function whose name starts with 'task_'", "correct": true, "feedback": "Correct."}, {"answer": "It needs to be inside a file whose name starts with 'task_'", "correct": true, "feedback": "Correct."}, {"answer": "You need to register it with the pytask database", "correct": false, "feedback": "Incorrect."}, {"answer": "You need to specify the path to the `.py` file when you call pytask", "correct": false, "feedback": "Incorrect."}]}, {"question": "How does pytask create the dependency graph of your project?", "type": "multiple_choice", "answers": [{"answer": "You need to specify it manually", "correct": false, "feedback": "Incorrect."}, {"answer": "There is a graphical interface to draw the DAG", "correct": false, "feedback": "Incorrect."}, {"answer": "It inspects the function signatures and default arguments of your tasks", "correct": true, "feedback": "Correct."}, {"answer": "It requires a specific directory structure that implies the graph DAG", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1368,8 +1374,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ezbnoSLurgro")) {
-            show_questions(questionsezbnoSLurgro,  ezbnoSLurgro); 
+          if(document.getElementById("aEAYdODMKcVd")) {
+            show_questions(questionsaEAYdODMKcVd,  aEAYdODMKcVd); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1378,8 +1384,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ezbnoSLurgro");
-        // console.log(document.getElementById("ezbnoSLurgro"));
+        //console.log("aEAYdODMKcVd");
+        // console.log(document.getElementById("aEAYdODMKcVd"));
 
         try_show();
         }
@@ -1419,20 +1425,20 @@ if (typeof version == 'undefined') {
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../content_objectives.html"
+       href="../reproducibility/objectives_materials.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Content and Learning Objectives</p>
+        <p class="prev-next-title">What does reproducibility mean?</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../texts/index.html"
+       href="../writing_simple_pytasks/objectives_materials.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Texts, Typesetting, and Text Data</p>
+        <p class="prev-next-title">Writing simple (py)tasks</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

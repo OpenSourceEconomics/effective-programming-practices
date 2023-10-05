@@ -229,14 +229,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/normal_forms/objectives_materials.html">Rules for data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/joins/objectives_materials.html">Joining datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reproducibility/objectives_materials.html">What does reproducibility mean?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_simple_pytasks/objectives_materials.html">Writing simple (py)tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_pytasks_multiple_outputs/objectives_materials.html">Writing (py)tasks with multiple outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reusing_pytask_functions/objectives_materials.html">Re-using pytask functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/pytask_docs/objectives_materials.html">The pytask documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -457,13 +463,13 @@ the Python Standard Reference</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="zkXzIlMkjcPC" data-shufflequestions="False"
+<div class="output text_html"><div id="EHtKWVOgADGv" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#zkXzIlMkjcPC {
+#EHtKWVOgADGv {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -633,7 +639,7 @@ the Python Standard Reference</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionszkXzIlMkjcPC=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
+</style></div><script type="application/javascript">var questionsEHtKWVOgADGv=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1382,8 +1388,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("zkXzIlMkjcPC")) {
-            show_questions(questionszkXzIlMkjcPC,  zkXzIlMkjcPC); 
+          if(document.getElementById("EHtKWVOgADGv")) {
+            show_questions(questionsEHtKWVOgADGv,  EHtKWVOgADGv); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1392,8 +1398,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("zkXzIlMkjcPC");
-        // console.log(document.getElementById("zkXzIlMkjcPC"));
+        //console.log("EHtKWVOgADGv");
+        // console.log(document.getElementById("EHtKWVOgADGv"));
 
         try_show();
         }

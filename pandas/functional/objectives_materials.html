@@ -73,8 +73,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'pandas/functional/objectives_materials';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Reproducible Research" href="../../projects/index.html" />
-    <link rel="prev" title="Joining datasets" href="../joins/objectives_materials.html" />
+    <link rel="next" title="Functional data management: Example" href="functional_pandas.html" />
+    <link rel="prev" title="Merging datasets" href="../merging/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -229,14 +229,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../normal_forms/objectives_materials.html">Rules for data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../joins/objectives_materials.html">Joining datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rules/objectives_materials.html">Rules for data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../merging/objectives_materials.html">Merging datasets</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Functional data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional_pandas.html">Functional data management: Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reproducibility/objectives_materials.html">What does reproducibility mean?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_simple_pytasks/objectives_materials.html">Writing simple (py)tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_pytasks_multiple_outputs/objectives_materials.html">Writing (py)tasks with multiple outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reusing_pytask_functions/objectives_materials.html">Re-using pytask functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/pytask_docs/objectives_materials.html">The pytask documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -409,7 +415,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -436,23 +441,24 @@ document.write(`
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
 <p>Here is the
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/xxx">Screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/61d4c36d3448dfe36e736b034ea41645/pandas-functional.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Permalink to this heading">#</a></h2>
+<a class="reference external" href="https://player.uni-bonn.educast.nrw/1b8b6a1b-c948-4aec-b234-7b178fdee985">Screencast</a>,
+the <a class="reference download internal" download="" href="../../_downloads/61d4c36d3448dfe36e736b034ea41645/pandas-functional.pdf"><span class="xref download myst">slide(s)</span></a>, the <a class="reference internal" href="functional_pandas.html"><span class="doc std std-doc">notebook</span></a> (also see
+the next page), and the <a class="reference download internal" download="" href="../../_downloads/bfe2512a66c3cee874a68e95c91b67e2/survey.csv"><span class="xref download myst">dataset</span></a> used in the screencast.</p>
+<!-- 
+## Additional Materials
+ -->
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="vSHAJPDjBhOA" data-shufflequestions="False"
+<div class="output text_html"><div id="TslUjEqOPfrB" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#vSHAJPDjBhOA {
+#TslUjEqOPfrB {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -622,7 +628,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsvSHAJPDjBhOA=[{"question": "Pandas ...", "code": "import pandas as pd", "type": "many_choice", "answers": [{"answer": ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"], "correct": true, "feedback": ""}, {"answer": ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ccccc"], "correct": false, "feedback": ""}, {"answer": ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ddddd"], "correct": true, "feedback": ""}, {"answer": ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa eeeeee"], "correct": false, "feedback": ""}]}];
+</style></div><script type="application/javascript">var questionsTslUjEqOPfrB=[{"question": "The main purpose of functions is to", "type": "many_choice", "answers": [{"answer": "Save typing", "correct": false, "feedback": "Incorrect."}, {"answer": "Make your code more readable by showing its high-level structure", "correct": true, "feedback": "Correct."}, {"answer": "Make your code more efficient", "correct": false, "feedback": "Incorrect."}, {"answer": "Show off your programming skills", "correct": false, "feedback": "Incorrect."}, {"answer": "Easily re-use code in several places of your project", "correct": true, "feedback": "Correct."}]}, {"question": "What are the disadvantages of the functional approach to data management?", "type": "many_choice", "answers": [{"answer": "It is less readable for non-programmers", "correct": false, "feedback": "Incorrect."}, {"answer": "It is less effecient", "correct": false, "feedback": "Incorrect."}, {"answer": "It uses more memory", "correct": false, "feedback": "Incorrect."}, {"answer": "It does not work for all projects", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why are good function names better than comments", "type": "many_choice", "answers": [{"answer": "They are easier to write", "correct": false, "feedback": "Incorrect."}, {"answer": "They are less likely to become outdated over time", "correct": true, "feedback": "Correct."}, {"answer": "They will be more visible in Tracebacks", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1371,8 +1377,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("vSHAJPDjBhOA")) {
-            show_questions(questionsvSHAJPDjBhOA,  vSHAJPDjBhOA); 
+          if(document.getElementById("TslUjEqOPfrB")) {
+            show_questions(questionsTslUjEqOPfrB,  TslUjEqOPfrB); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1381,8 +1387,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("vSHAJPDjBhOA");
-        // console.log(document.getElementById("vSHAJPDjBhOA"));
+        //console.log("TslUjEqOPfrB");
+        // console.log(document.getElementById("TslUjEqOPfrB"));
 
         try_show();
         }
@@ -1422,20 +1428,20 @@ if (typeof version == 'undefined') {
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../joins/objectives_materials.html"
+       href="../merging/objectives_materials.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Joining datasets</p>
+        <p class="prev-next-title">Merging datasets</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../projects/index.html"
+       href="functional_pandas.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Reproducible Research</p>
+        <p class="prev-next-title">Functional data management: Example</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1456,7 +1462,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>
