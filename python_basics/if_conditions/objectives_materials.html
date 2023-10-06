@@ -243,6 +243,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../projects/writing_pytasks_multiple_outputs/objectives_materials.html">Writing (py)tasks with multiple outputs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/reusing_pytask_functions/objectives_materials.html">Re-using pytask functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/pytask_docs/objectives_materials.html">The pytask documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/what_are_templates/objectives_materials.html">What are the project templates?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/setup/objectives_materials.html">Setting up a project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/directory_structure/objectives_materials.html">Directory structure in the templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/paths/objectives_materials.html">Handling paths in projects</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -455,13 +459,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="cStKRCPGKAiW" data-shufflequestions="False"
+<div class="output text_html"><div id="scSsegpKKASV" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#cStKRCPGKAiW {
+#scSsegpKKASV {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -631,7 +635,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionscStKRCPGKAiW=[{"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n    print(2)\nelif c:\n    print(3)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive", "correct": false}, {"answer": "Exactly one print function will be executed.", "correct": false}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print function will be executed.", "correct": true}]}, {"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n        print(2)\nelif c:\n        print(3)\nelse:\n        print(4)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive.", "correct": true}, {"answer": "Exactly one print function will be executed.", "correct": true}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print functionwill be executed.", "correct": false}]}, {"question": "if/elif/elif/else-blocks in Python are ...", "type": "many_choice", "answers": [{"answer": "using Boolean logic, i.e., the inclusive or, meaning that all blocks following conditions evaluating to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": false}, {"answer": "short-circuit, meaning that only the block following the first condition that evaluates to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": true}]}, {"question": "Tick all conditions that imply that 'Yes' will be printed to the screen. (assume correct indentation)", "type": "many_choice", "answers": [{"code": "if True:\n    print('Yes')", "correct": true}, {"code": "if (0,):\n    print('Yes')", "correct": true}, {"code": "if [0]:\n    print('Yes')", "correct": true}, {"code": "if []:\n    print('Yes')", "correct": false}, {"code": "if (0):\n    print('Yes')", "correct": false}, {"code": "if -5:\n    print('Yes')", "correct": true}, {"code": "if '0':\n    print('Yes')", "correct": true}, {"code": "if '':\n    print('Yes')", "correct": false}]}, {"question": "It is easy to filter dictionaries based on conditions for both  keys and values. (with correct explanation)", "type": "many_choice", "answers": [{"answer": "Yes, in particular one may loop over key-value pairs using the '.items()' method directly. It is then easy to apply conditions to keys and/or values.", "correct": true}, {"answer": "No, looping over a dictionary always loops over the keys alone. It is then difficult to access the corresponding values.", "correct": false}, {"answer": "Yes, because looping over a dictionary always loops over key-value pairs. It is then easy to apply conditions to keys and/or values.", "correct": false}, {"answer": "No, because conditions can only ever be applied to the values.", "correct": false}]}, {"question": "The following code will yield ...", "code": "if a = 0:\n    print(7)", "type": "many_choice", "answers": [{"answer": "SyntaxError: invalid syntax", "correct": true}, {"answer": "7", "correct": false}]}];
+</style></div><script type="application/javascript">var questionsscSsegpKKASV=[{"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n    print(2)\nelif c:\n    print(3)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive", "correct": false}, {"answer": "Exactly one print function will be executed.", "correct": false}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print function will be executed.", "correct": true}]}, {"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n        print(2)\nelif c:\n        print(3)\nelse:\n        print(4)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive.", "correct": true}, {"answer": "Exactly one print function will be executed.", "correct": true}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print functionwill be executed.", "correct": false}]}, {"question": "if/elif/elif/else-blocks in Python are ...", "type": "many_choice", "answers": [{"answer": "using Boolean logic, i.e., the inclusive or, meaning that all blocks following conditions evaluating to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": false}, {"answer": "short-circuit, meaning that only the block following the first condition that evaluates to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": true}]}, {"question": "Tick all conditions that imply that 'Yes' will be printed to the screen. (assume correct indentation)", "type": "many_choice", "answers": [{"code": "if True:\n    print('Yes')", "correct": true}, {"code": "if (0,):\n    print('Yes')", "correct": true}, {"code": "if [0]:\n    print('Yes')", "correct": true}, {"code": "if []:\n    print('Yes')", "correct": false}, {"code": "if (0):\n    print('Yes')", "correct": false}, {"code": "if -5:\n    print('Yes')", "correct": true}, {"code": "if '0':\n    print('Yes')", "correct": true}, {"code": "if '':\n    print('Yes')", "correct": false}]}, {"question": "It is easy to filter dictionaries based on conditions for both  keys and values. (with correct explanation)", "type": "many_choice", "answers": [{"answer": "Yes, in particular one may loop over key-value pairs using the '.items()' method directly. It is then easy to apply conditions to keys and/or values.", "correct": true}, {"answer": "No, looping over a dictionary always loops over the keys alone. It is then difficult to access the corresponding values.", "correct": false}, {"answer": "Yes, because looping over a dictionary always loops over key-value pairs. It is then easy to apply conditions to keys and/or values.", "correct": false}, {"answer": "No, because conditions can only ever be applied to the values.", "correct": false}]}, {"question": "The following code will yield ...", "code": "if a = 0:\n    print(7)", "type": "many_choice", "answers": [{"answer": "SyntaxError: invalid syntax", "correct": true}, {"answer": "7", "correct": false}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1380,8 +1384,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("cStKRCPGKAiW")) {
-            show_questions(questionscStKRCPGKAiW,  cStKRCPGKAiW); 
+          if(document.getElementById("scSsegpKKASV")) {
+            show_questions(questionsscSsegpKKASV,  scSsegpKKASV); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1390,8 +1394,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("cStKRCPGKAiW");
-        // console.log(document.getElementById("cStKRCPGKAiW"));
+        //console.log("scSsegpKKASV");
+        // console.log(document.getElementById("scSsegpKKASV"));
 
         try_show();
         }
