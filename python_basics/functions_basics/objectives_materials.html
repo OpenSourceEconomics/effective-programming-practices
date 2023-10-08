@@ -74,7 +74,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Principles for Good Functions" href="../functions_principles/objectives_materials.html" />
-    <link rel="prev" title="If conditions" href="../if_conditions/objectives_materials.html" />
+    <link rel="prev" title="Comprehensions" href="../comprehensions/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -169,7 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../background/index.html">Some Background</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../background/content_objectives.html">Content and Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../background/os_history/objectives_materials.html">A Brief History of Operating System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../background/os_history/objectives_materials.html">A Brief History of Operating Systems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../background/graphs/objectives_materials.html">Graphs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../background/file_systems/objectives_materials.html">File Systems</a></li>
 </ul>
@@ -197,6 +197,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../git/merging_and_conflicts/objectives_materials.html">Merging and resolving merge conflicts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/github/objectives_materials.html">Introduction to GitHub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/collaboration/objectives_materials.html">Collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/pre_commits/objectives_materials.html">Pre-commit hooks</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Python Basics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -207,6 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../dicts/objectives_materials.html">Dictionaries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../for_loops/objectives_materials.html">For loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../if_conditions/objectives_materials.html">If conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../comprehensions/objectives_materials.html">Comprehensions</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Defining Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functions_principles/objectives_materials.html">Principles for Good Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tracebacks/objectives_materials.html">Tracebacks and Asking for Help</a></li>
@@ -217,6 +219,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_py_vscode/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_pytask/objectives_materials.html">Running Python code via pytask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../executing_pytest/objectives_materials.html">Running Python code via pytest</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -249,7 +252,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../projects/paths/objectives_materials.html">Handling paths in projects</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../software_engineering/index.html">Software Engineering</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/style_guides/objectives_materials.html">Style guides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/naming/objectives_materials.html">Naming things</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pure_functions/objectives_materials.html">Pure functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/idea_of_testing/objectives_materials.html">The idea of unit testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_does_pytest_do/objectives_materials.html">What does pytest do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/writing_simple_pytests/objectives_materials.html">Writing simple (py)tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/content_objectives.html">Content and Learning Objectives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markup_languages/objectives_materials.html">Markup languages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_syntax/objectives_materials.html">Markdown syntax</a></li>
@@ -457,13 +473,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="RpQDTcxIqttd" data-shufflequestions="False"
+<div class="output text_html"><div id="UPCfKGPIhjjt" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#RpQDTcxIqttd {
+#UPCfKGPIhjjt {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -633,7 +649,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsRpQDTcxIqttd=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
+</style></div><script type="application/javascript">var questionsUPCfKGPIhjjt=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1382,8 +1398,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("RpQDTcxIqttd")) {
-            show_questions(questionsRpQDTcxIqttd,  RpQDTcxIqttd); 
+          if(document.getElementById("UPCfKGPIhjjt")) {
+            show_questions(questionsUPCfKGPIhjjt,  UPCfKGPIhjjt); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1392,8 +1408,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("RpQDTcxIqttd");
-        // console.log(document.getElementById("RpQDTcxIqttd"));
+        //console.log("UPCfKGPIhjjt");
+        // console.log(document.getElementById("UPCfKGPIhjjt"));
 
         try_show();
         }
@@ -1433,12 +1449,12 @@ if (typeof version == 'undefined') {
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../if_conditions/objectives_materials.html"
+       href="../comprehensions/objectives_materials.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">If conditions</p>
+        <p class="prev-next-title">Comprehensions</p>
       </div>
     </a>
     <a class="right-next"
