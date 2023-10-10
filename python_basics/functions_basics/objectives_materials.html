@@ -202,6 +202,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Python Basics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation_linux/instructions.html">Installing Python on Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation_mac/instructions.html">Installing Python on Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation_windows/instructions.html">Installing Python on Windows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../assignment_and_scalar_types/objectives_materials.html">Assignment and Built-in Scalar Types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../strings/objectives_materials.html">Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lists_tuples_sets/objectives_materials.html">Lists, Tuples and Sets</a></li>
@@ -473,13 +476,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="UPCfKGPIhjjt" data-shufflequestions="False"
+<div class="output text_html"><div id="MtvkJCrQhzRR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#UPCfKGPIhjjt {
+#MtvkJCrQhzRR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -649,7 +652,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsUPCfKGPIhjjt=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
+</style></div><script type="application/javascript">var questionsMtvkJCrQhzRR=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1398,8 +1401,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("UPCfKGPIhjjt")) {
-            show_questions(questionsUPCfKGPIhjjt,  UPCfKGPIhjjt); 
+          if(document.getElementById("MtvkJCrQhzRR")) {
+            show_questions(questionsMtvkJCrQhzRR,  MtvkJCrQhzRR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1408,8 +1411,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("UPCfKGPIhjjt");
-        // console.log(document.getElementById("UPCfKGPIhjjt"));
+        //console.log("MtvkJCrQhzRR");
+        // console.log(document.getElementById("MtvkJCrQhzRR"));
 
         try_show();
         }
