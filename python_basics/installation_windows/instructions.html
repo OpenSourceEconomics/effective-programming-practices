@@ -438,6 +438,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-mamba">Installing mamba</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-course-environment">Creating the course environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
             </nav>
         </div>
@@ -464,6 +465,8 @@ according to the instructions.</p>
 everything else. We install it via Miniforge.</p></li>
 <li><p>How to create the <strong>course environment</strong>: The course environment is a collection of
 Python packages that we will need for the course.</p></li>
+<li><p>Troubleshooting: Windows is the most problematic operating system and sometimes
+requires a few extra steps to get everything working.</p></li>
 </ol>
 <section id="installing-mamba">
 <h2>Installing mamba<a class="headerlink" href="#installing-mamba" title="Permalink to this heading">#</a></h2>
@@ -516,6 +519,18 @@ prompt. This is done by typing <code class="docutils literal notranslate"><span 
 that the environment is active by showing the name of the environment in parenthesis
 before the directory you are currently in.</p>
 <p><img alt="15_activate_epp.png" src="../../_images/15_activate_epp.png" /></p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>If mamba or conda are not recognized as commands in the powershell, do the following:</p>
+<ul>
+<li><p>open a Powershell as administrator and execute <code class="docutils literal notranslate"><span class="pre">set-executionpolicy</span> <span class="pre">remotesigned</span></code></p></li>
+<li><p>close and re-open Powershell</p></li>
+<li><p>execute <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code></p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 
@@ -584,6 +599,7 @@ before the directory you are currently in.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-mamba">Installing mamba</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-course-environment">Creating the course environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
   </nav></div>
 
