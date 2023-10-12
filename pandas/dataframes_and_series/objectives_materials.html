@@ -476,13 +476,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="nWKnhxscZEgN" data-shufflequestions="False"
+<div class="output text_html"><div id="XDKXnUaDpLtk" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#nWKnhxscZEgN {
+#XDKXnUaDpLtk {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -652,7 +652,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsnWKnhxscZEgN=[{"question": "Pandas DataFrames can be thought of as:", "type": "many_choice", "answers": [{"answer": "Vectors with an index.", "correct": false, "feedback": "This is true of `pd.Series`, DataFrames have two dimensions."}, {"answer": "A labelled matrix with columns of different types and an index.", "correct": true, "feedback": "This mental model is particularly useful for thinking about datasets."}, {"answer": "A dictionary of vectors (each of which is of a homogenous data type) with an index.", "correct": true, "feedback": "This mental model is particularly useful when thinking about performance characteristics of row vs. column operations."}]}, {"question": "Tick all that apply", "type": "many_choice", "answers": [{"answer": "Since DataFrames are almost loaded from a file, it is pointless to learn how to create them from scratch.", "correct": false, "feedback": "There are many use-cases for minimal examples."}, {"answer": "AI coding helpers are very useful for helping generate small DataFrames from scratch.", "correct": true, "feedback": "Indeed, may "}, {"answer": "It is often helpful to use small DataFrames to boil a problem down to its essence and then scale up.", "correct": true, "feedback": "Indeed, great way to debug and learn."}, {"answer": "It is most useful to debug data handling problems with the entire DataFrame because this gives the complete picture.", "correct": false, "feedback": "Try that with 10,000 rows? No, humans need small examples."}]}, {"question": "Assume that `df` and `ser` are a DataFrame and a Series, respectively. Their string representations are immediately below. What does df look like after you execute the line below?", "code": "df:\n       country  life_exp\nyear\n1992  Zimbabwe    60.377\n1997  Zimbabwe    46.809\n\nser:\n       pop\nyear\n1997  11.4\n1992  10.7\n\ndf[\"pop\"] = ser\n", "type": "many_choice", "answers": [{"code": "The code will raise a syntax\nerror, hence no change.:\n\n       country  life_exp\nyear                   .\n1992  Zimbabwe    60.377\n1997  Zimbabwe    46.809\n", "correct": false, "feedback": "No, this is perfectly valid syntax."}, {"code": "       country  life_exp   pop\nyear                         .\n1992  Zimbabwe    60.377  10.7\n1997  Zimbabwe    46.809  11.4\n", "correct": true, "feedback": "Indeed, inserting a column aligns on the index."}, {"code": "       country  life_exp   pop\nyear                         .\n1992  Zimbabwe    60.377  11.4\n1997  Zimbabwe    46.809  10.7\n", "correct": false, "feedback": "No, inserting a column aligns on the index."}]}];
+</style></div><script type="application/javascript">var questionsXDKXnUaDpLtk=[{"question": "Pandas DataFrames can be thought of as:", "type": "many_choice", "answers": [{"answer": "Vectors with an index.", "correct": false, "feedback": "This is true of `pd.Series`, DataFrames have two dimensions."}, {"answer": "A labelled matrix with columns of different types and an index.", "correct": true, "feedback": "This mental model is particularly useful for thinking about datasets."}, {"answer": "A dictionary of vectors (each of which is of a homogenous data type) with an index.", "correct": true, "feedback": "This mental model is particularly useful when thinking about performance characteristics of row vs. column operations."}]}, {"question": "Tick all that apply", "type": "many_choice", "answers": [{"answer": "Since DataFrames are almost loaded from a file, it is pointless to learn how to create them from scratch.", "correct": false, "feedback": "There are many use-cases for minimal examples."}, {"answer": "AI coding helpers are very useful for helping generate small DataFrames from scratch.", "correct": true, "feedback": "Indeed, may "}, {"answer": "It is often helpful to use small DataFrames to boil a problem down to its essence and then scale up.", "correct": true, "feedback": "Indeed, great way to debug and learn."}, {"answer": "It is most useful to debug data handling problems with the entire DataFrame because this gives the complete picture.", "correct": false, "feedback": "Try that with 10,000 rows? No, humans need small examples."}]}, {"question": "Assume that `df` and `ser` are a DataFrame and a Series, respectively. Their string representations are immediately below. What does df look like after you execute the line below?", "code": "df:\n       country  life_exp\nyear\n1992  Zimbabwe    60.377\n1997  Zimbabwe    46.809\n\nser:\n       pop\nyear\n1997  11.4\n1992  10.7\n\ndf[\"pop\"] = ser\n", "type": "many_choice", "answers": [{"code": "The code will raise a syntax\nerror, hence no change.:\n\n       country  life_exp\nyear                   .\n1992  Zimbabwe    60.377\n1997  Zimbabwe    46.809\n", "correct": false, "feedback": "No, this is perfectly valid syntax."}, {"code": "       country  life_exp   pop\nyear                         .\n1992  Zimbabwe    60.377  10.7\n1997  Zimbabwe    46.809  11.4\n", "correct": true, "feedback": "Indeed, inserting a column aligns on the index."}, {"code": "       country  life_exp   pop\nyear                         .\n1992  Zimbabwe    60.377  11.4\n1997  Zimbabwe    46.809  10.7\n", "correct": false, "feedback": "No, inserting a column aligns on the index."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1401,8 +1401,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("nWKnhxscZEgN")) {
-            show_questions(questionsnWKnhxscZEgN,  nWKnhxscZEgN); 
+          if(document.getElementById("XDKXnUaDpLtk")) {
+            show_questions(questionsXDKXnUaDpLtk,  XDKXnUaDpLtk); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1411,8 +1411,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("nWKnhxscZEgN");
-        // console.log(document.getElementById("nWKnhxscZEgN"));
+        //console.log("XDKXnUaDpLtk");
+        // console.log(document.getElementById("XDKXnUaDpLtk"));
 
         try_show();
         }

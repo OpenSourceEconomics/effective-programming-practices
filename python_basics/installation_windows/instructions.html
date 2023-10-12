@@ -522,15 +522,20 @@ before the directory you are currently in.</p>
 </section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>If mamba or conda are not recognized as commands in the powershell, do the following:</p>
-<ul>
-<li><p>open a Powershell as administrator and execute <code class="docutils literal notranslate"><span class="pre">set-executionpolicy</span> <span class="pre">remotesigned</span></code></p></li>
+<p>If mamba or conda are not recognized as commands in the powershell, do the following:</p>
+<ol class="arabic simple">
+<li><p>open a Powershell as administrator and execute</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Set-ExecutionPolicy<span class="w"> </span>-ExecutionPolicy<span class="w"> </span>RemoteSigned
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
 <li><p>close and re-open Powershell</p></li>
-<li><p>execute <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code></p></li>
-</ul>
-</li>
-</ul>
+<li><p>execute</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>init
+</pre></div>
+</div>
 </section>
 </section>
 
