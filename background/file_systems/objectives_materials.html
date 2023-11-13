@@ -57,13 +57,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-JNV9WF0QCS"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-JNV9WF0QCS');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -118,8 +111,8 @@ const thebe_selector_output = ".output, .cell_output"
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -279,6 +272,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_applications/objectives_materials.html">Markdown applications</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Plotting Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/tweak_px_example.html">Plotting Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/objectives_materials.html">Customised plots with plotly graph objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Plotting Example</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -320,21 +327,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-<a href="https://github.com/OpenSourceEconomics/epp_topics/issues/new?title=Issue%20on%20page%20%2Fbackground/file_systems/objectives_materials.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button"
-   title="Open an issue"
-   data-bs-placement="bottom" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-
-</a>
-
 
 
 
@@ -529,13 +521,13 @@ accessible material around.</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qFTHckWCmhMb" data-shufflequestions="False"
+<div class="output text_html"><div id="GwBVfCUCCpUA" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#qFTHckWCmhMb {
+#GwBVfCUCCpUA {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -705,7 +697,7 @@ accessible material around.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqFTHckWCmhMb=[{"question": "In which of the following Operating Systems can you find\n            the following path \"/Users/username/Documents\"?", "type": "multiple_choice", "answers": [{"answer": "Linux-based OS", "correct": false, "feedback": "Incorrect. While Linux-based OS\n                use almost the same  ."}, {"answer": "MacOS", "correct": true, "feedback": "Correct."}, {"answer": "Windows", "correct": false, "feedback": "Incorrect. Windows uses a different File System\n                than this. Windows File System starts with the physical drive\n                (e.g. C:\\) and then uses backslashes \"\\\" to separate the\n                directories."}]}, {"question": "What are the key differences\n              between UNIX-based and Windows-based File Systems?", "type": "many_choice", "answers": [{"answer": "Windows-systems use backslashes \"\\\" to separate\n                directories,\n            while UNIX-based systems use forward slashes \"/\".", "correct": true, "feedback": "Correct."}, {"answer": "Windows-systems have a more nested structure, with a\n                larger number\n                of directories.", "correct": false, "feedback": "Incorrect. The directories are not necessarily more\n                numerous or nested in Windows."}, {"answer": "Windows-systems have a separate directory tree for each\n                physical drive,\n            while UNIX-based systems have a single directory tree.", "correct": true, "feedback": "Correct. For example many computers have a C:\\ and a\n                D:\\ drive."}, {"answer": "Windows-systems have a single directory tree, while\n                UNIX-based\n            systems have a separate directory tree for each physical drive.", "correct": false, "feedback": "Incorrect. The answer is the opposite of this."}]}, {"question": "J\u00f6rn, Maria and Vinayak are working on a project together. J\u00f6rn is\n            running Windows\n             on his laptop,\n            while Maria and Vinayak have laptops that run MacOS. For reasons that will\n            become apparent\n            to you in the next lectures of this course, they need to decide whether to\n            use paths\n             with forward slashes \"/\" or\n            backslashes \"\\\" to separate directories, and they cannot\n            each use the path type\n            that is native to their\n            operating system. What do you think they should do?", "type": "multiple_choice", "answers": [{"answer": "They should use forward slashes \"/\".", "correct": true, "feedback": "Correct. The reason for this is that while\n                    UNIX-based systems cannot use backslashes \"\\\" in paths,\n                    modern Windows-based systems can use forward slashes \"/\".\n                    In fact, forward slashes are the \"standard\" for OS and\n                    programming languages. The story behind why Windows uses\n                    backslashes \"\\\" is quite interesting if you want to\n                    google it."}, {"answer": "They should use backslashes \"\\\".", "correct": false, "feedback": "Incorrect. The reason for this is that UNIX-based\n                systems cannot use backslashes \"\\\" in paths."}, {"answer": " It does not really matter which they use,\n                 as long as they are consistent.", "correct": false, "feedback": "Incorrect. It is very important to be consistent,\n                but\n                it does matter\n                which type of path they use, because UNIX-based\n          systems cannot use backslashes \"\\\" in paths."}]}, {"question": " What is the root directory,\n            and how is it\n            represented in a UNIX-based system?", "type": "multiple_choice", "answers": [{"answer": "The root directory is the directory that\n                contains all other directories (the top-level\n                directory in the folder structure),\n                and  is represented by a forward slash \"/\" in UNIX.", "correct": true, "feedback": "Correct."}, {"answer": "The root directory is the directory\n                that contains all other directories (the top-level\n                directory in the folder structure),\n                and is represented by a backslash \"\\\" in UNIX.", "correct": false, "feedback": "Incorrect. The correct symbol is a forward\n                slash \"/\"."}, {"answer": "The root directory is the directory that\n                contains all the user files, and is represented\n                by a forward slash \"/\" in UNIX.", "correct": false, "feedback": "Incorrect. The root directory contains all\n                directories, not\n                only the user files."}, {"answer": "The root directory is the directory that\n                contains all other directories\n                (the top-level\n                directory in the folder structure),\n                 and is represented by \" C:\\ \".", "correct": false, "feedback": "Incorrect. \" C:\\ \" is the root directory in\n                Windows-based File Systems,\n                not in UNIX-based systems."}]}];
+</style></div><script type="application/javascript">var questionsGwBVfCUCCpUA=[{"question": "In which of the following Operating Systems can you find\n            the following path \"/Users/username/Documents\"?", "type": "multiple_choice", "answers": [{"answer": "Linux-based OS", "correct": false, "feedback": "Incorrect. While Linux-based OS\n                use almost the same  ."}, {"answer": "MacOS", "correct": true, "feedback": "Correct."}, {"answer": "Windows", "correct": false, "feedback": "Incorrect. Windows uses a different File System\n                than this. Windows File System starts with the physical drive\n                (e.g. C:\\) and then uses backslashes \"\\\" to separate the\n                directories."}]}, {"question": "What are the key differences\n              between UNIX-based and Windows-based File Systems?", "type": "many_choice", "answers": [{"answer": "Windows-systems use backslashes \"\\\" to separate\n                directories,\n            while UNIX-based systems use forward slashes \"/\".", "correct": true, "feedback": "Correct."}, {"answer": "Windows-systems have a more nested structure, with a\n                larger number\n                of directories.", "correct": false, "feedback": "Incorrect. The directories are not necessarily more\n                numerous or nested in Windows."}, {"answer": "Windows-systems have a separate directory tree for each\n                physical drive,\n            while UNIX-based systems have a single directory tree.", "correct": true, "feedback": "Correct. For example many computers have a C:\\ and a\n                D:\\ drive."}, {"answer": "Windows-systems have a single directory tree, while\n                UNIX-based\n            systems have a separate directory tree for each physical drive.", "correct": false, "feedback": "Incorrect. The answer is the opposite of this."}]}, {"question": "J\u00f6rn, Maria and Vinayak are working on a project together. J\u00f6rn is\n            running Windows\n             on his laptop,\n            while Maria and Vinayak have laptops that run MacOS. For reasons that will\n            become apparent\n            to you in the next lectures of this course, they need to decide whether to\n            use paths\n             with forward slashes \"/\" or\n            backslashes \"\\\" to separate directories, and they cannot\n            each use the path type\n            that is native to their\n            operating system. What do you think they should do?", "type": "multiple_choice", "answers": [{"answer": "They should use forward slashes \"/\".", "correct": true, "feedback": "Correct. The reason for this is that while\n                    UNIX-based systems cannot use backslashes \"\\\" in paths,\n                    modern Windows-based systems can use forward slashes \"/\".\n                    In fact, forward slashes are the \"standard\" for OS and\n                    programming languages. The story behind why Windows uses\n                    backslashes \"\\\" is quite interesting if you want to\n                    google it."}, {"answer": "They should use backslashes \"\\\".", "correct": false, "feedback": "Incorrect. The reason for this is that UNIX-based\n                systems cannot use backslashes \"\\\" in paths."}, {"answer": " It does not really matter which they use,\n                 as long as they are consistent.", "correct": false, "feedback": "Incorrect. It is very important to be consistent,\n                but\n                it does matter\n                which type of path they use, because UNIX-based\n          systems cannot use backslashes \"\\\" in paths."}]}, {"question": " What is the root directory,\n            and how is it\n            represented in a UNIX-based system?", "type": "multiple_choice", "answers": [{"answer": "The root directory is the directory that\n                contains all other directories (the top-level\n                directory in the folder structure),\n                and  is represented by a forward slash \"/\" in UNIX.", "correct": true, "feedback": "Correct."}, {"answer": "The root directory is the directory\n                that contains all other directories (the top-level\n                directory in the folder structure),\n                and is represented by a backslash \"\\\" in UNIX.", "correct": false, "feedback": "Incorrect. The correct symbol is a forward\n                slash \"/\"."}, {"answer": "The root directory is the directory that\n                contains all the user files, and is represented\n                by a forward slash \"/\" in UNIX.", "correct": false, "feedback": "Incorrect. The root directory contains all\n                directories, not\n                only the user files."}, {"answer": "The root directory is the directory that\n                contains all other directories\n                (the top-level\n                directory in the folder structure),\n                 and is represented by \" C:\\ \".", "correct": false, "feedback": "Incorrect. \" C:\\ \" is the root directory in\n                Windows-based File Systems,\n                not in UNIX-based systems."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1454,8 +1446,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("qFTHckWCmhMb")) {
-            show_questions(questionsqFTHckWCmhMb,  qFTHckWCmhMb); 
+          if(document.getElementById("GwBVfCUCCpUA")) {
+            show_questions(questionsGwBVfCUCCpUA,  GwBVfCUCCpUA); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1464,8 +1456,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("qFTHckWCmhMb");
-        // console.log(document.getElementById("qFTHckWCmhMb"));
+        //console.log("GwBVfCUCCpUA");
+        // console.log(document.getElementById("GwBVfCUCCpUA"));
 
         try_show();
         }
@@ -1574,21 +1566,6 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   
   <div class="footer-item">
     
-<div class="extra_footer">
-  <p>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <img alt="Creative Commons License" style="border-width:0"
-    src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /
-  >
-</a>
-<br />
-This work is licensed under a <a
-  rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-</a>.
-</p>
-
-</div>
   </div>
   
 </div>

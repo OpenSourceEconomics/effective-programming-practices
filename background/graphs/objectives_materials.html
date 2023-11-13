@@ -57,13 +57,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-JNV9WF0QCS"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-JNV9WF0QCS');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -118,8 +111,8 @@ const thebe_selector_output = ".output, .cell_output"
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -279,6 +272,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_applications/objectives_materials.html">Markdown applications</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Plotting Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/tweak_px_example.html">Plotting Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/objectives_materials.html">Customised plots with plotly graph objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Plotting Example</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -320,21 +327,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-<a href="https://github.com/OpenSourceEconomics/epp_topics/issues/new?title=Issue%20on%20page%20%2Fbackground/graphs/objectives_materials.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button"
-   title="Open an issue"
-   data-bs-placement="bottom" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-
-</a>
-
 
 
 
@@ -493,13 +485,13 @@ by Ran Spiegler.</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="VFuPPyWQRJvn" data-shufflequestions="False"
+<div class="output text_html"><div id="FdSjHLbcNUUz" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#VFuPPyWQRJvn {
+#FdSjHLbcNUUz {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -669,7 +661,7 @@ by Ran Spiegler.</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsVFuPPyWQRJvn=[{"question": "Which of the following is a graph according to the definition?", "type": "many_choice", "answers": [{"answer": "A pair of sets (N, E) where N is a set                     of nodes and E is a set of edges.", "correct": true, "feedback": "This is the definition of a graph."}, {"answer": "A pair of sets (D, F) where D is a set of dots and F\n                    is a set of geometrical figures.", "correct": false, "feedback": "If F would be the set of segments                     connecting the dots, (D, F) would be a graph."}, {"answer": "A pair of sets (P, F) where P is a set of people and F\n                    is the set specifying the friendship relationships among pepole.", "correct": true, "feedback": "People are the nodes and                     the friendship relationships are the edges."}, {"answer": "A pair of sets (C, S) where C is the set of cities\n                    in Europe and S the set of European roads.", "correct": true, "feedback": "Cities are the nodes and Roads are the edges."}]}, {"question": "Examples of Graphs are:", "type": "many_choice", "answers": [{"answer": "Bushes", "correct": false, "feedback": "False"}, {"answer": "Chains", "correct": true, "feedback": "Correct."}, {"answer": "Tables", "correct": false, "feedback": "False"}, {"answer": "DAGs", "correct": true, "feedback": "Correct."}]}, {"question": "The most elementary application of graphs                 in computer science is:", "type": "multiple_choice", "answers": [{"answer": "Produce reproducible research", "correct": false, "feedback": "This is an application of graphs,                     but not the most elementary."}, {"answer": "The file system", "correct": true, "feedback": "Correct."}, {"answer": "Causal Theory", "correct": false, "feedback": "This is an application of graphs,                     but is not specific to computer science."}, {"answer": "Social Network Analysis", "correct": false, "feedback": "This is an application of graphs,                     but is not specific to computer science."}]}, {"question": "Consider the following graph. \n                N = {a, b, c, d, e}; E = {{a, b}, {a, c}, {d, c}, {b, c}, {d, e}} \n                What type of graph is it? If multiple options are true, use the one                 with the strictest requirements. \n                Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Arborescense", "correct": false, "feedback": "Incorrect."}, {"answer": "Directed Acyclic (DAG)", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": true, "feedback": "Correct. The graph is not directed."}]}, {"question": "Consider the following graph. \n            N = {a, b, c, d, e}; E = {(a, b), (a, c), (d, c), (b, c), (d, e)} \n            What type of graph is it? If multiple options are true, use the one             with the strictest requirements. \n            Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Arborescense", "correct": false, "feedback": "Incorrect."}, {"answer": "Directed Acyclic (DAG)", "correct": true, "feedback": "Correct; the set {A, B, C} do not form a cycle."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}, {"question": "Consider the following graph. \n            N = {a, b, c, d, e}; E = {{a, b}, {b, c}, {b, d}, {b, e}} \n            What type of graph is it? If multiple options are true, use the one             with the strictest requirements. \n            Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": true, "feedback": "Correct."}, {"answer": "Arborescense", "correct": false, "feedback": "Incorrect."}, {"answer": "Directed Acyclic (DAG)", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}, {"question": "Consider the following graph. \n            N = {a, b, c, d, e}; E = {(a, b), (a, c), (b, c), (d, e), (c, a)}\n            What type of graph is it? If multiple options are true, use the one             with the strictest requirements. \n            Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Arborescense", "correct": false, "feedback": "Incorrect."}, {"answer": "Directed Acyclic (DAG)", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": true, "feedback": "Correct."}]}, {"question": "Consider the following graph. \n            N = {a, b, c, d, e}; E = {(a, b), (a, c), (c, d), (b, e)}\n            What type of graph is it? If multiple options are true, use the one             with the strictest requirements. \n            Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Arborescense", "correct": true, "feedback": "Correct."}, {"answer": "Directed Acyclic (DAG)", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsFdSjHLbcNUUz=[{"question": "Which of the following is a graph according to the definition?", "type": "many_choice", "answers": [{"answer": "A pair of sets (N, E) where N is a set                     of nodes and E is a set of edges.", "correct": true, "feedback": "This is the definition of a graph."}, {"answer": "A pair of sets (D, F) where D is a set of dots and F\n                    is a set of geometrical figures.", "correct": false, "feedback": "If F would be the set of segments                     connecting the dots, (D, F) would be a graph."}, {"answer": "A pair of sets (P, F) where P is a set of people and F\n                    is the set specifying the friendship relationships among pepole.", "correct": true, "feedback": "People are the nodes and                     the friendship relationships are the edges."}, {"answer": "A pair of sets (C, S) where C is the set of cities\n                    in Europe and S the set of European roads.", "correct": true, "feedback": "Cities are the nodes and Roads are the edges."}]}, {"question": "Examples of Graphs are:", "type": "many_choice", "answers": [{"answer": "Bushes", "correct": false, "feedback": "False"}, {"answer": "Chains", "correct": true, "feedback": "Correct."}, {"answer": "Tables", "correct": false, "feedback": "False"}, {"answer": "DAGs", "correct": true, "feedback": "Correct."}]}, {"question": "The most elementary application of graphs                 in computer science is:", "type": "multiple_choice", "answers": [{"answer": "Produce reproducible research", "correct": false, "feedback": "This is an application of graphs,                     but not the most elementary."}, {"answer": "The file system", "correct": true, "feedback": "Correct."}, {"answer": "Causal Theory", "correct": false, "feedback": "This is an application of graphs,                     but is not specific to computer science."}, {"answer": "Social Network Analysis", "correct": false, "feedback": "This is an application of graphs,                     but is not specific to computer science."}]}, {"question": "Consider the following graph. \n                N = {a, b, c, d, e}; E = {{a, b}, {a, c}, {d, c}, {b, c}, {d, e}} \n                What type of graph is it? If multiple options are true, use the one                 with the strictest requirements. \n                Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Arborescense", "correct": false, "feedback": "Incorrect."}, {"answer": "Directed Acyclic (DAG)", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": true, "feedback": "Correct. The graph is not directed."}]}, {"question": "Consider the following graph. \n            N = {a, b, c, d, e}; E = {(a, b), (a, c), (d, c), (b, c), (d, e)} \n            What type of graph is it? If multiple options are true, use the one             with the strictest requirements. \n            Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Arborescense", "correct": false, "feedback": "Incorrect."}, {"answer": "Directed Acyclic (DAG)", "correct": true, "feedback": "Correct; the set {A, B, C} do not form a cycle."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}, {"question": "Consider the following graph. \n            N = {a, b, c, d, e}; E = {{a, b}, {b, c}, {b, d}, {b, e}} \n            What type of graph is it? If multiple options are true, use the one             with the strictest requirements. \n            Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": true, "feedback": "Correct."}, {"answer": "Arborescense", "correct": false, "feedback": "Incorrect."}, {"answer": "Directed Acyclic (DAG)", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}, {"question": "Consider the following graph. \n            N = {a, b, c, d, e}; E = {(a, b), (a, c), (b, c), (d, e), (c, a)}\n            What type of graph is it? If multiple options are true, use the one             with the strictest requirements. \n            Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Arborescense", "correct": false, "feedback": "Incorrect."}, {"answer": "Directed Acyclic (DAG)", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": true, "feedback": "Correct."}]}, {"question": "Consider the following graph. \n            N = {a, b, c, d, e}; E = {(a, b), (a, c), (c, d), (b, e)}\n            What type of graph is it? If multiple options are true, use the one             with the strictest requirements. \n            Feel free to draw the graph!", "type": "multiple_choice", "answers": [{"answer": "Tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Arborescense", "correct": true, "feedback": "Correct."}, {"answer": "Directed Acyclic (DAG)", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1418,8 +1410,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("VFuPPyWQRJvn")) {
-            show_questions(questionsVFuPPyWQRJvn,  VFuPPyWQRJvn); 
+          if(document.getElementById("FdSjHLbcNUUz")) {
+            show_questions(questionsFdSjHLbcNUUz,  FdSjHLbcNUUz); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1428,8 +1420,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("VFuPPyWQRJvn");
-        // console.log(document.getElementById("VFuPPyWQRJvn"));
+        //console.log("FdSjHLbcNUUz");
+        // console.log(document.getElementById("FdSjHLbcNUUz"));
 
         try_show();
         }
@@ -1536,21 +1528,6 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   
   <div class="footer-item">
     
-<div class="extra_footer">
-  <p>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <img alt="Creative Commons License" style="border-width:0"
-    src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /
-  >
-</a>
-<br />
-This work is licensed under a <a
-  rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-</a>.
-</p>
-
-</div>
   </div>
   
 </div>

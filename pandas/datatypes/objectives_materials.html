@@ -57,13 +57,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-JNV9WF0QCS"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-JNV9WF0QCS');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -118,8 +111,8 @@ const thebe_selector_output = ".output, .cell_output"
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -279,6 +272,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_applications/objectives_materials.html">Markdown applications</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Plotting Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/tweak_px_example.html">Plotting Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/objectives_materials.html">Customised plots with plotly graph objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Plotting Example</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -320,21 +327,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-<a href="https://github.com/OpenSourceEconomics/epp_topics/issues/new?title=Issue%20on%20page%20%2Fpandas/datatypes/objectives_materials.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button"
-   title="Open an issue"
-   data-bs-placement="bottom" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-
-</a>
-
 
 
 
@@ -742,7 +734,7 @@ and these are the <a class="reference download internal" download="" href="../..
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="xfqsVqMkwXnT" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="xfqsVqMkwXnT-next" onclick="window.checkFlip('xfqsVqMkwXnT')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="taebeWdcFcyT" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="taebeWdcFcyT-next" onclick="window.checkFlip('taebeWdcFcyT')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -1089,28 +1081,28 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("xfqsVqMkwXnT")) {
-            createCards("xfqsVqMkwXnT", "True", "False");
+          if(document.getElementById("taebeWdcFcyT")) {
+            createCards("taebeWdcFcyT", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsxfqsVqMkwXnT=[{"name": "Intro", "front": "Describe each of the DataTypes (rough amount of storage space, the broad range of values it can/should take, an example use case).", "back": "Let's go through them step by step (click on next in the bottom right)."}, {"name": "pd.Int16Dtype", "front": "pd.Int16Dtype", "back": "An integer, requiring 16 bits of storage space, yielding a range of values from $[-2^{15}, 2^{15}) = [-32768, 32767]$. We may use it to store the year."}, {"name": "pd.UInt32Dtype", "front": "pd.UInt32Dtype", "back": "An unsigned integer, requiring 32 bits of storage space, yielding a range of values: $[0, 2^{32}) = [0, 4294967295]$. We may use it to store the person identifiers, unless we observe more than half of all humanity."}, {"name": "pd.StringDtype", "front": "pd.StringDtype", "back": "Strings of arbitrary length, we may use it to store answers to a free-text answer from a survey."}, {"name": "pd.CategoricalDtype (ordered)", "front": "pd.CategoricalDtype (ordered)", "back": "A categorical variable, with a fixed number of possible values, which are ordered in a way specified by the user. Very efficient storage behind the scenes. An example would be responses to a Likert scale question on subjective health with possible values excellent-very good-good-fair-poor."}, {"name": "pd.CategoricalDtype (unordered)", "front": "pd.CategoricalDtype (unordered)", "back": "A categorical variable, with a fixed number of possible values, which are not ordered. Very efficient storage behind the scenes. An example would be gender (female, male, other, ...)."}];
-var frontColorsxfqsVqMkwXnT= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsxfqsVqMkwXnT= ["var(--dark-blue-gray)" ];
-var textColorsxfqsVqMkwXnT= ["var(--snow)" ];
+var cardstaebeWdcFcyT=[{"name": "Intro", "front": "Describe each of the DataTypes (rough amount of storage space, the broad range of values it can/should take, an example use case).", "back": "Let's go through them step by step (click on next in the bottom right)."}, {"name": "pd.Int16Dtype", "front": "pd.Int16Dtype", "back": "An integer, requiring 16 bits of storage space, yielding a range of values from $[-2^{15}, 2^{15}) = [-32768, 32767]$. We may use it to store the year."}, {"name": "pd.UInt32Dtype", "front": "pd.UInt32Dtype", "back": "An unsigned integer, requiring 32 bits of storage space, yielding a range of values: $[0, 2^{32}) = [0, 4294967295]$. We may use it to store the person identifiers, unless we observe more than half of all humanity."}, {"name": "pd.StringDtype", "front": "pd.StringDtype", "back": "Strings of arbitrary length, we may use it to store answers to a free-text answer from a survey."}, {"name": "pd.CategoricalDtype (ordered)", "front": "pd.CategoricalDtype (ordered)", "back": "A categorical variable, with a fixed number of possible values, which are ordered in a way specified by the user. Very efficient storage behind the scenes. An example would be responses to a Likert scale question on subjective health with possible values excellent-very good-good-fair-poor."}, {"name": "pd.CategoricalDtype (unordered)", "front": "pd.CategoricalDtype (unordered)", "back": "A categorical variable, with a fixed number of possible values, which are not ordered. Very efficient storage behind the scenes. An example would be gender (female, male, other, ...)."}];
+var frontColorstaebeWdcFcyT= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorstaebeWdcFcyT= ["var(--dark-blue-gray)" ];
+var textColorstaebeWdcFcyT= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="OAsqTgpeJZbY" data-shufflequestions="False"
+<div class="output text_html"><div id="EyGUsgvNJiog" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#OAsqTgpeJZbY {
+#EyGUsgvNJiog {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1280,7 +1272,7 @@ try_create(); </script></div>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsOAsqTgpeJZbY=[{"question": "Assume you have a small survey dataset with 1500 rows and 50 columns. Among other things, your dataset has variables for gender, income, happiness (on a 3-point Likert scale), all of which are stored as pd.Int64DType. Tick all that apply.", "type": "many_choice", "answers": [{"answer": "We should set each variable to the smallest possible integer type to save on memory.", "correct": false, "feedback": "Gender as an integer is not helpful at all! You always need to remember what the numbers mean. Let's not get started on plotting or accidentally using the values 0, 1, 2 directly in a regression.Also, with the size of these data, memory is not a concern."}, {"answer": "We should set income to be of the pd.Float64Dtype variant in order to save on memory", "correct": false, "feedback": "Both datatypes take up the same amount of memory. Also, with the size of these data, memory is not a concern."}, {"answer": "We should set income to be of the pd.Float64Dtype variant in to make clear we are approximating a real number.", "correct": true, "feedback": "We would recommend this indeed. Strictly speaking, you could not calculate continuous distributions etc. with integers, although the necessary type conversion will often happen implicitly."}, {"answer": "We should set gender to be of the ordered pd.CategoricalDtype variant.", "correct": false, "feedback": "How would you order female/male/other?"}, {"answer": "We should set gender to be of the unordered pd.CategoricalDtype variant.", "correct": true}, {"answer": "We should set happiness to be of the ordered pd.CategoricalDtype variant.", "correct": true, "feedback": "This is the correct representation."}, {"answer": "We should set happiness to be of the unordered pd.CategoricalDtype variant.", "correct": false, "feedback": "Order is built into Likert scales by definition; the data type should reflect this."}, {"answer": "We can just leave happiness to be an Integer type.", "correct": false, "feedback": "A categorical data type makes much clearer what the variable contains. The only reason you may want to leave it as an integer would be to include it in a regression where you are comfortable interpret differences in a cardinal way. While there is a debate on whether this is not too far-fetched for Likert-scales with a larger outcome space, for three outcomes it definitely is not."}]}];
+</style></div><script type="application/javascript">var questionsEyGUsgvNJiog=[{"question": "Assume you have a small survey dataset with 1500 rows and 50 columns. Among other things, your dataset has variables for gender, income, happiness (on a 3-point Likert scale), all of which are stored as pd.Int64DType. Tick all that apply.", "type": "many_choice", "answers": [{"answer": "We should set each variable to the smallest possible integer type to save on memory.", "correct": false, "feedback": "Gender as an integer is not helpful at all! You always need to remember what the numbers mean. Let's not get started on plotting or accidentally using the values 0, 1, 2 directly in a regression.Also, with the size of these data, memory is not a concern."}, {"answer": "We should set income to be of the pd.Float64Dtype variant in order to save on memory", "correct": false, "feedback": "Both datatypes take up the same amount of memory. Also, with the size of these data, memory is not a concern."}, {"answer": "We should set income to be of the pd.Float64Dtype variant in to make clear we are approximating a real number.", "correct": true, "feedback": "We would recommend this indeed. Strictly speaking, you could not calculate continuous distributions etc. with integers, although the necessary type conversion will often happen implicitly."}, {"answer": "We should set gender to be of the ordered pd.CategoricalDtype variant.", "correct": false, "feedback": "How would you order female/male/other?"}, {"answer": "We should set gender to be of the unordered pd.CategoricalDtype variant.", "correct": true}, {"answer": "We should set happiness to be of the ordered pd.CategoricalDtype variant.", "correct": true, "feedback": "This is the correct representation."}, {"answer": "We should set happiness to be of the unordered pd.CategoricalDtype variant.", "correct": false, "feedback": "Order is built into Likert scales by definition; the data type should reflect this."}, {"answer": "We can just leave happiness to be an Integer type.", "correct": false, "feedback": "A categorical data type makes much clearer what the variable contains. The only reason you may want to leave it as an integer would be to include it in a regression where you are comfortable interpret differences in a cardinal way. While there is a debate on whether this is not too far-fetched for Likert-scales with a larger outcome space, for three outcomes it definitely is not."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2029,8 +2021,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("OAsqTgpeJZbY")) {
-            show_questions(questionsOAsqTgpeJZbY,  OAsqTgpeJZbY); 
+          if(document.getElementById("EyGUsgvNJiog")) {
+            show_questions(questionsEyGUsgvNJiog,  EyGUsgvNJiog); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2039,8 +2031,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("OAsqTgpeJZbY");
-        // console.log(document.getElementById("OAsqTgpeJZbY"));
+        //console.log("EyGUsgvNJiog");
+        // console.log(document.getElementById("EyGUsgvNJiog"));
 
         try_show();
         }
@@ -2145,21 +2137,6 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   
   <div class="footer-item">
     
-<div class="extra_footer">
-  <p>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <img alt="Creative Commons License" style="border-width:0"
-    src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /
-  >
-</a>
-<br />
-This work is licensed under a <a
-  rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-</a>.
-</p>
-
-</div>
   </div>
   
 </div>
