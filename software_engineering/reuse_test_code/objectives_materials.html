@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'software_engineering/reuse_test_code/objectives_materials';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Texts, Typesetting, and Text Data" href="../../texts/index.html" />
+    <link rel="next" title="Introduction to error handling" href="../error_handling_intro/objectives_materials.html" />
     <link rel="prev" title="What to test? How to test it?" href="../what_and_how_to_test/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -491,13 +495,13 @@ fixtures</a></p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="pHQFgoDjnGKg" data-shufflequestions="False"
+<div class="output text_html"><div id="vbDlyNoiZleq" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#pHQFgoDjnGKg {
+#vbDlyNoiZleq {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -667,7 +671,7 @@ fixtures</a></p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionspHQFgoDjnGKg=[{"question": "Which functions are recognized as tests by pytest?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytest.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `test`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tests are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytest", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytest again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsvbDlyNoiZleq=[{"question": "Which functions are recognized as tests by pytest?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytest.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `test`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tests are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytest", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytest again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1416,8 +1420,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("pHQFgoDjnGKg")) {
-            show_questions(questionspHQFgoDjnGKg,  pHQFgoDjnGKg); 
+          if(document.getElementById("vbDlyNoiZleq")) {
+            show_questions(questionsvbDlyNoiZleq,  vbDlyNoiZleq); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1426,8 +1430,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("pHQFgoDjnGKg");
-        // console.log(document.getElementById("pHQFgoDjnGKg"));
+        //console.log("vbDlyNoiZleq");
+        // console.log(document.getElementById("vbDlyNoiZleq"));
 
         try_show();
         }
@@ -1476,11 +1480,11 @@ if (typeof version == 'undefined') {
       </div>
     </a>
     <a class="right-next"
-       href="../../texts/index.html"
+       href="../error_handling_intro/objectives_materials.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Texts, Typesetting, and Text Data</p>
+        <p class="prev-next-title">Introduction to error handling</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

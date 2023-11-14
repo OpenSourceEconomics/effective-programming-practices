@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -509,13 +513,13 @@ command by typing in <code class="docutils literal notranslate"><span class="pre
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="whomusGqqgOR" data-shufflequestions="False"
+<div class="output text_html"><div id="QnIRJiEQTdci" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#whomusGqqgOR {
+#QnIRJiEQTdci {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -685,7 +689,7 @@ command by typing in <code class="docutils literal notranslate"><span class="pre
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionswhomusGqqgOR=[{"question": "What does pwd do", "type": "multiple_choice", "answers": [{"answer": "Print the current working directory", "correct": true, "feedback": "Correct."}, {"answer": "Switch to your home directory", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a new directory called pwd", "correct": false, "feedback": "Incorrect."}, {"answer": "Print all files in the present working directory", "correct": false, "feedback": "Incorrect."}]}, {"question": "What can you do with the z command?", "type": "many_choice", "answers": [{"answer": "Save typing when switching to a directory", "correct": true, "feedback": "Correct."}, {"answer": "Create files more efficiently", "correct": false, "feedback": "Incorrect."}, {"answer": "Print the entire directory tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Switch to a directory of which you only know the approximate name", "correct": true, "feedback": "Correct."}]}, {"question": "What does `cd ..` do", "type": "multiple_choice", "answers": [{"answer": "Move to a directory called `..`", "correct": false, "feedback": "Incorrect."}, {"answer": "Move to the parent directory", "correct": true, "feedback": "Correct."}, {"answer": "Move to the home directory", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsQnIRJiEQTdci=[{"question": "What does pwd do", "type": "multiple_choice", "answers": [{"answer": "Print the current working directory", "correct": true, "feedback": "Correct."}, {"answer": "Switch to your home directory", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a new directory called pwd", "correct": false, "feedback": "Incorrect."}, {"answer": "Print all files in the present working directory", "correct": false, "feedback": "Incorrect."}]}, {"question": "What can you do with the z command?", "type": "many_choice", "answers": [{"answer": "Save typing when switching to a directory", "correct": true, "feedback": "Correct."}, {"answer": "Create files more efficiently", "correct": false, "feedback": "Incorrect."}, {"answer": "Print the entire directory tree", "correct": false, "feedback": "Incorrect."}, {"answer": "Switch to a directory of which you only know the approximate name", "correct": true, "feedback": "Correct."}]}, {"question": "What does `cd ..` do", "type": "multiple_choice", "answers": [{"answer": "Move to a directory called `..`", "correct": false, "feedback": "Incorrect."}, {"answer": "Move to the parent directory", "correct": true, "feedback": "Correct."}, {"answer": "Move to the home directory", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1434,8 +1438,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("whomusGqqgOR")) {
-            show_questions(questionswhomusGqqgOR,  whomusGqqgOR); 
+          if(document.getElementById("QnIRJiEQTdci")) {
+            show_questions(questionsQnIRJiEQTdci,  QnIRJiEQTdci); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1444,8 +1448,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("whomusGqqgOR");
-        // console.log(document.getElementById("whomusGqqgOR"));
+        //console.log("QnIRJiEQTdci");
+        // console.log(document.getElementById("QnIRJiEQTdci"));
 
         try_show();
         }

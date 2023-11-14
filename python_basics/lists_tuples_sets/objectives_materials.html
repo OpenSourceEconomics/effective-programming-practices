@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -488,13 +492,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="HRTjRiWmrsXO" data-shufflequestions="False"
+<div class="output text_html"><div id="iIXKiHAKJquw" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#HRTjRiWmrsXO {
+#iIXKiHAKJquw {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -664,7 +668,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsHRTjRiWmrsXO=[{"question": "What are the differences between a list and a tuple?", "type": "many_choice", "answers": [{"answer": "Lists are immutable, while tuples are mutable", "correct": false, "feedback": "Incorrect. Tuples are immutable,\n                while lists are mutable."}, {"answer": "Lists are mutable, while tuples are immutable", "correct": true, "feedback": "Correct!"}, {"answer": "Lists are ordered, while tuples are unordered", "correct": false, "feedback": "Incorrect. Both are ordered."}, {"answer": "Lists are used more frequently than tuples, because\n                they are more flexible (can be used for different purposes)", "correct": true, "feedback": "Correct. Tuples are usually used\n                in locations where you do not want to risk accidental changes,\n                 for example the indices of a dataset."}]}, {"question": "How do you access the second element of a set object named 'das_set'?", "type": "multiple_choice", "answers": [{"answer": "das_set[1]", "correct": false, "feedback": "Incorrect."}, {"answer": "das_set[2]", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot acces the second element of a set,\n            because sets are unordered", "correct": true, "feedback": "Correct!"}, {"answer": "das_set(2)", "correct": false, "feedback": "Incorrect."}]}, {"question": "What makes an object hashable?", "type": "multiple_choice", "answers": [{"answer": "A hashable objext can be used as a key in\n             a hash table or dictionary.", "correct": true, "feedback": "Correct!"}, {"answer": "A hashable object always has\n             a unique representation in memory.", "correct": false, "feedback": "Incorrect."}, {"answer": "A hashable object is immutable.", "correct": false, "feedback": "Incorrect.\n                A hashable object can be immutable."}, {"answer": "A hashable object is mutable.", "correct": false, "feedback": "Incorrect. A\n                hashable object can be mutable."}]}, {"question": "How do you access the second element of a tuple object named\n                        'das_tuple'?", "type": "multiple_choice", "answers": [{"answer": "das_tuple[1]", "correct": true, "feedback": "Correct!"}, {"answer": "das_tuple[2]", "correct": false, "feedback": "Incorrect.\n             Remember that Python starts counting from 0."}, {"answer": "das_tuple(1)", "correct": false, "feedback": "Incorrect.\n             Square brackets are used for indexing, not round ones."}, {"answer": "das_tuple(2)", "correct": false, "feedback": "Incorrect."}]}, {"question": "You have a sequence of unique objects for which you will need\n                     to check multiple times whether it includes a specific object\n                     or not. Would it be more efficient to have the objects\n                     in a list, a tuple or a set?", "type": "multiple_choice", "answers": [{"answer": "List", "correct": false, "feedback": "Incorrect. While\n            lists can be used for this purpose, it is not the most efficient way,\n            nor the easiest one to write."}, {"answer": "Tuple", "correct": false, "feedback": "Incorrect. While\n            tuples can be used for this purpose, it is not the most efficient\n              way, and the most complicated one to write."}, {"answer": "Set", "correct": true, "feedback": "Correct. Sets are\n             optimised for this kind of task, both in terms of efficiency and\n             simplicity of the code (there is a specific method for this,\n             set.contains())."}]}];
+</style></div><script type="application/javascript">var questionsiIXKiHAKJquw=[{"question": "What are the differences between a list and a tuple?", "type": "many_choice", "answers": [{"answer": "Lists are immutable, while tuples are mutable", "correct": false, "feedback": "Incorrect. Tuples are immutable,\n                while lists are mutable."}, {"answer": "Lists are mutable, while tuples are immutable", "correct": true, "feedback": "Correct!"}, {"answer": "Lists are ordered, while tuples are unordered", "correct": false, "feedback": "Incorrect. Both are ordered."}, {"answer": "Lists are used more frequently than tuples, because\n                they are more flexible (can be used for different purposes)", "correct": true, "feedback": "Correct. Tuples are usually used\n                in locations where you do not want to risk accidental changes,\n                 for example the indices of a dataset."}]}, {"question": "How do you access the second element of a set object named 'das_set'?", "type": "multiple_choice", "answers": [{"answer": "das_set[1]", "correct": false, "feedback": "Incorrect."}, {"answer": "das_set[2]", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot acces the second element of a set,\n            because sets are unordered", "correct": true, "feedback": "Correct!"}, {"answer": "das_set(2)", "correct": false, "feedback": "Incorrect."}]}, {"question": "What makes an object hashable?", "type": "multiple_choice", "answers": [{"answer": "A hashable objext can be used as a key in\n             a hash table or dictionary.", "correct": true, "feedback": "Correct!"}, {"answer": "A hashable object always has\n             a unique representation in memory.", "correct": false, "feedback": "Incorrect."}, {"answer": "A hashable object is immutable.", "correct": false, "feedback": "Incorrect.\n                A hashable object can be immutable."}, {"answer": "A hashable object is mutable.", "correct": false, "feedback": "Incorrect. A\n                hashable object can be mutable."}]}, {"question": "How do you access the second element of a tuple object named\n                        'das_tuple'?", "type": "multiple_choice", "answers": [{"answer": "das_tuple[1]", "correct": true, "feedback": "Correct!"}, {"answer": "das_tuple[2]", "correct": false, "feedback": "Incorrect.\n             Remember that Python starts counting from 0."}, {"answer": "das_tuple(1)", "correct": false, "feedback": "Incorrect.\n             Square brackets are used for indexing, not round ones."}, {"answer": "das_tuple(2)", "correct": false, "feedback": "Incorrect."}]}, {"question": "You have a sequence of unique objects for which you will need\n                     to check multiple times whether it includes a specific object\n                     or not. Would it be more efficient to have the objects\n                     in a list, a tuple or a set?", "type": "multiple_choice", "answers": [{"answer": "List", "correct": false, "feedback": "Incorrect. While\n            lists can be used for this purpose, it is not the most efficient way,\n            nor the easiest one to write."}, {"answer": "Tuple", "correct": false, "feedback": "Incorrect. While\n            tuples can be used for this purpose, it is not the most efficient\n              way, and the most complicated one to write."}, {"answer": "Set", "correct": true, "feedback": "Correct. Sets are\n             optimised for this kind of task, both in terms of efficiency and\n             simplicity of the code (there is a specific method for this,\n             set.contains())."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1413,8 +1417,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("HRTjRiWmrsXO")) {
-            show_questions(questionsHRTjRiWmrsXO,  HRTjRiWmrsXO); 
+          if(document.getElementById("iIXKiHAKJquw")) {
+            show_questions(questionsiIXKiHAKJquw,  iIXKiHAKJquw); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1423,8 +1427,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("HRTjRiWmrsXO");
-        // console.log(document.getElementById("HRTjRiWmrsXO"));
+        //console.log("iIXKiHAKJquw");
+        // console.log(document.getElementById("iIXKiHAKJquw"));
 
         try_show();
         }

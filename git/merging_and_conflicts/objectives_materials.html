@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -480,13 +484,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="oQdvYZcRgsRF" data-shufflequestions="False"
+<div class="output text_html"><div id="GOykFJwMCVxP" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#oQdvYZcRgsRF {
+#GOykFJwMCVxP {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -656,7 +660,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsoQdvYZcRgsRF=[{"question": "Which steps are needed to fix a merge conflict?", "type": "many_choice", "answers": [{"answer": "modify the files manually", "correct": true, "feedback": "Correct."}, {"answer": "`git reset`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git add`", "correct": true, "feedback": "Correct."}, {"answer": "`git commit`", "correct": true, "feedback": "Correct."}, {"answer": "`git resolve conflict`", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsGOykFJwMCVxP=[{"question": "Which steps are needed to fix a merge conflict?", "type": "many_choice", "answers": [{"answer": "modify the files manually", "correct": true, "feedback": "Correct."}, {"answer": "`git reset`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git add`", "correct": true, "feedback": "Correct."}, {"answer": "`git commit`", "correct": true, "feedback": "Correct."}, {"answer": "`git resolve conflict`", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1405,8 +1409,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("oQdvYZcRgsRF")) {
-            show_questions(questionsoQdvYZcRgsRF,  oQdvYZcRgsRF); 
+          if(document.getElementById("GOykFJwMCVxP")) {
+            show_questions(questionsGOykFJwMCVxP,  GOykFJwMCVxP); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1415,8 +1419,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("oQdvYZcRgsRF");
-        // console.log(document.getElementById("oQdvYZcRgsRF"));
+        //console.log("GOykFJwMCVxP");
+        // console.log(document.getElementById("GOykFJwMCVxP"));
 
         try_show();
         }
@@ -1685,7 +1689,7 @@ if (typeof version == 'undefined') {
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="PKXfirUwEVaY" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="PKXfirUwEVaY-next" onclick="window.checkFlip('PKXfirUwEVaY')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="GtUuEfiyqwZm" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="GtUuEfiyqwZm-next" onclick="window.checkFlip('GtUuEfiyqwZm')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -2032,17 +2036,17 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("PKXfirUwEVaY")) {
-            createCards("PKXfirUwEVaY", "True", "False");
+          if(document.getElementById("GtUuEfiyqwZm")) {
+            createCards("GtUuEfiyqwZm", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsPKXfirUwEVaY=[{"name": "Intro", "front": "What are the correct commands         to merge branch `a` into branch `b`?", "back": "Let's go through them step by             step (click on next in the bottom right)."}, {"name": "git checkout b", "front": "git checkout b", "back": "This moves the HEAD from the             current branch to branch `b`."}, {"name": "git merge a", "front": "git merge a", "back": "This merges branch `a` into             the current branch `b`."}];
-var frontColorsPKXfirUwEVaY= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsPKXfirUwEVaY= ["var(--dark-blue-gray)" ];
-var textColorsPKXfirUwEVaY= ["var(--snow)" ];
+var cardsGtUuEfiyqwZm=[{"name": "Intro", "front": "What are the correct commands         to merge branch `a` into branch `b`?", "back": "Let's go through them step by             step (click on next in the bottom right)."}, {"name": "git checkout b", "front": "git checkout b", "back": "This moves the HEAD from the             current branch to branch `b`."}, {"name": "git merge a", "front": "git merge a", "back": "This merges branch `a` into             the current branch `b`."}];
+var frontColorsGtUuEfiyqwZm= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsGtUuEfiyqwZm= ["var(--dark-blue-gray)" ];
+var textColorsGtUuEfiyqwZm= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 </section>

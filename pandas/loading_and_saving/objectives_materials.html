@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -484,13 +488,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="wbcGZlnozAId" data-shufflequestions="False"
+<div class="output text_html"><div id="prIqQuuSuxCn" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#wbcGZlnozAId {
+#prIqQuuSuxCn {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -660,7 +664,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionswbcGZlnozAId=[{"question": "Storing data in csv format is useful because", "type": "many_choice", "answers": [{"answer": "you can open the data in a text editor.", "correct": true, "feedback": "About the only reason and pointless for large datasets."}, {"answer": "actually, it is not useful at all in general.", "correct": true, "feedback": "Indeed!"}, {"answer": "it is easy to preserve categorical data types.", "correct": false, "feedback": "This is not easy at all."}, {"answer": "csv is a clearly defined standard.", "correct": false, "feedback": "Very much to the contrary."}]}];
+</style></div><script type="application/javascript">var questionsprIqQuuSuxCn=[{"question": "Storing data in csv format is useful because", "type": "many_choice", "answers": [{"answer": "you can open the data in a text editor.", "correct": true, "feedback": "About the only reason and pointless for large datasets."}, {"answer": "actually, it is not useful at all in general.", "correct": true, "feedback": "Indeed!"}, {"answer": "it is easy to preserve categorical data types.", "correct": false, "feedback": "This is not easy at all."}, {"answer": "csv is a clearly defined standard.", "correct": false, "feedback": "Very much to the contrary."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1409,8 +1413,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("wbcGZlnozAId")) {
-            show_questions(questionswbcGZlnozAId,  wbcGZlnozAId); 
+          if(document.getElementById("prIqQuuSuxCn")) {
+            show_questions(questionsprIqQuuSuxCn,  prIqQuuSuxCn); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1419,8 +1423,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("wbcGZlnozAId");
-        // console.log(document.getElementById("wbcGZlnozAId"));
+        //console.log("prIqQuuSuxCn");
+        // console.log(document.getElementById("prIqQuuSuxCn"));
 
         try_show();
         }
@@ -1686,7 +1690,7 @@ if (typeof version == 'undefined') {
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="pTqxYOJDMntQ" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="pTqxYOJDMntQ-next" onclick="window.checkFlip('pTqxYOJDMntQ')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="bWVZcBPtUvcg" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="bWVZcBPtUvcg-next" onclick="window.checkFlip('bWVZcBPtUvcg')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -2033,17 +2037,17 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("pTqxYOJDMntQ")) {
-            createCards("pTqxYOJDMntQ", "True", "False");
+          if(document.getElementById("bWVZcBPtUvcg")) {
+            createCards("bWVZcBPtUvcg", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardspTqxYOJDMntQ=[{"name": "intro", "front": "Describe the format you would use for each of the following tasks.", "back": "Let's go through them step by step (click on next in the bottom right)."}, {"name": "share_with_stata", "front": "Share data with a Stata user.", "back": "Use Stata's dta format. It is typically better to solve compatibility issues on the Python side."}, {"name": "share_with_R", "front": "Share data with a user of R.", "back": "Use Apache Arrow's feather format. It can easily be read into R and itis a very well-defined standard."}, {"name": "re_use_in_workflow", "front": "Read in the data downstream in the project.", "back": "Pickle the data. You are guaranteed to get the same thing back since you will be using the same versions of Python and Pandas."}, {"name": "share_with_python", "front": "Share data with a user of Python.", "back": "Use Apache Arrow's feather format. It can easily be read into Python and it is a very well-defined standard. Alternatively, pickle is also likely to work, although there can be incompatibilities across versions of Python and it is easy to include objects in a pickle file that require the same import statements to work."}];
-var frontColorspTqxYOJDMntQ= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorspTqxYOJDMntQ= ["var(--dark-blue-gray)" ];
-var textColorspTqxYOJDMntQ= ["var(--snow)" ];
+var cardsbWVZcBPtUvcg=[{"name": "intro", "front": "Describe the format you would use for each of the following tasks.", "back": "Let's go through them step by step (click on next in the bottom right)."}, {"name": "share_with_stata", "front": "Share data with a Stata user.", "back": "Use Stata's dta format. It is typically better to solve compatibility issues on the Python side."}, {"name": "share_with_R", "front": "Share data with a user of R.", "back": "Use Apache Arrow's feather format. It can easily be read into R and itis a very well-defined standard."}, {"name": "re_use_in_workflow", "front": "Read in the data downstream in the project.", "back": "Pickle the data. You are guaranteed to get the same thing back since you will be using the same versions of Python and Pandas."}, {"name": "share_with_python", "front": "Share data with a user of Python.", "back": "Use Apache Arrow's feather format. It can easily be read into Python and it is a very well-defined standard. Alternatively, pickle is also likely to work, although there can be incompatibilities across versions of Python and it is easy to include objects in a pickle file that require the same import statements to work."}];
+var frontColorsbWVZcBPtUvcg= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsbWVZcBPtUvcg= ["var(--dark-blue-gray)" ];
+var textColorsbWVZcBPtUvcg= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 </section>

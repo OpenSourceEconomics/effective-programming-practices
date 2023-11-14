@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -489,13 +493,13 @@ join and concatenate</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="XaVQIhDkYKEF" data-shufflequestions="False"
+<div class="output text_html"><div id="VXIdbsOOjBoQ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#XaVQIhDkYKEF {
+#VXIdbsOOjBoQ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -665,7 +669,7 @@ join and concatenate</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXaVQIhDkYKEF=[{"question": "Why does raw data often not come in a single file?", "type": "multiple_choice", "answers": [{"answer": "Because it is too large to fit in a single file.", "correct": false, "feedback": "Incorrect."}, {"answer": "Because data providers respect the normal forms", "correct": true, "feedback": "Correct."}, {"answer": "Because data providers are lazy", "correct": false, "feedback": "Incorrect."}]}, {"question": "In which situations can you use `pd.concat`", "type": "many_choice", "answers": [{"answer": "You want to join DataFrames on the index", "correct": true, "feedback": "Correct."}, {"answer": "You want to join DataFrames on the columns", "correct": true, "feedback": "Correct."}, {"answer": "You want to do a m:m join", "correct": false, "feedback": "Incorrect."}, {"answer": "You want to do a left join", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the how argument in `pd.merge` do?", "type": "multiple_choice", "answers": [{"answer": "It determines which columns are kept", "correct": false, "feedback": "Incorrect."}, {"answer": "It determines which rows are kept", "correct": true, "feedback": "Correct."}, {"answer": "It determines how NaNs are handled", "correct": false, "feedback": "Incorrect."}, {"answer": "It determines whether you do a 1:1, 1:m or m:m join", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a quick way to check if a merge went \"well\"?", "type": "multiple_choice", "answers": [{"answer": "Check if the number of observations in the new dataframe is what you expected         it to be", "correct": true, "feedback": "Correct."}, {"answer": "Check if the number of columns in the new dataframe is what you expected         it to be", "correct": false, "feedback": "Incorrect."}, {"answer": "Check if the index is the same as the left dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "Check if the index is the same as the right dataframe", "correct": false, "feedback": "Incorrect."}]}, {"question": "The \"inner\" option for the argument how in pd.merge determines that", "type": "multiple_choice", "answers": [{"answer": "the new dataframe only contains observations with the intersection of the         keys used for the merge", "correct": true, "feedback": "Correct."}, {"answer": "the new dataframe contains all observations from the left dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "the new dataframe contains all observations from the right dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "the new dataframe contains all observations from both dataframes", "correct": false, "feedback": "Incorrect."}]}, {"question": "You want to use data from the Current Population Survey (CPS), which provides     multiple data files, each containing observations for a given month. You want     to put all the data from 2019 in a single dataframe. Which of the following         functions is better for this task?", "type": "multiple_choice", "answers": [{"answer": "pd.concat", "correct": true, "feedback": "Correct."}, {"answer": "pd.merge", "correct": false, "feedback": "Incorrect."}, {"answer": "pd.join", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsVXIdbsOOjBoQ=[{"question": "Why does raw data often not come in a single file?", "type": "multiple_choice", "answers": [{"answer": "Because it is too large to fit in a single file.", "correct": false, "feedback": "Incorrect."}, {"answer": "Because data providers respect the normal forms", "correct": true, "feedback": "Correct."}, {"answer": "Because data providers are lazy", "correct": false, "feedback": "Incorrect."}]}, {"question": "In which situations can you use `pd.concat`", "type": "many_choice", "answers": [{"answer": "You want to join DataFrames on the index", "correct": true, "feedback": "Correct."}, {"answer": "You want to join DataFrames on the columns", "correct": true, "feedback": "Correct."}, {"answer": "You want to do a m:m join", "correct": false, "feedback": "Incorrect."}, {"answer": "You want to do a left join", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the how argument in `pd.merge` do?", "type": "multiple_choice", "answers": [{"answer": "It determines which columns are kept", "correct": false, "feedback": "Incorrect."}, {"answer": "It determines which rows are kept", "correct": true, "feedback": "Correct."}, {"answer": "It determines how NaNs are handled", "correct": false, "feedback": "Incorrect."}, {"answer": "It determines whether you do a 1:1, 1:m or m:m join", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a quick way to check if a merge went \"well\"?", "type": "multiple_choice", "answers": [{"answer": "Check if the number of observations in the new dataframe is what you expected         it to be", "correct": true, "feedback": "Correct."}, {"answer": "Check if the number of columns in the new dataframe is what you expected         it to be", "correct": false, "feedback": "Incorrect."}, {"answer": "Check if the index is the same as the left dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "Check if the index is the same as the right dataframe", "correct": false, "feedback": "Incorrect."}]}, {"question": "The \"inner\" option for the argument how in pd.merge determines that", "type": "multiple_choice", "answers": [{"answer": "the new dataframe only contains observations with the intersection of the         keys used for the merge", "correct": true, "feedback": "Correct."}, {"answer": "the new dataframe contains all observations from the left dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "the new dataframe contains all observations from the right dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "the new dataframe contains all observations from both dataframes", "correct": false, "feedback": "Incorrect."}]}, {"question": "You want to use data from the Current Population Survey (CPS), which provides     multiple data files, each containing observations for a given month. You want     to put all the data from 2019 in a single dataframe. Which of the following         functions is better for this task?", "type": "multiple_choice", "answers": [{"answer": "pd.concat", "correct": true, "feedback": "Correct."}, {"answer": "pd.merge", "correct": false, "feedback": "Incorrect."}, {"answer": "pd.join", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1414,8 +1418,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("XaVQIhDkYKEF")) {
-            show_questions(questionsXaVQIhDkYKEF,  XaVQIhDkYKEF); 
+          if(document.getElementById("VXIdbsOOjBoQ")) {
+            show_questions(questionsVXIdbsOOjBoQ,  VXIdbsOOjBoQ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1424,8 +1428,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("XaVQIhDkYKEF");
-        // console.log(document.getElementById("XaVQIhDkYKEF"));
+        //console.log("VXIdbsOOjBoQ");
+        // console.log(document.getElementById("VXIdbsOOjBoQ"));
 
         try_show();
         }

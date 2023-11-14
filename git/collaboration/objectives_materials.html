@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -480,13 +484,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="SPvFqtsHMzaz" data-shufflequestions="False"
+<div class="output text_html"><div id="pGqohncASHZi" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#SPvFqtsHMzaz {
+#pGqohncASHZi {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -656,7 +660,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsSPvFqtsHMzaz=[{"question": "What can you do if you have already         opened a pull request but still want to make         changes?", "type": "multiple_choice", "answers": [{"answer": "Open a new pull request", "correct": false, "feedback": "Incorrect."}, {"answer": "Simply push more changes to the                     branch on which you worked", "correct": true, "feedback": "Correct."}, {"answer": "Close the old pull request and                 start over", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git pull` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a                 central repository since the last synchronization", "correct": true, "feedback": "Correct."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                     the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made since                 the last synchronization with the central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a central                 location and checks out the default branch for the                 local working copy", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git push` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a central                 repository since the last synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                     the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": true, "feedback": "Correct."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git clone` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a                 central repository since the last synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion                 in the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionspGqohncASHZi=[{"question": "What can you do if you have already         opened a pull request but still want to make         changes?", "type": "multiple_choice", "answers": [{"answer": "Open a new pull request", "correct": false, "feedback": "Incorrect."}, {"answer": "Simply push more changes to the                     branch on which you worked", "correct": true, "feedback": "Correct."}, {"answer": "Close the old pull request and                 start over", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git pull` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a                 central repository since the last synchronization", "correct": true, "feedback": "Correct."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                     the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made since                 the last synchronization with the central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a central                 location and checks out the default branch for the                 local working copy", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git push` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a central                 repository since the last synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                     the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": true, "feedback": "Correct."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git clone` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a                 central repository since the last synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion                 in the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1405,8 +1409,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("SPvFqtsHMzaz")) {
-            show_questions(questionsSPvFqtsHMzaz,  SPvFqtsHMzaz); 
+          if(document.getElementById("pGqohncASHZi")) {
+            show_questions(questionspGqohncASHZi,  pGqohncASHZi); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1415,8 +1419,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("SPvFqtsHMzaz");
-        // console.log(document.getElementById("SPvFqtsHMzaz"));
+        //console.log("pGqohncASHZi");
+        // console.log(document.getElementById("pGqohncASHZi"));
 
         try_show();
         }
@@ -1685,7 +1689,7 @@ if (typeof version == 'undefined') {
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="HPCKCOVRDThx" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="HPCKCOVRDThx-next" onclick="window.checkFlip('HPCKCOVRDThx')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="qQMRUUtBXMhh" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="qQMRUUtBXMhh-next" onclick="window.checkFlip('qQMRUUtBXMhh')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -2032,17 +2036,17 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("HPCKCOVRDThx")) {
-            createCards("HPCKCOVRDThx", "True", "False");
+          if(document.getElementById("qQMRUUtBXMhh")) {
+            createCards("qQMRUUtBXMhh", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsHPCKCOVRDThx=[{"name": "Intro", "front": "What are the typical steps for         creating a new feature branch?", "back": "Let's go through them step by step         (click on next in the bottom right)."}, {"name": "git checkout main", "front": "git checkout main", "back": "This command switches to the main branch.         We need to switch to the main branch and update it         before creating a new branch, to make sure that         we start working from the latest version         of the code."}, {"name": "git pull", "front": "git pull", "back": "This command pulls the latest changes         from the remote repository."}, {"name": "git checkout -b feature_branch", "front": "git checkout -b feature_branch", "back": "This command creates a new branch called         feature_branch and switches to it."}, {"question": "`git push` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a central                 repository since the last synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                     the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": true, "feedback": "Correct."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git clone` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a                 central repository since the last synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion                 in the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": true, "feedback": "Correct."}]}];
-var frontColorsHPCKCOVRDThx= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsHPCKCOVRDThx= ["var(--dark-blue-gray)" ];
-var textColorsHPCKCOVRDThx= ["var(--snow)" ];
+var cardsqQMRUUtBXMhh=[{"name": "Intro", "front": "What are the typical steps for         creating a new feature branch?", "back": "Let's go through them step by step         (click on next in the bottom right)."}, {"name": "git checkout main", "front": "git checkout main", "back": "This command switches to the main branch.         We need to switch to the main branch and update it         before creating a new branch, to make sure that         we start working from the latest version         of the code."}, {"name": "git pull", "front": "git pull", "back": "This command pulls the latest changes         from the remote repository."}, {"name": "git checkout -b feature_branch", "front": "git checkout -b feature_branch", "back": "This command creates a new branch called         feature_branch and switches to it."}, {"question": "`git push` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a central                 repository since the last synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                     the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": true, "feedback": "Correct."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git clone` ...", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to a                 central repository since the last synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion                 in the next commit", "correct": false, "feedback": "Incorrect."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": true, "feedback": "Correct."}]}];
+var frontColorsqQMRUUtBXMhh= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsqQMRUUtBXMhh= ["var(--dark-blue-gray)" ];
+var textColorsqQMRUUtBXMhh= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 </section>

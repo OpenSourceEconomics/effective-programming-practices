@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -514,13 +518,13 @@ GitHub. Instead of removing commits you will rather add new commits that undo ch
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="KSOnWHXguIRt" data-shufflequestions="False"
+<div class="output text_html"><div id="vwkqgYAHPzQJ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#KSOnWHXguIRt {
+#vwkqgYAHPzQJ {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -690,7 +694,7 @@ GitHub. Instead of removing commits you will rather add new commits that undo ch
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsKSOnWHXguIRt=[{"question": "What do you need to checkout a             previous commit?", "type": "multiple_choice", "answers": [{"answer": "The unique id (hash number)                     of the commit", "correct": true, "feedback": "Correct."}, {"answer": "The commit message", "correct": false, "feedback": "Incorrect."}, {"answer": "The timestamp of the commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "Checking out a previous commit puts             you in a detached head mode. How can you             go back?", "type": "multiple_choice", "answers": [{"answer": "Use `git checkout main` or                 `git checkout SOME_BRANCH`", "correct": true, "feedback": "Correct."}, {"answer": "Panic and type random git commands", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git revert` do?", "type": "multiple_choice", "answers": [{"answer": "Delete a commit from the commit history", "correct": false, "feedback": "Incorrect."}, {"answer": "Add a new commit to the commit                 history that undoes the changes of a previous                 commit", "correct": true, "feedback": "Correct."}, {"answer": "Undo all commits that come                 after the specified commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git reset --hard` do?", "type": "many_choice", "answers": [{"answer": "Delete all commits after the                 specified commit and reset the local files                 to the specified commit", "correct": true, "feedback": "Correct."}, {"answer": "Permanently delete things that                 were in your commit history", "correct": true, "feedback": "Correct."}, {"answer": "Let you safely browse an                 earlier version of your files", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsvwkqgYAHPzQJ=[{"question": "What do you need to checkout a             previous commit?", "type": "multiple_choice", "answers": [{"answer": "The unique id (hash number)                     of the commit", "correct": true, "feedback": "Correct."}, {"answer": "The commit message", "correct": false, "feedback": "Incorrect."}, {"answer": "The timestamp of the commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "Checking out a previous commit puts             you in a detached head mode. How can you             go back?", "type": "multiple_choice", "answers": [{"answer": "Use `git checkout main` or                 `git checkout SOME_BRANCH`", "correct": true, "feedback": "Correct."}, {"answer": "Panic and type random git commands", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git revert` do?", "type": "multiple_choice", "answers": [{"answer": "Delete a commit from the commit history", "correct": false, "feedback": "Incorrect."}, {"answer": "Add a new commit to the commit                 history that undoes the changes of a previous                 commit", "correct": true, "feedback": "Correct."}, {"answer": "Undo all commits that come                 after the specified commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git reset --hard` do?", "type": "many_choice", "answers": [{"answer": "Delete all commits after the                 specified commit and reset the local files                 to the specified commit", "correct": true, "feedback": "Correct."}, {"answer": "Permanently delete things that                 were in your commit history", "correct": true, "feedback": "Correct."}, {"answer": "Let you safely browse an                 earlier version of your files", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1439,8 +1443,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("KSOnWHXguIRt")) {
-            show_questions(questionsKSOnWHXguIRt,  KSOnWHXguIRt); 
+          if(document.getElementById("vwkqgYAHPzQJ")) {
+            show_questions(questionsvwkqgYAHPzQJ,  vwkqgYAHPzQJ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1449,8 +1453,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("KSOnWHXguIRt");
-        // console.log(document.getElementById("KSOnWHXguIRt"));
+        //console.log("vwkqgYAHPzQJ");
+        // console.log(document.getElementById("vwkqgYAHPzQJ"));
 
         try_show();
         }

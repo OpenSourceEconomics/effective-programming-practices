@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -485,13 +489,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ubJdIXogAEjc" data-shufflequestions="False"
+<div class="output text_html"><div id="AIAYGIPeBzzf" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ubJdIXogAEjc {
+#AIAYGIPeBzzf {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -661,7 +665,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsubJdIXogAEjc=[{"question": "What does it mean that a file is staged?", "type": "multiple_choice", "answers": [{"answer": "It will be included in the next                     commit", "correct": true, "feedback": "Correct."}, {"answer": "The file is included in a                     snapshot to which you can always come back", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot make further                 changes to that file", "correct": false, "feedback": "Incorrect."}, {"answer": "The file is marked as                 unfinished and will not yet be committed", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you find out which         files have been staged?", "type": "many_choice", "answers": [{"answer": "Use `git status`", "correct": true, "feedback": "Correct."}, {"answer": "Check the side-bar of any                     modern editor", "correct": true, "feedback": "Correct."}, {"answer": "Look into the `.git` folder", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git add ...`", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to                 a central repository since the last                 synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                 the next commit", "correct": true, "feedback": "Correct."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsAIAYGIPeBzzf=[{"question": "What does it mean that a file is staged?", "type": "multiple_choice", "answers": [{"answer": "It will be included in the next                     commit", "correct": true, "feedback": "Correct."}, {"answer": "The file is included in a                     snapshot to which you can always come back", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot make further                 changes to that file", "correct": false, "feedback": "Incorrect."}, {"answer": "The file is marked as                 unfinished and will not yet be committed", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you find out which         files have been staged?", "type": "many_choice", "answers": [{"answer": "Use `git status`", "correct": true, "feedback": "Correct."}, {"answer": "Check the side-bar of any                     modern editor", "correct": true, "feedback": "Correct."}, {"answer": "Look into the `.git` folder", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git add ...`", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to                 a central repository since the last                 synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                 the next commit", "correct": true, "feedback": "Correct."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1410,8 +1414,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ubJdIXogAEjc")) {
-            show_questions(questionsubJdIXogAEjc,  ubJdIXogAEjc); 
+          if(document.getElementById("AIAYGIPeBzzf")) {
+            show_questions(questionsAIAYGIPeBzzf,  AIAYGIPeBzzf); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1420,8 +1424,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ubJdIXogAEjc");
-        // console.log(document.getElementById("ubJdIXogAEjc"));
+        //console.log("AIAYGIPeBzzf");
+        // console.log(document.getElementById("AIAYGIPeBzzf"));
 
         try_show();
         }

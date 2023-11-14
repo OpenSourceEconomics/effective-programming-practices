@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -477,13 +481,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="mocFYBDNFCdm" data-shufflequestions="False"
+<div class="output text_html"><div id="QtjEkEQDxmzK" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#mocFYBDNFCdm {
+#QtjEkEQDxmzK {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -653,7 +657,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsmocFYBDNFCdm=[{"question": "Git is a distributed version         control system. What does distributed mean?", "type": "many_choice", "answers": [{"answer": "Git uses multiple                 processors to be faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Git repositories are                 stored locally on each developer's computer", "correct": true, "feedback": "Correct."}, {"answer": "Git automatically backs                 up files in a cloud", "correct": true, "feedback": "Correct."}]}, {"question": "Git is a distributed version         control system. What does version control mean?", "type": "many_choice", "answers": [{"answer": "Git can be used to record                 changes to our files over time", "correct": true, "feedback": "Correct."}, {"answer": "Git lets you go back in time", "correct": true, "feedback": "Correct."}, {"answer": "Git stores snapshots in                 versioned folders", "correct": false, "feedback": "Incorrect."}, {"answer": "With Git, your research                 projects are automatically reproducible", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsQtjEkEQDxmzK=[{"question": "Git is a distributed version         control system. What does distributed mean?", "type": "many_choice", "answers": [{"answer": "Git uses multiple                 processors to be faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Git repositories are                 stored locally on each developer's computer", "correct": true, "feedback": "Correct."}, {"answer": "Git automatically backs                 up files in a cloud", "correct": true, "feedback": "Correct."}]}, {"question": "Git is a distributed version         control system. What does version control mean?", "type": "many_choice", "answers": [{"answer": "Git can be used to record                 changes to our files over time", "correct": true, "feedback": "Correct."}, {"answer": "Git lets you go back in time", "correct": true, "feedback": "Correct."}, {"answer": "Git stores snapshots in                 versioned folders", "correct": false, "feedback": "Incorrect."}, {"answer": "With Git, your research                 projects are automatically reproducible", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1402,8 +1406,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("mocFYBDNFCdm")) {
-            show_questions(questionsmocFYBDNFCdm,  mocFYBDNFCdm); 
+          if(document.getElementById("QtjEkEQDxmzK")) {
+            show_questions(questionsQtjEkEQDxmzK,  QtjEkEQDxmzK); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1412,8 +1416,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("mocFYBDNFCdm");
-        // console.log(document.getElementById("mocFYBDNFCdm"));
+        //console.log("QtjEkEQDxmzK");
+        // console.log(document.getElementById("QtjEkEQDxmzK"));
 
         try_show();
         }

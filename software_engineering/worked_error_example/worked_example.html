@@ -1,0 +1,837 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Worked error handling example &#8212; Effective Programming Practices for Economists: Topics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'software_engineering/worked_error_example/worked_example';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Texts, Typesetting, and Text Data" href="../../texts/index.html" />
+    <link rel="prev" title="How to raise errors?" href="../raising_errors/objectives_materials.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../landing-page.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ose-logo.png" class="logo__image only-light" alt="Effective Programming Practices for Economists: Topics - Home"/>
+    <script>document.write(`<img src="../../_static/ose-logo.png" class="logo__image only-dark" alt="Effective Programming Practices for Economists: Topics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../background/index.html">Some Background</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../background/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../background/os_history/objectives_materials.html">A Brief History of Operating Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../background/graphs/objectives_materials.html">Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../background/file_systems/objectives_materials.html">File Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tools/index.html">Miscellaneous Tools</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tools/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tools/shell_history/objectives_materials.html">History of computer interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tools/why_shells_today/objectives_materials.html">Why use shells today?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tools/unix_navigation/objectives_materials.html">Navigation in the unix shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tools/windows_navigation/objectives_materials.html">Navigation in the windows shell</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../git/index.html">Git and Github</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../git/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/introduction/objectives_materials.html">Introduction and Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/why_git/objectives_materials.html">Why git?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/installing_git/objectives_materials.html">Installing git and some useful shell commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/how_git_works/objectives_materials.html">How git works</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/creating_repos/objectives_materials.html">Creating repositiories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/cloning_repos/instructions.html">Cloning GitHub repos + Personal Access Tokens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/staging/objectives_materials.html">Staging files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/committing/objectives_materials.html">Making commits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/undoing_things/objectives_materials.html">Undoing things</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/branches/objectives_materials.html">Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/merging_and_conflicts/objectives_materials.html">Merging and resolving merge conflicts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/github/objectives_materials.html">Introduction to GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/collaboration/objectives_materials.html">Collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../git/pre_commits/objectives_materials.html">Pre-commit hooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../python_installation_execution/index.html">Python: Installation and Execution</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_vscode/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files in VS Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_pytask/objectives_materials.html">Running Python code via pytask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_pytest/objectives_materials.html">Running Python code via pytest</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../python_basics/index.html">Python Basics</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/assignment_and_scalar_types/objectives_materials.html">Assignment and Built-in Scalar Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/strings/objectives_materials.html">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/lists_tuples_sets/objectives_materials.html">Lists, Tuples and Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/dicts/objectives_materials.html">Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/for_loops/objectives_materials.html">For loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/if_conditions/objectives_materials.html">If conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/comprehensions/objectives_materials.html">Comprehensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/functions_basics/objectives_materials.html">Defining Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/functions_principles/objectives_materials.html">Principles for Good Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/tracebacks/objectives_materials.html">Tracebacks and Asking for Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/importing/objectives_materials.html">Importing, Namespaces, Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_basics/pathlib/objectives_materials.html">File paths with pathlib</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/what_is_pandas/objectives_materials.html">What is (modern) pandas?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/dataframes_and_series/objectives_materials.html">DataFrames and Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/datatypes/objectives_materials.html">Data types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/loading_and_saving/objectives_materials.html">Loading and saving data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/columns_and_indices/objectives_materials.html">Setting and renaming columns and indices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../scientific_computing/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scientific_computing/what_is_numpy/objectives_materials.html">What is numpy?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scientific_computing/creating_arrays/objectives_materials.html">Creating arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scientific_computing/indexing/objectives_materials.html">Array indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scientific_computing/calculations_on_arrays/objectives_materials.html">Calculations on arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scientific_computing/calculations_between_arrays/objectives_materials.html">Calculations between arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scientific_computing/randomness/objectives_materials.html">Randomness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scientific_computing/broadcasting/objectives_materials.html">Broadcasting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reproducibility/objectives_materials.html">What does reproducibility mean?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/what_does_pytask_do/objectives_materials.html">What does pytask do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_simple_pytasks/objectives_materials.html">Writing simple (py)tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/writing_pytasks_multiple_outputs/objectives_materials.html">Writing (py)tasks with multiple outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/reusing_pytask_functions/objectives_materials.html">Re-using pytask functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/pytask_docs/objectives_materials.html">The pytask documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/what_are_templates/objectives_materials.html">What are the project templates?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/setup/objectives_materials.html">Setting up a project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/directory_structure/objectives_materials.html">Directory structure in the templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/paths/objectives_materials.html">Handling paths in projects</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Software Engineering</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../style_guides/objectives_materials.html">Style guides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naming/objectives_materials.html">Naming things</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pure_functions/objectives_materials.html">Pure functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../idea_of_testing/objectives_materials.html">The idea of unit testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../what_does_pytest_do/objectives_materials.html">What does pytest do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../writing_simple_pytests/objectives_materials.html">Writing simple (py)tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Worked error handling example</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../texts/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../texts/markup_languages/objectives_materials.html">Markup languages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_syntax/objectives_materials.html">Markdown syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../texts/markdown_applications/objectives_materials.html">Markdown applications</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/tweak_px_example.html">Customise plots created with plotly express: Example Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/objectives_materials.html">Customised plots with plotly graph objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/software_engineering/worked_error_example/worked_example.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Worked error handling example</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-for-good-error-handling">Recipe for good error handling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calling-the-functions-with-invalid-inputs">Calling the functions with invalid inputs</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="worked-error-handling-example">
+<h1>Worked error handling example<a class="headerlink" href="#worked-error-handling-example" title="Permalink to this heading">#</a></h1>
+<p>This notebook shows very thorough error handling for the functions</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">create_markdown_table</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">convert_lod_to_dol</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">convert_dol_to_lod</span></code></p></li>
+</ul>
+<p>Such a level of error handling would be necessary if these functions are used by
+a large group of users (e.g. if they are in a Python package). Whether you need this
+level of error handling for functions that are only used by yourself in a single
+project is debatable. But usually thorough error handling saves more time than it
+costs.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">convert_lod_to_dol</span><span class="p">(</span><span class="n">lod</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert a list of dictionaries to a dictionary of lists.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        lod (list): List of dictionaries</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: Dictionary of lists</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_fail_if_not_list</span><span class="p">(</span><span class="n">lod</span><span class="p">)</span>
+    <span class="n">_fail_if_list_of_wrong_types</span><span class="p">(</span><span class="n">lod</span><span class="p">)</span>
+    <span class="n">_fail_if_list_of_dicts_with_different_keys</span><span class="p">(</span><span class="n">lod</span><span class="p">)</span>
+
+    <span class="n">keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">lod</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+        <span class="n">out</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">lod</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">out</span>
+
+
+<span class="k">def</span> <span class="nf">convert_dol_to_lod</span><span class="p">(</span><span class="n">dol</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert a dictionary of lists to a list of dictionaries.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        dol (dict): Dictionary of lists</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list: List of dictionaries</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_fail_if_not_dict</span><span class="p">(</span><span class="n">dol</span><span class="p">)</span>
+    <span class="n">_fail_if_dict_of_wrong_types</span><span class="p">(</span><span class="n">dol</span><span class="p">)</span>
+    <span class="n">_fail_if_dict_of_lists_with_different_lengths</span><span class="p">(</span><span class="n">dol</span><span class="p">)</span>
+
+    <span class="n">keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">dol</span><span class="p">)</span>
+    <span class="n">n_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dol</span><span class="p">[</span><span class="n">keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_rows</span><span class="p">):</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="n">key</span><span class="p">:</span> <span class="n">dol</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="n">row</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">})</span>
+    <span class="k">return</span> <span class="n">out</span>
+
+
+<span class="k">def</span> <span class="nf">create_markdown_table</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create a markdown table from a list of dictionaries or a dictionary of lists.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data (list or dict): List of dictionaries or dictionary of lists</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: The Markdown table</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_fail_if_neither_dict_nor_list</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="n">lod</span> <span class="o">=</span> <span class="n">convert_dol_to_lod</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">_fail_if_list_of_wrong_types</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">_fail_if_list_of_dicts_with_different_keys</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">lod</span> <span class="o">=</span> <span class="n">data</span>
+
+    <span class="n">keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">lod</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">_create_header</span><span class="p">(</span><span class="n">keys</span><span class="p">),</span>
+        <span class="n">_create_separator</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">keys</span><span class="p">)),</span>
+    <span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">lod</span><span class="p">:</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_create_data_row</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_create_header</span><span class="p">(</span><span class="n">keys</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create a header for a Markdown table.&quot;&quot;&quot;</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+        <span class="n">header</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot; </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2"> |&quot;</span>
+    <span class="k">return</span> <span class="n">header</span>
+
+
+<span class="k">def</span> <span class="nf">_create_separator</span><span class="p">(</span><span class="n">n_cols</span><span class="p">):</span>
+    <span class="n">separator</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_cols</span><span class="p">):</span>
+        <span class="n">separator</span> <span class="o">+=</span> <span class="s2">&quot; ------ |&quot;</span>
+    <span class="k">return</span> <span class="n">separator</span>
+
+
+<span class="k">def</span> <span class="nf">_create_data_row</span><span class="p">(</span><span class="n">row_dict</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create a row of data for a Markdown table.&quot;&quot;&quot;</span>
+    <span class="n">row_string</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">row_dict</span><span class="p">:</span>
+        <span class="n">row_string</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot; </span><span class="si">{</span><span class="n">row_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="si">}</span><span class="s2"> |&quot;</span>
+    <span class="k">return</span> <span class="n">row_string</span>
+
+
+<span class="k">def</span> <span class="nf">_fail_if_neither_dict_nor_list</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;data must be a list of dicts or a dictionary of lists. Not </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+            <span class="n">msg</span><span class="p">,</span>
+        <span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_fail_if_not_list</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;data must be a list of dicts&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_fail_if_not_dict</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;data must be a dictionary of lists&quot;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">NonTabularDataError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Raised when data has the correct type but is not tabular.&quot;&quot;&quot;</span>
+
+
+
+<span class="k">def</span> <span class="nf">_fail_if_list_of_wrong_types</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">invalid_rows</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="n">invalid_rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">invalid_rows</span><span class="p">:</span>
+        <span class="n">report</span> <span class="o">=</span> <span class="s2">&quot;The following rows are not dictionaries:</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">invalid_rows</span><span class="p">:</span>
+            <span class="n">report</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;  Row </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> has type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_fail_if_list_of_dicts_with_different_keys</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">keys</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="n">invalid_rows</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">set</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">!=</span> <span class="n">keys</span><span class="p">:</span>
+            <span class="n">invalid_rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">invalid_rows</span><span class="p">:</span>
+        <span class="n">report</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Valid keys are: </span><span class="si">{</span><span class="n">keys</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">The following rows have invalid keys:</span><span class="se">\n</span><span class="s2">&quot;</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">invalid_rows</span><span class="p">:</span>
+            <span class="n">report</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;  Row </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="p">[</span><span class="n">k</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">keys</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="k">raise</span> <span class="n">NonTabularDataError</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_fail_if_dict_of_wrong_types</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">invalid_cols</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">invalid_cols</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">invalid_cols</span><span class="p">:</span>
+        <span class="n">report</span> <span class="o">=</span> <span class="s2">&quot;The following dict entries are not lists:</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">invalid_cols</span><span class="p">:</span>
+            <span class="n">report</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;  Key &#39;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&#39; has a value of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">])</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_fail_if_dict_of_lists_with_different_lengths</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">()))])</span>
+    <span class="n">invalid_cols</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">])</span> <span class="o">!=</span> <span class="n">length</span><span class="p">:</span>
+            <span class="n">invalid_cols</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">invalid_cols</span><span class="p">:</span>
+        <span class="n">report</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;The correct length is </span><span class="si">{</span><span class="n">length</span><span class="si">}</span><span class="s2">. The following dict entries have invalid &quot;</span>
+            <span class="s2">&quot;lengths:</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">invalid_cols</span><span class="p">:</span>
+            <span class="n">report</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;  Key &#39;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&#39; has a value with length </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">])</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="k">raise</span> <span class="n">NonTabularDataError</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="recipe-for-good-error-handling">
+<h2>Recipe for good error handling<a class="headerlink" href="#recipe-for-good-error-handling" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Identify which inputs can potentially cause probles. Those are the inputs that:</p>
+<ul class="simple">
+<li><p>come directly from a user</p></li>
+<li><p>have not been checked in other functions</p></li>
+</ul>
+</li>
+<li><p>List everything that could go wrong with those inputs. Start with those that are
+very easy to check (e.g. is data a list or dict) and continue with more specific ones
+(does the dict have the right keys).</p></li>
+<li><p>Write one <code class="docutils literal notranslate"><span class="pre">_fail</span> <span class="pre">...</span></code> function for each of the conditions in the previous step</p></li>
+<li><p>Call the <code class="docutils literal notranslate"><span class="pre">_fail</span> <span class="pre">...</span></code> functions at the earliest possible moment in your code</p></li>
+<li><p>Call your functions with invalid inputs and read the error messages. Are they
+as helpful as they can be? Do they show too much or too little output? Try to maximize
+the information content without showing anything irrelevant.</p></li>
+</ol>
+</section>
+<section id="calling-the-functions-with-invalid-inputs">
+<h2>Calling the functions with invalid inputs<a class="headerlink" href="#calling-the-functions-with-invalid-inputs" title="Permalink to this heading">#</a></h2>
+<p>Call <code class="docutils literal notranslate"><span class="pre">create_markdown_table</span></code> with the inputs below to see the error messages</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">invalid_lod</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;ProgrammingGod42&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Kim&quot;</span><span class="p">,</span> <span class="s2">&quot;github_name&quot;</span><span class="p">:</span> <span class="s2">&quot;CodingKim&quot;</span><span class="p">},</span>
+    <span class="p">[</span><span class="s2">&quot;Jesse&quot;</span><span class="p">,</span> <span class="s2">&quot;JavascriptJesse&quot;</span><span class="p">],</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">invalid_lod</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Robin&quot;</span><span class="p">,</span> <span class="s2">&quot;github_name&quot;</span><span class="p">:</span> <span class="s2">&quot;ProgrammingGod42&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Kim&quot;</span><span class="p">,</span> <span class="s2">&quot;github_name&quot;</span><span class="p">:</span> <span class="s2">&quot;CodingKim&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Jesse&quot;</span><span class="p">,</span> <span class="s2">&quot;github_nameeeeeeeeee&quot;</span><span class="p">:</span> <span class="s2">&quot;JavascriptJesse&quot;</span><span class="p">},</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">invalid_dol</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Robin&quot;</span><span class="p">,</span> <span class="s2">&quot;Kim&quot;</span><span class="p">,</span> <span class="s2">&quot;Jesse&quot;</span><span class="p">),</span>
+    <span class="s2">&quot;github_name&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;ProgrammingGod42&quot;</span><span class="p">,</span> <span class="s2">&quot;CodingKim&quot;</span><span class="p">,</span> <span class="s2">&quot;JavascriptJesse&quot;</span><span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">invalid_dol</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Robin&quot;</span><span class="p">,</span> <span class="s2">&quot;Kim&quot;</span><span class="p">,</span> <span class="s2">&quot;Jesse&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;github_name&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;ProgrammingGod42&quot;</span><span class="p">,</span> <span class="s2">&quot;CodingKim&quot;</span><span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./software_engineering/worked_error_example"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../raising_errors/objectives_materials.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">How to raise errors?</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../texts/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Texts, Typesetting, and Text Data</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-for-good-error-handling">Recipe for good error handling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calling-the-functions-with-invalid-inputs">Calling the functions with invalid inputs</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Janoś Gabler and Hans-Martin von Gaudecker
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -486,13 +490,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="iMKNbNqPVtRG" data-shufflequestions="False"
+<div class="output text_html"><div id="itlJUduwgdSv" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#iMKNbNqPVtRG {
+#itlJUduwgdSv {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -662,7 +666,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsiMKNbNqPVtRG=[{"question": "If you need to represent 'hello world', in Python you would use ...", "type": "multiple_choice", "answers": [{"answer": "A string", "correct": true, "feedback": "Correct."}, {"answer": "A float", "correct": false, "feedback": "Incorrect."}, {"answer": "An integer", "correct": false, "feedback": "Incorrect."}, {"answer": "A Boolean", "correct": false, "feedback": "Incorrect."}]}, {"question": "What do you expect the following code to return?str(True) + str(False)", "type": "multiple_choice", "answers": [{"answer": "1", "correct": false, "feedback": "This is the result of True + False."}, {"answer": "10", "correct": false, "feedback": "This is not a str."}, {"answer": "\"10\"", "correct": false, "feedback": "This is the result of                 str(int(True)) + str(int(False))"}, {"answer": "None of the others", "correct": true, "feedback": "The code returns TrueFalse."}]}, {"question": "Which of the following is a string method?", "type": "many_choice", "answers": [{"answer": "capitalize()", "correct": true, "feedback": "Converts the first character to upper case."}, {"answer": "endswith()", "correct": true, "feedback": "Returns true if the string ends with the specified value"}, {"answer": "find()", "correct": true, "feedback": "Searches the string for a specified value and returns                 the position of where it was found"}, {"answer": "isbeta()", "correct": false, "feedback": "This is not a string method.                 isalpha() Returns True if all characters                 in the string are in the alphabet."}]}, {"question": "What do you expect the following code to return? (if it were two lines) course_name = \"EPP\" f\"This is the {course_name} course.\"", "type": "multiple_choice", "answers": [{"answer": "This is the \\{course_name\\} course", "correct": false, "feedback": "Incorrect."}, {"answer": "This is the EPP course", "correct": true, "feedback": "Correct."}, {"answer": "Error stating that addition among strings is done with +.", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsitlJUduwgdSv=[{"question": "If you need to represent 'hello world', in Python you would use ...", "type": "multiple_choice", "answers": [{"answer": "A string", "correct": true, "feedback": "Correct."}, {"answer": "A float", "correct": false, "feedback": "Incorrect."}, {"answer": "An integer", "correct": false, "feedback": "Incorrect."}, {"answer": "A Boolean", "correct": false, "feedback": "Incorrect."}]}, {"question": "What do you expect the following code to return?str(True) + str(False)", "type": "multiple_choice", "answers": [{"answer": "1", "correct": false, "feedback": "This is the result of True + False."}, {"answer": "10", "correct": false, "feedback": "This is not a str."}, {"answer": "\"10\"", "correct": false, "feedback": "This is the result of                 str(int(True)) + str(int(False))"}, {"answer": "None of the others", "correct": true, "feedback": "The code returns TrueFalse."}]}, {"question": "Which of the following is a string method?", "type": "many_choice", "answers": [{"answer": "capitalize()", "correct": true, "feedback": "Converts the first character to upper case."}, {"answer": "endswith()", "correct": true, "feedback": "Returns true if the string ends with the specified value"}, {"answer": "find()", "correct": true, "feedback": "Searches the string for a specified value and returns                 the position of where it was found"}, {"answer": "isbeta()", "correct": false, "feedback": "This is not a string method.                 isalpha() Returns True if all characters                 in the string are in the alphabet."}]}, {"question": "What do you expect the following code to return? (if it were two lines) course_name = \"EPP\" f\"This is the {course_name} course.\"", "type": "multiple_choice", "answers": [{"answer": "This is the \\{course_name\\} course", "correct": false, "feedback": "Incorrect."}, {"answer": "This is the EPP course", "correct": true, "feedback": "Correct."}, {"answer": "Error stating that addition among strings is done with +.", "correct": false, "feedback": "Incorrect."}, {"answer": "None of the others", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1411,8 +1415,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("iMKNbNqPVtRG")) {
-            show_questions(questionsiMKNbNqPVtRG,  iMKNbNqPVtRG); 
+          if(document.getElementById("itlJUduwgdSv")) {
+            show_questions(questionsitlJUduwgdSv,  itlJUduwgdSv); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1421,8 +1425,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("iMKNbNqPVtRG");
-        // console.log(document.getElementById("iMKNbNqPVtRG"));
+        //console.log("itlJUduwgdSv");
+        // console.log(document.getElementById("itlJUduwgdSv"));
 
         try_show();
         }

@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -483,13 +487,13 @@ the next page), and the <a class="reference download internal" download="" href=
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="VpCWaBzGkwaJ" data-shufflequestions="False"
+<div class="output text_html"><div id="hbHbcWtyvlhk" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#VpCWaBzGkwaJ {
+#hbHbcWtyvlhk {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -659,7 +663,7 @@ the next page), and the <a class="reference download internal" download="" href=
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsVpCWaBzGkwaJ=[{"question": "The main purpose of functions is to", "type": "many_choice", "answers": [{"answer": "Save typing", "correct": false, "feedback": "Incorrect."}, {"answer": "Make your code more readable by showing its high-level structure", "correct": true, "feedback": "Correct."}, {"answer": "Make your code more efficient", "correct": false, "feedback": "Incorrect."}, {"answer": "Show off your programming skills", "correct": false, "feedback": "Incorrect."}, {"answer": "Easily re-use code in several places of your project", "correct": true, "feedback": "Correct."}]}, {"question": "What are the disadvantages of the functional approach to data management?", "type": "multiple_choice", "answers": [{"answer": "It is less readable for non-programmers", "correct": false, "feedback": "Incorrect."}, {"answer": "It is less efficient", "correct": false, "feedback": "Incorrect."}, {"answer": "It uses more memory", "correct": false, "feedback": "Incorrect."}, {"answer": "It does not work for all projects", "correct": false, "feedback": "Incorrect."}, {"answer": "It is painful to implement in Stata", "correct": true, "feedback": "Correct."}]}, {"question": "Why are good function names better than comments", "type": "many_choice", "answers": [{"answer": "They are easier to write", "correct": false, "feedback": "Incorrect."}, {"answer": "They are less likely to become outdated over time", "correct": true, "feedback": "Correct."}, {"answer": "They will be more visible in Tracebacks", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionshbHbcWtyvlhk=[{"question": "The main purpose of functions is to", "type": "many_choice", "answers": [{"answer": "Save typing", "correct": false, "feedback": "Incorrect."}, {"answer": "Make your code more readable by showing its high-level structure", "correct": true, "feedback": "Correct."}, {"answer": "Make your code more efficient", "correct": false, "feedback": "Incorrect."}, {"answer": "Show off your programming skills", "correct": false, "feedback": "Incorrect."}, {"answer": "Easily re-use code in several places of your project", "correct": true, "feedback": "Correct."}]}, {"question": "What are the disadvantages of the functional approach to data management?", "type": "multiple_choice", "answers": [{"answer": "It is less readable for non-programmers", "correct": false, "feedback": "Incorrect."}, {"answer": "It is less efficient", "correct": false, "feedback": "Incorrect."}, {"answer": "It uses more memory", "correct": false, "feedback": "Incorrect."}, {"answer": "It does not work for all projects", "correct": false, "feedback": "Incorrect."}, {"answer": "It is painful to implement in Stata", "correct": true, "feedback": "Correct."}]}, {"question": "Why are good function names better than comments", "type": "many_choice", "answers": [{"answer": "They are easier to write", "correct": false, "feedback": "Incorrect."}, {"answer": "They are less likely to become outdated over time", "correct": true, "feedback": "Correct."}, {"answer": "They will be more visible in Tracebacks", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1408,8 +1412,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("VpCWaBzGkwaJ")) {
-            show_questions(questionsVpCWaBzGkwaJ,  VpCWaBzGkwaJ); 
+          if(document.getElementById("hbHbcWtyvlhk")) {
+            show_questions(questionshbHbcWtyvlhk,  hbHbcWtyvlhk); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1418,8 +1422,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("VpCWaBzGkwaJ");
-        // console.log(document.getElementById("VpCWaBzGkwaJ"));
+        //console.log("hbHbcWtyvlhk");
+        // console.log(document.getElementById("hbHbcWtyvlhk"));
 
         try_show();
         }

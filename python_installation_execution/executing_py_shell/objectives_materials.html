@@ -275,6 +275,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/pytest_error_handling/objectives_materials.html">Testing code that should raise errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/what_and_how_to_test/objectives_materials.html">What to test? How to test it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/reuse_test_code/objectives_materials.html">Reusing test code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/error_handling_intro/objectives_materials.html">Introduction to error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/which_errors_to_handle/objectives_materials.html">Which errors to handle?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/raising_errors/objectives_materials.html">How to raise errors?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/worked_error_example/worked_example.html">Worked error handling example</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../texts/index.html">Texts, Typesetting, and Text Data</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -526,13 +530,13 @@ and these are the <a class="reference download internal" download="" href="../..
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="itUshRImZJqb" data-shufflequestions="False"
+<div class="output text_html"><div id="QsEstALSzGwq" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#itUshRImZJqb {
+#QsEstALSzGwq {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -702,7 +706,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsitUshRImZJqb=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
+</style></div><script type="application/javascript">var questionsQsEstALSzGwq=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1451,8 +1455,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("itUshRImZJqb")) {
-            show_questions(questionsitUshRImZJqb,  itUshRImZJqb); 
+          if(document.getElementById("QsEstALSzGwq")) {
+            show_questions(questionsQsEstALSzGwq,  QsEstALSzGwq); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1461,8 +1465,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("itUshRImZJqb");
-        // console.log(document.getElementById("itUshRImZJqb"));
+        //console.log("QsEstALSzGwq");
+        // console.log(document.getElementById("QsEstALSzGwq"));
 
         try_show();
         }
