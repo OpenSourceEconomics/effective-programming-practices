@@ -497,13 +497,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ZMOKpBkMqHyG" data-shufflequestions="False"
+<div class="output text_html"><div id="IvSbJKCNelGp" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ZMOKpBkMqHyG {
+#IvSbJKCNelGp {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -673,7 +673,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsZMOKpBkMqHyG=[{"question": "Using a meaningful index...", "type": "many_choice", "answers": [{"answer": "makes combining datasets safer.", "correct": true, "feedback": "You are less likely to introduce bugs due to misaligned data because the hurdles for calling `.reset_index()` are higher."}, {"answer": "means that you will never have duplicate values in the index.", "correct": false, "feedback": "In a country x panel, setting the country name as the only index would mean we have a meaningful index with duplicated values. The index should be set to both country and year to avoid duplicates."}, {"answer": "means that we are never going to use floats. ", "correct": false, "feedback": "Using income as an index might be meaningful. But it is not a good idea at all because of floating point imprecisions and the fact that you will hardly be able to avoid duplicates. "}, {"answer": "means that we will not end up with MultiIndex objects.", "correct": false, "feedback": "Not at all. MultiIndex objects come up as soon as you have more than one dimension in the rows (e.g., panel data)."}]}, {"question": "What will the output of the following code be?", "code": ">>> df.columns\nIndex(['a', 'b', 'c'], dtype='string')\n\n>>> df = df.rename(columns={\"b\": \"B\", \"x\": \"u\"})\n>>> df.columns\n", "type": "multiple_choice", "answers": [{"code": "Index(['a', 'B', 'c'], dtype='string')", "correct": true}, {"code": "KeyError: 'x'", "correct": false, "feedback": "The rename method will only consider the subset of keys in the dictionary that are also present among the columns."}, {"code": "KeyError: 'a' and 'c' not found among dictionary keys {'b', 'x'}", "correct": false, "feedback": "The rename method does not require that all columns are present among the dictionary keys."}, {"code": "Index(['a', 'B', 'c', 'u'], dtype='string')", "correct": false, "feedback": "How would you expect this to work? For example, how would you expect the column 'u' be filled? This would lead to memory problems when you accidentally pass a large dictionary when `df` has many rows."}]}];
+</style></div><script type="application/javascript">var questionsIvSbJKCNelGp=[{"question": "Using a meaningful index...", "type": "many_choice", "answers": [{"answer": "makes combining datasets safer.", "correct": true, "feedback": "You are less likely to introduce bugs due to misaligned data because the hurdles for calling `.reset_index()` are higher."}, {"answer": "means that you will never have duplicate values in the index.", "correct": false, "feedback": "In a country x panel, setting the country name as the only index would mean we have a meaningful index with duplicated values. The index should be set to both country and year to avoid duplicates."}, {"answer": "means that we are never going to use floats. ", "correct": false, "feedback": "Using income as an index might be meaningful. But it is not a good idea at all because of floating point imprecisions and the fact that you will hardly be able to avoid duplicates. "}, {"answer": "means that we will not end up with MultiIndex objects.", "correct": false, "feedback": "Not at all. MultiIndex objects come up as soon as you have more than one dimension in the rows (e.g., panel data)."}]}, {"question": "What will the output of the following code be?", "code": ">>> df.columns\nIndex(['a', 'b', 'c'], dtype='string')\n\n>>> df = df.rename(columns={\"b\": \"B\", \"x\": \"u\"})\n>>> df.columns\n", "type": "multiple_choice", "answers": [{"code": "Index(['a', 'B', 'c'], dtype='string')", "correct": true}, {"code": "KeyError: 'x'", "correct": false, "feedback": "The rename method will only consider the subset of keys in the dictionary that are also present among the columns."}, {"code": "KeyError: 'a' and 'c' not found among dictionary keys {'b', 'x'}", "correct": false, "feedback": "The rename method does not require that all columns are present among the dictionary keys."}, {"code": "Index(['a', 'B', 'c', 'u'], dtype='string')", "correct": false, "feedback": "How would you expect this to work? For example, how would you expect the column 'u' be filled? This would lead to memory problems when you accidentally pass a large dictionary when `df` has many rows."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1422,8 +1422,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ZMOKpBkMqHyG")) {
-            show_questions(questionsZMOKpBkMqHyG,  ZMOKpBkMqHyG); 
+          if(document.getElementById("IvSbJKCNelGp")) {
+            show_questions(questionsIvSbJKCNelGp,  IvSbJKCNelGp); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1432,8 +1432,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ZMOKpBkMqHyG");
-        // console.log(document.getElementById("ZMOKpBkMqHyG"));
+        //console.log("IvSbJKCNelGp");
+        // console.log(document.getElementById("IvSbJKCNelGp"));
 
         try_show();
         }

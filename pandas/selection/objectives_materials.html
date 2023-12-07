@@ -499,13 +499,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qyqqzMuJZpDS" data-shufflequestions="False"
+<div class="output text_html"><div id="PKyxRnyjFiAe" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#qyqqzMuJZpDS {
+#PKyxRnyjFiAe {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -675,7 +675,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqyqqzMuJZpDS=[{"question": "What will the output of this code snippet be?", "code": ">>> df\n   a  b\nx  0  1\ny  2  3\n\n>>> df['a']\n", "type": "multiple_choice", "answers": [{"answer": "(pd.Series)", "code": "x    0\ny    2\nName: a, dtype: int64\n", "correct": true, "feedback": ""}, {"answer": "(DataFrame)", "code": "   a\nx  0\ny  2\n", "correct": false, "feedback": "Almost, but single brackets yield a Series."}, {"code": "KeyError: \"None of\n[Index(['a'], dtype='string')]\nare in the [index]\"\n", "correct": false, "feedback": "Indexing a DataFrame yields columns, not rows."}, {"code": "KeyError: 'a'", "correct": false, "feedback": "Indexing a DataFrame yields columns, not rows."}]}, {"question": "What will the output of this code snippet be?", "code": ">>> df\n   a  b\nx  0  1\ny  2  3\n\n>>> df.loc['b']\n", "type": "multiple_choice", "answers": [{"answer": "(pd.Series)", "code": "x    1\ny    3\nName: b, dtype: int64\n", "correct": false, "feedback": "The `.loc` indexer yields rows, not columns."}, {"answer": "(DataFrame)", "code": "   b\nx  1\ny  3\n", "correct": false, "feedback": "The `.loc` indexer yields rows, not columns."}, {"code": "KeyError: \"None of\n[Index(['b'], dtype='string')]\nare in the [index]\"\n", "correct": false, "feedback": "Almost, but this is the error message when passing a list."}, {"code": "KeyError: 'b'", "correct": true, "feedback": "Indeed, 'b' is not among the rows."}]}, {"question": "What will the output of this code snippet be?", "code": ">>> df\n   a  b\nx  0  1\ny  2  3\n\n>>> df.loc[['y']]\n", "type": "multiple_choice", "answers": [{"answer": "(pd.Series)", "code": "a    2\nb    3\nName: y, dtype: int64\n", "correct": false, "feedback": "Almost, but a nested list brackets yield a DataFrame."}, {"answer": "(DataFrame)", "code": "   a  b\ny  2  3\n", "correct": true, "feedback": ""}, {"code": "KeyError: \"None of\n[Index(['y'], dtype='string')]\nare in the [columns]\"\n", "correct": false, "feedback": "The `.loc` indexer yields rows, not columns."}, {"code": "KeyError: 'y'", "correct": false, "feedback": "The `.loc` indexer yields rows, not columns."}]}, {"question": "What will the output of this code snippet be?", "code": ">>> df\n   a  b\nx  0  1\ny  2  3\n\n>>> df[['x']]\n", "type": "multiple_choice", "answers": [{"answer": "(pd.Series)", "code": "a    0\nb    1\nName: x, dtype: int64\n", "correct": false, "feedback": "Indexing into a DataFrame yields columns, not rows."}, {"answer": "(DataFrame)", "code": "   a  b\ny  0  1\n", "correct": false, "feedback": "Indexing into a DataFrame yields columns, not rows."}, {"code": "KeyError: \"None of\n[Index(['x'], dtype='string')]\nare in the [columns]\"\n", "correct": true, "feedback": "The columns are labelled 'a' and 'b'."}, {"code": "KeyError: 'x'", "correct": false, "feedback": "Almost, but this is the error message when indexing with an inexistent column name, not when passing a list of potential column names."}]}];
+</style></div><script type="application/javascript">var questionsPKyxRnyjFiAe=[{"question": "What will the output of this code snippet be?", "code": ">>> df\n   a  b\nx  0  1\ny  2  3\n\n>>> df['a']\n", "type": "multiple_choice", "answers": [{"answer": "(pd.Series)", "code": "x    0\ny    2\nName: a, dtype: int64\n", "correct": true, "feedback": ""}, {"answer": "(DataFrame)", "code": "   a\nx  0\ny  2\n", "correct": false, "feedback": "Almost, but single brackets yield a Series."}, {"code": "KeyError: \"None of\n[Index(['a'], dtype='string')]\nare in the [index]\"\n", "correct": false, "feedback": "Indexing a DataFrame yields columns, not rows."}, {"code": "KeyError: 'a'", "correct": false, "feedback": "Indexing a DataFrame yields columns, not rows."}]}, {"question": "What will the output of this code snippet be?", "code": ">>> df\n   a  b\nx  0  1\ny  2  3\n\n>>> df.loc['b']\n", "type": "multiple_choice", "answers": [{"answer": "(pd.Series)", "code": "x    1\ny    3\nName: b, dtype: int64\n", "correct": false, "feedback": "The `.loc` indexer yields rows, not columns."}, {"answer": "(DataFrame)", "code": "   b\nx  1\ny  3\n", "correct": false, "feedback": "The `.loc` indexer yields rows, not columns."}, {"code": "KeyError: \"None of\n[Index(['b'], dtype='string')]\nare in the [index]\"\n", "correct": false, "feedback": "Almost, but this is the error message when passing a list."}, {"code": "KeyError: 'b'", "correct": true, "feedback": "Indeed, 'b' is not among the rows."}]}, {"question": "What will the output of this code snippet be?", "code": ">>> df\n   a  b\nx  0  1\ny  2  3\n\n>>> df.loc[['y']]\n", "type": "multiple_choice", "answers": [{"answer": "(pd.Series)", "code": "a    2\nb    3\nName: y, dtype: int64\n", "correct": false, "feedback": "Almost, but a nested list brackets yield a DataFrame."}, {"answer": "(DataFrame)", "code": "   a  b\ny  2  3\n", "correct": true, "feedback": ""}, {"code": "KeyError: \"None of\n[Index(['y'], dtype='string')]\nare in the [columns]\"\n", "correct": false, "feedback": "The `.loc` indexer yields rows, not columns."}, {"code": "KeyError: 'y'", "correct": false, "feedback": "The `.loc` indexer yields rows, not columns."}]}, {"question": "What will the output of this code snippet be?", "code": ">>> df\n   a  b\nx  0  1\ny  2  3\n\n>>> df[['x']]\n", "type": "multiple_choice", "answers": [{"answer": "(pd.Series)", "code": "a    0\nb    1\nName: x, dtype: int64\n", "correct": false, "feedback": "Indexing into a DataFrame yields columns, not rows."}, {"answer": "(DataFrame)", "code": "   a  b\ny  0  1\n", "correct": false, "feedback": "Indexing into a DataFrame yields columns, not rows."}, {"code": "KeyError: \"None of\n[Index(['x'], dtype='string')]\nare in the [columns]\"\n", "correct": true, "feedback": "The columns are labelled 'a' and 'b'."}, {"code": "KeyError: 'x'", "correct": false, "feedback": "Almost, but this is the error message when indexing with an inexistent column name, not when passing a list of potential column names."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1424,8 +1424,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("qyqqzMuJZpDS")) {
-            show_questions(questionsqyqqzMuJZpDS,  qyqqzMuJZpDS); 
+          if(document.getElementById("PKyxRnyjFiAe")) {
+            show_questions(questionsPKyxRnyjFiAe,  PKyxRnyjFiAe); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1434,8 +1434,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("qyqqzMuJZpDS");
-        // console.log(document.getElementById("qyqqzMuJZpDS"));
+        //console.log("PKyxRnyjFiAe");
+        // console.log(document.getElementById("PKyxRnyjFiAe"));
 
         try_show();
         }
