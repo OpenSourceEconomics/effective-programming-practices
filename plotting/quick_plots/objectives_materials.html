@@ -302,6 +302,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../debugging/index.html">Debugging</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_intro/objectives_materials.html">Introduction to debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_strategies/objectives_materials.html">Strategies for debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/avoiding_debugging/objectives_materials.html">Avoiding debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_psychology/objectives_materials.html">(Armchair) Psychology of debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/gathering_data/objectives_materials.html">Gathering data efficiently</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/pdbp/objectives_materials.html">Using the Pdb+ debugger</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -491,13 +501,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="bDmfBhWFLScO" data-shufflequestions="False"
+<div class="output text_html"><div id="zNHYqkqQcAOa" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#bDmfBhWFLScO {
+#zNHYqkqQcAOa {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -667,7 +677,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsbDmfBhWFLScO=[{"question": "Which of the following applies to plotly.express?", "type": "many_choice", "answers": [{"answer": "It only supports static plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating figures is faster than in plotly.graph_objects", "correct": true, "feedback": "Correct."}, {"answer": "It is a good choice for exploratory plots", "correct": true, "feedback": "Correct."}, {"answer": "It is useless for creating publication-ready plots", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the main use of plotly.express?", "type": "multiple_choice", "answers": [{"answer": "Creating plots with a high degree of customization", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating interactive plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating static plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating exploratory plots", "correct": true, "feedback": "Correct."}]}, {"question": "Which of the following lines of code allows you to use         plotly.express through pandas.DataFrame?", "type": "multiple_choice", "answers": [{"answer": "import plotly.express as px", "correct": false, "feedback": "Incorrect."}, {"answer": "import plotly.graph_objects as go", "correct": false, "feedback": "Incorrect."}, {"answer": "import plotly.express as pd", "correct": false, "feedback": "Incorrect."}, {"answer": "pd.options.plotting.backend = 'plotly'", "correct": true, "feedback": "Correct."}]}, {"question": "What would you run to get the \"spaghetti plot\" of         beer_consumption in each day in November (stored in variable day),        for various cities in Germany (stored in Stadt)?", "type": "multiple_choice", "answers": [{"answer": "df.plot(x = 'day', y='beer_consumption', color='Stadt')", "correct": true, "feedback": "Correct."}, {"answer": "df.plot(x = 'day', y='beer_consumption', facet_col='Stadt')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot(x = 'day', y='beer_consumption', facet_row='Stadt')", "correct": false, "feedback": "Incorrect."}]}, {"question": "You need to plot the distribution of beer_consumption     in each day in November (stored in variable day) for the     whole North Rhine-Westphalia (stored in variable Bundesland).    What would you run?", "type": "multiple_choice", "answers": [{"answer": "df.plot.bar(x = 'day', y='beer_consumption',             color='Bundesland')", "correct": true, "feedback": "Correct."}, {"answer": "df.plot.bar(x = 'day', y='beer_consumption',             facet_col='Bundesland')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot.bar(x = 'day', y='beer_consumption',             color='Bundesland', kind='hist')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot(x = 'day', y='beer_consumption', color='Bundesland')", "correct": false, "feedback": "Incorrect."}]}, {"question": "Can you produce good quality (publication-ready)     plots with plotly.express?", "type": "multiple_choice", "answers": [{"answer": "Yes, you have to tweak the figure after creating it", "correct": true, "feedback": "Correct."}, {"answer": "No, it is impossible and you should always use             plotly.graph_objects instead", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionszNHYqkqQcAOa=[{"question": "Which of the following applies to plotly.express?", "type": "many_choice", "answers": [{"answer": "It only supports static plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating figures is faster than in plotly.graph_objects", "correct": true, "feedback": "Correct."}, {"answer": "It is a good choice for exploratory plots", "correct": true, "feedback": "Correct."}, {"answer": "It is useless for creating publication-ready plots", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the main use of plotly.express?", "type": "multiple_choice", "answers": [{"answer": "Creating plots with a high degree of customization", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating interactive plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating static plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating exploratory plots", "correct": true, "feedback": "Correct."}]}, {"question": "Which of the following lines of code allows you to use         plotly.express through pandas.DataFrame?", "type": "multiple_choice", "answers": [{"answer": "import plotly.express as px", "correct": false, "feedback": "Incorrect."}, {"answer": "import plotly.graph_objects as go", "correct": false, "feedback": "Incorrect."}, {"answer": "import plotly.express as pd", "correct": false, "feedback": "Incorrect."}, {"answer": "pd.options.plotting.backend = 'plotly'", "correct": true, "feedback": "Correct."}]}, {"question": "What would you run to get the \"spaghetti plot\" of         beer_consumption in each day in November (stored in variable day),        for various cities in Germany (stored in Stadt)?", "type": "multiple_choice", "answers": [{"answer": "df.plot(x = 'day', y='beer_consumption', color='Stadt')", "correct": true, "feedback": "Correct."}, {"answer": "df.plot(x = 'day', y='beer_consumption', facet_col='Stadt')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot(x = 'day', y='beer_consumption', facet_row='Stadt')", "correct": false, "feedback": "Incorrect."}]}, {"question": "You need to plot the distribution of beer_consumption     in each day in November (stored in variable day) for the     whole North Rhine-Westphalia (stored in variable Bundesland).    What would you run?", "type": "multiple_choice", "answers": [{"answer": "df.plot.bar(x = 'day', y='beer_consumption',             color='Bundesland')", "correct": true, "feedback": "Correct."}, {"answer": "df.plot.bar(x = 'day', y='beer_consumption',             facet_col='Bundesland')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot.bar(x = 'day', y='beer_consumption',             color='Bundesland', kind='hist')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot(x = 'day', y='beer_consumption', color='Bundesland')", "correct": false, "feedback": "Incorrect."}]}, {"question": "Can you produce good quality (publication-ready)     plots with plotly.express?", "type": "multiple_choice", "answers": [{"answer": "Yes, you have to tweak the figure after creating it", "correct": true, "feedback": "Correct."}, {"answer": "No, it is impossible and you should always use             plotly.graph_objects instead", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1416,8 +1426,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("bDmfBhWFLScO")) {
-            show_questions(questionsbDmfBhWFLScO,  bDmfBhWFLScO); 
+          if(document.getElementById("zNHYqkqQcAOa")) {
+            show_questions(questionszNHYqkqQcAOa,  zNHYqkqQcAOa); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1426,8 +1436,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("bDmfBhWFLScO");
-        // console.log(document.getElementById("bDmfBhWFLScO"));
+        //console.log("zNHYqkqQcAOa");
+        // console.log(document.getElementById("zNHYqkqQcAOa"));
 
         try_show();
         }

@@ -302,6 +302,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../debugging/index.html">Debugging</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_intro/objectives_materials.html">Introduction to debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_strategies/objectives_materials.html">Strategies for debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/avoiding_debugging/objectives_materials.html">Avoiding debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_psychology/objectives_materials.html">(Armchair) Psychology of debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/gathering_data/objectives_materials.html">Gathering data efficiently</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/pdbp/objectives_materials.html">Using the Pdb+ debugger</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -495,13 +505,13 @@ fixtures</a></p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="GDevQLEbkrCg" data-shufflequestions="False"
+<div class="output text_html"><div id="guQRcDphFHls" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#GDevQLEbkrCg {
+#guQRcDphFHls {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -671,7 +681,7 @@ fixtures</a></p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsGDevQLEbkrCg=[{"question": "Which functions are recognized as tests by pytest?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytest.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `test`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tests are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytest", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytest again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsguQRcDphFHls=[{"question": "What is the purpose of pytest parametrize?", "type": "multiple_choice", "answers": [{"answer": "It is used to repeat the same test with different         implementations (inputs)", "correct": true, "feedback": "Correct."}, {"answer": "It is used to check if a function is working properly", "correct": false, "feedback": "Incorrect."}, {"answer": "It is used to produce different test outputs", "correct": false, "feedback": "Incorrect."}, {"answer": "It searches for the best parameters for testing", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the advantage of using pytest parametrize?", "type": "many_choice", "answers": [{"answer": "It allows to test different inputs with the same test", "correct": true, "feedback": "Correct."}, {"answer": "It allows to test different expected outputs with the same test", "correct": true, "feedback": "Correct."}, {"answer": "It makes for a more readable code", "correct": true, "feedback": "Correct."}, {"answer": "It automatically generates test cases", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1420,8 +1430,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("GDevQLEbkrCg")) {
-            show_questions(questionsGDevQLEbkrCg,  GDevQLEbkrCg); 
+          if(document.getElementById("guQRcDphFHls")) {
+            show_questions(questionsguQRcDphFHls,  guQRcDphFHls); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1430,8 +1440,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("GDevQLEbkrCg");
-        // console.log(document.getElementById("GDevQLEbkrCg"));
+        //console.log("guQRcDphFHls");
+        // console.log(document.getElementById("guQRcDphFHls"));
 
         try_show();
         }

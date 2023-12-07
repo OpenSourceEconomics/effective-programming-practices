@@ -302,6 +302,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../debugging/index.html">Debugging</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_intro/objectives_materials.html">Introduction to debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_strategies/objectives_materials.html">Strategies for debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/avoiding_debugging/objectives_materials.html">Avoiding debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_psychology/objectives_materials.html">(Armchair) Psychology of debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/gathering_data/objectives_materials.html">Gathering data efficiently</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/pdbp/objectives_materials.html">Using the Pdb+ debugger</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -468,7 +478,8 @@ document.write(`
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
 <p>After working through this topic, you should be able to:</p>
 <ul class="simple">
-<li></li>
+<li><p>Recognize pure functions</p></li>
+<li><p>Explain the advantages of using pure functions</p></li>
 </ul>
 </section>
 <section id="materials">
@@ -481,13 +492,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="SxPODLUWdEYl" data-shufflequestions="False"
+<div class="output text_html"><div id="MOtXCtlAYOMn" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#SxPODLUWdEYl {
+#MOtXCtlAYOMn {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -657,7 +668,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsSxPODLUWdEYl=[];
+</style></div><script type="application/javascript">var questionsMOtXCtlAYOMn=[{"question": "The characteristics of pure functions are:", "type": "many_choice", "answers": [{"answer": "They only take one argument", "correct": false, "feedback": "Pure functions can take multiple arguments."}, {"answer": "The function does not depend on variables                     defined outside the function", "correct": true, "feedback": "Correct."}, {"answer": "The function does not produce side effects", "correct": true, "feedback": "Correct."}, {"answer": "The function has a clear docstring", "correct": false, "feedback": "Docstrings are essnetial for the readability                     of the code, but not a characteristics of pure functions."}]}, {"question": "The advantages of writing pure functions are:", "type": "many_choice", "answers": [{"answer": "They are testable", "correct": true, "feedback": "Correct. While testing, one can control                     everything that is relevant"}, {"answer": "They provide explicit interfaces", "correct": true, "feedback": "Correct. What is used in the function is passed                     in as argument"}, {"answer": "They are only relevant in functional programming", "correct": false, "feedback": "Incorrect."}, {"answer": "They are parallelizable", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1406,8 +1417,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("SxPODLUWdEYl")) {
-            show_questions(questionsSxPODLUWdEYl,  SxPODLUWdEYl); 
+          if(document.getElementById("MOtXCtlAYOMn")) {
+            show_questions(questionsMOtXCtlAYOMn,  MOtXCtlAYOMn); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1416,8 +1427,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("SxPODLUWdEYl");
-        // console.log(document.getElementById("SxPODLUWdEYl"));
+        //console.log("MOtXCtlAYOMn");
+        // console.log(document.getElementById("MOtXCtlAYOMn"));
 
         try_show();
         }

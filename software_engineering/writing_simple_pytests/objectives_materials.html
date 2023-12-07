@@ -302,6 +302,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../debugging/index.html">Debugging</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_intro/objectives_materials.html">Introduction to debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_strategies/objectives_materials.html">Strategies for debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/avoiding_debugging/objectives_materials.html">Avoiding debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_psychology/objectives_materials.html">(Armchair) Psychology of debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/gathering_data/objectives_materials.html">Gathering data efficiently</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/pdbp/objectives_materials.html">Using the Pdb+ debugger</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -468,7 +478,7 @@ document.write(`
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
 <p>After working through this topic, you should be able to:</p>
 <ul class="simple">
-<li><p>write tests for your functions that pytest recognizes them</p></li>
+<li><p>write tests for your functions that pytest recognizes</p></li>
 <li><p>write simple, yet meaningful tests for your functions</p></li>
 <li><p>run them using pytest for your own projects</p></li>
 </ul>
@@ -487,13 +497,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ijJFNfcOBdaM" data-shufflequestions="False"
+<div class="output text_html"><div id="yOtSjVvTCJIU" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ijJFNfcOBdaM {
+#yOtSjVvTCJIU {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -663,7 +673,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsijJFNfcOBdaM=[{"question": "Which functions are recognized as tests by pytest?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytest.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `test`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tests are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytest", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytest again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsyOtSjVvTCJIU=[{"question": "Which functions are recognized as tests by pytest?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytest.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `test`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tests are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytest", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytest again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}, {"question": "A simple test is likely to contain:", "type": "many_choice", "answers": [{"answer": "An assertion", "correct": true, "feedback": "Correct."}, {"answer": "Some expected results", "correct": true, "feedback": "Correct."}, {"answer": "An explanation of possible error messages that one could obtain", "correct": false, "feedback": "Incorrect."}, {"answer": "A call to the function we want to test", "correct": false, "feedback": "Incorrect."}]}, {"question": "A good name for a test is:", "type": "multiple_choice", "answers": [{"answer": "test_analyses", "correct": false, "feedback": "Incorrect."}, {"answer": "test_functionX", "correct": false, "feedback": "Incorrect."}, {"answer": "test_function_X_returns_dtype_Y", "correct": true, "feedback": "Correct."}, {"answer": "test_for_dtypes", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1412,8 +1422,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ijJFNfcOBdaM")) {
-            show_questions(questionsijJFNfcOBdaM,  ijJFNfcOBdaM); 
+          if(document.getElementById("yOtSjVvTCJIU")) {
+            show_questions(questionsyOtSjVvTCJIU,  yOtSjVvTCJIU); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1422,8 +1432,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ijJFNfcOBdaM");
-        // console.log(document.getElementById("ijJFNfcOBdaM"));
+        //console.log("yOtSjVvTCJIU");
+        // console.log(document.getElementById("yOtSjVvTCJIU"));
 
         try_show();
         }

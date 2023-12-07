@@ -302,6 +302,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../debugging/index.html">Debugging</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_intro/objectives_materials.html">Introduction to debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_strategies/objectives_materials.html">Strategies for debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/avoiding_debugging/objectives_materials.html">Avoiding debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_psychology/objectives_materials.html">(Armchair) Psychology of debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/gathering_data/objectives_materials.html">Gathering data efficiently</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/pdbp/objectives_materials.html">Using the Pdb+ debugger</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -490,13 +500,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="MFWgVKjlQXsc" data-shufflequestions="False"
+<div class="output text_html"><div id="AWfvgMeXmgSL" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#MFWgVKjlQXsc {
+#AWfvgMeXmgSL {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -666,7 +676,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsMFWgVKjlQXsc=[{"question": "To set a good seed which of the following lines of code would zou use?", "type": "multiple_choice", "answers": [{"answer": "np.random.seed", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng(6943)", "correct": true, "feedback": "Correct."}]}, {"question": "Why a seed is needed when dealing with random generated numbers?", "type": "multiple_choice", "answers": [{"answer": "A seed is nice to have, but not essential", "correct": false, "feedback": "Incorrect."}, {"answer": "For the purpose of reproducible research", "correct": true, "feedback": "Correct."}, {"answer": "To help obtain nicer results", "correct": false, "feedback": "Incorrect."}, {"answer": "To make sure that two random extraction will             not yield the same outcome", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following applies to seeds?", "type": "many_choice", "answers": [{"answer": "You should never use similar seeds as they yield correlated numbers.", "correct": false, "feedback": "Incorrect."}, {"answer": "They are numbers between 0 and 2 ** 32", "correct": true, "feedback": "Correct."}, {"answer": "You should always check that your conclusions do not depend on the seed", "correct": true, "feedback": "Correct."}, {"answer": "It's ok to always use 123.", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsAWfvgMeXmgSL=[{"question": "To set a good seed which of the following lines of code would zou use?", "type": "multiple_choice", "answers": [{"answer": "np.random.seed", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng(6943)", "correct": true, "feedback": "Correct."}]}, {"question": "Why a seed is needed when dealing with random generated numbers?", "type": "multiple_choice", "answers": [{"answer": "A seed is nice to have, but not essential", "correct": false, "feedback": "Incorrect."}, {"answer": "For the purpose of reproducible research", "correct": true, "feedback": "Correct."}, {"answer": "To help obtain nicer results", "correct": false, "feedback": "Incorrect."}, {"answer": "To make sure that two random extraction will             not yield the same outcome", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following applies to seeds?", "type": "many_choice", "answers": [{"answer": "You should never use similar seeds as they yield correlated numbers.", "correct": false, "feedback": "Incorrect."}, {"answer": "They are numbers between 0 and 2 ** 32", "correct": true, "feedback": "Correct."}, {"answer": "You should always check that your conclusions do not depend on the seed", "correct": true, "feedback": "Correct."}, {"answer": "It's ok to always use 123.", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1415,8 +1425,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("MFWgVKjlQXsc")) {
-            show_questions(questionsMFWgVKjlQXsc,  MFWgVKjlQXsc); 
+          if(document.getElementById("AWfvgMeXmgSL")) {
+            show_questions(questionsAWfvgMeXmgSL,  AWfvgMeXmgSL); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1425,8 +1435,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("MFWgVKjlQXsc");
-        // console.log(document.getElementById("MFWgVKjlQXsc"));
+        //console.log("AWfvgMeXmgSL");
+        // console.log(document.getElementById("AWfvgMeXmgSL"));
 
         try_show();
         }

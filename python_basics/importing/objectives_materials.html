@@ -302,6 +302,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../debugging/index.html">Debugging</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/content_objectives.html">Content and Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_intro/objectives_materials.html">Introduction to debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_strategies/objectives_materials.html">Strategies for debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/avoiding_debugging/objectives_materials.html">Avoiding debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/debugging_psychology/objectives_materials.html">(Armchair) Psychology of debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/gathering_data/objectives_materials.html">Gathering data efficiently</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging/pdbp/objectives_materials.html">Using the Pdb+ debugger</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -498,13 +508,13 @@ the Python Standard Reference</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ShppzJmBKWKt" data-shufflequestions="False"
+<div class="output text_html"><div id="ohYHtJilvcqg" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ShppzJmBKWKt {
+#ohYHtJilvcqg {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -674,7 +684,7 @@ the Python Standard Reference</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsShppzJmBKWKt=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
+</style></div><script type="application/javascript">var questionsohYHtJilvcqg=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1423,8 +1433,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ShppzJmBKWKt")) {
-            show_questions(questionsShppzJmBKWKt,  ShppzJmBKWKt); 
+          if(document.getElementById("ohYHtJilvcqg")) {
+            show_questions(questionsohYHtJilvcqg,  ohYHtJilvcqg); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1433,8 +1443,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ShppzJmBKWKt");
-        // console.log(document.getElementById("ShppzJmBKWKt"));
+        //console.log("ohYHtJilvcqg");
+        // console.log(document.getElementById("ohYHtJilvcqg"));
 
         try_show();
         }
