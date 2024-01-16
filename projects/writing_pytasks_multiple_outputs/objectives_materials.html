@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -507,13 +508,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qGLUmgQfzFcP" data-shufflequestions="False"
+<div class="output text_html"><div id="gKmCiMQwUixj" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#qGLUmgQfzFcP {
+#gKmCiMQwUixj {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -683,7 +684,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqGLUmgQfzFcP=[{"question": "What are valid ways to specify tasks with multiple dependencies", "type": "many_choice", "answers": [{"answer": "Have multiple arguments, each is a pathlib.Path", "correct": true, "feedback": "Correct."}, {"answer": "Have single argument that is a dictionary of pathlib.Path", "correct": true, "feedback": "Correct."}, {"answer": "You cannot have multiple dependencies for a task", "correct": false, "feedback": "Incorrect."}, {"answer": "Have multiple arguments, each is a dictionary of pathlib.Path", "correct": true, "feedback": "Correct."}]}, {"question": "What are valid ways to specify tasks with multiple products", "type": "many_choice", "answers": [{"answer": "Have arguments called `produces_1`, `produces_2`, etc.", "correct": false, "feedback": "Incorrect."}, {"answer": "Have one argument called `produces` which is a dict of pathlib.Path", "correct": true, "feedback": "Correct."}, {"answer": "You cannot have multiple products for a task", "correct": false, "feedback": "Incorrect."}, {"answer": "Have one argument called `produces` which is a list of pathlib.Path", "correct": true, "feedback": "Correct."}]}, {"question": "How can you inspect which task are collected by pytask without running them", "type": "multiple_choice", "answers": [{"answer": "`pytask collect`", "correct": true, "feedback": "Correct."}, {"answer": "`pytask list-tasks`", "correct": false, "feedback": "Incorrect."}, {"answer": "`pytask`", "correct": false, "feedback": "Incorrect."}, {"answer": "`pytask --help`", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsgKmCiMQwUixj=[{"question": "What are valid ways to specify tasks with multiple dependencies", "type": "many_choice", "answers": [{"answer": "Have multiple arguments, each is a pathlib.Path", "correct": true, "feedback": "Correct."}, {"answer": "Have single argument that is a dictionary of pathlib.Path", "correct": true, "feedback": "Correct."}, {"answer": "You cannot have multiple dependencies for a task", "correct": false, "feedback": "Incorrect."}, {"answer": "Have multiple arguments, each is a dictionary of pathlib.Path", "correct": true, "feedback": "Correct."}]}, {"question": "What are valid ways to specify tasks with multiple products", "type": "many_choice", "answers": [{"answer": "Have arguments called `produces_1`, `produces_2`, etc.", "correct": false, "feedback": "Incorrect."}, {"answer": "Have one argument called `produces` which is a dict of pathlib.Path", "correct": true, "feedback": "Correct."}, {"answer": "You cannot have multiple products for a task", "correct": false, "feedback": "Incorrect."}, {"answer": "Have one argument called `produces` which is a list of pathlib.Path", "correct": true, "feedback": "Correct."}]}, {"question": "How can you inspect which task are collected by pytask without running them", "type": "multiple_choice", "answers": [{"answer": "`pytask collect`", "correct": true, "feedback": "Correct."}, {"answer": "`pytask list-tasks`", "correct": false, "feedback": "Incorrect."}, {"answer": "`pytask`", "correct": false, "feedback": "Incorrect."}, {"answer": "`pytask --help`", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1432,8 +1433,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("qGLUmgQfzFcP")) {
-            show_questions(questionsqGLUmgQfzFcP,  qGLUmgQfzFcP); 
+          if(document.getElementById("gKmCiMQwUixj")) {
+            show_questions(questionsgKmCiMQwUixj,  gKmCiMQwUixj); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1442,8 +1443,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("qGLUmgQfzFcP");
-        // console.log(document.getElementById("qGLUmgQfzFcP"));
+        //console.log("gKmCiMQwUixj");
+        // console.log(document.getElementById("gKmCiMQwUixj"));
 
         try_show();
         }

@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -506,13 +507,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="CfUZWXMkhmzB" data-shufflequestions="False"
+<div class="output text_html"><div id="iFXeQPvqElKY" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#CfUZWXMkhmzB {
+#iFXeQPvqElKY {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -682,7 +683,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsCfUZWXMkhmzB=[{"question": "Git is a distributed version         control system. What does distributed mean?", "type": "many_choice", "answers": [{"answer": "Git uses multiple                 processors to be faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Git repositories are                 stored locally on each developer's computer", "correct": true, "feedback": "Correct."}, {"answer": "Git automatically backs                 up files in a cloud", "correct": true, "feedback": "Correct."}]}, {"question": "Git is a distributed version         control system. What does version control mean?", "type": "many_choice", "answers": [{"answer": "Git can be used to record                 changes to our files over time", "correct": true, "feedback": "Correct."}, {"answer": "Git lets you go back in time", "correct": true, "feedback": "Correct."}, {"answer": "Git stores snapshots in                 versioned folders", "correct": false, "feedback": "Incorrect."}, {"answer": "With Git, your research                 projects are automatically reproducible", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsiFXeQPvqElKY=[{"question": "Git is a distributed version         control system. What does distributed mean?", "type": "many_choice", "answers": [{"answer": "Git uses multiple                 processors to be faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Git repositories are                 stored locally on each developer's computer", "correct": true, "feedback": "Correct."}, {"answer": "Git automatically backs                 up files in a cloud", "correct": true, "feedback": "Correct."}]}, {"question": "Git is a distributed version         control system. What does version control mean?", "type": "many_choice", "answers": [{"answer": "Git can be used to record                 changes to our files over time", "correct": true, "feedback": "Correct."}, {"answer": "Git lets you go back in time", "correct": true, "feedback": "Correct."}, {"answer": "Git stores snapshots in                 versioned folders", "correct": false, "feedback": "Incorrect."}, {"answer": "With Git, your research                 projects are automatically reproducible", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1431,8 +1432,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("CfUZWXMkhmzB")) {
-            show_questions(questionsCfUZWXMkhmzB,  CfUZWXMkhmzB); 
+          if(document.getElementById("iFXeQPvqElKY")) {
+            show_questions(questionsiFXeQPvqElKY,  iFXeQPvqElKY); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1441,8 +1442,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("CfUZWXMkhmzB");
-        // console.log(document.getElementById("CfUZWXMkhmzB"));
+        //console.log("iFXeQPvqElKY");
+        // console.log(document.getElementById("iFXeQPvqElKY"));
 
         try_show();
         }

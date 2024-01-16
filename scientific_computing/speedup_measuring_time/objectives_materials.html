@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -499,21 +500,20 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/xxx">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/7b1cf8c3356b16913c1108495faf3386/scientific_computing-speedup_measuring_time.pdf"><span class="xref download myst">slides</span></a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kxwlwz95IXE?si=MP3JZtSqlmxG5m3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>These are the <a class="reference download internal" download="" href="../../_downloads/7b1cf8c3356b16913c1108495faf3386/scientific_computing-speedup_measuring_time.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="iTLPXCyjxtAV" data-shufflequestions="False"
+<div class="output text_html"><div id="inzecDTBCtvB" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#iTLPXCyjxtAV {
+#inzecDTBCtvB {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -683,7 +683,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsiTLPXCyjxtAV=[{"question": "Why should you use `time.perf_counter` instead of `time.time`?", "type": "multiple_choice", "answers": [{"answer": "It has a higher resolution", "correct": true, "feedback": "Correct."}, {"answer": "`time.time` is biased", "correct": false, "feedback": "Incorrect."}, {"answer": "It is more interpretable", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following things does `timeit` do?", "type": "many_choice", "answers": [{"answer": "Determine how often your code should be run to get an accurate time", "correct": true, "feedback": "Correct."}, {"answer": "Discard outliers", "correct": true, "feedback": "Correct."}, {"answer": "Make your function faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Reduce noise from background tasks", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you use realistically sized inputs to measure runtime?", "type": "many_choice", "answers": [{"answer": "Not all algorithms scale linearly", "correct": true, "feedback": "Correct."}, {"answer": "The resulting runtime is more interpretable", "correct": true, "feedback": "Correct."}, {"answer": "It is easier to implement", "correct": false, "feedback": "Incorrect."}, {"answer": "It is more accurate", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsinzecDTBCtvB=[{"question": "Why should you use `time.perf_counter` instead of `time.time`?", "type": "multiple_choice", "answers": [{"answer": "It has a higher resolution", "correct": true, "feedback": "Correct."}, {"answer": "`time.time` is biased", "correct": false, "feedback": "Incorrect."}, {"answer": "It is more interpretable", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following things does `timeit` do?", "type": "many_choice", "answers": [{"answer": "Determine how often your code should be run to get an accurate time", "correct": true, "feedback": "Correct."}, {"answer": "Discard outliers", "correct": true, "feedback": "Correct."}, {"answer": "Make your function faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Reduce noise from background tasks", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you use realistically sized inputs to measure runtime?", "type": "many_choice", "answers": [{"answer": "Not all algorithms scale linearly", "correct": true, "feedback": "Correct."}, {"answer": "The resulting runtime is more interpretable", "correct": true, "feedback": "Correct."}, {"answer": "It is easier to implement", "correct": false, "feedback": "Incorrect."}, {"answer": "It is more accurate", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1432,8 +1432,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("iTLPXCyjxtAV")) {
-            show_questions(questionsiTLPXCyjxtAV,  iTLPXCyjxtAV); 
+          if(document.getElementById("inzecDTBCtvB")) {
+            show_questions(questionsinzecDTBCtvB,  inzecDTBCtvB); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1442,8 +1442,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("iTLPXCyjxtAV");
-        // console.log(document.getElementById("iTLPXCyjxtAV"));
+        //console.log("inzecDTBCtvB");
+        // console.log(document.getElementById("inzecDTBCtvB"));
 
         try_show();
         }

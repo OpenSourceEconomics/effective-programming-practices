@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -583,13 +584,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="PrJcttAXMiyc" data-shufflequestions="False"
+<div class="output text_html"><div id="tMRoROXPfhoN" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#PrJcttAXMiyc {
+#tMRoROXPfhoN {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -759,7 +760,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPrJcttAXMiyc=[{"question": "The main advantages of plotly are:", "type": "many_choice", "answers": [{"answer": "It produce interactive graphs", "correct": true, "feedback": "Correct. Interactive graphs are very helpful                     to direct more formal analyses"}, {"answer": "It is available for additional statistical softwares", "correct": true, "feedback": "Correct. It's available also in Julia and R."}, {"answer": "Supports relevant output formats", "correct": true, "feedback": "Correct. E.g. dashboards, HTML, static formats"}, {"answer": "It produces particularly nice graphs", "correct": false, "feedback": "Incorrect. The graphs produced by different                     libraries are comparable."}]}, {"question": "Static and interactive plots are hardly ever                 integrated in a single library because:", "type": "multiple_choice", "answers": [{"answer": "Dynamic plots are typically based on JavaSript                     while static graphs do not need it", "correct": true, "feedback": "Correct. In plotly, Kaleido tries to bridge                     this difference by running a browser in the background                     and downloading a static graph."}, {"answer": "The library would be too big", "correct": false, "feedback": "Incorrect. The size of a library normally is not a limit."}, {"answer": "Once dynamic plots were introduced, libraries                     for static plots were already well developed", "correct": false, "feedback": "Incorrect. While the statement is true, this is                     not the reason                     why the different types of graphs are not integrated in a                     single library."}]}];
+</style></div><script type="application/javascript">var questionstMRoROXPfhoN=[{"question": "The main advantages of plotly are:", "type": "many_choice", "answers": [{"answer": "It produce interactive graphs", "correct": true, "feedback": "Correct. Interactive graphs are very helpful                     to direct more formal analyses"}, {"answer": "It is available for additional statistical softwares", "correct": true, "feedback": "Correct. It's available also in Julia and R."}, {"answer": "Supports relevant output formats", "correct": true, "feedback": "Correct. E.g. dashboards, HTML, static formats"}, {"answer": "It produces particularly nice graphs", "correct": false, "feedback": "Incorrect. The graphs produced by different                     libraries are comparable."}]}, {"question": "Static and interactive plots are hardly ever                 integrated in a single library because:", "type": "multiple_choice", "answers": [{"answer": "Dynamic plots are typically based on JavaSript                     while static graphs do not need it", "correct": true, "feedback": "Correct. In plotly, Kaleido tries to bridge                     this difference by running a browser in the background                     and downloading a static graph."}, {"answer": "The library would be too big", "correct": false, "feedback": "Incorrect. The size of a library normally is not a limit."}, {"answer": "Once dynamic plots were introduced, libraries                     for static plots were already well developed", "correct": false, "feedback": "Incorrect. While the statement is true, this is                     not the reason                     why the different types of graphs are not integrated in a                     single library."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1508,8 +1509,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("PrJcttAXMiyc")) {
-            show_questions(questionsPrJcttAXMiyc,  PrJcttAXMiyc); 
+          if(document.getElementById("tMRoROXPfhoN")) {
+            show_questions(questionstMRoROXPfhoN,  tMRoROXPfhoN); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1518,8 +1519,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("PrJcttAXMiyc");
-        // console.log(document.getElementById("PrJcttAXMiyc"));
+        //console.log("tMRoROXPfhoN");
+        // console.log(document.getElementById("tMRoROXPfhoN"));
 
         try_show();
         }

@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -498,21 +499,20 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
-<p>Here is
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/xxx">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/1ef7321907fd62ed229f4f96d3c273da/software_engineering-deciding_containers.pdf"><span class="xref download myst">slides</span></a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6UgGnVC9dSk?si=bNkHn-kuZpUjsuP5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>These are the <a class="reference download internal" download="" href="../../_downloads/1ef7321907fd62ed229f4f96d3c273da/software_engineering-deciding_containers.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="LlJVXrzQxhqA" data-shufflequestions="False"
+<div class="output text_html"><div id="eKuqTFoZZUia" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#LlJVXrzQxhqA {
+#eKuqTFoZZUia {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -682,7 +682,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsLlJVXrzQxhqA=[{"question": "What is the main factor in deciding between dicts, dataclasses and NamedTuple", "type": "multiple_choice", "answers": [{"answer": "Fixed vs. free fields", "correct": true, "feedback": "Correct."}, {"answer": "Mutable vs. immutable", "correct": false, "feedback": "Incorrect."}, {"answer": "Ordered vs. unordered", "correct": false, "feedback": "Incorrect."}, {"answer": "Speed", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which data structures are a good choice if you have fixed fields", "type": "many_choice", "answers": [{"answer": "dicts", "correct": false, "feedback": "Incorrect."}, {"answer": "dataclasses", "correct": true, "feedback": "Correct."}, {"answer": "NamedTuples", "correct": true, "feedback": "Correct."}, {"answer": "lists", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which data structures are immutable by default", "type": "multiple_choice", "answers": [{"answer": "dicts", "correct": false, "feedback": "Incorrect."}, {"answer": "dataclasses", "correct": false, "feedback": "Incorrect."}, {"answer": "NamedTuples", "correct": true, "feedback": "Correct."}, {"answer": "lists", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionseKuqTFoZZUia=[{"question": "What is the main factor in deciding between dicts, dataclasses and NamedTuple", "type": "multiple_choice", "answers": [{"answer": "Fixed vs. free fields", "correct": true, "feedback": "Correct."}, {"answer": "Mutable vs. immutable", "correct": false, "feedback": "Incorrect."}, {"answer": "Ordered vs. unordered", "correct": false, "feedback": "Incorrect."}, {"answer": "Speed", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which data structures are a good choice if you have fixed fields", "type": "many_choice", "answers": [{"answer": "dicts", "correct": false, "feedback": "Incorrect."}, {"answer": "dataclasses", "correct": true, "feedback": "Correct."}, {"answer": "NamedTuples", "correct": true, "feedback": "Correct."}, {"answer": "lists", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which data structures are immutable by default", "type": "multiple_choice", "answers": [{"answer": "dicts", "correct": false, "feedback": "Incorrect."}, {"answer": "dataclasses", "correct": false, "feedback": "Incorrect."}, {"answer": "NamedTuples", "correct": true, "feedback": "Correct."}, {"answer": "lists", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1431,8 +1431,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("LlJVXrzQxhqA")) {
-            show_questions(questionsLlJVXrzQxhqA,  LlJVXrzQxhqA); 
+          if(document.getElementById("eKuqTFoZZUia")) {
+            show_questions(questionseKuqTFoZZUia,  eKuqTFoZZUia); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1441,8 +1441,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("LlJVXrzQxhqA");
-        // console.log(document.getElementById("LlJVXrzQxhqA"));
+        //console.log("eKuqTFoZZUia");
+        // console.log(document.getElementById("eKuqTFoZZUia"));
 
         try_show();
         }

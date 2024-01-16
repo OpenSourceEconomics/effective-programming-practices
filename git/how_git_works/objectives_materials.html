@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -508,13 +509,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="YaUpwuCxxTdS" data-shufflequestions="False"
+<div class="output text_html"><div id="RDuFBXBsKoQt" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#YaUpwuCxxTdS {
+#RDuFBXBsKoQt {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -684,7 +685,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsYaUpwuCxxTdS=[{"question": "What is a git repository?", "type": "multiple_choice", "answers": [{"answer": "A folder containing a `.git` directory", "correct": true, "feedback": "Correct."}, {"answer": "A folder that gets automatically                     synced to the cloud", "correct": false, "feedback": "Incorrect."}, {"answer": "A place where the configurations for git                     are stored", "correct": false, "feedback": "Incorrect."}, {"answer": "A folder containing all files that                 belong to your project", "correct": true, "feedback": "Correct."}]}, {"question": "What is a git commit?", "type": "multiple_choice", "answers": [{"answer": "A snapshot that git creates in                 fixed time intervals", "correct": false, "feedback": "Incorrect."}, {"answer": "A snapshot that you create after                     you have made some changes that belong together", "correct": true, "feedback": "Correct."}, {"answer": "Something you can come back to                     at a later stage", "correct": true, "feedback": "Correct."}, {"answer": "A new folder that contains a                     copy of the repo", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsRDuFBXBsKoQt=[{"question": "What is a git repository?", "type": "multiple_choice", "answers": [{"answer": "A folder containing a `.git` directory", "correct": true, "feedback": "Correct."}, {"answer": "A folder that gets automatically                     synced to the cloud", "correct": false, "feedback": "Incorrect."}, {"answer": "A place where the configurations for git                     are stored", "correct": false, "feedback": "Incorrect."}, {"answer": "A folder containing all files that                 belong to your project", "correct": true, "feedback": "Correct."}]}, {"question": "What is a git commit?", "type": "multiple_choice", "answers": [{"answer": "A snapshot that git creates in                 fixed time intervals", "correct": false, "feedback": "Incorrect."}, {"answer": "A snapshot that you create after                     you have made some changes that belong together", "correct": true, "feedback": "Correct."}, {"answer": "Something you can come back to                     at a later stage", "correct": true, "feedback": "Correct."}, {"answer": "A new folder that contains a                     copy of the repo", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1433,8 +1434,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("YaUpwuCxxTdS")) {
-            show_questions(questionsYaUpwuCxxTdS,  YaUpwuCxxTdS); 
+          if(document.getElementById("RDuFBXBsKoQt")) {
+            show_questions(questionsRDuFBXBsKoQt,  RDuFBXBsKoQt); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1443,8 +1444,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("YaUpwuCxxTdS");
-        // console.log(document.getElementById("YaUpwuCxxTdS"));
+        //console.log("RDuFBXBsKoQt");
+        // console.log(document.getElementById("RDuFBXBsKoQt"));
 
         try_show();
         }

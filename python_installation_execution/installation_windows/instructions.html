@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'python_installation_execution/installation_windows/instructions';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Executing notebooks in a browser" href="../executing_notebook_browser/objectives_materials.html" />
+    <link rel="next" title="Installing Python with Windows Subsystem for Linux (WSL2)" href="../installation_wsl/instructions.html" />
     <link rel="prev" title="Installing Python on Mac" href="../installation_mac/instructions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -478,6 +479,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-the-course-environment">Activate the course environment</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-1">Troubleshooting 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-2">Troubleshooting 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-3">Troubleshooting 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-4">Troubleshooting 4</a></li>
 </ul>
             </nav>
         </div>
@@ -507,6 +510,13 @@ Python packages that we will need for the course.</p></li>
 <li><p>Troubleshooting: Windows is the most problematic operating system and sometimes
 requires a few extra steps to get everything working.</p></li>
 </ol>
+<p>Finally, if you have worked with Windows before and are not a big fan of the
+issues that come with its shell and sometimes with its compatibility with Python, you can
+check out the WSL installation guide in this course. This guide
+is an alternative to installing Python on Windows, and it will allow you to use a Linux
+distribution to run your Python code using a Virtual Machine. We recommend this approach
+to those of you who are already a bit “tech-savy” and are familiar with working with
+shells and conda environments.</p>
 <section id="installing-mamba">
 <h2>Installing mamba<a class="headerlink" href="#installing-mamba" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
@@ -574,39 +584,70 @@ For this course, you will type <code class="docutils literal notranslate"><span 
 <p>The console shows that the environment is active by showing the name of the environment
 in parenthesis before the directory you are currently in.</p>
 <p><img alt="14_activate_epp.png" src="../../_images/14_activate_epp.png" /></p>
-<p>Additionally, if you execute <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code>, the report will show that the active environemnt is epp</p>
+<p>Additionally, if you execute <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code>, the report will show that the active environment is epp</p>
 <p><img alt="15_conda_info.png" src="../../_images/15_conda_info.png" /></p>
+<p>If in the conda info environment you read <code class="docutils literal notranslate"><span class="pre">active</span> <span class="pre">environment</span> <span class="pre">:</span> <span class="pre">None</span></code>, go to
+Troubleshooting 2 below. If you have other problems activating the environment, check
+the other Troubleshooting sections.</p>
 </section>
 <section id="troubleshooting-1">
 <h2>Troubleshooting 1<a class="headerlink" href="#troubleshooting-1" title="Permalink to this heading">#</a></h2>
-<p>If mamba or conda are not recognized as commands in the powershell, do the following:</p>
+<p>Follow this section’s instructions if mamba or conda are not recognized as commands in the
+powershell, and you get the following error:</p>
+<p><img alt="19_not_recognized.png" src="../../_images/19_not_recognized.png" /></p>
+<p>To fix this you will need to activate conda in the powershell through the conda prompt.</p>
 <ol class="arabic">
-<li><p>open a Powershell as administrator by right clicking on the powershell icond and selecting
-“run as administrator”.</p></li>
-<li><p>execute the following command</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Set-ExecutionPolicy<span class="w"> </span>-ExecutionPolicy<span class="w"> </span>RemoteSigned
+<li><p>First, open the windows search and search for “conda prompt”. Open the conda prompt.
+After opening the conda prompt type:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>init<span class="w"> </span>powershell
 </pre></div>
 </div>
-<p>and select “Yes at all” by entering “T”</p>
-<p><img alt="16_execution_policy.png" src="../../_images/16_execution_policy.png" /></p>
 </li>
-<li><p>close and re-open Powershell</p></li>
-<li><p>execute</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>init
-</pre></div>
-</div>
-<p><img alt="17_conda_init.png" src="../../_images/17_conda_init.png" /></p>
-</li>
-<li><p>close and re-open Powershell</p></li>
+<li><p>After this command finishes running, you can close the Conda prompt, open PowerShell
+(by opening Terminal) and try activating the environment with
+<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">epp_topics</span></code> again, as described above.</p></li>
 </ol>
-<p>Now you can try again the procedure to activate the course environment described above.</p>
 </section>
 <section id="troubleshooting-2">
 <h2>Troubleshooting 2<a class="headerlink" href="#troubleshooting-2" title="Permalink to this heading">#</a></h2>
-<p>In case the procedure described in “Troubleshooting 1” above doesn’t work and when you
-open the powershell an error message pertaining “profile.ps1” appear, you can activate
-environments following the procedure described below.
-Note that <strong>you will have to follow this procedure each time you start a new Terminal.</strong></p>
+<p>Another potential issue that may present itself is that, despite no error appearing
+after typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">epp_topics</span></code>, you cannot run .py files, and the
+environment does not appear in the terminal (in should appear in parentheses before
+PS in the Terminal line).</p>
+<p>You can check if this is the issue you are experiencing by typing conda info.</p>
+<p><img alt="21_conda_empty.png" src="../../_images/21_conda_empty.png" /></p>
+<p>If you get the same output as above, and your active environment reads none as above,
+then do the following.</p>
+<ol class="arabic simple">
+<li><p>Repeat the same steps as in Troubleshooting 1 above.</p></li>
+<li><p>After you are finished, restart your machine.</p></li>
+</ol>
+</section>
+<section id="troubleshooting-3">
+<h2>Troubleshooting 3<a class="headerlink" href="#troubleshooting-3" title="Permalink to this heading">#</a></h2>
+<p>Sometimes there can be problems with the execution policies of Windows. You may get the
+following error:</p>
+<p><img alt="20_exec_policy.png" src="../../_images/20_exec_policy.png" /></p>
+<p>To fix this, we will have to change the execution policy.</p>
+<ol class="arabic">
+<li><p>Open a new terminal as administrator. To open it as administrator you need to right
+click on it and select “Open as administrator”.</p></li>
+<li><p>Now write</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Set-ExecutionPolicy<span class="w"> </span>RemoteSigned
+</pre></div>
+</div>
+</li>
+<li><p>Finally, close the terminal, open a new one, and try activating conda again
+(as explained in the previous section).</p></li>
+</ol>
+</section>
+<section id="troubleshooting-4">
+<h2>Troubleshooting 4<a class="headerlink" href="#troubleshooting-4" title="Permalink to this heading">#</a></h2>
+<p>In case non of the previous fixes work and you are still unable to use conda from your
+Powershell, you will have to use the command prompt. This is annoying, given that many
+navigation commands such as ls and pwd do not work in this type of terminal. However, if
+nothing else works this is an easy fix.</p>
+<p>Note that <strong>you will have to follow this procedure each time you start a new Terminal.</strong></p>
 <ol class="arabic">
 <li><p>To activate the environments in the powershell you need to first switch to the command
 prompt. This is done by typing <code class="docutils literal notranslate"><span class="pre">cmd</span></code> in the terminal.</p>
@@ -617,9 +658,6 @@ The console shows that the environment is active by showing the name of the
 environment in parenthesis before the directory you are currently in.</p>
 <p><img alt="14_activate_epp.png" src="../../_images/14_activate_epp.png" /></p>
 </li>
-<li><p>To prevent the error message pertaining “profile.ps1” to appear every time you
-open a new terminal, you can follow the directory reported in the error message
-and delete “profile.ps1”.</p></li>
 </ol>
 </section>
 </section>
@@ -664,11 +702,11 @@ and delete “profile.ps1”.</p></li>
       </div>
     </a>
     <a class="right-next"
-       href="../executing_notebook_browser/objectives_materials.html"
+       href="../installation_wsl/instructions.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Executing notebooks in a browser</p>
+        <p class="prev-next-title">Installing Python with Windows Subsystem for Linux (WSL2)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -692,6 +730,8 @@ and delete “profile.ps1”.</p></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-the-course-environment">Activate the course environment</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-1">Troubleshooting 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-2">Troubleshooting 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-3">Troubleshooting 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-4">Troubleshooting 4</a></li>
 </ul>
   </nav></div>
 

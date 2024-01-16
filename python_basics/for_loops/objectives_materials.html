@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -522,13 +523,13 @@ that this contains many things you do not need to know!</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ZDlkPCnoWCBT" data-shufflequestions="False"
+<div class="output text_html"><div id="qUQBfHFktgMO" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ZDlkPCnoWCBT {
+#qUQBfHFktgMO {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -698,7 +699,7 @@ that this contains many things you do not need to know!</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsZDlkPCnoWCBT=[{"question": "Repeating code snippets should be avoided because ...", "type": "many_choice", "answers": [{"answer": "programme runtime generally rises.", "correct": false}, {"answer": "it is easy to forget about fixing bugs in all places, leading to extra work.", "correct": true}, {"answer": "when changing behaviour of the code, one often misses out on some places, leading potentially subtle bugs.", "correct": true}, {"answer": "the extra amount of disk space used often is problematic.", "correct": false}]}, {"question": "For loops are to be avoided like the plague because ...", "type": "many_choice", "answers": [{"answer": "they're not.", "correct": true}, {"answer": "they are always slower than readily available alternatives.", "correct": false}, {"answer": "they will cause bottlenecks in your programmes.", "correct": false}, {"answer": "they always lead to trouble with mutable objects.", "correct": false}]}, {"question": "What will the output of the following code be?", "type": "multiple_choice", "code": "for i in []:\n    print(i)", "answers": [{"answer": "[Nothing]", "correct": true}, {"answer": "0", "correct": false}]}, {"question": "What will the output of the following code be?", "type": "multiple_choice", "code": "for i in [1, 2, 3]:\n    print(i)", "answers": [{"code": "0\n1\n2", "correct": false}, {"code": "1\n2\n3", "correct": true}]}, {"question": "Three important types of loops and their correct descriptions are...", "type": "many_choice", "answers": [{"answer": "Meshing loops, which are used to create sparse grids.", "correct": false}, {"answer": "Reduction loops, which are used to aggregate out some dimension(s) from a list of inputs.", "correct": true}, {"answer": "Filtering loops, which are used to remove elements from a list.", "correct": true}, {"answer": "Mapping loops, which are used to put values on a map.", "correct": false}, {"answer": "Reduction loops, which are used to remove elements from a list.", "correct": false}, {"answer": "Mapping loops, which are used to apply a function to a list of inputs.", "correct": true}]}];
+</style></div><script type="application/javascript">var questionsqUQBfHFktgMO=[{"question": "Repeating code snippets should be avoided because ...", "type": "many_choice", "answers": [{"answer": "programme runtime generally rises.", "correct": false}, {"answer": "it is easy to forget about fixing bugs in all places, leading to extra work.", "correct": true}, {"answer": "when changing behaviour of the code, one often misses out on some places, leading potentially subtle bugs.", "correct": true}, {"answer": "the extra amount of disk space used often is problematic.", "correct": false}]}, {"question": "For loops are to be avoided like the plague because ...", "type": "many_choice", "answers": [{"answer": "they're not.", "correct": true}, {"answer": "they are always slower than readily available alternatives.", "correct": false}, {"answer": "they will cause bottlenecks in your programmes.", "correct": false}, {"answer": "they always lead to trouble with mutable objects.", "correct": false}]}, {"question": "What will the output of the following code be?", "type": "multiple_choice", "code": "for i in []:\n    print(i)", "answers": [{"answer": "[Nothing]", "correct": true}, {"answer": "0", "correct": false}]}, {"question": "What will the output of the following code be?", "type": "multiple_choice", "code": "for i in [1, 2, 3]:\n    print(i)", "answers": [{"code": "0\n1\n2", "correct": false}, {"code": "1\n2\n3", "correct": true}]}, {"question": "Three important types of loops and their correct descriptions are...", "type": "many_choice", "answers": [{"answer": "Meshing loops, which are used to create sparse grids.", "correct": false}, {"answer": "Reduction loops, which are used to aggregate out some dimension(s) from a list of inputs.", "correct": true}, {"answer": "Filtering loops, which are used to remove elements from a list.", "correct": true}, {"answer": "Mapping loops, which are used to put values on a map.", "correct": false}, {"answer": "Reduction loops, which are used to remove elements from a list.", "correct": false}, {"answer": "Mapping loops, which are used to apply a function to a list of inputs.", "correct": true}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1447,8 +1448,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ZDlkPCnoWCBT")) {
-            show_questions(questionsZDlkPCnoWCBT,  ZDlkPCnoWCBT); 
+          if(document.getElementById("qUQBfHFktgMO")) {
+            show_questions(questionsqUQBfHFktgMO,  qUQBfHFktgMO); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1457,8 +1458,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ZDlkPCnoWCBT");
-        // console.log(document.getElementById("ZDlkPCnoWCBT"));
+        //console.log("qUQBfHFktgMO");
+        // console.log(document.getElementById("qUQBfHFktgMO"));
 
         try_show();
         }

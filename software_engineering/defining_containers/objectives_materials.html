@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -474,7 +475,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-working-through-this-topic-you-should-be-able-to">After working through this topic, you should be able to:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
@@ -493,15 +493,18 @@ document.write(`
 <h1>Defining custom containers<a class="headerlink" href="#defining-custom-containers" title="Permalink to this heading">#</a></h1>
 <section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="after-working-through-this-topic-you-should-be-able-to">
-<h2>After working through this topic, you should be able to:<a class="headerlink" href="#after-working-through-this-topic-you-should-be-able-to" title="Permalink to this heading">#</a></h2>
+<p>After working through this topic, you should be able to:</p>
+<ul class="simple">
+<li><p>Define NamedTuples</p></li>
+<li><p>Define dataclasses</p></li>
+<li><p>Explain why sometimes custom classes can be better than dictionaries for storing
+your some data.</p></li>
+</ul>
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
-<p>Here is
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/xxx">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/49076c8f09f537587193ab9454099571/software_engineering-defining_containers.pdf"><span class="xref download myst">slides</span></a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7O1r6B5eieA?si=l8MeDPvk8og0nRMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>These are the <a class="reference download internal" download="" href="../../_downloads/49076c8f09f537587193ab9454099571/software_engineering-defining_containers.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="additional-materials">
 <h2>Additional materials<a class="headerlink" href="#additional-materials" title="Permalink to this heading">#</a></h2>
@@ -513,13 +516,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ePxhKJiUOXti" data-shufflequestions="False"
+<div class="output text_html"><div id="zSCBoowZZbkT" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ePxhKJiUOXti {
+#zSCBoowZZbkT {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -689,7 +692,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsePxhKJiUOXti=[{"question": "What are potential drawbacks of python dictionaries", "type": "many_choice", "answers": [{"answer": "They are slow", "correct": false, "feedback": "Incorrect."}, {"answer": "Typos in keys can only be detected at runtime", "correct": true, "feedback": "Correct."}, {"answer": "It is hard to document/know which keys are there", "correct": true, "feedback": "Correct."}, {"answer": "They are not ordered", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of NamedTuples", "type": "many_choice", "answers": [{"answer": "They are immutable", "correct": true, "feedback": "Correct."}, {"answer": "They are faster", "correct": false, "feedback": "Incorrect."}, {"answer": "It is easy to document what fields are there", "correct": true, "feedback": "Correct."}, {"answer": "They are easier to write", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of dataclasses", "type": "many_choice", "answers": [{"answer": "They are immutable", "correct": false, "feedback": "Incorrect."}, {"answer": "They are faster", "correct": false, "feedback": "Incorrect."}, {"answer": "It is easy to document what fields are there", "correct": true, "feedback": "Correct."}, {"answer": "They have many powerful options", "correct": true, "feedback": "Correct."}]}, {"question": "How do you usually access the attributes of NamedTuples and dataclasses", "type": "multiple_choice", "answers": [{"answer": "With square brackets", "correct": false, "feedback": "Incorrect."}, {"answer": "With dot notation", "correct": true, "feedback": "Correct."}, {"answer": "With the getattr function", "correct": false, "feedback": "Incorrect."}, {"answer": "With the setattr function", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionszSCBoowZZbkT=[{"question": "What are potential drawbacks of python dictionaries", "type": "many_choice", "answers": [{"answer": "They are slow", "correct": false, "feedback": "Incorrect."}, {"answer": "Typos in keys can only be detected at runtime", "correct": true, "feedback": "Correct."}, {"answer": "It is hard to document/know which keys are there", "correct": true, "feedback": "Correct."}, {"answer": "They are not ordered", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of NamedTuples", "type": "many_choice", "answers": [{"answer": "They are immutable", "correct": true, "feedback": "Correct."}, {"answer": "They are faster", "correct": false, "feedback": "Incorrect."}, {"answer": "It is easy to document what fields are there", "correct": true, "feedback": "Correct."}, {"answer": "They are easier to write", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of dataclasses", "type": "many_choice", "answers": [{"answer": "They are immutable", "correct": false, "feedback": "Incorrect."}, {"answer": "They are faster", "correct": false, "feedback": "Incorrect."}, {"answer": "It is easy to document what fields are there", "correct": true, "feedback": "Correct."}, {"answer": "They have many powerful options", "correct": true, "feedback": "Correct."}]}, {"question": "How do you usually access the attributes of NamedTuples and dataclasses", "type": "multiple_choice", "answers": [{"answer": "With square brackets", "correct": false, "feedback": "Incorrect."}, {"answer": "With dot notation", "correct": true, "feedback": "Correct."}, {"answer": "With the getattr function", "correct": false, "feedback": "Incorrect."}, {"answer": "With the setattr function", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1438,8 +1441,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ePxhKJiUOXti")) {
-            show_questions(questionsePxhKJiUOXti,  ePxhKJiUOXti); 
+          if(document.getElementById("zSCBoowZZbkT")) {
+            show_questions(questionszSCBoowZZbkT,  zSCBoowZZbkT); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1448,8 +1451,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ePxhKJiUOXti");
-        // console.log(document.getElementById("ePxhKJiUOXti"));
+        //console.log("zSCBoowZZbkT");
+        // console.log(document.getElementById("zSCBoowZZbkT"));
 
         try_show();
         }
@@ -1522,7 +1525,6 @@ if (typeof version == 'undefined') {
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-working-through-this-topic-you-should-be-able-to">After working through this topic, you should be able to:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>

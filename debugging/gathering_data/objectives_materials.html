@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -506,13 +507,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="CCmFiDglHcNh" data-shufflequestions="False"
+<div class="output text_html"><div id="rxhVJlTtUVZI" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#CCmFiDglHcNh {
+#rxhVJlTtUVZI {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -682,7 +683,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsCCmFiDglHcNh=[{"question": "How can gathering data help in debugging?", "type": "many_choice", "answers": [{"answer": "It replaces reading error messages", "correct": false, "feedback": "Incorrect."}, {"answer": "It can help you to confirm hypotheses", "correct": true, "feedback": "Correct."}, {"answer": "It can help you to locate a problem", "correct": true, "feedback": "Correct."}, {"answer": "It automates the debugging process", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are problems of print statements for debugging", "type": "many_choice", "answers": [{"answer": "It takes a lot of effort to make the output informative", "correct": true, "feedback": "Correct."}, {"answer": "They don't help to gather data", "correct": false, "feedback": "Incorrect."}, {"answer": "Not all Python objects can be printed", "correct": false, "feedback": "Incorrect."}, {"answer": "You either get too much output or risk missing the important bit", "correct": true, "feedback": "Correct."}]}, {"question": "What are advantages of a debugger", "type": "many_choice", "answers": [{"answer": "It makes debugging more interactive than print statements", "correct": true, "feedback": "Correct."}, {"answer": "You only see what you want to see", "correct": true, "feedback": "Correct."}, {"answer": "It automates the debugging process", "correct": false, "feedback": "Incorrect."}, {"answer": "It is easier to learn than print statements.", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsrxhVJlTtUVZI=[{"question": "How can gathering data help in debugging?", "type": "many_choice", "answers": [{"answer": "It replaces reading error messages", "correct": false, "feedback": "Incorrect."}, {"answer": "It can help you to confirm hypotheses", "correct": true, "feedback": "Correct."}, {"answer": "It can help you to locate a problem", "correct": true, "feedback": "Correct."}, {"answer": "It automates the debugging process", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are problems of print statements for debugging", "type": "many_choice", "answers": [{"answer": "It takes a lot of effort to make the output informative", "correct": true, "feedback": "Correct."}, {"answer": "They don't help to gather data", "correct": false, "feedback": "Incorrect."}, {"answer": "Not all Python objects can be printed", "correct": false, "feedback": "Incorrect."}, {"answer": "You either get too much output or risk missing the important bit", "correct": true, "feedback": "Correct."}]}, {"question": "What are advantages of a debugger", "type": "many_choice", "answers": [{"answer": "It makes debugging more interactive than print statements", "correct": true, "feedback": "Correct."}, {"answer": "You only see what you want to see", "correct": true, "feedback": "Correct."}, {"answer": "It automates the debugging process", "correct": false, "feedback": "Incorrect."}, {"answer": "It is easier to learn than print statements.", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1431,8 +1432,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("CCmFiDglHcNh")) {
-            show_questions(questionsCCmFiDglHcNh,  CCmFiDglHcNh); 
+          if(document.getElementById("rxhVJlTtUVZI")) {
+            show_questions(questionsrxhVJlTtUVZI,  rxhVJlTtUVZI); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1441,8 +1442,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("CCmFiDglHcNh");
-        // console.log(document.getElementById("CCmFiDglHcNh"));
+        //console.log("rxhVJlTtUVZI");
+        // console.log(document.getElementById("rxhVJlTtUVZI"));
 
         try_show();
         }

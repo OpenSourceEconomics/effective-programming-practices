@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -508,13 +509,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="cekZJQLjsXfh" data-shufflequestions="False"
+<div class="output text_html"><div id="QSuCLorfTYAu" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#cekZJQLjsXfh {
+#QSuCLorfTYAu {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -684,7 +685,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionscekZJQLjsXfh=[{"question": "What are good ways to think about a 2d array", "type": "many_choice", "answers": [{"answer": "A matrix", "correct": true, "feedback": "Correct."}, {"answer": "Something like a 'list' of row vectors", "correct": true, "feedback": "Correct."}, {"answer": "A vector", "correct": false, "feedback": "Incorrect."}, {"answer": "A special case of a n-dimensional tensor", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is numpy?", "type": "many_choice", "answers": [{"answer": "A library that implements n-dimensional arrays", "correct": true, "feedback": "Correct."}, {"answer": "A library that lets you write fast loops in Python", "correct": false, "feedback": "Incorrect."}, {"answer": "A library that implements fast mathematical functions", "correct": true, "feedback": "Correct."}, {"answer": "A library for data management.", "correct": false, "feedback": "Incorrect."}]}, {"question": "Given arr = np.array([[1, 2],[False, 2]]). The code arr.dtype returns", "type": "multiple_choice", "answers": [{"answer": "int32", "correct": true, "feedback": "Correct."}, {"answer": "float64", "correct": false, "feedback": "Incorrect."}, {"answer": "boolean", "correct": false, "feedback": "Incorrect."}, {"answer": "it produces an error", "correct": false, "feedback": "Incorrect."}]}, {"question": "Numpy allows to perform fast numerical calculation because", "type": "many_choice", "answers": [{"answer": "Operations are performed among homogeneous datatypes", "correct": true, "feedback": "Correct."}, {"answer": "Array elements are physically stored next to each other ", "correct": true, "feedback": "Correct."}, {"answer": "Numpy is not much faster than alternative options for             scientific computing", "correct": false, "feedback": "Incorrect."}, {"answer": "Numpy enable to access computational power on the cloud", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsQSuCLorfTYAu=[{"question": "What are good ways to think about a 2d array", "type": "many_choice", "answers": [{"answer": "A matrix", "correct": true, "feedback": "Correct."}, {"answer": "Something like a 'list' of row vectors", "correct": true, "feedback": "Correct."}, {"answer": "A vector", "correct": false, "feedback": "Incorrect."}, {"answer": "A special case of a n-dimensional tensor", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is numpy?", "type": "many_choice", "answers": [{"answer": "A library that implements n-dimensional arrays", "correct": true, "feedback": "Correct."}, {"answer": "A library that lets you write fast loops in Python", "correct": false, "feedback": "Incorrect."}, {"answer": "A library that implements fast mathematical functions", "correct": true, "feedback": "Correct."}, {"answer": "A library for data management.", "correct": false, "feedback": "Incorrect."}]}, {"question": "Given arr = np.array([[1, 2],[False, 2]]). The code arr.dtype returns", "type": "multiple_choice", "answers": [{"answer": "int32", "correct": true, "feedback": "Correct."}, {"answer": "float64", "correct": false, "feedback": "Incorrect."}, {"answer": "boolean", "correct": false, "feedback": "Incorrect."}, {"answer": "it produces an error", "correct": false, "feedback": "Incorrect."}]}, {"question": "Numpy allows to perform fast numerical calculation because", "type": "many_choice", "answers": [{"answer": "Operations are performed among homogeneous datatypes", "correct": true, "feedback": "Correct."}, {"answer": "Array elements are physically stored next to each other ", "correct": true, "feedback": "Correct."}, {"answer": "Numpy is not much faster than alternative options for             scientific computing", "correct": false, "feedback": "Incorrect."}, {"answer": "Numpy enable to access computational power on the cloud", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1433,8 +1434,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("cekZJQLjsXfh")) {
-            show_questions(questionscekZJQLjsXfh,  cekZJQLjsXfh); 
+          if(document.getElementById("QSuCLorfTYAu")) {
+            show_questions(questionsQSuCLorfTYAu,  QSuCLorfTYAu); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1443,8 +1444,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("cekZJQLjsXfh");
-        // console.log(document.getElementById("cekZJQLjsXfh"));
+        //console.log("QSuCLorfTYAu");
+        // console.log(document.getElementById("QSuCLorfTYAu"));
 
         try_show();
         }

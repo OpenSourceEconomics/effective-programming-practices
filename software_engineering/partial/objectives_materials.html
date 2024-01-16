@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -474,7 +475,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-working-through-this-topic-you-should-be-able-to">After working through this topic, you should be able to:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
@@ -492,27 +492,27 @@ document.write(`
 <h1>Partialling arguments to functions<a class="headerlink" href="#partialling-arguments-to-functions" title="Permalink to this heading">#</a></h1>
 <section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="after-working-through-this-topic-you-should-be-able-to">
-<h2>After working through this topic, you should be able to:<a class="headerlink" href="#after-working-through-this-topic-you-should-be-able-to" title="Permalink to this heading">#</a></h2>
+<p>After working through this topic, you should be able to:</p>
+<ul class="simple">
+<li><p>Use functools.partial to modify the signature of functions</p></li>
+</ul>
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
-<p>Here is
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/xxx">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/87237ac0b674e13549cf713a658e3e1b/software_engineering-partial.pdf"><span class="xref download myst">slides</span></a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1wOolOmd0RM?si=4GtS98qjsWE_IDJJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>These are the <a class="reference download internal" download="" href="../../_downloads/87237ac0b674e13549cf713a658e3e1b/software_engineering-partial.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="EhpKCHwWLSvX" data-shufflequestions="False"
+<div class="output text_html"><div id="AxqvIxclIAcQ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#EhpKCHwWLSvX {
+#AxqvIxclIAcQ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -682,7 +682,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsEhpKCHwWLSvX=[{"question": "What is a higher order function?", "type": "multiple_choice", "answers": [{"answer": "A function that takes a function as an argument and returns a function", "correct": true, "feedback": "Correct."}, {"answer": "A function that uses polynomials larger than 2", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that calls another function", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does partial do", "type": "many_choice", "answers": [{"answer": "Take a function and return a function with fewer arguments", "correct": true, "feedback": "Correct."}, {"answer": "Take the partial defrivitive of a function", "correct": false, "feedback": "Incorrect."}, {"answer": "Inject data into a function", "correct": true, "feedback": "Correct."}, {"answer": "Take a function and return a function with more arguments", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsAxqvIxclIAcQ=[{"question": "What is a higher order function?", "type": "multiple_choice", "answers": [{"answer": "A function that takes a function as an argument and returns a function", "correct": true, "feedback": "Correct."}, {"answer": "A function that uses polynomials larger than 2", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that calls another function", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does partial do", "type": "many_choice", "answers": [{"answer": "Take a function and return a function with fewer arguments", "correct": true, "feedback": "Correct."}, {"answer": "Take the partial defrivitive of a function", "correct": false, "feedback": "Incorrect."}, {"answer": "Inject data into a function", "correct": true, "feedback": "Correct."}, {"answer": "Take a function and return a function with more arguments", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1431,8 +1431,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("EhpKCHwWLSvX")) {
-            show_questions(questionsEhpKCHwWLSvX,  EhpKCHwWLSvX); 
+          if(document.getElementById("AxqvIxclIAcQ")) {
+            show_questions(questionsAxqvIxclIAcQ,  AxqvIxclIAcQ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1441,8 +1441,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("EhpKCHwWLSvX");
-        // console.log(document.getElementById("EhpKCHwWLSvX"));
+        //console.log("AxqvIxclIAcQ");
+        // console.log(document.getElementById("AxqvIxclIAcQ"));
 
         try_show();
         }
@@ -1515,7 +1515,6 @@ if (typeof version == 'undefined') {
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-working-through-this-topic-you-should-be-able-to">After working through this topic, you should be able to:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>

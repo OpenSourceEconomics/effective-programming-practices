@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -555,13 +556,13 @@ and these are the <a class="reference download internal" download="" href="../..
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="XTqnpfQqalTG" data-shufflequestions="False"
+<div class="output text_html"><div id="eQbyowJtbcvA" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#XTqnpfQqalTG {
+#eQbyowJtbcvA {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -731,7 +732,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXTqnpfQqalTG=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
+</style></div><script type="application/javascript">var questionseQbyowJtbcvA=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1480,8 +1481,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("XTqnpfQqalTG")) {
-            show_questions(questionsXTqnpfQqalTG,  XTqnpfQqalTG); 
+          if(document.getElementById("eQbyowJtbcvA")) {
+            show_questions(questionseQbyowJtbcvA,  eQbyowJtbcvA); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1490,8 +1491,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("XTqnpfQqalTG");
-        // console.log(document.getElementById("XTqnpfQqalTG"));
+        //console.log("eQbyowJtbcvA");
+        // console.log(document.getElementById("eQbyowJtbcvA"));
 
         try_show();
         }

@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -542,13 +543,13 @@ features.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="xmUKTXdIZZlJ" data-shufflequestions="False"
+<div class="output text_html"><div id="zEEUEymIFPGJ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#xmUKTXdIZZlJ {
+#zEEUEymIFPGJ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -718,7 +719,7 @@ features.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsxmUKTXdIZZlJ=[{"question": "What are features of estimagic", "type": "many_choice", "answers": [{"answer": "It has diagostic tools to help you find the right optimizer", "correct": true, "feedback": "Correct."}, {"answer": "It is written in Fortran so it is really fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It re-implements optimizers to make them more user-friendly", "correct": false, "feedback": "Incorrect."}, {"answer": "It wraps optimizers from other packages and makes them more user-friendly", "correct": true, "feedback": "Correct."}]}, {"question": "Why data structures can you use for the parameters to optimize in estimagic?", "type": "many_choice", "answers": [{"answer": "numpy arrays", "correct": true, "feedback": "Correct."}, {"answer": "pandas Series", "correct": true, "feedback": "Correct."}, {"answer": "pandas DataFrames", "correct": true, "feedback": "Correct."}, {"answer": "lists", "correct": true, "feedback": "Correct."}, {"answer": "dictionaries", "correct": true, "feedback": "Correct."}, {"answer": "NamedTuples", "correct": true, "feedback": "Correct."}, {"answer": "Nested combinations of all of the above", "correct": true, "feedback": "Correct."}]}, {"question": "Which data structures can you use for the parameters in most other packages?", "type": "multiple_choice", "answers": [{"answer": "1d numpy arrays", "correct": true, "feedback": "Correct."}, {"answer": "pandas Series", "correct": false, "feedback": "Incorrect."}, {"answer": "pandas DataFrames", "correct": false, "feedback": "Incorrect."}, {"answer": "lists", "correct": false, "feedback": "Incorrect."}, {"answer": "dictionaries", "correct": false, "feedback": "Incorrect."}, {"answer": "NamedTuples", "correct": false, "feedback": "Incorrect."}, {"answer": "Nested combinations of all of the above", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionszEEUEymIFPGJ=[{"question": "What are features of estimagic", "type": "many_choice", "answers": [{"answer": "It has diagostic tools to help you find the right optimizer", "correct": true, "feedback": "Correct."}, {"answer": "It is written in Fortran so it is really fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It re-implements optimizers to make them more user-friendly", "correct": false, "feedback": "Incorrect."}, {"answer": "It wraps optimizers from other packages and makes them more user-friendly", "correct": true, "feedback": "Correct."}]}, {"question": "Why data structures can you use for the parameters to optimize in estimagic?", "type": "many_choice", "answers": [{"answer": "numpy arrays", "correct": true, "feedback": "Correct."}, {"answer": "pandas Series", "correct": true, "feedback": "Correct."}, {"answer": "pandas DataFrames", "correct": true, "feedback": "Correct."}, {"answer": "lists", "correct": true, "feedback": "Correct."}, {"answer": "dictionaries", "correct": true, "feedback": "Correct."}, {"answer": "NamedTuples", "correct": true, "feedback": "Correct."}, {"answer": "Nested combinations of all of the above", "correct": true, "feedback": "Correct."}]}, {"question": "Which data structures can you use for the parameters in most other packages?", "type": "multiple_choice", "answers": [{"answer": "1d numpy arrays", "correct": true, "feedback": "Correct."}, {"answer": "pandas Series", "correct": false, "feedback": "Incorrect."}, {"answer": "pandas DataFrames", "correct": false, "feedback": "Incorrect."}, {"answer": "lists", "correct": false, "feedback": "Incorrect."}, {"answer": "dictionaries", "correct": false, "feedback": "Incorrect."}, {"answer": "NamedTuples", "correct": false, "feedback": "Incorrect."}, {"answer": "Nested combinations of all of the above", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1467,8 +1468,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("xmUKTXdIZZlJ")) {
-            show_questions(questionsxmUKTXdIZZlJ,  xmUKTXdIZZlJ); 
+          if(document.getElementById("zEEUEymIFPGJ")) {
+            show_questions(questionszEEUEymIFPGJ,  zEEUEymIFPGJ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1477,8 +1478,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("xmUKTXdIZZlJ");
-        // console.log(document.getElementById("xmUKTXdIZZlJ"));
+        //console.log("zEEUEymIFPGJ");
+        // console.log(document.getElementById("zEEUEymIFPGJ"));
 
         try_show();
         }

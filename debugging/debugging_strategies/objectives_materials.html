@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -508,13 +509,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="sGlFMqzLxoQR" data-shufflequestions="False"
+<div class="output text_html"><div id="IFlOvkxBerBo" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#sGlFMqzLxoQR {
+#IFlOvkxBerBo {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -684,7 +685,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionssGlFMqzLxoQR=[{"question": "What is meant by 'get it right the fist time'?", "type": "multiple_choice", "answers": [{"answer": "Only bad programmers need to do debugging", "correct": false, "feedback": "Incorrect."}, {"answer": "Investing time into avoiding bugs can be better than fixing them", "correct": true, "feedback": "Correct."}, {"answer": "It is possible to write bug free code", "correct": false, "feedback": "Incorrect."}, {"answer": "Debugging is a waste of time", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is meant by 'is it plugged in'?", "type": "multiple_choice", "answers": [{"answer": "Often problems are caused by simple things. Rule them out first", "correct": true, "feedback": "Correct."}, {"answer": "Many people forget to plug-in their laptops", "correct": false, "feedback": "Incorrect."}, {"answer": "Many bugs are caused by hardware issues", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following statements are true in the context of debugging", "type": "many_choice", "answers": [{"answer": "The most efficient way to debug is making many changes at once", "correct": false, "feedback": "Incorrect."}, {"answer": "Only make a change if you have a good theory about what is wrong", "correct": true, "feedback": "Correct."}, {"answer": "Never commit a broken version of the code", "correct": false, "feedback": "Incorrect."}, {"answer": "The first thing you do when debugging is to make a commit", "correct": true, "feedback": "Correct."}, {"answer": "While debugging you can work on new features so you don't waste time", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsIFlOvkxBerBo=[{"question": "What is meant by 'get it right the fist time'?", "type": "multiple_choice", "answers": [{"answer": "Only bad programmers need to do debugging", "correct": false, "feedback": "Incorrect."}, {"answer": "Investing time into avoiding bugs can be better than fixing them", "correct": true, "feedback": "Correct."}, {"answer": "It is possible to write bug free code", "correct": false, "feedback": "Incorrect."}, {"answer": "Debugging is a waste of time", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is meant by 'is it plugged in'?", "type": "multiple_choice", "answers": [{"answer": "Often problems are caused by simple things. Rule them out first", "correct": true, "feedback": "Correct."}, {"answer": "Many people forget to plug-in their laptops", "correct": false, "feedback": "Incorrect."}, {"answer": "Many bugs are caused by hardware issues", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following statements are true in the context of debugging", "type": "many_choice", "answers": [{"answer": "The most efficient way to debug is making many changes at once", "correct": false, "feedback": "Incorrect."}, {"answer": "Only make a change if you have a good theory about what is wrong", "correct": true, "feedback": "Correct."}, {"answer": "Never commit a broken version of the code", "correct": false, "feedback": "Incorrect."}, {"answer": "The first thing you do when debugging is to make a commit", "correct": true, "feedback": "Correct."}, {"answer": "While debugging you can work on new features so you don't waste time", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1433,8 +1434,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("sGlFMqzLxoQR")) {
-            show_questions(questionssGlFMqzLxoQR,  sGlFMqzLxoQR); 
+          if(document.getElementById("IFlOvkxBerBo")) {
+            show_questions(questionsIFlOvkxBerBo,  IFlOvkxBerBo); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1443,8 +1444,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("sGlFMqzLxoQR");
-        // console.log(document.getElementById("sGlFMqzLxoQR"));
+        //console.log("IFlOvkxBerBo");
+        // console.log(document.getElementById("IFlOvkxBerBo"));
 
         try_show();
         }

@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -509,13 +510,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="gjaxMaqgdEJc" data-shufflequestions="False"
+<div class="output text_html"><div id="TXoTinFOkyNh" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#gjaxMaqgdEJc {
+#TXoTinFOkyNh {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -685,7 +686,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsgjaxMaqgdEJc=[{"question": "Which steps are needed to fix a merge conflict?", "type": "many_choice", "answers": [{"answer": "modify the files manually", "correct": true, "feedback": "Correct."}, {"answer": "`git reset`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git add`", "correct": true, "feedback": "Correct."}, {"answer": "`git commit`", "correct": true, "feedback": "Correct."}, {"answer": "`git resolve conflict`", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsTXoTinFOkyNh=[{"question": "Which steps are needed to fix a merge conflict?", "type": "many_choice", "answers": [{"answer": "modify the files manually", "correct": true, "feedback": "Correct."}, {"answer": "`git reset`", "correct": false, "feedback": "Incorrect."}, {"answer": "`git add`", "correct": true, "feedback": "Correct."}, {"answer": "`git commit`", "correct": true, "feedback": "Correct."}, {"answer": "`git resolve conflict`", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1434,8 +1435,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("gjaxMaqgdEJc")) {
-            show_questions(questionsgjaxMaqgdEJc,  gjaxMaqgdEJc); 
+          if(document.getElementById("TXoTinFOkyNh")) {
+            show_questions(questionsTXoTinFOkyNh,  TXoTinFOkyNh); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1444,8 +1445,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("gjaxMaqgdEJc");
-        // console.log(document.getElementById("gjaxMaqgdEJc"));
+        //console.log("TXoTinFOkyNh");
+        // console.log(document.getElementById("TXoTinFOkyNh"));
 
         try_show();
         }
@@ -1714,7 +1715,7 @@ if (typeof version == 'undefined') {
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="REamIrODOXeI" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="REamIrODOXeI-next" onclick="window.checkFlip('REamIrODOXeI')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="NFhluANtGsBC" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="NFhluANtGsBC-next" onclick="window.checkFlip('NFhluANtGsBC')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -2061,17 +2062,17 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("REamIrODOXeI")) {
-            createCards("REamIrODOXeI", "True", "False");
+          if(document.getElementById("NFhluANtGsBC")) {
+            createCards("NFhluANtGsBC", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsREamIrODOXeI=[{"name": "Intro", "front": "What are the correct commands         to merge branch `a` into branch `b`?", "back": "Let's go through them step by             step (click on next in the bottom right)."}, {"name": "git checkout b", "front": "git checkout b", "back": "This moves the HEAD from the             current branch to branch `b`."}, {"name": "git merge a", "front": "git merge a", "back": "This merges branch `a` into             the current branch `b`."}];
-var frontColorsREamIrODOXeI= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsREamIrODOXeI= ["var(--dark-blue-gray)" ];
-var textColorsREamIrODOXeI= ["var(--snow)" ];
+var cardsNFhluANtGsBC=[{"name": "Intro", "front": "What are the correct commands         to merge branch `a` into branch `b`?", "back": "Let's go through them step by             step (click on next in the bottom right)."}, {"name": "git checkout b", "front": "git checkout b", "back": "This moves the HEAD from the             current branch to branch `b`."}, {"name": "git merge a", "front": "git merge a", "back": "This merges branch `a` into             the current branch `b`."}];
+var frontColorsNFhluANtGsBC= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsNFhluANtGsBC= ["var(--dark-blue-gray)" ];
+var textColorsNFhluANtGsBC= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 </section>

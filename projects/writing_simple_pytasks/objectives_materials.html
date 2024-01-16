@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -509,13 +510,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="pzZtSHEunftQ" data-shufflequestions="False"
+<div class="output text_html"><div id="JbZUvltcqnUY" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#pzZtSHEunftQ {
+#JbZUvltcqnUY {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -685,7 +686,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionspzZtSHEunftQ=[{"question": "Which functions are recognized as tasks by pytask?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytask.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `produces`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What type do most arguments of tasks have?", "type": "multiple_choice", "answers": [{"answer": "DataFrame because pytask is primariliy for data clening", "correct": false, "feedback": "Incorrect."}, {"answer": "pathlib.Path because tasks always read or write files", "correct": true, "feedback": "Correct."}, {"answer": "str because that is the best way to store paths", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why do tasks need default values for all arguments?", "type": "multiple_choice", "answers": [{"answer": "Calling them from another module becomes more user friendly", "correct": false, "feedback": "Incorrect."}, {"answer": "They are needed to infer a dependency graph", "correct": true, "feedback": "Correct."}, {"answer": "It makes the code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Python requires all functions arguments to have default values", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tasks are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytask", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytask again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsJbZUvltcqnUY=[{"question": "Which functions are recognized as tasks by pytask?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytask.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `produces`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What type do most arguments of tasks have?", "type": "multiple_choice", "answers": [{"answer": "DataFrame because pytask is primariliy for data clening", "correct": false, "feedback": "Incorrect."}, {"answer": "pathlib.Path because tasks always read or write files", "correct": true, "feedback": "Correct."}, {"answer": "str because that is the best way to store paths", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why do tasks need default values for all arguments?", "type": "multiple_choice", "answers": [{"answer": "Calling them from another module becomes more user friendly", "correct": false, "feedback": "Incorrect."}, {"answer": "They are needed to infer a dependency graph", "correct": true, "feedback": "Correct."}, {"answer": "It makes the code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Python requires all functions arguments to have default values", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tasks are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytask", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytask again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1434,8 +1435,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("pzZtSHEunftQ")) {
-            show_questions(questionspzZtSHEunftQ,  pzZtSHEunftQ); 
+          if(document.getElementById("JbZUvltcqnUY")) {
+            show_questions(questionsJbZUvltcqnUY,  JbZUvltcqnUY); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1444,8 +1445,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("pzZtSHEunftQ");
-        // console.log(document.getElementById("pzZtSHEunftQ"));
+        //console.log("JbZUvltcqnUY");
+        // console.log(document.getElementById("JbZUvltcqnUY"));
 
         try_show();
         }

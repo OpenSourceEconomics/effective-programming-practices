@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -508,13 +509,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="hpGEEuhRhSQy" data-shufflequestions="False"
+<div class="output text_html"><div id="DYllXdSJJihG" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#hpGEEuhRhSQy {
+#DYllXdSJJihG {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -684,7 +685,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionshpGEEuhRhSQy=[{"question": "For long running tasks you should loop over tasks, not products. Why?", "type": "many_choice", "answers": [{"answer": "So pytask can run your tasks in parallel", "correct": true, "feedback": "Correct."}, {"answer": "If one task fails, only the failing task has to be executed again", "correct": true, "feedback": "Correct."}, {"answer": "It makes your code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask has a runtime limit for individual tasks.", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you loop over tasks?", "type": "multiple_choice", "answers": [{"answer": "You define the task function within a for loop using the task decorator", "correct": true, "feedback": "Correct."}, {"answer": "You use a for loop within the task function", "correct": false, "feedback": "Incorrect."}, {"answer": "You use the `pytask.loop` decorator", "correct": false, "feedback": "Incorrect."}, {"answer": "`produces` is a dictionary that you generate in a loop", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential drawbacks of looping over tasks instead of products?", "type": "multiple_choice", "answers": [{"answer": "You get many more tasks and might lose the overview", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks is slower", "correct": false, "feedback": "Incorrect."}, {"answer": "Both are bad, loops are always bad, Python should not have loops", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks is less readable", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of looping over tasks instead of products?", "type": "many_choice", "answers": [{"answer": "More granular caching of results can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "More granular parallelization can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks in more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks in always preferable", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsDYllXdSJJihG=[{"question": "For long running tasks you should loop over tasks, not products. Why?", "type": "many_choice", "answers": [{"answer": "So pytask can run your tasks in parallel", "correct": true, "feedback": "Correct."}, {"answer": "If one task fails, only the failing task has to be executed again", "correct": true, "feedback": "Correct."}, {"answer": "It makes your code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask has a runtime limit for individual tasks.", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you loop over tasks?", "type": "multiple_choice", "answers": [{"answer": "You define the task function within a for loop using the task decorator", "correct": true, "feedback": "Correct."}, {"answer": "You use a for loop within the task function", "correct": false, "feedback": "Incorrect."}, {"answer": "You use the `pytask.loop` decorator", "correct": false, "feedback": "Incorrect."}, {"answer": "`produces` is a dictionary that you generate in a loop", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential drawbacks of looping over tasks instead of products?", "type": "multiple_choice", "answers": [{"answer": "You get many more tasks and might lose the overview", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks is slower", "correct": false, "feedback": "Incorrect."}, {"answer": "Both are bad, loops are always bad, Python should not have loops", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks is less readable", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of looping over tasks instead of products?", "type": "many_choice", "answers": [{"answer": "More granular caching of results can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "More granular parallelization can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks in more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks in always preferable", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1433,8 +1434,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("hpGEEuhRhSQy")) {
-            show_questions(questionshpGEEuhRhSQy,  hpGEEuhRhSQy); 
+          if(document.getElementById("DYllXdSJJihG")) {
+            show_questions(questionsDYllXdSJJihG,  DYllXdSJJihG); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1443,8 +1444,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("hpGEEuhRhSQy");
-        // console.log(document.getElementById("hpGEEuhRhSQy"));
+        //console.log("DYllXdSJJihG");
+        // console.log(document.getElementById("DYllXdSJJihG"));
 
         try_show();
         }

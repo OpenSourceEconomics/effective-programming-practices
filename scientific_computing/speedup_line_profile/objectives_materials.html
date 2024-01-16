@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -475,7 +476,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -494,32 +494,25 @@ document.write(`
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
 <p>After working through this topic, you should be able to:</p>
 <ul class="simple">
-<li></li>
+<li><p>Use a line-profile to detect how much time is spent in each line of your code</p></li>
 </ul>
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/xxx">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/5cc9308ca5b1501c83ca7d0e80176b0a/scientific_computing-speedup_line_profile.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m9m1_MREGJs?si=Gz9_dGQ5F3gA1PfZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>These are the <a class="reference download internal" download="" href="../../_downloads/5cc9308ca5b1501c83ca7d0e80176b0a/scientific_computing-speedup_line_profile.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="sQbiUZqkxgRM" data-shufflequestions="False"
+<div class="output text_html"><div id="XOZVArrvvkGg" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#sQbiUZqkxgRM {
+#XOZVArrvvkGg {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -689,7 +682,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionssQbiUZqkxgRM=[{"question": "What does a line-profiler do?", "type": "multiple_choice", "answers": [{"answer": "Precisely measure the runtime of your function", "correct": false, "feedback": "Incorrect."}, {"answer": "Show yoy the line-by-line runtime of your function", "correct": true, "feedback": "Correct."}, {"answer": "Disaggregate the runtime of your code by individual functions", "correct": false, "feedback": "Incorrect."}]}, {"question": "In which part of the process should you use a line-profiler?", "type": "multiple_choice", "answers": [{"answer": "When you have replaced all loops and it still runs too slow", "correct": false, "feedback": "Incorrect."}, {"answer": "After you found a slow function with snakeviz but before you make changes", "correct": true, "feedback": "Correct."}]}, {"question": "In which applications is a profiler like snakeviz most useful?", "type": "multiple_choice", "answers": [{"answer": "You have a large codebase and want to know where most time is spent", "correct": false, "feedback": "Incorrect."}, {"answer": "You know that most time is spent in one function and want to know in which line", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsXOZVArrvvkGg=[{"question": "What does a line-profiler do?", "type": "multiple_choice", "answers": [{"answer": "Precisely measure the runtime of your function", "correct": false, "feedback": "Incorrect."}, {"answer": "Show yoy the line-by-line runtime of your function", "correct": true, "feedback": "Correct."}, {"answer": "Disaggregate the runtime of your code by individual functions", "correct": false, "feedback": "Incorrect."}]}, {"question": "In which part of the process should you use a line-profiler?", "type": "multiple_choice", "answers": [{"answer": "When you have replaced all loops and it still runs too slow", "correct": false, "feedback": "Incorrect."}, {"answer": "After you found a slow function with snakeviz but before you make changes", "correct": true, "feedback": "Correct."}]}, {"question": "In which applications is a profiler like snakeviz most useful?", "type": "multiple_choice", "answers": [{"answer": "You have a large codebase and want to know where most time is spent", "correct": false, "feedback": "Incorrect."}, {"answer": "You know that most time is spent in one function and want to know in which line", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1438,8 +1431,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("sQbiUZqkxgRM")) {
-            show_questions(questionssQbiUZqkxgRM,  sQbiUZqkxgRM); 
+          if(document.getElementById("XOZVArrvvkGg")) {
+            show_questions(questionsXOZVArrvvkGg,  XOZVArrvvkGg); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1448,8 +1441,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("sQbiUZqkxgRM");
-        // console.log(document.getElementById("sQbiUZqkxgRM"));
+        //console.log("XOZVArrvvkGg");
+        // console.log(document.getElementById("XOZVArrvvkGg"));
 
         try_show();
         }
@@ -1523,7 +1516,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

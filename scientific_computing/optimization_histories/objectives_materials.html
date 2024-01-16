@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -506,13 +507,13 @@ document.write(`
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="iwMOKpPSRkYD" data-shufflequestions="False"
+<div class="output text_html"><div id="yfgMOcABMORv" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#iwMOKpPSRkYD {
+#yfgMOcABMORv {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -682,7 +683,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsiwMOKpPSRkYD=[{"question": "What are valid inputs to `em.criterion_plot`?", "type": "many_choice", "answers": [{"answer": "An OptimizeResult", "correct": true, "feedback": "Correct."}, {"answer": "A path to an estimagic log file", "correct": true, "feedback": "Correct."}, {"answer": "A dictionary of the above", "correct": true, "feedback": "Correct."}]}, {"question": "What can you learn when looking at the criterion plot of two optimizers", "type": "many_choice", "answers": [{"answer": "Which optimizer was faster", "correct": true, "feedback": "Correct."}, {"answer": "Which optimizer found the better solution", "correct": true, "feedback": "Correct."}, {"answer": "Whether any of the two optimizers found the global optimum", "correct": false, "feedback": "Incorrect."}, {"answer": "Whether you picked the perfect optimizer for your problem", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why are there typically no guarantees that you will get a (global) optimum?", "type": "many_choice", "answers": [{"answer": "Assumptions of convergence proofs might not hold in practice", "correct": true, "feedback": "Correct."}, {"answer": "Optimizers in Python are implemented very badly", "correct": false, "feedback": "Incorrect."}, {"answer": "Convergence proofs of local optimizers say nothing about global optima", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsyfgMOcABMORv=[{"question": "What are valid inputs to `em.criterion_plot`?", "type": "many_choice", "answers": [{"answer": "An OptimizeResult", "correct": true, "feedback": "Correct."}, {"answer": "A path to an estimagic log file", "correct": true, "feedback": "Correct."}, {"answer": "A dictionary of the above", "correct": true, "feedback": "Correct."}]}, {"question": "What can you learn when looking at the criterion plot of two optimizers", "type": "many_choice", "answers": [{"answer": "Which optimizer was faster", "correct": true, "feedback": "Correct."}, {"answer": "Which optimizer found the better solution", "correct": true, "feedback": "Correct."}, {"answer": "Whether any of the two optimizers found the global optimum", "correct": false, "feedback": "Incorrect."}, {"answer": "Whether you picked the perfect optimizer for your problem", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why are there typically no guarantees that you will get a (global) optimum?", "type": "many_choice", "answers": [{"answer": "Assumptions of convergence proofs might not hold in practice", "correct": true, "feedback": "Correct."}, {"answer": "Optimizers in Python are implemented very badly", "correct": false, "feedback": "Incorrect."}, {"answer": "Convergence proofs of local optimizers say nothing about global optima", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1431,8 +1432,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("iwMOKpPSRkYD")) {
-            show_questions(questionsiwMOKpPSRkYD,  iwMOKpPSRkYD); 
+          if(document.getElementById("yfgMOcABMORv")) {
+            show_questions(questionsyfgMOcABMORv,  yfgMOcABMORv); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1441,8 +1442,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("iwMOKpPSRkYD");
-        // console.log(document.getElementById("iwMOKpPSRkYD"));
+        //console.log("yfgMOcABMORv");
+        // console.log(document.getElementById("yfgMOcABMORv"));
 
         try_show();
         }

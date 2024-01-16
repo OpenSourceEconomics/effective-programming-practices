@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -500,21 +501,20 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/xxx">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/56b35550a390cf4c3304ab2a304d7ccd/scientific_computing-speedup_numpy.pdf"><span class="xref download myst">slides</span></a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OFGH_EGKAt4?si=E66gIgSVrjAZ3-NG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>These are the <a class="reference download internal" download="" href="../../_downloads/56b35550a390cf4c3304ab2a304d7ccd/scientific_computing-speedup_numpy.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="jCpZnqQaEcHe" data-shufflequestions="False"
+<div class="output text_html"><div id="QEbcEpnpqTYA" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#jCpZnqQaEcHe {
+#QEbcEpnpqTYA {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -684,7 +684,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsjCpZnqQaEcHe=[{"question": "Why can numpy be fast", "type": "many_choice", "answers": [{"answer": "Data is stored in a very efficient format in memory", "correct": true, "feedback": "Correct."}, {"answer": "Numpy functions are highly optimized for speed", "correct": true, "feedback": "Correct."}, {"answer": "It is written in C and anything written in C is always super fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It is a compiler that compiles your Python code to machine code", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following statements on vectorized code are true", "type": "multiple_choice", "answers": [{"answer": "With vectorized code, Python overhead is incurred once per array, not once per number", "correct": true, "feedback": "Correct."}, {"answer": "Vectorized code is always faster than non-vectorized code", "correct": false, "feedback": "Incorrect."}, {"answer": "If you cant't vectorize everything, at least use array operations inside your loop", "correct": false, "feedback": "Incorrect."}, {"answer": "Vectorized code can never be as readable as loops", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsQEbcEpnpqTYA=[{"question": "Why can numpy be fast", "type": "many_choice", "answers": [{"answer": "Data is stored in a very efficient format in memory", "correct": true, "feedback": "Correct."}, {"answer": "Numpy functions are highly optimized for speed", "correct": true, "feedback": "Correct."}, {"answer": "It is written in C and anything written in C is always super fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It is a compiler that compiles your Python code to machine code", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following statements on vectorized code are true", "type": "multiple_choice", "answers": [{"answer": "With vectorized code, Python overhead is incurred once per array, not once per number", "correct": true, "feedback": "Correct."}, {"answer": "Vectorized code is always faster than non-vectorized code", "correct": false, "feedback": "Incorrect."}, {"answer": "If you cant't vectorize everything, at least use array operations inside your loop", "correct": false, "feedback": "Incorrect."}, {"answer": "Vectorized code can never be as readable as loops", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1433,8 +1433,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("jCpZnqQaEcHe")) {
-            show_questions(questionsjCpZnqQaEcHe,  jCpZnqQaEcHe); 
+          if(document.getElementById("QEbcEpnpqTYA")) {
+            show_questions(questionsQEbcEpnpqTYA,  QEbcEpnpqTYA); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1443,8 +1443,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("jCpZnqQaEcHe");
-        // console.log(document.getElementById("jCpZnqQaEcHe"));
+        //console.log("QEbcEpnpqTYA");
+        // console.log(document.getElementById("QEbcEpnpqTYA"));
 
         try_show();
         }

@@ -199,6 +199,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_linux/instructions.html">Installing Python on Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_mac/instructions.html">Installing Python on Mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_windows/instructions.html">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
@@ -507,13 +508,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="HjuPpuNKmwLN" data-shufflequestions="False"
+<div class="output text_html"><div id="XmMVEVtIoWIl" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#HjuPpuNKmwLN {
+#XmMVEVtIoWIl {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -683,7 +684,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsHjuPpuNKmwLN=[{"question": "What are advantages of defining the project paths in the config file", "type": "many_choice", "answers": [{"answer": "There is a central place where you can rename folders", "correct": true, "feedback": "Correct."}, {"answer": "You avoid duplicated definitions of the same paths", "correct": true, "feedback": "Correct."}, {"answer": "You can define paths as simple strings instead of using pathlib", "correct": false, "feedback": "Incorrect."}, {"answer": "You do not have to remember the file paths", "correct": true, "feedback": "Correct."}]}, {"question": "How can you use the file paths defined in config.py in other files?", "type": "multiple_choice", "answers": [{"answer": "You import them", "correct": true, "feedback": "Correct."}, {"answer": "You define them again", "correct": false, "feedback": "Incorrect."}, {"answer": "You use the get_paths function", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot use them in other files", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do the project templates make sure paths are defined relative to the root?", "type": "multiple_choice", "answers": [{"answer": "By using `Path(__file__)`", "correct": true, "feedback": "Correct."}, {"answer": "By defining paths in the config file that is in the root directory", "correct": false, "feedback": "Incorrect."}, {"answer": "By using Pathlib", "correct": false, "feedback": "Incorrect."}, {"answer": "By asking users to copy-paste paths from the file explorer", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsXmMVEVtIoWIl=[{"question": "What are advantages of defining the project paths in the config file", "type": "many_choice", "answers": [{"answer": "There is a central place where you can rename folders", "correct": true, "feedback": "Correct."}, {"answer": "You avoid duplicated definitions of the same paths", "correct": true, "feedback": "Correct."}, {"answer": "You can define paths as simple strings instead of using pathlib", "correct": false, "feedback": "Incorrect."}, {"answer": "You do not have to remember the file paths", "correct": true, "feedback": "Correct."}]}, {"question": "How can you use the file paths defined in config.py in other files?", "type": "multiple_choice", "answers": [{"answer": "You import them", "correct": true, "feedback": "Correct."}, {"answer": "You define them again", "correct": false, "feedback": "Incorrect."}, {"answer": "You use the get_paths function", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot use them in other files", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do the project templates make sure paths are defined relative to the root?", "type": "multiple_choice", "answers": [{"answer": "By using `Path(__file__)`", "correct": true, "feedback": "Correct."}, {"answer": "By defining paths in the config file that is in the root directory", "correct": false, "feedback": "Incorrect."}, {"answer": "By using Pathlib", "correct": false, "feedback": "Incorrect."}, {"answer": "By asking users to copy-paste paths from the file explorer", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1432,8 +1433,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("HjuPpuNKmwLN")) {
-            show_questions(questionsHjuPpuNKmwLN,  HjuPpuNKmwLN); 
+          if(document.getElementById("XmMVEVtIoWIl")) {
+            show_questions(questionsXmMVEVtIoWIl,  XmMVEVtIoWIl); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1442,8 +1443,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("HjuPpuNKmwLN");
-        // console.log(document.getElementById("HjuPpuNKmwLN"));
+        //console.log("XmMVEVtIoWIl");
+        // console.log(document.getElementById("XmMVEVtIoWIl"));
 
         try_show();
         }
