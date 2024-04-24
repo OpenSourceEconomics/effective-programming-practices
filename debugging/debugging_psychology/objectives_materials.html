@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -77,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
 
@@ -120,12 +120,18 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,6 +146,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../landing-page.html">
@@ -434,6 +441,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -443,6 +451,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -486,7 +495,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="armchair-psychology-of-debugging">
 <h1>(Armchair) Psychology of debugging<a class="headerlink" href="#armchair-psychology-of-debugging" title="Permalink to this heading">#</a></h1>
@@ -501,20 +510,20 @@ document.write(`
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
 <p>Here is the
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/233d7968-5590-4ca2-adbf-58209d1f0ff2">screencast</a>.
+<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/233d7968-5590-4ca2-adbf-58209d1f0ff2/aab8622e-1f4a-42ab-96bd-6cd356ea603e/ed53f044-30d0-4d34-b0b0-27ceb9962b06.mp4">screencast</a>.
 These are the <a class="reference download internal" download="" href="../../_downloads/490c4a5193939d2af8505365cccd2a08/debugging-debugging_psychology.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="gvMgcdEgeBza" data-shufflequestions="False"
+<div class="output text_html"><div id="RylAjZthSyYC" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#gvMgcdEgeBza {
+#RylAjZthSyYC {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -684,7 +693,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsgvMgcdEgeBza=[{"question": "How can thorough reading help while debugging", "type": "many_choice", "answers": [{"answer": "Many tracebacks ar very informative and can help you to locate problems", "correct": true, "feedback": "Correct."}, {"answer": "Reading your entire code-base from start to end will locate any bug", "correct": false, "feedback": "Incorrect."}, {"answer": "Reading a few lines that likely contain a bug is a good way to find it", "correct": true, "feedback": "Correct."}]}, {"question": "Why is just running code again not a good debugging strategy", "type": "many_choice", "answers": [{"answer": "Computers are deterministic machines", "correct": true, "feedback": "Correct."}, {"answer": "If it runs the second time, there still is a problem you need to locate", "correct": true, "feedback": "Correct."}, {"answer": "Just running a second time is a good debugging strategy", "correct": false, "feedback": "Incorrect."}, {"answer": "It is a waste of time", "correct": true, "feedback": "Correct."}]}, {"question": "Why should you avoid telling yourself that your code should work", "type": "many_choice", "answers": [{"answer": "If you are debugging, it didn't", "correct": true, "feedback": "Correct."}, {"answer": "It creates the wrong mindset", "correct": true, "feedback": "Correct."}, {"answer": "It is a valid strategy to do that", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you be careful when trying out things while debugging", "type": "many_choice", "answers": [{"answer": "The more things you try at once, the harder is to see what worked", "correct": true, "feedback": "Correct."}, {"answer": "You should try out as many things as possible", "correct": false, "feedback": "Incorrect."}, {"answer": "It is unlikely that random changes fix your code", "correct": true, "feedback": "Correct."}, {"answer": "You can make things worse than before", "correct": true, "feedback": "Correct."}]}, {"question": "Why should you start with the assumption that the bug is not in libraries", "type": "multiple_choice", "answers": [{"answer": "Libraries are well perfect", "correct": false, "feedback": "Incorrect."}, {"answer": "Most of the time the bug is in your code", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsRylAjZthSyYC=[{"question": "How can thorough reading help while debugging", "type": "many_choice", "answers": [{"answer": "Many tracebacks ar very informative and can help you to locate problems", "correct": true, "feedback": "Correct."}, {"answer": "Reading your entire code-base from start to end will locate any bug", "correct": false, "feedback": "Incorrect."}, {"answer": "Reading a few lines that likely contain a bug is a good way to find it", "correct": true, "feedback": "Correct."}]}, {"question": "Why is just running code again not a good debugging strategy", "type": "many_choice", "answers": [{"answer": "Computers are deterministic machines", "correct": true, "feedback": "Correct."}, {"answer": "If it runs the second time, there still is a problem you need to locate", "correct": true, "feedback": "Correct."}, {"answer": "Just running a second time is a good debugging strategy", "correct": false, "feedback": "Incorrect."}, {"answer": "It is a waste of time", "correct": true, "feedback": "Correct."}]}, {"question": "Why should you avoid telling yourself that your code should work", "type": "many_choice", "answers": [{"answer": "If you are debugging, it didn't", "correct": true, "feedback": "Correct."}, {"answer": "It creates the wrong mindset", "correct": true, "feedback": "Correct."}, {"answer": "It is a valid strategy to do that", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you be careful when trying out things while debugging", "type": "many_choice", "answers": [{"answer": "The more things you try at once, the harder is to see what worked", "correct": true, "feedback": "Correct."}, {"answer": "You should try out as many things as possible", "correct": false, "feedback": "Incorrect."}, {"answer": "It is unlikely that random changes fix your code", "correct": true, "feedback": "Correct."}, {"answer": "You can make things worse than before", "correct": true, "feedback": "Correct."}]}, {"question": "Why should you start with the assumption that the bug is not in libraries", "type": "multiple_choice", "answers": [{"answer": "Libraries are well perfect", "correct": false, "feedback": "Incorrect."}, {"answer": "Most of the time the bug is in your code", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1433,8 +1442,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("gvMgcdEgeBza")) {
-            show_questions(questionsgvMgcdEgeBza,  gvMgcdEgeBza); 
+          if(document.getElementById("RylAjZthSyYC")) {
+            show_questions(questionsRylAjZthSyYC,  RylAjZthSyYC); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1443,8 +1452,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("gvMgcdEgeBza");
-        // console.log(document.getElementById("gvMgcdEgeBza"));
+        //console.log("RylAjZthSyYC");
+        // console.log(document.getElementById("RylAjZthSyYC"));
 
         try_show();
         }
@@ -1481,7 +1490,7 @@ if (typeof version == 'undefined') {
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../avoiding_debugging/objectives_materials.html"
@@ -1509,6 +1518,7 @@ if (typeof version == 'undefined') {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1540,6 +1550,7 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -1559,8 +1570,8 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -76,7 +76,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
 
@@ -119,12 +119,18 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -139,6 +145,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../landing-page.html">
@@ -433,6 +440,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -442,6 +450,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -492,7 +501,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="using-the-pdb-debugger">
 <h1>Using the Pdb+ debugger<a class="headerlink" href="#using-the-pdb-debugger" title="Permalink to this heading">#</a></h1>
@@ -508,7 +517,7 @@ document.write(`
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
 <p>Here is the
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/639ba83f-daed-458c-9fbf-32dbd68612fc">screencast</a>.
+<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/639ba83f-daed-458c-9fbf-32dbd68612fc/60bbfb3d-2070-4f19-9f41-e384334861fd/15935a25-3f3e-4997-96fd-4974f859fbb0.mp4">screencast</a>.
 These are the <a class="reference download internal" download="" href="../../_downloads/03cf54646b1727213dca6409173da726/debugging-pdbp.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="pdbp-and-different-ways-of-running-code">
@@ -550,13 +559,13 @@ do because pytask will already be configured correctly.</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="eScguISzMBPT" data-shufflequestions="False"
+<div class="output text_html"><div id="BYsVgkaLzWRf" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#eScguISzMBPT {
+#BYsVgkaLzWRf {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -726,7 +735,7 @@ do because pytask will already be configured correctly.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionseScguISzMBPT=[{"question": "What does a breakpoint do?", "type": "multiple_choice", "answers": [{"answer": "Stop the execution of the program and show you a debug prompt", "correct": true, "feedback": "Correct."}, {"answer": "Print the values of all currently defined variables", "correct": false, "feedback": "Incorrect."}, {"answer": "Skip the rest of the Python script you are executing", "correct": false, "feedback": "Incorrect."}, {"answer": "Ignore all errors in the Python script you are executing", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you write `import pdbp; breakpoint()` instead of just `breakpoint()`?", "type": "multiple_choice", "answers": [{"answer": "This will make sure we use Pdb+, which is a better debugger than the default Pdb", "correct": true, "feedback": "Correct."}, {"answer": "This is the only valid way of setting breakpoints in Python", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are examples where conditional breakpoints are helpful", "type": "many_choice", "answers": [{"answer": "Your problem only occurs after a certain number of iterations in a loop", "correct": true, "feedback": "Correct."}, {"answer": "Your problem only occurs for certain values of a variable", "correct": true, "feedback": "Correct."}, {"answer": "Your problem only occurs when a certain function is called", "correct": false, "feedback": "Incorrect."}, {"answer": "Your problem seems to occur randomly", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the `n` command do in Pdb+ ?", "type": "multiple_choice", "answers": [{"answer": "It executes the next line of code", "correct": true, "feedback": "Correct."}, {"answer": "It executes the next line of code and steps into functions", "correct": false, "feedback": "Incorrect."}, {"answer": "It executes the next line of code and skips all loops", "correct": false, "feedback": "Incorrect."}, {"answer": "It executes the next line of code and skips all function calls", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the `s` command do in Pdb+ ?", "type": "multiple_choice", "answers": [{"answer": "It executes the next step and steps into function calls it encounters", "correct": true, "feedback": "Correct."}, {"answer": "It executes the next line of code", "correct": false, "feedback": "Incorrect."}, {"answer": "It runs the program until the next breakpoint", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are advantages of using a terminal debugger like Pdb+ ?", "type": "many_choice", "answers": [{"answer": "Integrates well with pytest", "correct": true, "feedback": "Correct."}, {"answer": "Integrates well with pytask", "correct": true, "feedback": "Correct."}, {"answer": "You can set breakpoints by clicking", "correct": false, "feedback": "Incorrect."}, {"answer": "It is very fast once you know the commands", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsBYsVgkaLzWRf=[{"question": "What does a breakpoint do?", "type": "multiple_choice", "answers": [{"answer": "Stop the execution of the program and show you a debug prompt", "correct": true, "feedback": "Correct."}, {"answer": "Print the values of all currently defined variables", "correct": false, "feedback": "Incorrect."}, {"answer": "Skip the rest of the Python script you are executing", "correct": false, "feedback": "Incorrect."}, {"answer": "Ignore all errors in the Python script you are executing", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you write `import pdbp; breakpoint()` instead of just `breakpoint()`?", "type": "multiple_choice", "answers": [{"answer": "This will make sure we use Pdb+, which is a better debugger than the default Pdb", "correct": true, "feedback": "Correct."}, {"answer": "This is the only valid way of setting breakpoints in Python", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are examples where conditional breakpoints are helpful", "type": "many_choice", "answers": [{"answer": "Your problem only occurs after a certain number of iterations in a loop", "correct": true, "feedback": "Correct."}, {"answer": "Your problem only occurs for certain values of a variable", "correct": true, "feedback": "Correct."}, {"answer": "Your problem only occurs when a certain function is called", "correct": false, "feedback": "Incorrect."}, {"answer": "Your problem seems to occur randomly", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the `n` command do in Pdb+ ?", "type": "multiple_choice", "answers": [{"answer": "It executes the next line of code", "correct": true, "feedback": "Correct."}, {"answer": "It executes the next line of code and steps into functions", "correct": false, "feedback": "Incorrect."}, {"answer": "It executes the next line of code and skips all loops", "correct": false, "feedback": "Incorrect."}, {"answer": "It executes the next line of code and skips all function calls", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the `s` command do in Pdb+ ?", "type": "multiple_choice", "answers": [{"answer": "It executes the next step and steps into function calls it encounters", "correct": true, "feedback": "Correct."}, {"answer": "It executes the next line of code", "correct": false, "feedback": "Incorrect."}, {"answer": "It runs the program until the next breakpoint", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are advantages of using a terminal debugger like Pdb+ ?", "type": "many_choice", "answers": [{"answer": "Integrates well with pytest", "correct": true, "feedback": "Correct."}, {"answer": "Integrates well with pytask", "correct": true, "feedback": "Correct."}, {"answer": "You can set breakpoints by clicking", "correct": false, "feedback": "Incorrect."}, {"answer": "It is very fast once you know the commands", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1475,8 +1484,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("eScguISzMBPT")) {
-            show_questions(questionseScguISzMBPT,  eScguISzMBPT); 
+          if(document.getElementById("BYsVgkaLzWRf")) {
+            show_questions(questionsBYsVgkaLzWRf,  BYsVgkaLzWRf); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1485,8 +1494,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("eScguISzMBPT");
-        // console.log(document.getElementById("eScguISzMBPT"));
+        //console.log("BYsVgkaLzWRf");
+        // console.log(document.getElementById("BYsVgkaLzWRf"));
 
         try_show();
         }
@@ -1523,7 +1532,7 @@ if (typeof version == 'undefined') {
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../gathering_data/objectives_materials.html"
@@ -1542,6 +1551,7 @@ if (typeof version == 'undefined') {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1580,6 +1590,7 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -1599,8 +1610,8 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

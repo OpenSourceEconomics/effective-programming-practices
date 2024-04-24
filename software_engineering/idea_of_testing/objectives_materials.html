@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -77,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
 
@@ -120,12 +120,18 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,6 +146,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../landing-page.html">
@@ -434,6 +441,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -443,6 +451,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -486,7 +495,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-idea-of-unit-testing">
 <h1>The idea of unit testing<a class="headerlink" href="#the-idea-of-unit-testing" title="Permalink to this heading">#</a></h1>
@@ -504,20 +513,20 @@ document.write(`
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
 <p>Here is
-<a class="reference external" href="https://player.uni-bonn.educast.nrw/e2411680-7656-4daa-bcda-84430ed83911">screencast</a>.
+<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/e2411680-7656-4daa-bcda-84430ed83911/188b41f7-cd3f-4c30-87d6-c1ed7ec88ca6/d8ffe25f-4830-40fd-b96f-74cd0e23c073.mp4">screencast</a>.
 These are the <a class="reference download internal" download="" href="../../_downloads/048af2856cd5004e582b3719a6ed54f5/software_engineering-idea_of_testing.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="HnvLVoHaXPvU" data-shufflequestions="False"
+<div class="output text_html"><div id="KNXBzPbYfSYl" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#HnvLVoHaXPvU {
+#KNXBzPbYfSYl {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -687,7 +696,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsHnvLVoHaXPvU=[{"question": "If all individual units of a program are functioning correctly,             what can we likely infer about the aggregate system?", "type": "multiple_choice", "answers": [{"answer": "The aggregate system will definitely work well.", "correct": false, "feedback": "While having correctly functioning individual units is a                 positive sign, it doesn't guarantee the aggregate system's                 correctness. Interactions between units, unexpected edge cases, and                 integration issues can still lead to problems at the system level.                 However, if idividual units do not work correctly, it is almost                  certain that the aggregate system will not work."}, {"answer": "There is no correlation between the correctness of                     individual units and the aggregate system.", "correct": false, "feedback": "Individual units can impact the overall system, and their                     correctness is relevant to the functioning of the aggregate                         system."}, {"answer": "The aggregate system is likely to work well, but it's                     not guaranteed.", "correct": true, "feedback": "Having functioning individual units is a positive                 indicator, but it doesn't ensure the correctness of the entire system.                 Integration issues and unexpected interactions can still arise."}, {"answer": "The correctness of individual units has no impact on the                     aggregate system.", "correct": false, "feedback": "The correctness of individual units is crucial for the                     overall system to function correctly. Issues at the unit level                     can propagate to the aggregate system."}]}, {"question": "Testing a unit is generally simpler than testing the entire             system.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Identifying and fixing bugs in smaller units of code is                 often simpler than dealing with the complexity of the entire system.                Unit testing allows for more focused and targeted examination of                 individual components."}, {"answer": "False", "correct": false, "feedback": "Identifying and fixing bugs in smaller units of code is                 often simpler than dealing with the complexity of the entire system.                Unit testing allows for more focused and targeted examination of                 individual components."}]}, {"question": "What is the primary purpose of the `assert`             statement in unit testing?", "type": "multiple_choice", "answers": [{"answer": "To terminate the program if a condition is not met.", "correct": false, "feedback": "The `assert` statement does not terminate the program but                     raises an `AssertionError` if the specified condition is false."}, {"answer": "To check and ensure that a given condition                     is true during runtime.", "correct": true, "feedback": "Correct. The `assert` statement is used to check                 conditions during runtime and raises an error if the condition                 is false."}, {"answer": "To print diagnostic information about the program.", "correct": false, "feedback": "The `assert` statement is not primarily used for printing                     diagnostic information but for runtime condition checking."}, {"answer": "To skip the execution of a block of code if a condition                     is false.", "correct": false, "feedback": "Conditional code execution is not the primary purpose of                      the `assert` statement; it is designed for checking and ensuring                         conditions."}]}, {"question": "The `assert` statement is only used to check inputs of a             function and not its output.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "The `assert` statement can be used to check both inputs                     and outputs of a function. It is a versatile tool for validating                     various conditions within the code."}, {"answer": "False", "correct": true, "feedback": "The `assert` statement can be used to check both inputs                     and outputs of a function. It is a versatile tool for validating                     various conditions within the code."}]}, {"question": "Testing can only be applied to mathematical functions. ", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Testing is a broad concept and can be applied to any                     piece of code, not just mathematical functions. It is essential                     for ensuring the correctness and reliability of software                     systems, regardless of their nature."}, {"answer": "False", "correct": true, "feedback": "Testing is a broad concept and can be applied to any                     piece of code, not just mathematical functions. It is essential                     for ensuring the correctness and reliability of software                     systems, regardless of their nature."}]}];
+</style></div><script type="application/javascript">var questionsKNXBzPbYfSYl=[{"question": "If all individual units of a program are functioning correctly,             what can we likely infer about the aggregate system?", "type": "multiple_choice", "answers": [{"answer": "The aggregate system will definitely work well.", "correct": false, "feedback": "While having correctly functioning individual units is a                 positive sign, it doesn't guarantee the aggregate system's                 correctness. Interactions between units, unexpected edge cases, and                 integration issues can still lead to problems at the system level.                 However, if idividual units do not work correctly, it is almost                  certain that the aggregate system will not work."}, {"answer": "There is no correlation between the correctness of                     individual units and the aggregate system.", "correct": false, "feedback": "Individual units can impact the overall system, and their                     correctness is relevant to the functioning of the aggregate                         system."}, {"answer": "The aggregate system is likely to work well, but it's                     not guaranteed.", "correct": true, "feedback": "Having functioning individual units is a positive                 indicator, but it doesn't ensure the correctness of the entire system.                 Integration issues and unexpected interactions can still arise."}, {"answer": "The correctness of individual units has no impact on the                     aggregate system.", "correct": false, "feedback": "The correctness of individual units is crucial for the                     overall system to function correctly. Issues at the unit level                     can propagate to the aggregate system."}]}, {"question": "Testing a unit is generally simpler than testing the entire             system.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Identifying and fixing bugs in smaller units of code is                 often simpler than dealing with the complexity of the entire system.                Unit testing allows for more focused and targeted examination of                 individual components."}, {"answer": "False", "correct": false, "feedback": "Identifying and fixing bugs in smaller units of code is                 often simpler than dealing with the complexity of the entire system.                Unit testing allows for more focused and targeted examination of                 individual components."}]}, {"question": "What is the primary purpose of the `assert`             statement in unit testing?", "type": "multiple_choice", "answers": [{"answer": "To terminate the program if a condition is not met.", "correct": false, "feedback": "The `assert` statement does not terminate the program but                     raises an `AssertionError` if the specified condition is false."}, {"answer": "To check and ensure that a given condition                     is true during runtime.", "correct": true, "feedback": "Correct. The `assert` statement is used to check                 conditions during runtime and raises an error if the condition                 is false."}, {"answer": "To print diagnostic information about the program.", "correct": false, "feedback": "The `assert` statement is not primarily used for printing                     diagnostic information but for runtime condition checking."}, {"answer": "To skip the execution of a block of code if a condition                     is false.", "correct": false, "feedback": "Conditional code execution is not the primary purpose of                      the `assert` statement; it is designed for checking and ensuring                         conditions."}]}, {"question": "The `assert` statement is only used to check inputs of a             function and not its output.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "The `assert` statement can be used to check both inputs                     and outputs of a function. It is a versatile tool for validating                     various conditions within the code."}, {"answer": "False", "correct": true, "feedback": "The `assert` statement can be used to check both inputs                     and outputs of a function. It is a versatile tool for validating                     various conditions within the code."}]}, {"question": "Testing can only be applied to mathematical functions. ", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Testing is a broad concept and can be applied to any                     piece of code, not just mathematical functions. It is essential                     for ensuring the correctness and reliability of software                     systems, regardless of their nature."}, {"answer": "False", "correct": true, "feedback": "Testing is a broad concept and can be applied to any                     piece of code, not just mathematical functions. It is essential                     for ensuring the correctness and reliability of software                     systems, regardless of their nature."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1436,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("HnvLVoHaXPvU")) {
-            show_questions(questionsHnvLVoHaXPvU,  HnvLVoHaXPvU); 
+          if(document.getElementById("KNXBzPbYfSYl")) {
+            show_questions(questionsKNXBzPbYfSYl,  KNXBzPbYfSYl); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1446,8 +1455,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("HnvLVoHaXPvU");
-        // console.log(document.getElementById("HnvLVoHaXPvU"));
+        //console.log("KNXBzPbYfSYl");
+        // console.log(document.getElementById("KNXBzPbYfSYl"));
 
         try_show();
         }
@@ -1484,7 +1493,7 @@ if (typeof version == 'undefined') {
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../pure_functions/objectives_materials.html"
@@ -1512,6 +1521,7 @@ if (typeof version == 'undefined') {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1543,6 +1553,7 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -1562,8 +1573,8 @@ By Janoś Gabler and Hans-Martin von Gaudecker
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>
