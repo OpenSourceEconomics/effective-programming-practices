@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=36295a99" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -516,13 +517,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="MbQVuFxoLJtQ" data-shufflequestions="False"
+<div class="output text_html"><div id="KlaZUraWPFYC" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#MbQVuFxoLJtQ {
+#KlaZUraWPFYC {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -692,7 +693,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsMbQVuFxoLJtQ=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
+</style></div><script type="application/javascript">var questionsKlaZUraWPFYC=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1441,8 +1442,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("MbQVuFxoLJtQ")) {
-            show_questions(questionsMbQVuFxoLJtQ,  MbQVuFxoLJtQ); 
+          if(document.getElementById("KlaZUraWPFYC")) {
+            show_questions(questionsKlaZUraWPFYC,  KlaZUraWPFYC); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1451,8 +1452,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("MbQVuFxoLJtQ");
-        // console.log(document.getElementById("MbQVuFxoLJtQ"));
+        //console.log("KlaZUraWPFYC");
+        // console.log(document.getElementById("KlaZUraWPFYC"));
 
         try_show();
         }

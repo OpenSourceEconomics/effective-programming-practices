@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=36295a99" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -512,13 +513,13 @@ and these are the <a class="reference download internal" download="" href="../..
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="mmsEbLjEmVeH" data-shufflequestions="False"
+<div class="output text_html"><div id="IoBfxBDvfTLD" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#mmsEbLjEmVeH {
+#IoBfxBDvfTLD {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -688,7 +689,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsmmsEbLjEmVeH=[{"question": "Which functions are recognized as tasks by pytask?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytask.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `produces`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What type do most arguments of tasks have?", "type": "multiple_choice", "answers": [{"answer": "DataFrame because pytask is primariliy for data clening", "correct": false, "feedback": "Incorrect."}, {"answer": "pathlib.Path because tasks always read or write files", "correct": true, "feedback": "Correct."}, {"answer": "str because that is the best way to store paths", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why do tasks need default values for all arguments?", "type": "multiple_choice", "answers": [{"answer": "Calling them from another module becomes more user friendly", "correct": false, "feedback": "Incorrect."}, {"answer": "They are needed to infer a dependency graph", "correct": true, "feedback": "Correct."}, {"answer": "It makes the code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Python requires all functions arguments to have default values", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tasks are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytask", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytask again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsIoBfxBDvfTLD=[{"question": "Which functions are recognized as tasks by pytask?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytask.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `produces`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What type do most arguments of tasks have?", "type": "multiple_choice", "answers": [{"answer": "DataFrame because pytask is primariliy for data clening", "correct": false, "feedback": "Incorrect."}, {"answer": "pathlib.Path because tasks always read or write files", "correct": true, "feedback": "Correct."}, {"answer": "str because that is the best way to store paths", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why do tasks need default values for all arguments?", "type": "multiple_choice", "answers": [{"answer": "Calling them from another module becomes more user friendly", "correct": false, "feedback": "Incorrect."}, {"answer": "They are needed to infer a dependency graph", "correct": true, "feedback": "Correct."}, {"answer": "It makes the code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Python requires all functions arguments to have default values", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tasks are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `task_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytask", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytask again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1437,8 +1438,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("mmsEbLjEmVeH")) {
-            show_questions(questionsmmsEbLjEmVeH,  mmsEbLjEmVeH); 
+          if(document.getElementById("IoBfxBDvfTLD")) {
+            show_questions(questionsIoBfxBDvfTLD,  IoBfxBDvfTLD); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1447,8 +1448,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("mmsEbLjEmVeH");
-        // console.log(document.getElementById("mmsEbLjEmVeH"));
+        //console.log("IoBfxBDvfTLD");
+        // console.log(document.getElementById("IoBfxBDvfTLD"));
 
         try_show();
         }
