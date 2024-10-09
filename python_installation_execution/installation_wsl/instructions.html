@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=36295a99" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -604,15 +604,15 @@ by simply running <code class="docutils literal notranslate"><span class="pre">w
 for WSL in the Windows search bar and clicking on the result (the penguin in the picture
 below).</p>
 <p><img alt="3_WSL_search.png" src="../../_images/3_WSL_search.png" /></p>
-<p>Once you have opened the terminal, we will need to use it to install Miniconda and mamba.
-First, you need to know whether you have an ARM64 or an x86_64 processor. To do so, you
-will either need to check what processor you have or to run the following
-command in the terminal:</p>
+<p>Once you have opened the terminal, we will need to use it to install mamba (the
+downloaded distribution containing it is called Miniforge). First, you need to know
+whether you have an ARM64 or an x86_64 processor. To do so, you will either need to
+check what processor you have or to run the following command in the terminal:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uname<span class="w"> </span>-m
 </pre></div>
 </div>
-<p>If you have a x86_64 processor, you will see <code class="docutils literal notranslate"><span class="pre">x86_64</span></code> in the output. If you have this
-processor, you can download Miniconda by running the following command:</p>
+<p>If you have a x86_64 processor, you will see <code class="docutils literal notranslate"><span class="pre">x86_64</span></code> in the output. If you have
+this processor, you can download Miniforge by running the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
 </pre></div>
 </div>
