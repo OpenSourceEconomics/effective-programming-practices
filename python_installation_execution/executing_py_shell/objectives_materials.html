@@ -510,62 +510,32 @@ navigate to directories in a shell.</p>
 <p>Here is the
 <a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/fdb5d582-02db-4ccb-818a-d415de3bef61/7d268b7a-8dc1-4db2-94d0-7755876969eb/288d688d-84a4-4b70-9a31-31ea4ba16d38.mp4">screencast</a>
 and these are the <a class="reference download internal" download="" href="../../_downloads/30e1b642a2ee90a95beffbebdcc7e8f1/python_installation_execution-executing_py_shell.pdf"><span class="xref download myst">slides</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>VS Code uses a different mechanism to activate environments. So in case you are using
+a terminal integrated in VS Code, <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">epp</span></code> will have no effect.
+Instead:</p>
+<ol class="arabic simple">
+<li><p>Open a Python file in the project</p></li>
+<li><p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+P</span></code> to open the command palette, type “Python: Select Interpreter”,
+and select the <code class="docutils literal notranslate"><span class="pre">epp</span></code> environment</p></li>
+<li><p>Make sure the correct interpreter is selected (see screenshot below)</p></li>
+<li><p>Open a new shell</p></li>
+</ol>
+<p><img alt="" src="../../_images/interpreter_annotated.png" /></p>
+</div>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">jupyterquiz</span> <span class="kn">import</span> <span class="n">display_quiz</span>
-
-<span class="n">content</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;question&quot;</span><span class="p">:</span> <span class="p">(</span>
-            <span class="s2">&quot;Your project&#39;s folder contains the following files: exercise_1.py, </span><span class="se">\</span>
-<span class="s2">            a folder called data, and a folder called results. Your shell is currently </span><span class="se">\</span>
-<span class="s2">            in the data folder. Which of the following commands would you use to run </span><span class="se">\</span>
-<span class="s2">            the exercise_1.py script?&quot;</span>
-        <span class="p">),</span>
-        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;many_choice&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;answers&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="s2">&quot;&#39;python exercise_1.py&#39;&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="s2">&quot;This would work if you were in the folder containing </span><span class="se">\</span>
-<span class="s2">                exercise_1.py.&quot;</span><span class="p">,</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="s2">&quot;&#39;python ../exercise_1.py&#39;&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="s2">&quot;This works because ../ moves you up one folder, </span><span class="se">\</span>
-<span class="s2">                    and then you can run the script from there.&quot;</span><span class="p">,</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="s2">&quot;&#39;python ~/exercise_1.py&#39;&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="s2">&quot;This would work if you were in your home folder (on a </span><span class="se">\</span>
-<span class="s2">                    Mac system).&quot;</span><span class="p">,</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="s2">&quot;&#39;cd ..&#39; and then &#39;python exercise_1.py&#39;&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;correct&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-                <span class="s2">&quot;feedback&quot;</span><span class="p">:</span> <span class="s2">&quot;This works because cd .. moves you up one folder, </span><span class="se">\</span>
-<span class="s2">                    and then you can run the script from there.&quot;</span><span class="p">,</span>
-            <span class="p">},</span>
-        <span class="p">],</span>
-    <span class="p">},</span>
-<span class="p">]</span>
-<span class="n">display_quiz</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s2">&quot;fdsp&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="RpArXZSMysSk" data-shufflequestions="False"
+<div class="output text_html"><div id="PvRhYLiQSCzm" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#RpArXZSMysSk {
+#PvRhYLiQSCzm {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -735,7 +705,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsRpArXZSMysSk=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
+</style></div><script type="application/javascript">var questionsPvRhYLiQSCzm=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1484,8 +1454,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("RpArXZSMysSk")) {
-            show_questions(questionsRpArXZSMysSk,  RpArXZSMysSk); 
+          if(document.getElementById("PvRhYLiQSCzm")) {
+            show_questions(questionsPvRhYLiQSCzm,  PvRhYLiQSCzm); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1494,8 +1464,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("RpArXZSMysSk");
-        // console.log(document.getElementById("RpArXZSMysSk"));
+        //console.log("PvRhYLiQSCzm");
+        // console.log(document.getElementById("PvRhYLiQSCzm"));
 
         try_show();
         }
