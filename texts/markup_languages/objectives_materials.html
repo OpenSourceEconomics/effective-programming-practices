@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -504,27 +504,29 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/88a4d039-e6fc-4dcf-9bd7-6e2a19422a56/703159e8-9be1-4a4c-a21a-6aff99eb6fbf/092ff481-bde3-44a6-9af0-9b10c24b49f7.mp4">Screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/bd9a2c40c03c40c252c2c72482d5a9b7/texts-markup_languages.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html">Documentation</a> of Python built-in types</p></li>
-</ul>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=88a4d039-e6fc-4dcf-9bd7-6e2a19422a56"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/bd9a2c40c03c40c252c2c72482d5a9b7/texts-markup_languages.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>See the <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html">documentation</a> of Python’s
+built-in types.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="tnXMImQVaStS" data-shufflequestions="False"
+<div class="output text_html"><div id="RoOonViZOTrx" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#tnXMImQVaStS {
+#RoOonViZOTrx {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -694,7 +696,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionstnXMImQVaStS=[{"question": "What is the purpose of markup languages", "type": "multiple_choice", "answers": [{"answer": "Write pretty documents in plain text files", "correct": true, "feedback": "Correct."}, {"answer": "Free alternative to better tools like Word", "correct": false, "feedback": "Incorrect."}, {"answer": "Feel nerdy while writing papers", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are benefits of using markup languages", "type": "many_choice", "answers": [{"answer": "More beginner friendly that Word", "correct": false, "feedback": "Incorrect."}, {"answer": "Better for version control", "correct": true, "feedback": "Correct."}, {"answer": "Better for fully automated research pipelienes", "correct": true, "feedback": "Correct."}, {"answer": "Can use powerful editors like vscode", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsRoOonViZOTrx=[{"question": "What is the purpose of markup languages", "type": "multiple_choice", "answers": [{"answer": "Write pretty documents in plain text files", "correct": true, "feedback": "Correct."}, {"answer": "Free alternative to better tools like Word", "correct": false, "feedback": "Incorrect."}, {"answer": "Feel nerdy while writing papers", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are benefits of using markup languages", "type": "many_choice", "answers": [{"answer": "More beginner friendly that Word", "correct": false, "feedback": "Incorrect."}, {"answer": "Better for version control", "correct": true, "feedback": "Correct."}, {"answer": "Better for fully automated research pipelienes", "correct": true, "feedback": "Correct."}, {"answer": "Can use powerful editors like vscode", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1443,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("tnXMImQVaStS")) {
-            show_questions(questionstnXMImQVaStS,  tnXMImQVaStS); 
+          if(document.getElementById("RoOonViZOTrx")) {
+            show_questions(questionsRoOonViZOTrx,  RoOonViZOTrx); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1453,8 +1455,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("tnXMImQVaStS");
-        // console.log(document.getElementById("tnXMImQVaStS"));
+        //console.log("RoOonViZOTrx");
+        // console.log(document.getElementById("RoOonViZOTrx"));
 
         try_show();
         }
@@ -1529,7 +1531,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

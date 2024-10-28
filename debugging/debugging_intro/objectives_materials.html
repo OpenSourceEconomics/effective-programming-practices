@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -503,21 +504,27 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/2b103f2c-cff8-40fe-8e29-d6044d94f279/bc7a6d23-cf04-43ce-94a3-7e8b5006b166/39595085-805a-4a47-a7a8-c128bb195570.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/dacaa03c4042f57cda7c23022f4b8969/debugging-debugging_intro.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=2b103f2c-cff8-40fe-8e29-d6044d94f279"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/dacaa03c4042f57cda7c23022f4b8969/debugging-debugging_intro.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="lniSrrYmoTJD" data-shufflequestions="False"
+<div class="output text_html"><div id="jAapkObwKpAP" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#lniSrrYmoTJD {
+#jAapkObwKpAP {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -687,7 +694,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionslniSrrYmoTJD=[{"question": "Why is debugging an important skill?", "type": "many_choice", "answers": [{"answer": "Research shows that developers spend a lot of time debugging", "correct": true, "feedback": "Correct."}, {"answer": "It is possible to become more efficient at debugging", "correct": true, "feedback": "Correct."}, {"answer": "So you can relax and not worry about adding bugs while writing code", "correct": false, "feedback": "Incorrect."}, {"answer": "Debugging is not an important skill", "correct": false, "feedback": "Incorrect."}]}, {"question": "Inspeculation is a hybrid of inspection, simulation and speculation. What does inspection mean in this context?", "type": "multiple_choice", "answers": [{"answer": "Inspecting the content of variables using a variable explorer", "correct": false, "feedback": "Incorrect."}, {"answer": "Inspecting the code", "correct": true, "feedback": "Correct."}]}, {"question": "Inspeculation is a hybrid of inspection, simulation and speculation. What does simulation mean in this context?", "type": "multiple_choice", "answers": [{"answer": "Running the code", "correct": false, "feedback": "Incorrect."}, {"answer": "Simulating the execution of the code in your head", "correct": true, "feedback": "Correct."}]}, {"question": "Inspeculation is a hybrid of inspection, simulation and speculation. What does speculation mean in this context?", "type": "multiple_choice", "answers": [{"answer": "Speculating about what could generate the result you are seeing", "correct": true, "feedback": "Correct."}, {"answer": "Speculating about who is to blame for the bug", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsjAapkObwKpAP=[{"question": "Why is debugging an important skill?", "type": "many_choice", "answers": [{"answer": "Research shows that developers spend a lot of time debugging", "correct": true, "feedback": "Correct."}, {"answer": "It is possible to become more efficient at debugging", "correct": true, "feedback": "Correct."}, {"answer": "So you can relax and not worry about adding bugs while writing code", "correct": false, "feedback": "Incorrect."}, {"answer": "Debugging is not an important skill", "correct": false, "feedback": "Incorrect."}]}, {"question": "Inspeculation is a hybrid of inspection, simulation and speculation. What does inspection mean in this context?", "type": "multiple_choice", "answers": [{"answer": "Inspecting the content of variables using a variable explorer", "correct": false, "feedback": "Incorrect."}, {"answer": "Inspecting the code", "correct": true, "feedback": "Correct."}]}, {"question": "Inspeculation is a hybrid of inspection, simulation and speculation. What does simulation mean in this context?", "type": "multiple_choice", "answers": [{"answer": "Running the code", "correct": false, "feedback": "Incorrect."}, {"answer": "Simulating the execution of the code in your head", "correct": true, "feedback": "Correct."}]}, {"question": "Inspeculation is a hybrid of inspection, simulation and speculation. What does speculation mean in this context?", "type": "multiple_choice", "answers": [{"answer": "Speculating about what could generate the result you are seeing", "correct": true, "feedback": "Correct."}, {"answer": "Speculating about who is to blame for the bug", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1436,8 +1443,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("lniSrrYmoTJD")) {
-            show_questions(questionslniSrrYmoTJD,  lniSrrYmoTJD); 
+          if(document.getElementById("jAapkObwKpAP")) {
+            show_questions(questionsjAapkObwKpAP,  jAapkObwKpAP); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1446,8 +1453,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("lniSrrYmoTJD");
-        // console.log(document.getElementById("lniSrrYmoTJD"));
+        //console.log("jAapkObwKpAP");
+        // console.log(document.getElementById("jAapkObwKpAP"));
 
         try_show();
         }

@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -504,21 +505,27 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/fcc9a140-1adc-403f-807d-1f69ff6abceb/d5c9a714-2c08-41fe-bb0a-39c495758763/6439de70-f84a-474c-bf70-4783440fdb16.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/e738e5c4c7cb6626d110e165b864dac1/scientific_computing-calculations_on_arrays.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=fcc9a140-1adc-403f-807d-1f69ff6abceb"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/e738e5c4c7cb6626d110e165b864dac1/scientific_computing-calculations_on_arrays.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="piEteWPrJDFL" data-shufflequestions="False"
+<div class="output text_html"><div id="KZDykztSFato" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#piEteWPrJDFL {
+#KZDykztSFato {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -688,7 +695,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionspiEteWPrJDFL=[{"question": "How are most numpy functions applied to arrays?", "type": "multiple_choice", "answers": [{"answer": "element-wise", "correct": true, "feedback": "Correct."}, {"answer": "row-wise", "correct": false, "feedback": "Incorrect."}, {"answer": "column-wise", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a reduction", "type": "multiple_choice", "answers": [{"answer": "A function that takes in multiple numbers and returns a single number", "correct": true, "feedback": "Correct."}, {"answer": "A fast element-wise function in numpy", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that takes in multiple numbers and returns an array", "correct": false, "feedback": "Incorrect."}, {"answer": "A contraction mapping", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does it mean when a function is vectorized?", "type": "many_choice", "answers": [{"answer": "The function can be applied to an entire array at once", "correct": true, "feedback": "Correct."}, {"answer": "The function takes 1d numpy arrays (vectors) as inputs", "correct": false, "feedback": "Incorrect."}, {"answer": "The function is much faster than an equivalent for loop", "correct": true, "feedback": "Correct."}, {"answer": "The function is much faster than an equivalent list comprehension", "correct": true, "feedback": "Correct."}]}, {"question": "Suppose you have a 2 dimensional array of shape (n,k).         Each raw represents a student and each column represents the grades         of the students in k subjects. To obtain the gpa of each student:", "type": "many_choice", "answers": [{"answer": "GPA is not so important, the important is what the students learned", "correct": true, "feedback": "Correct."}, {"answer": "your_array.mean()", "correct": false, "feedback": "Incorrect."}, {"answer": "your_array.mean(axis = 0)", "correct": false, "feedback": "Incorrect."}, {"answer": "your_array.mean(axis = 1)", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsKZDykztSFato=[{"question": "How are most numpy functions applied to arrays?", "type": "multiple_choice", "answers": [{"answer": "element-wise", "correct": true, "feedback": "Correct."}, {"answer": "row-wise", "correct": false, "feedback": "Incorrect."}, {"answer": "column-wise", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a reduction", "type": "multiple_choice", "answers": [{"answer": "A function that takes in multiple numbers and returns a single number", "correct": true, "feedback": "Correct."}, {"answer": "A fast element-wise function in numpy", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that takes in multiple numbers and returns an array", "correct": false, "feedback": "Incorrect."}, {"answer": "A contraction mapping", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does it mean when a function is vectorized?", "type": "many_choice", "answers": [{"answer": "The function can be applied to an entire array at once", "correct": true, "feedback": "Correct."}, {"answer": "The function takes 1d numpy arrays (vectors) as inputs", "correct": false, "feedback": "Incorrect."}, {"answer": "The function is much faster than an equivalent for loop", "correct": true, "feedback": "Correct."}, {"answer": "The function is much faster than an equivalent list comprehension", "correct": true, "feedback": "Correct."}]}, {"question": "Suppose you have a 2 dimensional array of shape (n,k).         Each raw represents a student and each column represents the grades         of the students in k subjects. To obtain the gpa of each student:", "type": "many_choice", "answers": [{"answer": "GPA is not so important, the important is what the students learned", "correct": true, "feedback": "Correct."}, {"answer": "your_array.mean()", "correct": false, "feedback": "Incorrect."}, {"answer": "your_array.mean(axis = 0)", "correct": false, "feedback": "Incorrect."}, {"answer": "your_array.mean(axis = 1)", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1437,8 +1444,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("piEteWPrJDFL")) {
-            show_questions(questionspiEteWPrJDFL,  piEteWPrJDFL); 
+          if(document.getElementById("KZDykztSFato")) {
+            show_questions(questionsKZDykztSFato,  KZDykztSFato); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1447,8 +1454,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("piEteWPrJDFL");
-        // console.log(document.getElementById("piEteWPrJDFL"));
+        //console.log("KZDykztSFato");
+        // console.log(document.getElementById("KZDykztSFato"));
 
         try_show();
         }

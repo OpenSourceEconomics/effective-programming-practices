@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -507,9 +508,15 @@ document.write(`
 fully working conda installation on your computer.</p>
 <p>We also assume that you have watched the screencasts on the shell and know how to
 navigate to directories in a shell.</p>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/fdb5d582-02db-4ccb-818a-d415de3bef61/7d268b7a-8dc1-4db2-94d0-7755876969eb/288d688d-84a4-4b70-9a31-31ea4ba16d38.mp4">screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/30e1b642a2ee90a95beffbebdcc7e8f1/python_installation_execution-executing_py_shell.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=fdb5d582-02db-4ccb-818a-d415de3bef61"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/30e1b642a2ee90a95beffbebdcc7e8f1/python_installation_execution-executing_py_shell.pdf"><span class="xref download myst">slides</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>VS Code uses a different mechanism to activate environments. So in case you are using
@@ -529,13 +536,13 @@ and select the <code class="docutils literal notranslate"><span class="pre">epp<
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="PvRhYLiQSCzm" data-shufflequestions="False"
+<div class="output text_html"><div id="QikwaiVfUtCg" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#PvRhYLiQSCzm {
+#QikwaiVfUtCg {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -705,7 +712,7 @@ and select the <code class="docutils literal notranslate"><span class="pre">epp<
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPvRhYLiQSCzm=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
+</style></div><script type="application/javascript">var questionsQikwaiVfUtCg=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1454,8 +1461,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("PvRhYLiQSCzm")) {
-            show_questions(questionsPvRhYLiQSCzm,  PvRhYLiQSCzm); 
+          if(document.getElementById("QikwaiVfUtCg")) {
+            show_questions(questionsQikwaiVfUtCg,  QikwaiVfUtCg); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1464,8 +1471,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("PvRhYLiQSCzm");
-        // console.log(document.getElementById("PvRhYLiQSCzm"));
+        //console.log("QikwaiVfUtCg");
+        // console.log(document.getElementById("QikwaiVfUtCg"));
 
         try_show();
         }

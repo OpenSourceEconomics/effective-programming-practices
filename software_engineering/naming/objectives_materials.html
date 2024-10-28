@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -505,27 +505,30 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/5ca1405f-a484-41ea-ac8f-6e96235ac3f1/10a28b4e-9397-4653-85a7-138acdb97cab/4a14293f-b1d1-463b-ba54-3729ba366384.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/f35c8681367644c9662366746a03df79/software_engineering-naming.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://dmitripavlutin.com/coding-like-shakespeare-practical-function-naming-conventions/">Blogpost on naming functions</a> (not in Python)</p></li>
-</ul>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=5ca1405f-a484-41ea-ac8f-6e96235ac3f1"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/f35c8681367644c9662366746a03df79/software_engineering-naming.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>A nice <a class="reference external" href="https://dmitripavlutin.com/coding-like-shakespeare-practical-function-naming-conventions/">blog post on naming
+functions</a>
+(not in Python).</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="WBVMEqmOcVgW" data-shufflequestions="False"
+<div class="output text_html"><div id="ONKnBOdYvtbL" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#WBVMEqmOcVgW {
+#ONKnBOdYvtbL {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -695,7 +698,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsWBVMEqmOcVgW=[{"question": "People use the word `lambbda` to avoid the lambda keyword. Why is this bad?", "type": "many_choice", "answers": [{"answer": "You need to remember how exactly you need to misspell lambda", "correct": true, "feedback": "Correct."}, {"answer": "It is hard to distinguish from lambda", "correct": true, "feedback": "Correct."}, {"answer": "It is not great but ok. You have to distinguish it somehow", "correct": false, "feedback": "Incorrect."}, {"answer": "You should use the unicode \u03bb instead", "correct": false, "feedback": "Incorrect."}]}, {"question": "A function that is used very often across your project should have ...", "type": "many_choice", "answers": [{"answer": "A short name, it is well known anyways", "correct": true, "feedback": "Correct."}, {"answer": "A long name, so everyone understand what it does", "correct": false, "feedback": "Incorrect."}, {"answer": "A name that starts with a verb in imperative model", "correct": true, "feedback": "Correct."}, {"answer": "A CamelCase name", "correct": false, "feedback": "Incorrect."}]}, {"question": "When is it ok to use very short variable like i and j", "type": "multiple_choice", "answers": [{"answer": "If you are in hurry, you can always fix it later", "correct": false, "feedback": "Incorrect."}, {"answer": "If the variable is used in short scope and i and j are array indices", "correct": true, "feedback": "Correct."}, {"answer": "If otherwise your line becomes too long", "correct": false, "feedback": "Incorrect."}, {"answer": "If you put a long comment before each use of the variable", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a good name for a list of countries you want to keep in a dataset", "type": "multiple_choice", "answers": [{"answer": "cntry_list", "correct": false, "feedback": "Incorrect."}, {"answer": "c_list", "correct": false, "feedback": "Incorrect."}, {"answer": "relevant_countries", "correct": true, "feedback": "Correct."}, {"answer": "to_keep", "correct": false, "feedback": "Incorrect."}]}, {"question": "A variable that is used throughout a function with about 50 lines of code", "type": "multiple_choice", "answers": [{"answer": "Should have a descriptive name because definition and usage are far apart", "correct": true, "feedback": "Correct."}, {"answer": "Should have a short name to save typing", "correct": false, "feedback": "Incorrect."}, {"answer": "Should indicate the type of the variable", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsONKnBOdYvtbL=[{"question": "People use the word `lambbda` to avoid the lambda keyword. Why is this bad?", "type": "many_choice", "answers": [{"answer": "You need to remember how exactly you need to misspell lambda", "correct": true, "feedback": "Correct."}, {"answer": "It is hard to distinguish from lambda", "correct": true, "feedback": "Correct."}, {"answer": "It is not great but ok. You have to distinguish it somehow", "correct": false, "feedback": "Incorrect."}, {"answer": "You should use the unicode \u03bb instead", "correct": false, "feedback": "Incorrect."}]}, {"question": "A function that is used very often across your project should have ...", "type": "many_choice", "answers": [{"answer": "A short name, it is well known anyways", "correct": true, "feedback": "Correct."}, {"answer": "A long name, so everyone understand what it does", "correct": false, "feedback": "Incorrect."}, {"answer": "A name that starts with a verb in imperative model", "correct": true, "feedback": "Correct."}, {"answer": "A CamelCase name", "correct": false, "feedback": "Incorrect."}]}, {"question": "When is it ok to use very short variable like i and j", "type": "multiple_choice", "answers": [{"answer": "If you are in hurry, you can always fix it later", "correct": false, "feedback": "Incorrect."}, {"answer": "If the variable is used in short scope and i and j are array indices", "correct": true, "feedback": "Correct."}, {"answer": "If otherwise your line becomes too long", "correct": false, "feedback": "Incorrect."}, {"answer": "If you put a long comment before each use of the variable", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a good name for a list of countries you want to keep in a dataset", "type": "multiple_choice", "answers": [{"answer": "cntry_list", "correct": false, "feedback": "Incorrect."}, {"answer": "c_list", "correct": false, "feedback": "Incorrect."}, {"answer": "relevant_countries", "correct": true, "feedback": "Correct."}, {"answer": "to_keep", "correct": false, "feedback": "Incorrect."}]}, {"question": "A variable that is used throughout a function with about 50 lines of code", "type": "multiple_choice", "answers": [{"answer": "Should have a descriptive name because definition and usage are far apart", "correct": true, "feedback": "Correct."}, {"answer": "Should have a short name to save typing", "correct": false, "feedback": "Incorrect."}, {"answer": "Should indicate the type of the variable", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1444,8 +1447,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("WBVMEqmOcVgW")) {
-            show_questions(questionsWBVMEqmOcVgW,  WBVMEqmOcVgW); 
+          if(document.getElementById("ONKnBOdYvtbL")) {
+            show_questions(questionsONKnBOdYvtbL,  ONKnBOdYvtbL); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1454,8 +1457,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("WBVMEqmOcVgW");
-        // console.log(document.getElementById("WBVMEqmOcVgW"));
+        //console.log("ONKnBOdYvtbL");
+        // console.log(document.getElementById("ONKnBOdYvtbL"));
 
         try_show();
         }
@@ -1530,7 +1533,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -506,24 +506,27 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/f191b5fe-0626-43b4-8b42-e0b97e036b9f/90f5a49c-597d-4025-89da-1962540b473c/a9a5d233-4264-41eb-959a-7bbffe74d616.mp4">Screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/3ac9bbbdb4a26f6f1742605a5f43f70d/pandas-loading_and_saving.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=f191b5fe-0626-43b4-8b42-e0b97e036b9f"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/3ac9bbbdb4a26f6f1742605a5f43f70d/pandas-loading_and_saving.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="KafgKdycmJhs" data-shufflequestions="False"
+<div class="output text_html"><div id="IISwwWUiZtDr" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#KafgKdycmJhs {
+#IISwwWUiZtDr {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -693,7 +696,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsKafgKdycmJhs=[{"question": "Storing data in csv format is useful because", "type": "many_choice", "answers": [{"answer": "you can open the data in a text editor.", "correct": true, "feedback": "About the only reason and pointless for large datasets."}, {"answer": "actually, it is not useful at all in general.", "correct": true, "feedback": "Indeed!"}, {"answer": "it is easy to preserve categorical data types.", "correct": false, "feedback": "This is not easy at all."}, {"answer": "csv is a clearly defined standard.", "correct": false, "feedback": "Very much to the contrary."}]}];
+</style></div><script type="application/javascript">var questionsIISwwWUiZtDr=[{"question": "Storing data in csv format is useful because", "type": "many_choice", "answers": [{"answer": "you can open the data in a text editor.", "correct": true, "feedback": "About the only reason and pointless for large datasets."}, {"answer": "actually, it is not useful at all in general.", "correct": true, "feedback": "Indeed!"}, {"answer": "it is easy to preserve categorical data types.", "correct": false, "feedback": "This is not easy at all."}, {"answer": "csv is a clearly defined standard.", "correct": false, "feedback": "Very much to the contrary."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1442,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("KafgKdycmJhs")) {
-            show_questions(questionsKafgKdycmJhs,  KafgKdycmJhs); 
+          if(document.getElementById("IISwwWUiZtDr")) {
+            show_questions(questionsIISwwWUiZtDr,  IISwwWUiZtDr); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1452,8 +1455,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("KafgKdycmJhs");
-        // console.log(document.getElementById("KafgKdycmJhs"));
+        //console.log("IISwwWUiZtDr");
+        // console.log(document.getElementById("IISwwWUiZtDr"));
 
         try_show();
         }
@@ -1719,7 +1722,7 @@ if (typeof version == 'undefined') {
 
 }
 
-</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="kbPzJZOuvTpc" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="kbPzJZOuvTpc-next" onclick="window.checkFlip('kbPzJZOuvTpc')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
+</style></div><div class="output text_html"><div style="height:40px"></div><div class="flip-container" id="FOvKAPeitMmL" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="FOvKAPeitMmL-next" onclick="window.checkFlip('FOvKAPeitMmL')"> </div> <div style="height:40px"></div></div><script type="application/javascript">/*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
  * https://github.com/john-doherty/swiped-events
@@ -2066,17 +2069,17 @@ function createCards(id, keyControl, grabFocus) {
 
 
         function try_create() {
-          if(document.getElementById("kbPzJZOuvTpc")) {
-            createCards("kbPzJZOuvTpc", "True", "False");
+          if(document.getElementById("FOvKAPeitMmL")) {
+            createCards("FOvKAPeitMmL", "True", "False");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardskbPzJZOuvTpc=[{"name": "intro", "front": "Describe the format you would use for each of the following tasks.", "back": "Let's go through them step by step (click on next in the bottom right)."}, {"name": "share_with_stata", "front": "Share data with a Stata user.", "back": "Use Stata's dta format. It is typically better to solve compatibility issues on the Python side."}, {"name": "share_with_R", "front": "Share data with a user of R.", "back": "Use Apache Arrow's feather format. It can easily be read into R and itis a very well-defined standard."}, {"name": "re_use_in_workflow", "front": "Read in the data downstream in the project.", "back": "Pickle the data. You are guaranteed to get the same thing back since you will be using the same versions of Python and Pandas."}, {"name": "share_with_python", "front": "Share data with a user of Python.", "back": "Use Apache Arrow's feather format. It can easily be read into Python and it is a very well-defined standard. Alternatively, pickle is also likely to work, although there can be incompatibilities across versions of Python and it is easy to include objects in a pickle file that require the same import statements to work."}];
-var frontColorskbPzJZOuvTpc= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorskbPzJZOuvTpc= ["var(--dark-blue-gray)" ];
-var textColorskbPzJZOuvTpc= ["var(--snow)" ];
+var cardsFOvKAPeitMmL=[{"name": "intro", "front": "Describe the format you would use for each of the following tasks.", "back": "Let's go through them step by step (click on next in the bottom right)."}, {"name": "share_with_stata", "front": "Share data with a Stata user.", "back": "Use Stata's dta format. It is typically better to solve compatibility issues on the Python side."}, {"name": "share_with_R", "front": "Share data with a user of R.", "back": "Use Apache Arrow's feather format. It can easily be read into R and itis a very well-defined standard."}, {"name": "re_use_in_workflow", "front": "Read in the data downstream in the project.", "back": "Pickle the data. You are guaranteed to get the same thing back since you will be using the same versions of Python and Pandas."}, {"name": "share_with_python", "front": "Share data with a user of Python.", "back": "Use Apache Arrow's feather format. It can easily be read into Python and it is a very well-defined standard. Alternatively, pickle is also likely to work, although there can be incompatibilities across versions of Python and it is easy to include objects in a pickle file that require the same import statements to work."}];
+var frontColorsFOvKAPeitMmL= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsFOvKAPeitMmL= ["var(--dark-blue-gray)" ];
+var textColorsFOvKAPeitMmL= ["var(--snow)" ];
 try_create(); </script></div>
 </div>
 </section>
@@ -2148,7 +2151,6 @@ try_create(); </script></div>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

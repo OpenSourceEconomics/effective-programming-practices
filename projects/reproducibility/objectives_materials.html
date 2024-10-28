@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -505,25 +505,29 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/4d9b8406-f929-4c92-aef8-7a9ebef4b128/55c7e11a-769d-4dbe-b3f4-f9d50ed51356/699124db-634d-4ac2-a454-2bb82665fe2d.mp4">Screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/15ad80c05b0e5675f14eed62f3766214/projects-reproducibility.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://datacodestandard.org/">https://datacodestandard.org/</a></p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=4d9b8406-f929-4c92-aef8-7a9ebef4b128"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/15ad80c05b0e5675f14eed62f3766214/projects-reproducibility.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p><a class="reference external" href="https://datacodestandard.org/">Data and Code Availability Standard</a> endorsed by 15+ top
+economics outlets.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="DqOTisiAoYrd" data-shufflequestions="False"
+<div class="output text_html"><div id="mnjtLdBVbqfR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#DqOTisiAoYrd {
+#mnjtLdBVbqfR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -693,7 +697,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsDqOTisiAoYrd=[{"question": "In order for a project to be reproducible it needs to have:", "type": "many_choice", "answers": [{"answer": "the raw data", "correct": true, "feedback": "Correct."}, {"answer": "the source code", "correct": true, "feedback": "Correct."}, {"answer": "the programs needed to run the code", "correct": true, "feedback": "Correct."}, {"answer": "the results", "correct": false, "feedback": "Incorrect. The results can be generated from the                     raw data and the source code."}]}, {"question": "Version control:", "type": "many_choice", "answers": [{"answer": "helps guaranteeing the integrity of the raw data", "correct": true, "feedback": "Correct. For example, raw data can be changed                     by mistake. Version control allows to go back to the                     previous version."}, {"answer": "enables the use of previous versions of the code", "correct": true, "feedback": "Correct."}, {"answer": "preserves the code in case local files are lost", "correct": false, "feedback": "Incorrect. This is not the main purpose of                     version control. Simple (simultaneous) online backups would                     do a better job. However, producing backups is a nice side                     effect of version control."}, {"answer": "often ends up consuming a lot of memory", "correct": false, "feedback": "Incorrect. Version control is very efficient in                     terms of memory usage. Additionally, only the source                     code and the raw data are under version control.                     This minimizes the memory usage."}]}, {"question": "Maintaining output file under version control:", "type": "many_choice", "answers": [{"answer": "Is a good idea because it allows to track changes in the                     output.", "correct": false, "feedback": "Incorrect. If the comparison of different outputs is                     needed, then both outputs should be present in the final version."}, {"answer": "Is not a good idea because it would consume a lot of                     memory.", "correct": true, "feedback": "Correct."}, {"answer": "Is not a good idea because generated output can become                     outdated.", "correct": true, "feedback": "Correct. Having both the source code and the output                     under version control generate the risk of having inconsistencies                     between the two."}, {"answer": "Is is a good idea because it makes the project more                     reproducible.", "correct": false, "feedback": "Incorrect. Output file are reproduced                     from the raw data and the source code. "}]}, {"question": "Organize a project with an outomated workflow:", "type": "many_choice", "answers": [{"answer": "Is essential for reproducibility.", "correct": true, "feedback": "Correct. The workflow should be automated to                     enable individuals external to the project to run it."}, {"answer": "Enables coworkers to easily join the project.", "correct": true, "feedback": "Correct. There is no need to explain the workflow                     to the new coworkers."}, {"answer": "Enables the future self to easily join the project.", "correct": true, "feedback": "Correct. While working on a project, it is easy to                     forget the details of the workflow. An automated workflow                     minimizes the risk of forgetting the details"}, {"answer": "Could be substituted by a DAG that explains the                     relationship between files.", "correct": false, "feedback": "Incorrect. A DAG is a good way to visualize the                     workflow, but it does not replace the automated workflow itself.                     An automated worklow minimizes human errors and                     is much faster."}]}];
+</style></div><script type="application/javascript">var questionsmnjtLdBVbqfR=[{"question": "In order for a project to be reproducible it needs to have:", "type": "many_choice", "answers": [{"answer": "the raw data", "correct": true, "feedback": "Correct."}, {"answer": "the source code", "correct": true, "feedback": "Correct."}, {"answer": "the programs needed to run the code", "correct": true, "feedback": "Correct."}, {"answer": "the results", "correct": false, "feedback": "Incorrect. The results can be generated from the                     raw data and the source code."}]}, {"question": "Version control:", "type": "many_choice", "answers": [{"answer": "helps guaranteeing the integrity of the raw data", "correct": true, "feedback": "Correct. For example, raw data can be changed                     by mistake. Version control allows to go back to the                     previous version."}, {"answer": "enables the use of previous versions of the code", "correct": true, "feedback": "Correct."}, {"answer": "preserves the code in case local files are lost", "correct": false, "feedback": "Incorrect. This is not the main purpose of                     version control. Simple (simultaneous) online backups would                     do a better job. However, producing backups is a nice side                     effect of version control."}, {"answer": "often ends up consuming a lot of memory", "correct": false, "feedback": "Incorrect. Version control is very efficient in                     terms of memory usage. Additionally, only the source                     code and the raw data are under version control.                     This minimizes the memory usage."}]}, {"question": "Maintaining output file under version control:", "type": "many_choice", "answers": [{"answer": "Is a good idea because it allows to track changes in the                     output.", "correct": false, "feedback": "Incorrect. If the comparison of different outputs is                     needed, then both outputs should be present in the final version."}, {"answer": "Is not a good idea because it would consume a lot of                     memory.", "correct": true, "feedback": "Correct."}, {"answer": "Is not a good idea because generated output can become                     outdated.", "correct": true, "feedback": "Correct. Having both the source code and the output                     under version control generate the risk of having inconsistencies                     between the two."}, {"answer": "Is is a good idea because it makes the project more                     reproducible.", "correct": false, "feedback": "Incorrect. Output file are reproduced                     from the raw data and the source code. "}]}, {"question": "Organize a project with an outomated workflow:", "type": "many_choice", "answers": [{"answer": "Is essential for reproducibility.", "correct": true, "feedback": "Correct. The workflow should be automated to                     enable individuals external to the project to run it."}, {"answer": "Enables coworkers to easily join the project.", "correct": true, "feedback": "Correct. There is no need to explain the workflow                     to the new coworkers."}, {"answer": "Enables the future self to easily join the project.", "correct": true, "feedback": "Correct. While working on a project, it is easy to                     forget the details of the workflow. An automated workflow                     minimizes the risk of forgetting the details"}, {"answer": "Could be substituted by a DAG that explains the                     relationship between files.", "correct": false, "feedback": "Incorrect. A DAG is a good way to visualize the                     workflow, but it does not replace the automated workflow itself.                     An automated worklow minimizes human errors and                     is much faster."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1442,8 +1446,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("DqOTisiAoYrd")) {
-            show_questions(questionsDqOTisiAoYrd,  DqOTisiAoYrd); 
+          if(document.getElementById("mnjtLdBVbqfR")) {
+            show_questions(questionsmnjtLdBVbqfR,  mnjtLdBVbqfR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1452,8 +1456,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("DqOTisiAoYrd");
-        // console.log(document.getElementById("DqOTisiAoYrd"));
+        //console.log("mnjtLdBVbqfR");
+        // console.log(document.getElementById("mnjtLdBVbqfR"));
 
         try_show();
         }
@@ -1528,7 +1532,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -505,19 +506,19 @@ document.write(`
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hOZueB4Cn1Y?si=ULkhiZapJkArR_R3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>These are the <a class="reference download internal" download="" href="../../_downloads/6885e1dcbb0028dd100619d2fb2a0471/scientific_computing-optimization_intro.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/6885e1dcbb0028dd100619d2fb2a0471/scientific_computing-optimization_intro.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="sHfdrIhvrHFn" data-shufflequestions="False"
+<div class="output text_html"><div id="JKLxcGbqCjov" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#sHfdrIhvrHFn {
+#JKLxcGbqCjov {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -687,7 +688,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionssHfdrIhvrHFn=[{"question": "What is the criterion function or objective function in optimization?", "type": "multiple_choice", "answers": [{"answer": "The function being minimized or maximized", "correct": true, "feedback": "Correct."}, {"answer": "Constraints that need to be fulfilled at the optimim", "correct": false, "feedback": "Incorrect."}, {"answer": "The parameters to optimize over", "correct": false, "feedback": "Incorrect."}, {"answer": "The numerical optimization algorithm", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are parameters in optimization?", "type": "multiple_choice", "answers": [{"answer": "A vector of numbers to optimize over", "correct": true, "feedback": "Correct."}, {"answer": "Additional inputs to the criterion function", "correct": false, "feedback": "Incorrect."}, {"answer": "Optional arguments of the optimization algorithm", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are typical applications of numerical optimization in economics?", "type": "many_choice", "answers": [{"answer": "Estimating nonlinear models with maximum likelihood", "correct": true, "feedback": "Correct."}, {"answer": "Estimating linear models with ordinary least squares", "correct": false, "feedback": "Incorrect."}, {"answer": "Fitting machine learning models", "correct": true, "feedback": "Correct."}, {"answer": "Solve discrete choice dynamic programming problems", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following applies to optimization algorithms?", "type": "multiple_choice", "answers": [{"answer": "They can run for a very long time", "correct": true, "feedback": "Correct."}, {"answer": "There as a single algorithm that is best for all problems", "correct": false, "feedback": "Incorrect."}, {"answer": "You have to become an expert in optimization to use them", "correct": false, "feedback": "Incorrect."}, {"answer": "You can completely ignore all details of the algorithm", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsJKLxcGbqCjov=[{"question": "What is the criterion function or objective function in optimization?", "type": "multiple_choice", "answers": [{"answer": "The function being minimized or maximized", "correct": true, "feedback": "Correct."}, {"answer": "Constraints that need to be fulfilled at the optimim", "correct": false, "feedback": "Incorrect."}, {"answer": "The parameters to optimize over", "correct": false, "feedback": "Incorrect."}, {"answer": "The numerical optimization algorithm", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are parameters in optimization?", "type": "multiple_choice", "answers": [{"answer": "A vector of numbers to optimize over", "correct": true, "feedback": "Correct."}, {"answer": "Additional inputs to the criterion function", "correct": false, "feedback": "Incorrect."}, {"answer": "Optional arguments of the optimization algorithm", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are typical applications of numerical optimization in economics?", "type": "many_choice", "answers": [{"answer": "Estimating nonlinear models with maximum likelihood", "correct": true, "feedback": "Correct."}, {"answer": "Estimating linear models with ordinary least squares", "correct": false, "feedback": "Incorrect."}, {"answer": "Fitting machine learning models", "correct": true, "feedback": "Correct."}, {"answer": "Solve discrete choice dynamic programming problems", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following applies to optimization algorithms?", "type": "multiple_choice", "answers": [{"answer": "They can run for a very long time", "correct": true, "feedback": "Correct."}, {"answer": "There as a single algorithm that is best for all problems", "correct": false, "feedback": "Incorrect."}, {"answer": "You have to become an expert in optimization to use them", "correct": false, "feedback": "Incorrect."}, {"answer": "You can completely ignore all details of the algorithm", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1436,8 +1437,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("sHfdrIhvrHFn")) {
-            show_questions(questionssHfdrIhvrHFn,  sHfdrIhvrHFn); 
+          if(document.getElementById("JKLxcGbqCjov")) {
+            show_questions(questionsJKLxcGbqCjov,  JKLxcGbqCjov); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1446,8 +1447,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("sHfdrIhvrHFn");
-        // console.log(document.getElementById("sHfdrIhvrHFn"));
+        //console.log("JKLxcGbqCjov");
+        // console.log(document.getElementById("JKLxcGbqCjov"));
 
         try_show();
         }

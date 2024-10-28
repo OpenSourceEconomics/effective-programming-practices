@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -504,9 +505,15 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/fb0a3430-f27b-402b-9188-39f07f06cff3/62f44b2e-84b2-4402-a542-35e35bc66c4d/30edca88-f72b-42c7-9f6d-4a36972b3d8f.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/7cbbde004a3f97b43452042711b06cdd/plotting-graph_objects.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=fb0a3430-f27b-402b-9188-39f07f06cff3"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/7cbbde004a3f97b43452042711b06cdd/plotting-graph_objects.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="links-used-in-the-screencast">
 <h2>Links used in the screencast<a class="headerlink" href="#links-used-in-the-screencast" title="Link to this heading">#</a></h2>
@@ -520,13 +527,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="uKEmZmXhTbTV" data-shufflequestions="False"
+<div class="output text_html"><div id="XGFYiejxnZxs" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#uKEmZmXhTbTV {
+#XGFYiejxnZxs {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -696,7 +703,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsuKEmZmXhTbTV=[{"question": "plotly.graph_objects is used for:", "type": "multiple_choice", "answers": [{"answer": "Produce basic graphs with simpler syntax", "correct": false, "feedback": "Incorrect. For this purpose you can use plotly.express."}, {"answer": "Produce more customized and fine-grained plots", "correct": true, "feedback": "Correct."}]}, {"question": "To set up a plotly graph object, the code to use is:", "type": "multiple_choice", "answers": [{"answer": "go.scatter(...)", "correct": true, "feedback": "Correct."}, {"answer": "df.plot(...)", "correct": false, "feedback": "Incorrect. With this code you use                     plotly.express through pandas.DataFrame."}, {"answer": "px.line(df, ...)", "correct": false, "feedback": "Incorrect. With this code you obtain a Figure object."}, {"answer": "plt.plot(...)", "correct": false, "feedback": "Incorrect. With this code you are using a different                 library."}]}];
+</style></div><script type="application/javascript">var questionsXGFYiejxnZxs=[{"question": "plotly.graph_objects is used for:", "type": "multiple_choice", "answers": [{"answer": "Produce basic graphs with simpler syntax", "correct": false, "feedback": "Incorrect. For this purpose you can use plotly.express."}, {"answer": "Produce more customized and fine-grained plots", "correct": true, "feedback": "Correct."}]}, {"question": "To set up a plotly graph object, the code to use is:", "type": "multiple_choice", "answers": [{"answer": "go.scatter(...)", "correct": true, "feedback": "Correct."}, {"answer": "df.plot(...)", "correct": false, "feedback": "Incorrect. With this code you use                     plotly.express through pandas.DataFrame."}, {"answer": "px.line(df, ...)", "correct": false, "feedback": "Incorrect. With this code you obtain a Figure object."}, {"answer": "plt.plot(...)", "correct": false, "feedback": "Incorrect. With this code you are using a different                 library."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1445,8 +1452,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("uKEmZmXhTbTV")) {
-            show_questions(questionsuKEmZmXhTbTV,  uKEmZmXhTbTV); 
+          if(document.getElementById("XGFYiejxnZxs")) {
+            show_questions(questionsXGFYiejxnZxs,  XGFYiejxnZxs); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1455,8 +1462,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("uKEmZmXhTbTV");
-        // console.log(document.getElementById("uKEmZmXhTbTV"));
+        //console.log("XGFYiejxnZxs");
+        // console.log(document.getElementById("XGFYiejxnZxs"));
 
         try_show();
         }

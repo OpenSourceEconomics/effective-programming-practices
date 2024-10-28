@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -512,28 +512,30 @@ web developer and mathematician and find similar examples</p></li>
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/3a0f5559-0156-4547-a048-3854aef85a6a/4cf45fcc-f64b-46f4-8a9a-e10e2969bc5a/40455814-d0c5-4fd9-8825-b97748579a55.mp4">screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/5758640a3af1b3d13e57bc59ebea0bbb/python_basics-importing.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/reference/import.html">Documentation of how to import</a> in
-the Python Standard Reference</p></li>
-</ul>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=3a0f5559-0156-4547-a048-3854aef85a6a"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/5758640a3af1b3d13e57bc59ebea0bbb/python_basics-importing.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>See the <a class="reference external" href="https://docs.python.org/3/reference/import.html">Documentation of how to
+import</a> in the Python Standard
+Reference.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="xXQXtXqZacIY" data-shufflequestions="False"
+<div class="output text_html"><div id="qUgYrEasbpxe" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#xXQXtXqZacIY {
+#qUgYrEasbpxe {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -703,7 +705,7 @@ the Python Standard Reference</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsxXQXtXqZacIY=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
+</style></div><script type="application/javascript">var questionsqUgYrEasbpxe=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1452,8 +1454,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("xXQXtXqZacIY")) {
-            show_questions(questionsxXQXtXqZacIY,  xXQXtXqZacIY); 
+          if(document.getElementById("qUgYrEasbpxe")) {
+            show_questions(questionsqUgYrEasbpxe,  qUgYrEasbpxe); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1462,8 +1464,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("xXQXtXqZacIY");
-        // console.log(document.getElementById("xXQXtXqZacIY"));
+        //console.log("qUgYrEasbpxe");
+        // console.log(document.getElementById("qUgYrEasbpxe"));
 
         try_show();
         }
@@ -1538,7 +1540,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

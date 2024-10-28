@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -503,20 +504,27 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the <a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/b0a3fe74-61cc-4624-b5e9-d9ffb207813f/cfab9eca-5ae4-4bdd-a8d7-dcaea3940f80/ad65fdca-13f9-4e14-b2cc-93536a1e8489.mp4">screencast</a>. These are the
-<a class="reference download internal" download="" href="../../_downloads/3595191cc755f9347591132392c92a1e/debugging-gathering_data.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=b0a3fe74-61cc-4624-b5e9-d9ffb207813f"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/3595191cc755f9347591132392c92a1e/debugging-gathering_data.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="XdJjPKUlFvjc" data-shufflequestions="False"
+<div class="output text_html"><div id="oEmqHxrbgbmn" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#XdJjPKUlFvjc {
+#oEmqHxrbgbmn {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -686,7 +694,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXdJjPKUlFvjc=[{"question": "How can gathering data help in debugging?", "type": "many_choice", "answers": [{"answer": "It replaces reading error messages", "correct": false, "feedback": "Incorrect."}, {"answer": "It can help you to confirm hypotheses", "correct": true, "feedback": "Correct."}, {"answer": "It can help you to locate a problem", "correct": true, "feedback": "Correct."}, {"answer": "It automates the debugging process", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are problems of print statements for debugging", "type": "many_choice", "answers": [{"answer": "It takes a lot of effort to make the output informative", "correct": true, "feedback": "Correct."}, {"answer": "They don't help to gather data", "correct": false, "feedback": "Incorrect."}, {"answer": "Not all Python objects can be printed", "correct": false, "feedback": "Incorrect."}, {"answer": "You either get too much output or risk missing the important bit", "correct": true, "feedback": "Correct."}]}, {"question": "What are advantages of a debugger", "type": "many_choice", "answers": [{"answer": "It makes debugging more interactive than print statements", "correct": true, "feedback": "Correct."}, {"answer": "You only see what you want to see", "correct": true, "feedback": "Correct."}, {"answer": "It automates the debugging process", "correct": false, "feedback": "Incorrect."}, {"answer": "It is easier to learn than print statements.", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsoEmqHxrbgbmn=[{"question": "How can gathering data help in debugging?", "type": "many_choice", "answers": [{"answer": "It replaces reading error messages", "correct": false, "feedback": "Incorrect."}, {"answer": "It can help you to confirm hypotheses", "correct": true, "feedback": "Correct."}, {"answer": "It can help you to locate a problem", "correct": true, "feedback": "Correct."}, {"answer": "It automates the debugging process", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are problems of print statements for debugging", "type": "many_choice", "answers": [{"answer": "It takes a lot of effort to make the output informative", "correct": true, "feedback": "Correct."}, {"answer": "They don't help to gather data", "correct": false, "feedback": "Incorrect."}, {"answer": "Not all Python objects can be printed", "correct": false, "feedback": "Incorrect."}, {"answer": "You either get too much output or risk missing the important bit", "correct": true, "feedback": "Correct."}]}, {"question": "What are advantages of a debugger", "type": "many_choice", "answers": [{"answer": "It makes debugging more interactive than print statements", "correct": true, "feedback": "Correct."}, {"answer": "You only see what you want to see", "correct": true, "feedback": "Correct."}, {"answer": "It automates the debugging process", "correct": false, "feedback": "Incorrect."}, {"answer": "It is easier to learn than print statements.", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1435,8 +1443,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("XdJjPKUlFvjc")) {
-            show_questions(questionsXdJjPKUlFvjc,  XdJjPKUlFvjc); 
+          if(document.getElementById("oEmqHxrbgbmn")) {
+            show_questions(questionsoEmqHxrbgbmn,  oEmqHxrbgbmn); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1445,8 +1453,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("XdJjPKUlFvjc");
-        // console.log(document.getElementById("XdJjPKUlFvjc"));
+        //console.log("oEmqHxrbgbmn");
+        // console.log(document.getElementById("oEmqHxrbgbmn"));
 
         try_show();
         }

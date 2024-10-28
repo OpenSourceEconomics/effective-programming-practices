@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -504,21 +505,27 @@ a task</p></li>
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/cfca8006-44ff-465d-b866-7623ac0e44db/a280f3a2-1984-41d8-9d95-948a654fb190/b383a68c-4f13-401d-abc0-1c782f3b0589.mp4">Screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/4fc2a5a7ae966a3e4a028dd490024ced/projects-reusing_pytask_functions.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=cfca8006-44ff-465d-b866-7623ac0e44db"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/4fc2a5a7ae966a3e4a028dd490024ced/projects-reusing_pytask_functions.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="PbxdJIfVIagd" data-shufflequestions="False"
+<div class="output text_html"><div id="XDCJuYSzytzD" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#PbxdJIfVIagd {
+#XDCJuYSzytzD {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -688,7 +695,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPbxdJIfVIagd=[{"question": "For long running tasks you should loop over tasks, not products. Why?", "type": "many_choice", "answers": [{"answer": "So pytask can run your tasks in parallel", "correct": true, "feedback": "Correct."}, {"answer": "If one task fails, only the failing task has to be executed again", "correct": true, "feedback": "Correct."}, {"answer": "It makes your code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask has a runtime limit for individual tasks.", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you loop over tasks?", "type": "multiple_choice", "answers": [{"answer": "You define the task function within a for loop using the task decorator", "correct": true, "feedback": "Correct."}, {"answer": "You use a for loop within the task function", "correct": false, "feedback": "Incorrect."}, {"answer": "You use the `pytask.loop` decorator", "correct": false, "feedback": "Incorrect."}, {"answer": "`produces` is a dictionary that you generate in a loop", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential drawbacks of looping over tasks instead of products?", "type": "multiple_choice", "answers": [{"answer": "You get many more tasks and might lose the overview", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks is slower", "correct": false, "feedback": "Incorrect."}, {"answer": "Both are bad, loops are always bad, Python should not have loops", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks is less readable", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of looping over tasks instead of products?", "type": "many_choice", "answers": [{"answer": "More granular caching of results can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "More granular parallelization can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks in more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks in always preferable", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsXDCJuYSzytzD=[{"question": "For long running tasks you should loop over tasks, not products. Why?", "type": "many_choice", "answers": [{"answer": "So pytask can run your tasks in parallel", "correct": true, "feedback": "Correct."}, {"answer": "If one task fails, only the failing task has to be executed again", "correct": true, "feedback": "Correct."}, {"answer": "It makes your code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask has a runtime limit for individual tasks.", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you loop over tasks?", "type": "multiple_choice", "answers": [{"answer": "You define the task function within a for loop using the task decorator", "correct": true, "feedback": "Correct."}, {"answer": "You use a for loop within the task function", "correct": false, "feedback": "Incorrect."}, {"answer": "You use the `pytask.loop` decorator", "correct": false, "feedback": "Incorrect."}, {"answer": "`produces` is a dictionary that you generate in a loop", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential drawbacks of looping over tasks instead of products?", "type": "multiple_choice", "answers": [{"answer": "You get many more tasks and might lose the overview", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks is slower", "correct": false, "feedback": "Incorrect."}, {"answer": "Both are bad, loops are always bad, Python should not have loops", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks is less readable", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of looping over tasks instead of products?", "type": "many_choice", "answers": [{"answer": "More granular caching of results can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "More granular parallelization can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks in more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks in always preferable", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1437,8 +1444,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("PbxdJIfVIagd")) {
-            show_questions(questionsPbxdJIfVIagd,  PbxdJIfVIagd); 
+          if(document.getElementById("XDCJuYSzytzD")) {
+            show_questions(questionsXDCJuYSzytzD,  XDCJuYSzytzD); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1447,8 +1454,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("PbxdJIfVIagd");
-        // console.log(document.getElementById("PbxdJIfVIagd"));
+        //console.log("XDCJuYSzytzD");
+        // console.log(document.getElementById("XDCJuYSzytzD"));
 
         try_show();
         }

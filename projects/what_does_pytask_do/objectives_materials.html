@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -505,21 +506,27 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/0673d58c-da2a-46d2-9aa9-54275bfec889/28786054-449e-4b9e-a248-ff3e4db794ab/ecd1d79c-b566-4f87-a998-aa94a4651d71.mp4">Screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/a8b235424fc9457bc5ffeef13bceb310/projects-what_does_pytask_do.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=0673d58c-da2a-46d2-9aa9-54275bfec889"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/a8b235424fc9457bc5ffeef13bceb310/projects-what_does_pytask_do.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="uIEuFIfmgzYX" data-shufflequestions="False"
+<div class="output text_html"><div id="TjdJVLsOyigA" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#uIEuFIfmgzYX {
+#TjdJVLsOyigA {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -689,7 +696,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsuIEuFIfmgzYX=[{"question": "What needs to be done to run a piece of Python code with pytask?", "type": "many_choice", "answers": [{"answer": "It needs te be inside a function whose name starts with 'task_'", "correct": true, "feedback": "Correct."}, {"answer": "It needs to be inside a file whose name starts with 'task_'", "correct": true, "feedback": "Correct."}, {"answer": "You need to register it with the pytask database", "correct": false, "feedback": "Incorrect."}, {"answer": "You need to specify the path to the `.py` file when you call pytask", "correct": false, "feedback": "Incorrect."}]}, {"question": "How does pytask create the dependency graph of your project?", "type": "multiple_choice", "answers": [{"answer": "You need to specify it manually", "correct": false, "feedback": "Incorrect."}, {"answer": "There is a graphical interface to draw the DAG", "correct": false, "feedback": "Incorrect."}, {"answer": "It inspects the function signatures and default arguments of your tasks", "correct": true, "feedback": "Correct."}, {"answer": "It requires a specific directory structure that implies the graph DAG", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsTjdJVLsOyigA=[{"question": "What needs to be done to run a piece of Python code with pytask?", "type": "many_choice", "answers": [{"answer": "It needs te be inside a function whose name starts with 'task_'", "correct": true, "feedback": "Correct."}, {"answer": "It needs to be inside a file whose name starts with 'task_'", "correct": true, "feedback": "Correct."}, {"answer": "You need to register it with the pytask database", "correct": false, "feedback": "Incorrect."}, {"answer": "You need to specify the path to the `.py` file when you call pytask", "correct": false, "feedback": "Incorrect."}]}, {"question": "How does pytask create the dependency graph of your project?", "type": "multiple_choice", "answers": [{"answer": "You need to specify it manually", "correct": false, "feedback": "Incorrect."}, {"answer": "There is a graphical interface to draw the DAG", "correct": false, "feedback": "Incorrect."}, {"answer": "It inspects the function signatures and default arguments of your tasks", "correct": true, "feedback": "Correct."}, {"answer": "It requires a specific directory structure that implies the graph DAG", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1438,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("uIEuFIfmgzYX")) {
-            show_questions(questionsuIEuFIfmgzYX,  uIEuFIfmgzYX); 
+          if(document.getElementById("TjdJVLsOyigA")) {
+            show_questions(questionsTjdJVLsOyigA,  TjdJVLsOyigA); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1448,8 +1455,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("uIEuFIfmgzYX");
-        // console.log(document.getElementById("uIEuFIfmgzYX"));
+        //console.log("TjdJVLsOyigA");
+        // console.log(document.getElementById("TjdJVLsOyigA"));
 
         try_show();
         }

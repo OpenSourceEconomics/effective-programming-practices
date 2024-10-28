@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -477,9 +478,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -494,12 +495,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="staging-files">
 <h1>Staging files<a class="headerlink" href="#staging-files" title="Link to this heading">#</a></h1>
-<section id="notes">
-<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>You can also use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span></code> to unstage all staged files</p></li>
-</ul>
-</section>
 <section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
 <p>After working through this topic, you should be able to:</p>
@@ -514,17 +509,23 @@ document.write(`
 <p>For this topic we are building on the excellent YouTube playlist by <a class="reference external" href="https://www.youtube.com/&#64;NetNinja">NetNinja</a></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KngvG8WzYLU?si=ebF1lolZuHj6AnLm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>You can also use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span></code> to unstage all staged files</p></li>
+</ul>
+</section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="GOxXZiLoqsSo" data-shufflequestions="False"
+<div class="output text_html"><div id="VSplciqEAdtZ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#GOxXZiLoqsSo {
+#VSplciqEAdtZ {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -694,7 +695,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsGOxXZiLoqsSo=[{"question": "What does it mean that a file is staged?", "type": "multiple_choice", "answers": [{"answer": "It will be included in the next                     commit", "correct": true, "feedback": "Correct."}, {"answer": "The file is included in a                     snapshot to which you can always come back", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot make further                 changes to that file", "correct": false, "feedback": "Incorrect."}, {"answer": "The file is marked as                 unfinished and will not yet be committed", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you find out which         files have been staged?", "type": "many_choice", "answers": [{"answer": "Use `git status`", "correct": true, "feedback": "Correct."}, {"answer": "Check the side-bar of any                     modern editor", "correct": true, "feedback": "Correct."}, {"answer": "Look into the `.git` folder", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git add ...`", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to                 a central repository since the last                 synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                 the next commit", "correct": true, "feedback": "Correct."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsVSplciqEAdtZ=[{"question": "What does it mean that a file is staged?", "type": "multiple_choice", "answers": [{"answer": "It will be included in the next                     commit", "correct": true, "feedback": "Correct."}, {"answer": "The file is included in a                     snapshot to which you can always come back", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot make further                 changes to that file", "correct": false, "feedback": "Incorrect."}, {"answer": "The file is marked as                 unfinished and will not yet be committed", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you find out which         files have been staged?", "type": "many_choice", "answers": [{"answer": "Use `git status`", "correct": true, "feedback": "Correct."}, {"answer": "Check the side-bar of any                     modern editor", "correct": true, "feedback": "Correct."}, {"answer": "Look into the `.git` folder", "correct": false, "feedback": "Incorrect."}]}, {"question": "`git add ...`", "type": "multiple_choice", "answers": [{"answer": "downloads any changes made to                 a central repository since the last                 synchronization", "correct": false, "feedback": "Incorrect."}, {"answer": "creates a new node in the DAG                 representing the revision history", "correct": false, "feedback": "Incorrect."}, {"answer": "stages a file for inclusion in                 the next commit", "correct": true, "feedback": "Correct."}, {"answer": "uploads the local commits made                 since the last synchronization with the                 central repository", "correct": false, "feedback": "Incorrect."}, {"answer": "downloads a repository from a                 central location and checks out the default                 branch for the local working copy", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1443,8 +1444,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("GOxXZiLoqsSo")) {
-            show_questions(questionsGOxXZiLoqsSo,  GOxXZiLoqsSo); 
+          if(document.getElementById("VSplciqEAdtZ")) {
+            show_questions(questionsVSplciqEAdtZ,  VSplciqEAdtZ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1453,8 +1454,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("GOxXZiLoqsSo");
-        // console.log(document.getElementById("GOxXZiLoqsSo"));
+        //console.log("VSplciqEAdtZ");
+        // console.log(document.getElementById("VSplciqEAdtZ"));
 
         try_show();
         }
@@ -1527,9 +1528,9 @@ if (typeof version == 'undefined') {
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

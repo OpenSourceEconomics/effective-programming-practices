@@ -243,6 +243,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -510,9 +511,15 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/639ba83f-daed-458c-9fbf-32dbd68612fc/60bbfb3d-2070-4f19-9f41-e384334861fd/15935a25-3f3e-4997-96fd-4974f859fbb0.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/03cf54646b1727213dca6409173da726/debugging-pdbp.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=639ba83f-daed-458c-9fbf-32dbd68612fc"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/03cf54646b1727213dca6409173da726/debugging-pdbp.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="pdbp-and-different-ways-of-running-code">
 <h2>pdbp and different ways of running code<a class="headerlink" href="#pdbp-and-different-ways-of-running-code" title="Link to this heading">#</a></h2>
@@ -553,13 +560,13 @@ do because pytask will already be configured correctly.</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="xuLeHqDrdGFL" data-shufflequestions="False"
+<div class="output text_html"><div id="ZPZkuNPeRGcF" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#xuLeHqDrdGFL {
+#ZPZkuNPeRGcF {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -729,7 +736,7 @@ do because pytask will already be configured correctly.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsxuLeHqDrdGFL=[{"question": "What does a breakpoint do?", "type": "multiple_choice", "answers": [{"answer": "Stop the execution of the program and show you a debug prompt", "correct": true, "feedback": "Correct."}, {"answer": "Print the values of all currently defined variables", "correct": false, "feedback": "Incorrect."}, {"answer": "Skip the rest of the Python script you are executing", "correct": false, "feedback": "Incorrect."}, {"answer": "Ignore all errors in the Python script you are executing", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you write `import pdbp; breakpoint()` instead of just `breakpoint()`?", "type": "multiple_choice", "answers": [{"answer": "This will make sure we use Pdb+, which is a better debugger than the default Pdb", "correct": true, "feedback": "Correct."}, {"answer": "This is the only valid way of setting breakpoints in Python", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are examples where conditional breakpoints are helpful", "type": "many_choice", "answers": [{"answer": "Your problem only occurs after a certain number of iterations in a loop", "correct": true, "feedback": "Correct."}, {"answer": "Your problem only occurs for certain values of a variable", "correct": true, "feedback": "Correct."}, {"answer": "Your problem only occurs when a certain function is called", "correct": false, "feedback": "Incorrect."}, {"answer": "Your problem seems to occur randomly", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the `n` command do in Pdb+ ?", "type": "multiple_choice", "answers": [{"answer": "It executes the next line of code", "correct": true, "feedback": "Correct."}, {"answer": "It executes the next line of code and steps into functions", "correct": false, "feedback": "Incorrect."}, {"answer": "It executes the next line of code and skips all loops", "correct": false, "feedback": "Incorrect."}, {"answer": "It executes the next line of code and skips all function calls", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the `s` command do in Pdb+ ?", "type": "multiple_choice", "answers": [{"answer": "It executes the next step and steps into function calls it encounters", "correct": true, "feedback": "Correct."}, {"answer": "It executes the next line of code", "correct": false, "feedback": "Incorrect."}, {"answer": "It runs the program until the next breakpoint", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are advantages of using a terminal debugger like Pdb+ ?", "type": "many_choice", "answers": [{"answer": "Integrates well with pytest", "correct": true, "feedback": "Correct."}, {"answer": "Integrates well with pytask", "correct": true, "feedback": "Correct."}, {"answer": "You can set breakpoints by clicking", "correct": false, "feedback": "Incorrect."}, {"answer": "It is very fast once you know the commands", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsZPZkuNPeRGcF=[{"question": "What does a breakpoint do?", "type": "multiple_choice", "answers": [{"answer": "Stop the execution of the program and show you a debug prompt", "correct": true, "feedback": "Correct."}, {"answer": "Print the values of all currently defined variables", "correct": false, "feedback": "Incorrect."}, {"answer": "Skip the rest of the Python script you are executing", "correct": false, "feedback": "Incorrect."}, {"answer": "Ignore all errors in the Python script you are executing", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you write `import pdbp; breakpoint()` instead of just `breakpoint()`?", "type": "multiple_choice", "answers": [{"answer": "This will make sure we use Pdb+, which is a better debugger than the default Pdb", "correct": true, "feedback": "Correct."}, {"answer": "This is the only valid way of setting breakpoints in Python", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are examples where conditional breakpoints are helpful", "type": "many_choice", "answers": [{"answer": "Your problem only occurs after a certain number of iterations in a loop", "correct": true, "feedback": "Correct."}, {"answer": "Your problem only occurs for certain values of a variable", "correct": true, "feedback": "Correct."}, {"answer": "Your problem only occurs when a certain function is called", "correct": false, "feedback": "Incorrect."}, {"answer": "Your problem seems to occur randomly", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the `n` command do in Pdb+ ?", "type": "multiple_choice", "answers": [{"answer": "It executes the next line of code", "correct": true, "feedback": "Correct."}, {"answer": "It executes the next line of code and steps into functions", "correct": false, "feedback": "Incorrect."}, {"answer": "It executes the next line of code and skips all loops", "correct": false, "feedback": "Incorrect."}, {"answer": "It executes the next line of code and skips all function calls", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the `s` command do in Pdb+ ?", "type": "multiple_choice", "answers": [{"answer": "It executes the next step and steps into function calls it encounters", "correct": true, "feedback": "Correct."}, {"answer": "It executes the next line of code", "correct": false, "feedback": "Incorrect."}, {"answer": "It runs the program until the next breakpoint", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are advantages of using a terminal debugger like Pdb+ ?", "type": "many_choice", "answers": [{"answer": "Integrates well with pytest", "correct": true, "feedback": "Correct."}, {"answer": "Integrates well with pytask", "correct": true, "feedback": "Correct."}, {"answer": "You can set breakpoints by clicking", "correct": false, "feedback": "Incorrect."}, {"answer": "It is very fast once you know the commands", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1478,8 +1485,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("xuLeHqDrdGFL")) {
-            show_questions(questionsxuLeHqDrdGFL,  xuLeHqDrdGFL); 
+          if(document.getElementById("ZPZkuNPeRGcF")) {
+            show_questions(questionsZPZkuNPeRGcF,  ZPZkuNPeRGcF); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1488,8 +1495,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("xuLeHqDrdGFL");
-        // console.log(document.getElementById("xuLeHqDrdGFL"));
+        //console.log("ZPZkuNPeRGcF");
+        // console.log(document.getElementById("ZPZkuNPeRGcF"));
 
         try_show();
         }

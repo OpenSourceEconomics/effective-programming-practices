@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -505,12 +505,16 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/163c3249-4739-4dea-b232-38a9ee8b5491/ed5d89e1-b522-4892-a94e-c6d6dec0061f/7fae7d8f-5a73-4c3f-8a41-7221c7192465.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/4c66bfbe3a35405995054adb622e4700/plotting-what_to_plot.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=163c3249-4739-4dea-b232-38a9ee8b5491"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/4c66bfbe3a35405995054adb622e4700/plotting-what_to_plot.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Some additional resources:</p>
 <ul class="simple">
 <li><p>Chapter 7 of <a class="reference external" href="https://www.callingbullshit.org/">Calling Bullshit</a> (Carl Bergstrom &amp;
 Jevin West). Light read, important insights in particular how popular visualisations
@@ -536,13 +540,13 @@ on tables.</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="nfWpaMXfuyEY" data-shufflequestions="False"
+<div class="output text_html"><div id="jKKimNSIhuhq" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#nfWpaMXfuyEY {
+#jKKimNSIhuhq {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -712,7 +716,7 @@ on tables.</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsnfWpaMXfuyEY=[{"question": "One thing you should clearly have in mind                 when thinking about plotting a graph is", "type": "many_choice", "answers": [{"answer": "Which type of data you are handling", "correct": true, "feedback": "Correct. If you carefully performed                     data management, this should be included in                     the variables dtypes."}, {"answer": "How to clearly show the data", "correct": true, "feedback": "Correct. This is one of the most                     important features of a graph."}, {"answer": "Which types of graphs you like the most", "correct": false, "feedback": "Inorrect. The appropriate graph is                     independent from our personal taste.                     Additionally, fancy graphs are often less effective                     than standard ones."}, {"answer": "Which colours you will use", "correct": false, "feedback": "Inorrect. Since many researchers look at                     graphs in scales of gray, you should start thinking                     about your graph in accordingly."}]}];
+</style></div><script type="application/javascript">var questionsjKKimNSIhuhq=[{"question": "One thing you should clearly have in mind                 when thinking about plotting a graph is", "type": "many_choice", "answers": [{"answer": "Which type of data you are handling", "correct": true, "feedback": "Correct. If you carefully performed                     data management, this should be included in                     the variables dtypes."}, {"answer": "How to clearly show the data", "correct": true, "feedback": "Correct. This is one of the most                     important features of a graph."}, {"answer": "Which types of graphs you like the most", "correct": false, "feedback": "Inorrect. The appropriate graph is                     independent from our personal taste.                     Additionally, fancy graphs are often less effective                     than standard ones."}, {"answer": "Which colours you will use", "correct": false, "feedback": "Inorrect. Since many researchers look at                     graphs in scales of gray, you should start thinking                     about your graph in accordingly."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1461,8 +1465,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("nfWpaMXfuyEY")) {
-            show_questions(questionsnfWpaMXfuyEY,  nfWpaMXfuyEY); 
+          if(document.getElementById("jKKimNSIhuhq")) {
+            show_questions(questionsjKKimNSIhuhq,  jKKimNSIhuhq); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1471,8 +1475,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("nfWpaMXfuyEY");
-        // console.log(document.getElementById("nfWpaMXfuyEY"));
+        //console.log("jKKimNSIhuhq");
+        // console.log(document.getElementById("jKKimNSIhuhq"));
 
         try_show();
         }
@@ -1547,7 +1551,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

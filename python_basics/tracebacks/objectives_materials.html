@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -511,29 +511,31 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/9eb28129-730a-45b1-8f98-18deaa3b3499/69baf6b2-5027-4657-a0a2-a597f37abbd2/a925cdbc-1333-4c38-a2db-db51a9bb5951.mp4">screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/910cbca26824838bbd0d41e3e23aa708/python_basics-tracebacks.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://matthewrocklin.com/minimal-bug-reports">excellent blogpost</a> by Matthew Rocklin
-that shows how to ideally ask for help</p></li>
-<li><p><a class="reference external" href="https://realpython.com/python-traceback/">realpython post</a> on how to read tracebacks</p></li>
-</ul>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=9eb28129-730a-45b1-8f98-18deaa3b3499"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/910cbca26824838bbd0d41e3e23aa708/python_basics-tracebacks.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>See an <a class="reference external" href="https://matthewrocklin.com/minimal-bug-reports">excellent blogpost</a> by Matthew
+Rocklin that shows how to ideally ask for help.</p>
+<p>And the <a class="reference external" href="https://realpython.com/python-traceback/">realpython post</a> on how to read
+tracebacks.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="VLTgxzUqeluM" data-shufflequestions="False"
+<div class="output text_html"><div id="MgbPzPTIVpFB" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#VLTgxzUqeluM {
+#MgbPzPTIVpFB {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -703,7 +705,7 @@ that shows how to ideally ask for help</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsVLTgxzUqeluM=[{"question": "If you need to represent 'hello world', in Python you would use ...", "type": "multiple_choice", "answers": [{"answer": "A string", "correct": true, "feedback": "Correct."}, {"answer": "A float", "correct": false, "feedback": "Incorrect."}, {"answer": "An integer", "correct": false, "feedback": "Incorrect."}, {"answer": "A Boolean", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsMgbPzPTIVpFB=[{"question": "If you need to represent 'hello world', in Python you would use ...", "type": "multiple_choice", "answers": [{"answer": "A string", "correct": true, "feedback": "Correct."}, {"answer": "A float", "correct": false, "feedback": "Incorrect."}, {"answer": "An integer", "correct": false, "feedback": "Incorrect."}, {"answer": "A Boolean", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1452,8 +1454,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("VLTgxzUqeluM")) {
-            show_questions(questionsVLTgxzUqeluM,  VLTgxzUqeluM); 
+          if(document.getElementById("MgbPzPTIVpFB")) {
+            show_questions(questionsMgbPzPTIVpFB,  MgbPzPTIVpFB); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1462,8 +1464,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("VLTgxzUqeluM");
-        // console.log(document.getElementById("VLTgxzUqeluM"));
+        //console.log("MgbPzPTIVpFB");
+        // console.log(document.getElementById("MgbPzPTIVpFB"));
 
         try_show();
         }
@@ -1538,7 +1540,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

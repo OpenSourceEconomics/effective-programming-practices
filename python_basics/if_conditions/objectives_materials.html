@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -505,27 +505,29 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/c9e125d0-111f-4ee8-985f-0ed60f179dcd/92c55088-b795-40c3-bcd4-128cdd3e8ed4/0467144f-76b2-4118-aaaf-6d906f9fce74.mp4">screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/da85e84f301287521c06ec8bfc78669c/python_basics-if_conditions.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://pythonbasics.org/if-statements/">Tutorial on conditional statements</a></p></li>
-</ul>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=c9e125d0-111f-4ee8-985f-0ed60f179dcd"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/da85e84f301287521c06ec8bfc78669c/python_basics-if_conditions.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>The PythonBasics <a class="reference external" href="https://pythonbasics.org/if-statements/">Tutorial on conditional
+statements</a> is very nice.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="bYuBNuDOmWfW" data-shufflequestions="False"
+<div class="output text_html"><div id="EfteFuyhNJLf" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#bYuBNuDOmWfW {
+#EfteFuyhNJLf {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -695,7 +697,7 @@ and these are the <a class="reference download internal" download="" href="../..
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsbYuBNuDOmWfW=[{"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n    print(2)\nelif c:\n    print(3)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive", "correct": false}, {"answer": "Exactly one print function will be executed.", "correct": false}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print function will be executed.", "correct": true}]}, {"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n        print(2)\nelif c:\n        print(3)\nelse:\n        print(4)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive.", "correct": true}, {"answer": "Exactly one print function will be executed.", "correct": true}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print functionwill be executed.", "correct": false}]}, {"question": "if/elif/elif/else-blocks in Python are ...", "type": "many_choice", "answers": [{"answer": "using Boolean logic, i.e., the inclusive or, meaning that all blocks following conditions evaluating to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": false}, {"answer": "short-circuit, meaning that only the block following the first condition that evaluates to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": true}]}, {"question": "Tick all conditions that imply that 'Yes' will be printed to the screen. (assume correct indentation)", "type": "many_choice", "answers": [{"code": "if True:\n    print('Yes')", "correct": true}, {"code": "if (0,):\n    print('Yes')", "correct": true}, {"code": "if [0]:\n    print('Yes')", "correct": true}, {"code": "if []:\n    print('Yes')", "correct": false}, {"code": "if (0):\n    print('Yes')", "correct": false}, {"code": "if -5:\n    print('Yes')", "correct": true}, {"code": "if '0':\n    print('Yes')", "correct": true}, {"code": "if '':\n    print('Yes')", "correct": false}]}, {"question": "It is easy to filter dictionaries based on conditions for both  keys and values. (with correct explanation)", "type": "many_choice", "answers": [{"answer": "Yes, in particular one may loop over key-value pairs using the '.items()' method directly. It is then easy to apply conditions to keys and/or values.", "correct": true}, {"answer": "No, looping over a dictionary always loops over the keys alone. It is then difficult to access the corresponding values.", "correct": false}, {"answer": "Yes, because looping over a dictionary always loops over key-value pairs. It is then easy to apply conditions to keys and/or values.", "correct": false}, {"answer": "No, because conditions can only ever be applied to the values.", "correct": false}]}, {"question": "The following code will yield ...", "code": "if a = 0:\n    print(7)", "type": "many_choice", "answers": [{"answer": "SyntaxError: invalid syntax", "correct": true}, {"answer": "7", "correct": false}]}];
+</style></div><script type="application/javascript">var questionsEfteFuyhNJLf=[{"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n    print(2)\nelif c:\n    print(3)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive", "correct": false}, {"answer": "Exactly one print function will be executed.", "correct": false}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print function will be executed.", "correct": true}]}, {"question": "Which statement is correct if you execute the following Python code, regardless of what 'a', 'b', and 'c' are?", "code": "if a:\n    print(1)\nelif b:\n        print(2)\nelif c:\n        print(3)\nelse:\n        print(4)", "type": "many_choice", "answers": [{"answer": "These conditions are necessarily exhaustive.", "correct": true}, {"answer": "Exactly one print function will be executed.", "correct": true}, {"answer": "More than one print function might be executed.", "correct": false}, {"answer": "Either nothing will be printed or precisely one print functionwill be executed.", "correct": false}]}, {"question": "if/elif/elif/else-blocks in Python are ...", "type": "many_choice", "answers": [{"answer": "using Boolean logic, i.e., the inclusive or, meaning that all blocks following conditions evaluating to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": false}, {"answer": "short-circuit, meaning that only the block following the first condition that evaluates to 'True' will be executed. If no condition evaluates to 'True', the block following 'else' will be executed.", "correct": true}]}, {"question": "Tick all conditions that imply that 'Yes' will be printed to the screen. (assume correct indentation)", "type": "many_choice", "answers": [{"code": "if True:\n    print('Yes')", "correct": true}, {"code": "if (0,):\n    print('Yes')", "correct": true}, {"code": "if [0]:\n    print('Yes')", "correct": true}, {"code": "if []:\n    print('Yes')", "correct": false}, {"code": "if (0):\n    print('Yes')", "correct": false}, {"code": "if -5:\n    print('Yes')", "correct": true}, {"code": "if '0':\n    print('Yes')", "correct": true}, {"code": "if '':\n    print('Yes')", "correct": false}]}, {"question": "It is easy to filter dictionaries based on conditions for both  keys and values. (with correct explanation)", "type": "many_choice", "answers": [{"answer": "Yes, in particular one may loop over key-value pairs using the '.items()' method directly. It is then easy to apply conditions to keys and/or values.", "correct": true}, {"answer": "No, looping over a dictionary always loops over the keys alone. It is then difficult to access the corresponding values.", "correct": false}, {"answer": "Yes, because looping over a dictionary always loops over key-value pairs. It is then easy to apply conditions to keys and/or values.", "correct": false}, {"answer": "No, because conditions can only ever be applied to the values.", "correct": false}]}, {"question": "The following code will yield ...", "code": "if a = 0:\n    print(7)", "type": "many_choice", "answers": [{"answer": "SyntaxError: invalid syntax", "correct": true}, {"answer": "7", "correct": false}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1444,8 +1446,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("bYuBNuDOmWfW")) {
-            show_questions(questionsbYuBNuDOmWfW,  bYuBNuDOmWfW); 
+          if(document.getElementById("EfteFuyhNJLf")) {
+            show_questions(questionsEfteFuyhNJLf,  EfteFuyhNJLf); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1454,8 +1456,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("bYuBNuDOmWfW");
-        // console.log(document.getElementById("bYuBNuDOmWfW"));
+        //console.log("EfteFuyhNJLf");
+        // console.log(document.getElementById("EfteFuyhNJLf"));
 
         try_show();
         }
@@ -1530,7 +1532,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

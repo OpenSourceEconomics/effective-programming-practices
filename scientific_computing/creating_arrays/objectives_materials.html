@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -506,12 +506,15 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/dbf47130-a749-450f-a04d-dd64cb07d78d/1a87c9b2-c1eb-4e27-826a-de5b2a3067cf/63a6031c-ad47-4766-8a46-e1fceafbba85.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/e2e871c7829344ef74b246b61d6fe732/scientific_computing-creating_arrays.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=dbf47130-a749-450f-a04d-dd64cb07d78d"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/e2e871c7829344ef74b246b61d6fe732/scientific_computing-creating_arrays.pdf"><span class="xref download myst">slides</span></a>.</p>
 <ul class="simple">
 <li><p>The numpy (<a class="reference external" href="https://numpy.org/doc/stable/reference/routines.array-creation.html">documentation</a>)</p></li>
 </ul>
@@ -520,13 +523,13 @@ These are the <a class="reference download internal" download="" href="../../_do
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="iGOiQojiggOf" data-shufflequestions="False"
+<div class="output text_html"><div id="TRcLpUzuhZBB" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#iGOiQojiggOf {
+#TRcLpUzuhZBB {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -696,7 +699,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsiGOiQojiggOf=[{"question": "What does `np.ones` do?", "type": "multiple_choice", "answers": [{"answer": "Create arrays of ones in different shapes", "correct": true, "feedback": "Correct."}, {"answer": "Create nested lists of ones", "correct": false, "feedback": "Incorrect."}, {"answer": "Create arrays of zeros in different shapes", "correct": false, "feedback": "Incorrect."}, {"answer": "Create an identity matrix", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `np.arange` do?", "type": "multiple_choice", "answers": [{"answer": "Create a matrix", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a vector with elements starting at 0 and increasing by 1", "correct": true, "feedback": "Correct."}, {"answer": "Create a vector with elements starting at 1 and increasing by 1", "correct": false, "feedback": "Incorrect."}, {"answer": "Create arbitrary grids of floating point numbers", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does shape (5, 4) mean?", "type": "multiple_choice", "answers": [{"answer": "There are 5 rows and 4 columns", "correct": true, "feedback": "Correct."}, {"answer": "There are 4 rows and 5 columns", "correct": false, "feedback": "Incorrect."}]}, {"question": "Suppose you have a list of length 8 that needs to reshaped into a 3 dimensional           array. The code you would use is:", "type": "multiple_choice", "answers": [{"answer": "reshaped_array = your_list.reshape(2,2,2)", "correct": false, "feedback": "Incorrect."}, {"answer": "reshaped_array = np.array(your_list).reshape(2,2,4)", "correct": false, "feedback": "Incorrect."}, {"answer": "reshaped_array = np.array(your_list).reshape(2,1,4)", "correct": true, "feedback": "Correct."}]}, {"question": "Suppose you have an array with shape (3,3). Then your_array.repeat(3)         will return:", "type": "multiple_choice", "answers": [{"answer": "A three dimensional array of shape (3,3,3)", "correct": false, "feedback": "Incorrect."}, {"answer": "A one dimensional array of shape (27,)", "correct": true, "feedback": "Correct."}, {"answer": "A two dimensional array of shape (9,9)", "correct": false, "feedback": "Incorrect."}, {"answer": "A two dimensional array of shape (9,3)", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsTRcLpUzuhZBB=[{"question": "What does `np.ones` do?", "type": "multiple_choice", "answers": [{"answer": "Create arrays of ones in different shapes", "correct": true, "feedback": "Correct."}, {"answer": "Create nested lists of ones", "correct": false, "feedback": "Incorrect."}, {"answer": "Create arrays of zeros in different shapes", "correct": false, "feedback": "Incorrect."}, {"answer": "Create an identity matrix", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `np.arange` do?", "type": "multiple_choice", "answers": [{"answer": "Create a matrix", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a vector with elements starting at 0 and increasing by 1", "correct": true, "feedback": "Correct."}, {"answer": "Create a vector with elements starting at 1 and increasing by 1", "correct": false, "feedback": "Incorrect."}, {"answer": "Create arbitrary grids of floating point numbers", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does shape (5, 4) mean?", "type": "multiple_choice", "answers": [{"answer": "There are 5 rows and 4 columns", "correct": true, "feedback": "Correct."}, {"answer": "There are 4 rows and 5 columns", "correct": false, "feedback": "Incorrect."}]}, {"question": "Suppose you have a list of length 8 that needs to reshaped into a 3 dimensional           array. The code you would use is:", "type": "multiple_choice", "answers": [{"answer": "reshaped_array = your_list.reshape(2,2,2)", "correct": false, "feedback": "Incorrect."}, {"answer": "reshaped_array = np.array(your_list).reshape(2,2,4)", "correct": false, "feedback": "Incorrect."}, {"answer": "reshaped_array = np.array(your_list).reshape(2,1,4)", "correct": true, "feedback": "Correct."}]}, {"question": "Suppose you have an array with shape (3,3). Then your_array.repeat(3)         will return:", "type": "multiple_choice", "answers": [{"answer": "A three dimensional array of shape (3,3,3)", "correct": false, "feedback": "Incorrect."}, {"answer": "A one dimensional array of shape (27,)", "correct": true, "feedback": "Correct."}, {"answer": "A two dimensional array of shape (9,9)", "correct": false, "feedback": "Incorrect."}, {"answer": "A two dimensional array of shape (9,3)", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1445,8 +1448,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("iGOiQojiggOf")) {
-            show_questions(questionsiGOiQojiggOf,  iGOiQojiggOf); 
+          if(document.getElementById("TRcLpUzuhZBB")) {
+            show_questions(questionsTRcLpUzuhZBB,  TRcLpUzuhZBB); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1455,8 +1458,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("iGOiQojiggOf");
-        // console.log(document.getElementById("iGOiQojiggOf"));
+        //console.log("TRcLpUzuhZBB");
+        // console.log(document.getElementById("TRcLpUzuhZBB"));
 
         try_show();
         }
@@ -1556,7 +1559,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

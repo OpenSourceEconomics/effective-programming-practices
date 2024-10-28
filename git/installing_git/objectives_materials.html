@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -477,9 +478,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-configuration">Additional configuration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
@@ -495,6 +496,15 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="installing-git-and-some-useful-shell-commands">
 <h1>Installing git and some useful shell commands<a class="headerlink" href="#installing-git-and-some-useful-shell-commands" title="Link to this heading">#</a></h1>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After working through this topic, you should be able to:</p>
+<ul class="simple">
+<li><p>install git on your local machine</p></li>
+<li><p>set the username and user email for git</p></li>
+<li><p>list, create and delete files from the command line</p></li>
+</ul>
+</section>
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
 <ul class="simple">
@@ -514,15 +524,6 @@ to vscode with the following command:</p>
 </pre></div>
 </div>
 </section>
-<section id="learning-objectives">
-<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
-<p>After working through this topic, you should be able to:</p>
-<ul class="simple">
-<li><p>install git on your local machine</p></li>
-<li><p>set the username and user email for git</p></li>
-<li><p>list, create and delete files from the command line</p></li>
-</ul>
-</section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
 <p>For this topic we are building on the excellent YouTube playlist by <a class="reference external" href="https://www.youtube.com/&#64;NetNinja">NetNinja</a></p>
@@ -532,13 +533,13 @@ to vscode with the following command:</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="yQGrouwsTCfF" data-shufflequestions="False"
+<div class="output text_html"><div id="CFiugVeUeAOS" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#yQGrouwsTCfF {
+#CFiugVeUeAOS {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -708,7 +709,7 @@ to vscode with the following command:</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsyQGrouwsTCfF=[{"question": "Why do you have to configure your         username and email address for git?", "type": "multiple_choice", "answers": [{"answer": "To sign up for the git newsletter", "correct": false, "feedback": "Incorrect."}, {"answer": "To link your GitHub account to                 your local git installation", "correct": false, "feedback": "Incorrect."}, {"answer": "It makes transparent who made                 a change to the source code", "correct": true, "feedback": "Correct."}, {"answer": "Git will complain if you                 don't do it", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsCFiugVeUeAOS=[{"question": "Why do you have to configure your         username and email address for git?", "type": "multiple_choice", "answers": [{"answer": "To sign up for the git newsletter", "correct": false, "feedback": "Incorrect."}, {"answer": "To link your GitHub account to                 your local git installation", "correct": false, "feedback": "Incorrect."}, {"answer": "It makes transparent who made                 a change to the source code", "correct": true, "feedback": "Correct."}, {"answer": "Git will complain if you                 don't do it", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1457,8 +1458,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("yQGrouwsTCfF")) {
-            show_questions(questionsyQGrouwsTCfF,  yQGrouwsTCfF); 
+          if(document.getElementById("CFiugVeUeAOS")) {
+            show_questions(questionsCFiugVeUeAOS,  CFiugVeUeAOS); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1467,8 +1468,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("yQGrouwsTCfF");
-        // console.log(document.getElementById("yQGrouwsTCfF"));
+        //console.log("CFiugVeUeAOS");
+        // console.log(document.getElementById("CFiugVeUeAOS"));
 
         try_show();
         }
@@ -1541,9 +1542,9 @@ if (typeof version == 'undefined') {
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-configuration">Additional configuration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>

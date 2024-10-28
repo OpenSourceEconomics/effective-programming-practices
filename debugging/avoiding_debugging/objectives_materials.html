@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -505,21 +506,27 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/7df7b3e6-0989-426b-9330-7f3033c7cd4d/d52233f9-ef50-4159-bda3-7d5f7a4e04f1/c0b3fabc-1aca-4790-acf9-954b5a3450c9.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/e6b46fcbe8566ae092f2c7d1ac1b144c/debugging-avoiding_debugging.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=7df7b3e6-0989-426b-9330-7f3033c7cd4d"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/e6b46fcbe8566ae092f2c7d1ac1b144c/debugging-avoiding_debugging.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="YkhPufLJVsvE" data-shufflequestions="False"
+<div class="output text_html"><div id="SdwNNFcJMPRJ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#YkhPufLJVsvE {
+#SdwNNFcJMPRJ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -689,7 +696,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsYkhPufLJVsvE=[{"question": "How can unit testing avoid debugging?", "type": "multiple_choice", "answers": [{"answer": "A tested function is likely correct. It can be skipped while debugging", "correct": true, "feedback": "Correct."}, {"answer": "Tests will discover if the function is called with invalid inputs", "correct": false, "feedback": "Incorrect."}, {"answer": "If you write test there can never be a bug in your code", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can error handling avoid debugging", "type": "multiple_choice", "answers": [{"answer": "Error handling makes sure that the results of functions are correct", "correct": false, "feedback": "Incorrect."}, {"answer": "Error handling alerts you about invalid inputs to a function", "correct": true, "feedback": "Correct."}, {"answer": "When doing proper error handling there can never be a bug in your code", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsSdwNNFcJMPRJ=[{"question": "How can unit testing avoid debugging?", "type": "multiple_choice", "answers": [{"answer": "A tested function is likely correct. It can be skipped while debugging", "correct": true, "feedback": "Correct."}, {"answer": "Tests will discover if the function is called with invalid inputs", "correct": false, "feedback": "Incorrect."}, {"answer": "If you write test there can never be a bug in your code", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can error handling avoid debugging", "type": "multiple_choice", "answers": [{"answer": "Error handling makes sure that the results of functions are correct", "correct": false, "feedback": "Incorrect."}, {"answer": "Error handling alerts you about invalid inputs to a function", "correct": true, "feedback": "Correct."}, {"answer": "When doing proper error handling there can never be a bug in your code", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1438,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("YkhPufLJVsvE")) {
-            show_questions(questionsYkhPufLJVsvE,  YkhPufLJVsvE); 
+          if(document.getElementById("SdwNNFcJMPRJ")) {
+            show_questions(questionsSdwNNFcJMPRJ,  SdwNNFcJMPRJ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1448,8 +1455,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("YkhPufLJVsvE");
-        // console.log(document.getElementById("YkhPufLJVsvE"));
+        //console.log("SdwNNFcJMPRJ");
+        // console.log(document.getElementById("SdwNNFcJMPRJ"));
 
         try_show();
         }

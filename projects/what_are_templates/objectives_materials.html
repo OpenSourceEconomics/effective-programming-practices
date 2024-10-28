@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -504,26 +504,29 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/paella7/ui/watch.html?id=f96c82ba-73de-4cd5-a2c9-c5a2e18b6c15">Screencast</a>
-and these are the <a class="reference download internal" download="" href="../../_downloads/e459ceaf2fecdc2d90a41479eb777989/projects-what_are_templates.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
-<p>Here is the <a class="reference external" href="https://econ-project-templates.readthedocs.io/en/stable/">documentation</a>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=f96c82ba-73de-4cd5-a2c9-c5a2e18b6c15"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/e459ceaf2fecdc2d90a41479eb777989/projects-what_are_templates.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>See the <a class="reference external" href="https://econ-project-templates.readthedocs.io/en/stable/">documentation</a>
 of the econ project templates.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="PgNjmaZPGZVB" data-shufflequestions="False"
+<div class="output text_html"><div id="RQJyadzCWjFP" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#PgNjmaZPGZVB {
+#RQJyadzCWjFP {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -693,7 +696,7 @@ of the econ project templates.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPgNjmaZPGZVB=[{"question": "What is the purpose of pytask?", "type": "many_choice", "answers": [{"answer": "Execute python tasks and keep track of dependencies between them", "correct": true, "feedback": "Correct."}, {"answer": "Download and customize the project templates", "correct": false, "feedback": "Incorrect."}, {"answer": "Showcase an example project implementing best practices", "correct": false, "feedback": "Incorrect."}, {"answer": "Run your python code in parallel", "correct": true, "feedback": "Correct."}]}, {"question": "What are the project templates?", "type": "multiple_choice", "answers": [{"answer": "Execute python tasks and keep track of dependencies between them", "correct": false, "feedback": "Incorrect."}, {"answer": "Download and customize the project templates", "correct": false, "feedback": "Incorrect."}, {"answer": "Showcase an example project implementing best practices", "correct": true, "feedback": "Correct."}, {"answer": "Run your python code in parallel", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsRQJyadzCWjFP=[{"question": "What is the purpose of pytask?", "type": "many_choice", "answers": [{"answer": "Execute python tasks and keep track of dependencies between them", "correct": true, "feedback": "Correct."}, {"answer": "Download and customize the project templates", "correct": false, "feedback": "Incorrect."}, {"answer": "Showcase an example project implementing best practices", "correct": false, "feedback": "Incorrect."}, {"answer": "Run your python code in parallel", "correct": true, "feedback": "Correct."}]}, {"question": "What are the project templates?", "type": "multiple_choice", "answers": [{"answer": "Execute python tasks and keep track of dependencies between them", "correct": false, "feedback": "Incorrect."}, {"answer": "Download and customize the project templates", "correct": false, "feedback": "Incorrect."}, {"answer": "Showcase an example project implementing best practices", "correct": true, "feedback": "Correct."}, {"answer": "Run your python code in parallel", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1442,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("PgNjmaZPGZVB")) {
-            show_questions(questionsPgNjmaZPGZVB,  PgNjmaZPGZVB); 
+          if(document.getElementById("RQJyadzCWjFP")) {
+            show_questions(questionsRQJyadzCWjFP,  RQJyadzCWjFP); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1452,8 +1455,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("PgNjmaZPGZVB");
-        // console.log(document.getElementById("PgNjmaZPGZVB"));
+        //console.log("RQJyadzCWjFP");
+        // console.log(document.getElementById("RQJyadzCWjFP"));
 
         try_show();
         }
@@ -1528,7 +1531,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>

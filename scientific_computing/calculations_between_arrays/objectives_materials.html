@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -503,21 +504,27 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/5871a8cb-f403-4908-a18f-1cbf70ce4ce9/9d90909c-432e-46b5-9872-f37887670849/3da5c69c-a4ed-404d-97a0-4766f5ae9362.mp4">screencast</a>.
-These are the <a class="reference download internal" download="" href="../../_downloads/e3ed7701b9468b7f946b91043e5f0199/scientific_computing-calculations_between_arrays.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=5871a8cb-f403-4908-a18f-1cbf70ce4ce9"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/e3ed7701b9468b7f946b91043e5f0199/scientific_computing-calculations_between_arrays.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="jBwpXnnZeNwk" data-shufflequestions="False"
+<div class="output text_html"><div id="UTwIJusZZZPY" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#jBwpXnnZeNwk {
+#UTwIJusZZZPY {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -687,7 +694,7 @@ These are the <a class="reference download internal" download="" href="../../_do
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsjBwpXnnZeNwk=[{"question": "How can you multiply the matrices a and b in numpy?", "type": "many_choice", "answers": [{"answer": "a.dot(b)", "correct": true, "feedback": "Correct."}, {"answer": "a * b", "correct": false, "feedback": "Incorrect."}, {"answer": "a @ b", "correct": true, "feedback": "Correct."}, {"answer": "a ** b", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you do an element-wise multiplication of the matrices a and b in numpy?", "type": "multiple_choice", "answers": [{"answer": "a.dot(b)", "correct": false, "feedback": "Incorrect."}, {"answer": "a * b", "correct": true, "feedback": "Correct."}, {"answer": "a @ b", "correct": false, "feedback": "Incorrect."}, {"answer": "a ** b", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsUTwIJusZZZPY=[{"question": "How can you multiply the matrices a and b in numpy?", "type": "many_choice", "answers": [{"answer": "a.dot(b)", "correct": true, "feedback": "Correct."}, {"answer": "a * b", "correct": false, "feedback": "Incorrect."}, {"answer": "a @ b", "correct": true, "feedback": "Correct."}, {"answer": "a ** b", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can you do an element-wise multiplication of the matrices a and b in numpy?", "type": "multiple_choice", "answers": [{"answer": "a.dot(b)", "correct": false, "feedback": "Incorrect."}, {"answer": "a * b", "correct": true, "feedback": "Correct."}, {"answer": "a @ b", "correct": false, "feedback": "Incorrect."}, {"answer": "a ** b", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1436,8 +1443,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("jBwpXnnZeNwk")) {
-            show_questions(questionsjBwpXnnZeNwk,  jBwpXnnZeNwk); 
+          if(document.getElementById("UTwIJusZZZPY")) {
+            show_questions(questionsUTwIJusZZZPY,  UTwIJusZZZPY); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1446,8 +1453,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("jBwpXnnZeNwk");
-        // console.log(document.getElementById("jBwpXnnZeNwk"));
+        //console.log("UTwIJusZZZPY");
+        // console.log(document.getElementById("UTwIJusZZZPY"));
 
         try_show();
         }

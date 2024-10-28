@@ -62,7 +62,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Functional data management" href="../functional/objectives_materials.html" />
+    <link rel="next" title="Functional data management: Fundamental rules" href="../functional_fundamentals/objectives_materials.html" />
     <link rel="prev" title="Rules for data management" href="../rules/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -244,6 +244,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../creating_variables/objectives_materials.html">Creating variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Merging datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functional/objectives_materials.html">Functional data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functional/functional_pandas.html">Functional data management: Example</a></li>
 </ul>
@@ -479,7 +480,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
             </nav>
@@ -506,29 +506,29 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<p>Here is the
-<a class="reference external" href="https://electure.uni-bonn.de/static/mh_default_org/engage-player/f6b59c88-7ee8-4130-94a1-97582d5d689f/4f633611-57f1-454c-861b-d5bde2cd19fd/29066d6c-6e41-4eb9-9f95-16628d3ec0a2.mp4">Screencast</a>
-(audio is very low in the beginning, but gets better) and these are the
-<a class="reference download internal" download="" href="../../_downloads/797a90c46f861a8856f79d051a71ab66/pandas-merging.pdf"><span class="xref download myst">slides</span></a>.</p>
-</section>
-<section id="additional-materials">
-<h2>Additional Materials<a class="headerlink" href="#additional-materials" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Pandas <a class="reference external" href="https://pandas.pydata.org/docs/user_guide/merging.html">tutorial</a> on merge,
-join and concatenate</p></li>
-</ul>
+<p>Video:</p>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=f6b59c88-7ee8-4130-94a1-97582d5d689f"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+<p>Download the <a class="reference download internal" download="" href="../../_downloads/797a90c46f861a8856f79d051a71ab66/pandas-merging.pdf"><span class="xref download myst">slides</span></a>.</p>
+<p>The Pandas <a class="reference external" href="https://pandas.pydata.org/docs/user_guide/merging.html">tutorial</a> on merge,
+join, and concatenate may be helpful.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="GiqmFNMaTjep" data-shufflequestions="False"
+<div class="output text_html"><div id="gAdaZWmCSUIR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#GiqmFNMaTjep {
+#gAdaZWmCSUIR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -698,7 +698,7 @@ join and concatenate</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsGiqmFNMaTjep=[{"question": "Why does raw data often not come in a single file?", "type": "multiple_choice", "answers": [{"answer": "Because it is too large to fit in a single file.", "correct": false, "feedback": "Incorrect."}, {"answer": "Because data providers respect the normal forms", "correct": true, "feedback": "Correct."}, {"answer": "Because data providers are lazy", "correct": false, "feedback": "Incorrect."}]}, {"question": "In which situations can you use `pd.concat`", "type": "many_choice", "answers": [{"answer": "You want to join DataFrames on the index", "correct": true, "feedback": "Correct."}, {"answer": "You want to join DataFrames on the columns", "correct": true, "feedback": "Correct."}, {"answer": "You want to do a m:m join", "correct": false, "feedback": "Incorrect."}, {"answer": "You want to do a left join", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the how argument in `pd.merge` do?", "type": "multiple_choice", "answers": [{"answer": "It determines which columns are kept", "correct": false, "feedback": "Incorrect."}, {"answer": "It determines which rows are kept", "correct": true, "feedback": "Correct."}, {"answer": "It determines how NaNs are handled", "correct": false, "feedback": "Incorrect."}, {"answer": "It determines whether you do a 1:1, 1:m or m:m join", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a quick way to check if a merge went \"well\"?", "type": "multiple_choice", "answers": [{"answer": "Check if the number of observations in the new dataframe is what you expected         it to be", "correct": true, "feedback": "Correct."}, {"answer": "Check if the number of columns in the new dataframe is what you expected         it to be", "correct": false, "feedback": "Incorrect."}, {"answer": "Check if the index is the same as the left dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "Check if the index is the same as the right dataframe", "correct": false, "feedback": "Incorrect."}]}, {"question": "The \"inner\" option for the argument how in pd.merge determines that", "type": "multiple_choice", "answers": [{"answer": "the new dataframe only contains observations with the intersection of the         keys used for the merge", "correct": true, "feedback": "Correct."}, {"answer": "the new dataframe contains all observations from the left dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "the new dataframe contains all observations from the right dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "the new dataframe contains all observations from both dataframes", "correct": false, "feedback": "Incorrect."}]}, {"question": "You want to use data from the Current Population Survey (CPS), which provides     multiple data files, each containing observations for a given month. You want     to put all the data from 2019 in a single dataframe. Which of the following         functions is better for this task?", "type": "multiple_choice", "answers": [{"answer": "pd.concat", "correct": true, "feedback": "Correct."}, {"answer": "pd.merge", "correct": false, "feedback": "Incorrect."}, {"answer": "pd.join", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsgAdaZWmCSUIR=[{"question": "Why does raw data often not come in a single file?", "type": "multiple_choice", "answers": [{"answer": "Because it is too large to fit in a single file.", "correct": false, "feedback": "Incorrect."}, {"answer": "Because data providers respect the normal forms", "correct": true, "feedback": "Correct."}, {"answer": "Because data providers are lazy", "correct": false, "feedback": "Incorrect."}]}, {"question": "In which situations can you use `pd.concat`", "type": "many_choice", "answers": [{"answer": "You want to join DataFrames on the index", "correct": true, "feedback": "Correct."}, {"answer": "You want to join DataFrames on the columns", "correct": true, "feedback": "Correct."}, {"answer": "You want to do a m:m join", "correct": false, "feedback": "Incorrect."}, {"answer": "You want to do a left join", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does the how argument in `pd.merge` do?", "type": "multiple_choice", "answers": [{"answer": "It determines which columns are kept", "correct": false, "feedback": "Incorrect."}, {"answer": "It determines which rows are kept", "correct": true, "feedback": "Correct."}, {"answer": "It determines how NaNs are handled", "correct": false, "feedback": "Incorrect."}, {"answer": "It determines whether you do a 1:1, 1:m or m:m join", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a quick way to check if a merge went \"well\"?", "type": "multiple_choice", "answers": [{"answer": "Check if the number of observations in the new dataframe is what you expected         it to be", "correct": true, "feedback": "Correct."}, {"answer": "Check if the number of columns in the new dataframe is what you expected         it to be", "correct": false, "feedback": "Incorrect."}, {"answer": "Check if the index is the same as the left dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "Check if the index is the same as the right dataframe", "correct": false, "feedback": "Incorrect."}]}, {"question": "The \"inner\" option for the argument how in pd.merge determines that", "type": "multiple_choice", "answers": [{"answer": "the new dataframe only contains observations with the intersection of the         keys used for the merge", "correct": true, "feedback": "Correct."}, {"answer": "the new dataframe contains all observations from the left dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "the new dataframe contains all observations from the right dataframe", "correct": false, "feedback": "Incorrect."}, {"answer": "the new dataframe contains all observations from both dataframes", "correct": false, "feedback": "Incorrect."}]}, {"question": "You want to use data from the Current Population Survey (CPS), which provides     multiple data files, each containing observations for a given month. You want     to put all the data from 2019 in a single dataframe. Which of the following         functions is better for this task?", "type": "multiple_choice", "answers": [{"answer": "pd.concat", "correct": true, "feedback": "Correct."}, {"answer": "pd.merge", "correct": false, "feedback": "Incorrect."}, {"answer": "pd.join", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1447,8 +1447,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("GiqmFNMaTjep")) {
-            show_questions(questionsGiqmFNMaTjep,  GiqmFNMaTjep); 
+          if(document.getElementById("gAdaZWmCSUIR")) {
+            show_questions(questionsgAdaZWmCSUIR,  gAdaZWmCSUIR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1457,8 +1457,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("GiqmFNMaTjep");
-        // console.log(document.getElementById("GiqmFNMaTjep"));
+        //console.log("gAdaZWmCSUIR");
+        // console.log(document.getElementById("gAdaZWmCSUIR"));
 
         try_show();
         }
@@ -1507,11 +1507,11 @@ if (typeof version == 'undefined') {
       </div>
     </a>
     <a class="right-next"
-       href="../functional/objectives_materials.html"
+       href="../functional_fundamentals/objectives_materials.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Functional data management</p>
+        <p class="prev-next-title">Functional data management: Fundamental rules</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1533,7 +1533,6 @@ if (typeof version == 'undefined') {
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-materials">Additional Materials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quiz">Quiz</a></li>
 </ul>
   </nav></div>
