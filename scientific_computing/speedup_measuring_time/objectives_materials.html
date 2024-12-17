@@ -489,20 +489,26 @@ document.write(`
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kxwlwz95IXE?si=MP3JZtSqlmxG5m3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=76d97954-29d9-48d0-9817-c667553a2167"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
 <p>Download the <a class="reference download internal" download="" href="../../_downloads/7b1cf8c3356b16913c1108495faf3386/scientific_computing-speedup_measuring_time.pdf"><span class="xref download myst">slides</span></a>.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="FMKNRUhgRUzb" data-shufflequestions="False"
+<div class="output text_html"><div id="SQWnqKMEioDy" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#FMKNRUhgRUzb {
+#SQWnqKMEioDy {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -672,7 +678,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsFMKNRUhgRUzb=[{"question": "Why should you use `time.perf_counter` instead of `time.time`?", "type": "multiple_choice", "answers": [{"answer": "It has a higher resolution", "correct": true, "feedback": "Correct."}, {"answer": "`time.time` is biased", "correct": false, "feedback": "Incorrect."}, {"answer": "It is more interpretable", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following things does `timeit` do?", "type": "many_choice", "answers": [{"answer": "Determine how often your code should be run to get an accurate time", "correct": true, "feedback": "Correct."}, {"answer": "Discard outliers", "correct": true, "feedback": "Correct."}, {"answer": "Make your function faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Reduce noise from background tasks", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you use realistically sized inputs to measure runtime?", "type": "many_choice", "answers": [{"answer": "Not all algorithms scale linearly", "correct": true, "feedback": "Correct."}, {"answer": "The resulting runtime is more interpretable", "correct": true, "feedback": "Correct."}, {"answer": "It is easier to implement", "correct": false, "feedback": "Incorrect."}, {"answer": "It is more accurate", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsSQWnqKMEioDy=[{"question": "Why should you use `time.perf_counter` instead of `time.time`?", "type": "multiple_choice", "answers": [{"answer": "It has a higher resolution", "correct": true, "feedback": "Correct."}, {"answer": "`time.time` is biased", "correct": false, "feedback": "Incorrect."}, {"answer": "It is more interpretable", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following things does `timeit` do?", "type": "many_choice", "answers": [{"answer": "Determine how often your code should be run to get an accurate time", "correct": true, "feedback": "Correct."}, {"answer": "Discard outliers", "correct": true, "feedback": "Correct."}, {"answer": "Make your function faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Reduce noise from background tasks", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why should you use realistically sized inputs to measure runtime?", "type": "many_choice", "answers": [{"answer": "Not all algorithms scale linearly", "correct": true, "feedback": "Correct."}, {"answer": "The resulting runtime is more interpretable", "correct": true, "feedback": "Correct."}, {"answer": "It is easier to implement", "correct": false, "feedback": "Incorrect."}, {"answer": "It is more accurate", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1421,8 +1427,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("FMKNRUhgRUzb")) {
-            show_questions(questionsFMKNRUhgRUzb,  FMKNRUhgRUzb); 
+          if(document.getElementById("SQWnqKMEioDy")) {
+            show_questions(questionsSQWnqKMEioDy,  SQWnqKMEioDy); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1431,8 +1437,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("FMKNRUhgRUzb");
-        // console.log(document.getElementById("FMKNRUhgRUzb"));
+        //console.log("SQWnqKMEioDy");
+        // console.log(document.getElementById("SQWnqKMEioDy"));
 
         try_show();
         }
