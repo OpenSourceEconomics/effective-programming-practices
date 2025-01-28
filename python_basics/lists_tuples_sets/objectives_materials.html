@@ -329,6 +329,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../metrics_ml/index.html">Data Analysis in Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/overview/objectives_materials.html">Python’s Data Analysis Ecosystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_intro/objectives_materials.html">Running regressions using statsmodels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_results/objectives_materials.html">Working with statsmodels’ results objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/ml_intro_diffs_metrics/objectives_materials.html">Introduction to Machine Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_intro/objectives_materials.html">Introduction to scikit-learn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_cv_hyper/objectives_materials.html">Cross-validation and hyperparamters in scikit-learn</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -519,13 +528,13 @@ tuples.</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="FVgoKqoyXnHD" data-shufflequestions="False"
+<div class="output text_html"><div id="yukqBwSAGYrx" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#FVgoKqoyXnHD {
+#yukqBwSAGYrx {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -726,7 +735,7 @@ tuples.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsFVgoKqoyXnHD=[{"question": "What are the differences between a list and a tuple?", "type": "many_choice", "answers": [{"answer": "Lists are immutable, while tuples are mutable", "correct": false, "feedback": "Incorrect. Tuples are immutable,\n                while lists are mutable."}, {"answer": "Lists are mutable, while tuples are immutable", "correct": true, "feedback": "Correct!"}, {"answer": "Lists are ordered, while tuples are unordered", "correct": false, "feedback": "Incorrect. Both are ordered."}, {"answer": "Lists are used more frequently than tuples, because\n                they are more flexible (can be used for different purposes)", "correct": true, "feedback": "Correct. Tuples are usually used\n                in locations where you do not want to risk accidental changes,\n                 for example the indices of a dataset."}]}, {"question": "How do you access the second element of a set object named 'das_set'?", "type": "multiple_choice", "answers": [{"answer": "das_set[1]", "correct": false, "feedback": "Incorrect."}, {"answer": "das_set[2]", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot access the second element of a set,\n            because sets are unordered", "correct": true, "feedback": "Correct!"}, {"answer": "das_set(2)", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you access the second element of a tuple object named\n                        'das_tuple'?", "type": "multiple_choice", "answers": [{"answer": "das_tuple[1]", "correct": true, "feedback": "Correct!"}, {"answer": "das_tuple[2]", "correct": false, "feedback": "Incorrect.\n             Remember that Python starts counting from 0."}, {"answer": "das_tuple(1)", "correct": false, "feedback": "Incorrect.\n             Square brackets are used for indexing, not round ones."}, {"answer": "das_tuple(2)", "correct": false, "feedback": "Incorrect."}]}, {"question": "You have a sequence of unique objects for which you will need\n                     to check multiple times whether it includes a specific object\n                     or not. Would it be more efficient to have the objects\n                     in a list, a tuple or a set?", "type": "multiple_choice", "answers": [{"answer": "List", "correct": false, "feedback": "Incorrect. While\n            lists can be used for this purpose, it is not the most efficient way,\n            nor the easiest one to write."}, {"answer": "Tuple", "correct": false, "feedback": "Incorrect. While\n            tuples can be used for this purpose, it is not the most efficient\n              way, and the most complicated one to write."}, {"answer": "Set", "correct": true, "feedback": "Correct. Sets are\n             optimised for this kind of task, both in terms of efficiency and\n             simplicity of the code (there is a specific method for this,\n             set.contains())."}]}];
+</style></div><script type="application/javascript">var questionsyukqBwSAGYrx=[{"question": "What are the differences between a list and a tuple?", "type": "many_choice", "answers": [{"answer": "Lists are immutable, while tuples are mutable", "correct": false, "feedback": "Incorrect. Tuples are immutable,\n                while lists are mutable."}, {"answer": "Lists are mutable, while tuples are immutable", "correct": true, "feedback": "Correct!"}, {"answer": "Lists are ordered, while tuples are unordered", "correct": false, "feedback": "Incorrect. Both are ordered."}, {"answer": "Lists are used more frequently than tuples, because\n                they are more flexible (can be used for different purposes)", "correct": true, "feedback": "Correct. Tuples are usually used\n                in locations where you do not want to risk accidental changes,\n                 for example the indices of a dataset."}]}, {"question": "How do you access the second element of a set object named 'das_set'?", "type": "multiple_choice", "answers": [{"answer": "das_set[1]", "correct": false, "feedback": "Incorrect."}, {"answer": "das_set[2]", "correct": false, "feedback": "Incorrect."}, {"answer": "You cannot access the second element of a set,\n            because sets are unordered", "correct": true, "feedback": "Correct!"}, {"answer": "das_set(2)", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you access the second element of a tuple object named\n                        'das_tuple'?", "type": "multiple_choice", "answers": [{"answer": "das_tuple[1]", "correct": true, "feedback": "Correct!"}, {"answer": "das_tuple[2]", "correct": false, "feedback": "Incorrect.\n             Remember that Python starts counting from 0."}, {"answer": "das_tuple(1)", "correct": false, "feedback": "Incorrect.\n             Square brackets are used for indexing, not round ones."}, {"answer": "das_tuple(2)", "correct": false, "feedback": "Incorrect."}]}, {"question": "You have a sequence of unique objects for which you will need\n                     to check multiple times whether it includes a specific object\n                     or not. Would it be more efficient to have the objects\n                     in a list, a tuple or a set?", "type": "multiple_choice", "answers": [{"answer": "List", "correct": false, "feedback": "Incorrect. While\n            lists can be used for this purpose, it is not the most efficient way,\n            nor the easiest one to write."}, {"answer": "Tuple", "correct": false, "feedback": "Incorrect. While\n            tuples can be used for this purpose, it is not the most efficient\n              way, and the most complicated one to write."}, {"answer": "Set", "correct": true, "feedback": "Correct. Sets are\n             optimised for this kind of task, both in terms of efficiency and\n             simplicity of the code (there is a specific method for this,\n             set.contains())."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1533,8 +1542,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("FVgoKqoyXnHD")) {
-            show_questions(questionsFVgoKqoyXnHD,  FVgoKqoyXnHD); 
+          if(document.getElementById("yukqBwSAGYrx")) {
+            show_questions(questionsyukqBwSAGYrx,  yukqBwSAGYrx); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1543,8 +1552,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("FVgoKqoyXnHD");
-        // console.log(document.getElementById("FVgoKqoyXnHD"));
+        //console.log("yukqBwSAGYrx");
+        // console.log(document.getElementById("yukqBwSAGYrx"));
 
         try_show();
         }

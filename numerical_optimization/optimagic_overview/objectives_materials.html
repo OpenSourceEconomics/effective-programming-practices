@@ -329,6 +329,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../metrics_ml/index.html">Data Analysis in Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/overview/objectives_materials.html">Python’s Data Analysis Ecosystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_intro/objectives_materials.html">Running regressions using statsmodels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_results/objectives_materials.html">Working with statsmodels’ results objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/ml_intro_diffs_metrics/objectives_materials.html">Introduction to Machine Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_intro/objectives_materials.html">Introduction to scikit-learn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_cv_hyper/objectives_materials.html">Cross-validation and hyperparamters in scikit-learn</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -514,13 +523,13 @@ understand all details. Just try to get an overview of the main optimagic featur
 ></iframe>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="BwQLTSAzHPWW" data-shufflequestions="False"
+<div class="output text_html"><div id="mNUsOOCODUFy" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#BwQLTSAzHPWW {
+#mNUsOOCODUFy {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -721,7 +730,7 @@ understand all details. Just try to get an overview of the main optimagic featur
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsBwQLTSAzHPWW=[{"question": "What are features of optimagic?", "type": "many_choice", "answers": [{"answer": "It has diagnostic tools to help you find the right optimizer", "correct": true, "feedback": "Correct."}, {"answer": "It is written in Fortran so it is really fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It re-implements optimizers to make them more user-friendly", "correct": false, "feedback": "Incorrect."}, {"answer": "It wraps optimizers from other packages and makes them more user-friendly", "correct": true, "feedback": "Correct."}]}, {"question": "Which data structures can you use for the parameters to optimize in optimagic?", "type": "many_choice", "answers": [{"answer": "numpy arrays", "correct": true, "feedback": "Correct."}, {"answer": "pandas Series", "correct": true, "feedback": "Correct."}, {"answer": "pandas DataFrames", "correct": true, "feedback": "Correct."}, {"answer": "lists", "correct": true, "feedback": "Correct."}, {"answer": "dictionaries", "correct": true, "feedback": "Correct."}, {"answer": "NamedTuples", "correct": true, "feedback": "Correct."}, {"answer": "Nested combinations of all of the above", "correct": true, "feedback": "Correct."}]}, {"question": "Which data structures can you use for the parameters in most other optimization packages?", "type": "multiple_choice", "answers": [{"answer": "1d numpy arrays", "correct": true, "feedback": "Correct."}, {"answer": "pandas Series", "correct": false, "feedback": "Incorrect."}, {"answer": "pandas DataFrames", "correct": false, "feedback": "Incorrect."}, {"answer": "lists", "correct": false, "feedback": "Incorrect."}, {"answer": "dictionaries", "correct": false, "feedback": "Incorrect."}, {"answer": "NamedTuples", "correct": false, "feedback": "Incorrect."}, {"answer": "Nested combinations of all of the above", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsmNUsOOCODUFy=[{"question": "What are features of optimagic?", "type": "many_choice", "answers": [{"answer": "It has diagnostic tools to help you find the right optimizer", "correct": true, "feedback": "Correct."}, {"answer": "It is written in Fortran so it is really fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It re-implements optimizers to make them more user-friendly", "correct": false, "feedback": "Incorrect."}, {"answer": "It wraps optimizers from other packages and makes them more user-friendly", "correct": true, "feedback": "Correct."}]}, {"question": "Which data structures can you use for the parameters to optimize in optimagic?", "type": "many_choice", "answers": [{"answer": "numpy arrays", "correct": true, "feedback": "Correct."}, {"answer": "pandas Series", "correct": true, "feedback": "Correct."}, {"answer": "pandas DataFrames", "correct": true, "feedback": "Correct."}, {"answer": "lists", "correct": true, "feedback": "Correct."}, {"answer": "dictionaries", "correct": true, "feedback": "Correct."}, {"answer": "NamedTuples", "correct": true, "feedback": "Correct."}, {"answer": "Nested combinations of all of the above", "correct": true, "feedback": "Correct."}]}, {"question": "Which data structures can you use for the parameters in most other optimization packages?", "type": "multiple_choice", "answers": [{"answer": "1d numpy arrays", "correct": true, "feedback": "Correct."}, {"answer": "pandas Series", "correct": false, "feedback": "Incorrect."}, {"answer": "pandas DataFrames", "correct": false, "feedback": "Incorrect."}, {"answer": "lists", "correct": false, "feedback": "Incorrect."}, {"answer": "dictionaries", "correct": false, "feedback": "Incorrect."}, {"answer": "NamedTuples", "correct": false, "feedback": "Incorrect."}, {"answer": "Nested combinations of all of the above", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1528,8 +1537,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("BwQLTSAzHPWW")) {
-            show_questions(questionsBwQLTSAzHPWW,  BwQLTSAzHPWW); 
+          if(document.getElementById("mNUsOOCODUFy")) {
+            show_questions(questionsmNUsOOCODUFy,  mNUsOOCODUFy); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1538,8 +1547,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("BwQLTSAzHPWW");
-        // console.log(document.getElementById("BwQLTSAzHPWW"));
+        //console.log("mNUsOOCODUFy");
+        // console.log(document.getElementById("mNUsOOCODUFy"));
 
         try_show();
         }

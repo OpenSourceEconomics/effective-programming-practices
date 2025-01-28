@@ -329,6 +329,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../metrics_ml/index.html">Data Analysis in Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/overview/objectives_materials.html">Python’s Data Analysis Ecosystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_intro/objectives_materials.html">Running regressions using statsmodels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_results/objectives_materials.html">Working with statsmodels’ results objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/ml_intro_diffs_metrics/objectives_materials.html">Introduction to Machine Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_intro/objectives_materials.html">Introduction to scikit-learn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_cv_hyper/objectives_materials.html">Cross-validation and hyperparamters in scikit-learn</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -515,13 +524,13 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="AUdxHttmaKzs" data-shufflequestions="False"
+<div class="output text_html"><div id="tFDhIFUetqJD" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#AUdxHttmaKzs {
+#tFDhIFUetqJD {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -722,7 +731,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsAUdxHttmaKzs=[{"question": "Which of the following behaviors of a function you should test?", "type": "many_choice", "answers": [{"answer": "Interfaces", "correct": true, "feedback": "Correct."}, {"answer": "Implementation details", "correct": false, "feedback": "Incorrect."}, {"answer": "Special cases (for example corner solutions)", "correct": true, "feedback": "Correct."}, {"answer": "Critical exceptions (the ones that are likely to happen)", "correct": true, "feedback": "Correct."}]}, {"question": "You want to test that all elements in list `a` are greater than 0.     Which of the following assertions would you use?", "type": "multiple_choice", "answers": [{"answer": "assert all(a > 0)", "correct": false, "feedback": "Incorrect."}, {"answer": "assert all([x > 0 for x in a])", "correct": true, "feedback": "Correct."}, {"answer": "assert any([x > 0 for x in a])", "correct": false, "feedback": "Incorrect."}, {"answer": "assert any(a > 0)", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does it mean for a test to be granular?", "type": "many_choice", "answers": [{"answer": "It tests a single specific behavior", "correct": true, "feedback": "Correct."}, {"answer": "It uses assertions for multiple behaviors of the function", "correct": false, "feedback": "Incorrect."}, {"answer": "It handles multiple assertions with \"or\"-like logic", "correct": false, "feedback": "Incorrect."}, {"answer": "It handles multiple assertions with \"and\"-like logic", "correct": true, "feedback": "Correct."}]}, {"question": "What should you do if you encounter a bug in your code?", "type": "multiple_choice", "answers": [{"answer": "Fix the bug and write a test that reproduces the bug with            a minimal implementation", "correct": true, "feedback": "Correct."}, {"answer": "Fix the bug and write a test that reproduces the bug in the             original implementation", "correct": false, "feedback": "Incorrect."}, {"answer": "Fix the bug and don't write a test", "correct": false, "feedback": "Incorrect."}, {"answer": "Get very frustrated and give up", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a countercheck in the context of testing?", "type": "multiple_choice", "answers": [{"answer": "A test that checks that the function returns the same value             as a different function", "correct": false, "feedback": "Incorrect."}, {"answer": "A test that checks the function's behavior for a specific             input and output", "correct": false, "feedback": "Incorrect."}, {"answer": "It means that when creating a test, you have to             make sure that it passes with the implementation that you             have in mind, but also that it fails with a wrong             implementation (because sometimes tests may pass for              different reasons that what you had in mind)", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionstFDhIFUetqJD=[{"question": "Which of the following behaviors of a function you should test?", "type": "many_choice", "answers": [{"answer": "Interfaces", "correct": true, "feedback": "Correct."}, {"answer": "Implementation details", "correct": false, "feedback": "Incorrect."}, {"answer": "Special cases (for example corner solutions)", "correct": true, "feedback": "Correct."}, {"answer": "Critical exceptions (the ones that are likely to happen)", "correct": true, "feedback": "Correct."}]}, {"question": "You want to test that all elements in list `a` are greater than 0.     Which of the following assertions would you use?", "type": "multiple_choice", "answers": [{"answer": "assert all(a > 0)", "correct": false, "feedback": "Incorrect."}, {"answer": "assert all([x > 0 for x in a])", "correct": true, "feedback": "Correct."}, {"answer": "assert any([x > 0 for x in a])", "correct": false, "feedback": "Incorrect."}, {"answer": "assert any(a > 0)", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does it mean for a test to be granular?", "type": "many_choice", "answers": [{"answer": "It tests a single specific behavior", "correct": true, "feedback": "Correct."}, {"answer": "It uses assertions for multiple behaviors of the function", "correct": false, "feedback": "Incorrect."}, {"answer": "It handles multiple assertions with \"or\"-like logic", "correct": false, "feedback": "Incorrect."}, {"answer": "It handles multiple assertions with \"and\"-like logic", "correct": true, "feedback": "Correct."}]}, {"question": "What should you do if you encounter a bug in your code?", "type": "multiple_choice", "answers": [{"answer": "Fix the bug and write a test that reproduces the bug with            a minimal implementation", "correct": true, "feedback": "Correct."}, {"answer": "Fix the bug and write a test that reproduces the bug in the             original implementation", "correct": false, "feedback": "Incorrect."}, {"answer": "Fix the bug and don't write a test", "correct": false, "feedback": "Incorrect."}, {"answer": "Get very frustrated and give up", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a countercheck in the context of testing?", "type": "multiple_choice", "answers": [{"answer": "A test that checks that the function returns the same value             as a different function", "correct": false, "feedback": "Incorrect."}, {"answer": "A test that checks the function's behavior for a specific             input and output", "correct": false, "feedback": "Incorrect."}, {"answer": "It means that when creating a test, you have to             make sure that it passes with the implementation that you             have in mind, but also that it fails with a wrong             implementation (because sometimes tests may pass for              different reasons that what you had in mind)", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1529,8 +1538,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("AUdxHttmaKzs")) {
-            show_questions(questionsAUdxHttmaKzs,  AUdxHttmaKzs); 
+          if(document.getElementById("tFDhIFUetqJD")) {
+            show_questions(questionstFDhIFUetqJD,  tFDhIFUetqJD); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1539,8 +1548,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("AUdxHttmaKzs");
-        // console.log(document.getElementById("AUdxHttmaKzs"));
+        //console.log("tFDhIFUetqJD");
+        // console.log(document.getElementById("tFDhIFUetqJD"));
 
         try_show();
         }

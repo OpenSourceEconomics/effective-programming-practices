@@ -329,6 +329,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../metrics_ml/index.html">Data Analysis in Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/overview/objectives_materials.html">Python’s Data Analysis Ecosystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_intro/objectives_materials.html">Running regressions using statsmodels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_results/objectives_materials.html">Working with statsmodels’ results objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/ml_intro_diffs_metrics/objectives_materials.html">Introduction to Machine Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_intro/objectives_materials.html">Introduction to scikit-learn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_cv_hyper/objectives_materials.html">Cross-validation and hyperparamters in scikit-learn</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -513,13 +522,13 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="FPaNAmTlCsXF" data-shufflequestions="False"
+<div class="output text_html"><div id="nBaUqUluMWtl" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#FPaNAmTlCsXF {
+#nBaUqUluMWtl {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -720,7 +729,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsFPaNAmTlCsXF=[{"question": "What is the main idea behind grid search?", "type": "multiple_choice", "answers": [{"answer": "Systematically exploring a predefined set of parameter values", "correct": true, "feedback": "Correct."}, {"answer": "Randomly selecting parameter values within specified bounds", "correct": false, "feedback": "Incorrect."}, {"answer": "Iteratively updating parameter values based on gradient descent", "correct": false, "feedback": "Incorrect."}, {"answer": "Using heuristics to find the optimal parameter combination", "correct": false, "feedback": "Incorrect."}, {"answer": "Employing trust regions to confine the search space for             parameter optimization", "correct": false, "feedback": "Incorrect."}]}, {"question": "How does one determine the number of grid points?", "type": "multiple_choice", "answers": [{"answer": "By evaluating the function", "correct": false, "feedback": "Incorrect."}, {"answer": "By setting arbitrary values", "correct": false, "feedback": "Incorrect."}, {"answer": "Based on desired precision", "correct": true, "feedback": "Correct."}, {"answer": "By determining bounds on parameters", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why is grid search considered less feasible in more than one dimension?", "type": "multiple_choice", "answers": [{"answer": "It does not allow for parallel processing, slowing             down the optimization process", "correct": false, "feedback": "Incorrect."}, {"answer": "Multi-dimensional grids result in a less precise parameter search", "correct": false, "feedback": "Incorrect."}, {"answer": "Grid search is inherently limited to one-dimensional problems", "correct": false, "feedback": "Incorrect."}, {"answer": "The presence of multiple dimensions exponentially increases the number of             parameter combinations to check, resulting in significant computational                 intensity", "correct": true, "feedback": "Correct."}]}, {"question": "The grid search algorithm could get \"stuck\" in a region with a local minimum", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Incorrect."}, {"answer": "False", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsnBaUqUluMWtl=[{"question": "What is the main idea behind grid search?", "type": "multiple_choice", "answers": [{"answer": "Systematically exploring a predefined set of parameter values", "correct": true, "feedback": "Correct."}, {"answer": "Randomly selecting parameter values within specified bounds", "correct": false, "feedback": "Incorrect."}, {"answer": "Iteratively updating parameter values based on gradient descent", "correct": false, "feedback": "Incorrect."}, {"answer": "Using heuristics to find the optimal parameter combination", "correct": false, "feedback": "Incorrect."}, {"answer": "Employing trust regions to confine the search space for             parameter optimization", "correct": false, "feedback": "Incorrect."}]}, {"question": "How does one determine the number of grid points?", "type": "multiple_choice", "answers": [{"answer": "By evaluating the function", "correct": false, "feedback": "Incorrect."}, {"answer": "By setting arbitrary values", "correct": false, "feedback": "Incorrect."}, {"answer": "Based on desired precision", "correct": true, "feedback": "Correct."}, {"answer": "By determining bounds on parameters", "correct": false, "feedback": "Incorrect."}]}, {"question": "Why is grid search considered less feasible in more than one dimension?", "type": "multiple_choice", "answers": [{"answer": "It does not allow for parallel processing, slowing             down the optimization process", "correct": false, "feedback": "Incorrect."}, {"answer": "Multi-dimensional grids result in a less precise parameter search", "correct": false, "feedback": "Incorrect."}, {"answer": "Grid search is inherently limited to one-dimensional problems", "correct": false, "feedback": "Incorrect."}, {"answer": "The presence of multiple dimensions exponentially increases the number of             parameter combinations to check, resulting in significant computational                 intensity", "correct": true, "feedback": "Correct."}]}, {"question": "The grid search algorithm could get \"stuck\" in a region with a local minimum", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Incorrect."}, {"answer": "False", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1527,8 +1536,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("FPaNAmTlCsXF")) {
-            show_questions(questionsFPaNAmTlCsXF,  FPaNAmTlCsXF); 
+          if(document.getElementById("nBaUqUluMWtl")) {
+            show_questions(questionsnBaUqUluMWtl,  nBaUqUluMWtl); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1537,8 +1546,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("FPaNAmTlCsXF");
-        // console.log(document.getElementById("FPaNAmTlCsXF"));
+        //console.log("nBaUqUluMWtl");
+        // console.log(document.getElementById("nBaUqUluMWtl"));
 
         try_show();
         }

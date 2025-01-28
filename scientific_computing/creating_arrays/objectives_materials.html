@@ -329,6 +329,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/graph_objects/graph_objects_example.html">Customised plots with plotly graph objects: Example Notebook</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../metrics_ml/index.html">Data Analysis in Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/overview/objectives_materials.html">Python’s Data Analysis Ecosystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_intro/objectives_materials.html">Running regressions using statsmodels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/statsmodels_results/objectives_materials.html">Working with statsmodels’ results objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/ml_intro_diffs_metrics/objectives_materials.html">Introduction to Machine Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_intro/objectives_materials.html">Introduction to scikit-learn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics_ml/sklearn_cv_hyper/objectives_materials.html">Cross-validation and hyperparamters in scikit-learn</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -519,13 +528,13 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="laosawRcigXb" data-shufflequestions="False"
+<div class="output text_html"><div id="bPTZuNlzGDEb" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#laosawRcigXb {
+#bPTZuNlzGDEb {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -726,7 +735,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionslaosawRcigXb=[{"question": "What does `np.ones` do?", "type": "multiple_choice", "answers": [{"answer": "Create arrays of ones in different shapes", "correct": true, "feedback": "Correct."}, {"answer": "Create nested lists of ones", "correct": false, "feedback": "Incorrect."}, {"answer": "Create arrays of zeros in different shapes", "correct": false, "feedback": "Incorrect."}, {"answer": "Create an identity matrix", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `np.arange` do?", "type": "multiple_choice", "answers": [{"answer": "Create a matrix", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a vector with elements starting at 0 and increasing by 1", "correct": true, "feedback": "Correct."}, {"answer": "Create a vector with elements starting at 1 and increasing by 1", "correct": false, "feedback": "Incorrect."}, {"answer": "Create arbitrary grids of floating point numbers", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does shape (5, 4) mean?", "type": "multiple_choice", "answers": [{"answer": "There are 5 rows and 4 columns", "correct": true, "feedback": "Correct."}, {"answer": "There are 4 rows and 5 columns", "correct": false, "feedback": "Incorrect."}]}, {"question": "Suppose you have a list of length 8 that needs to reshaped into a 3 dimensional           array. The code you would use is:", "type": "multiple_choice", "answers": [{"answer": "reshaped_array = your_list.reshape(2,2,2)", "correct": false, "feedback": "Incorrect."}, {"answer": "reshaped_array = np.array(your_list).reshape(2,2,4)", "correct": false, "feedback": "Incorrect."}, {"answer": "reshaped_array = np.array(your_list).reshape(2,1,4)", "correct": true, "feedback": "Correct."}]}, {"question": "Suppose you have an array with shape (3,3). Then your_array.repeat(3)         will return:", "type": "multiple_choice", "answers": [{"answer": "A three dimensional array of shape (3,3,3)", "correct": false, "feedback": "Incorrect."}, {"answer": "A one dimensional array of shape (27,)", "correct": true, "feedback": "Correct."}, {"answer": "A two dimensional array of shape (9,9)", "correct": false, "feedback": "Incorrect."}, {"answer": "A two dimensional array of shape (9,3)", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsbPTZuNlzGDEb=[{"question": "What does `np.ones` do?", "type": "multiple_choice", "answers": [{"answer": "Create arrays of ones in different shapes", "correct": true, "feedback": "Correct."}, {"answer": "Create nested lists of ones", "correct": false, "feedback": "Incorrect."}, {"answer": "Create arrays of zeros in different shapes", "correct": false, "feedback": "Incorrect."}, {"answer": "Create an identity matrix", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `np.arange` do?", "type": "multiple_choice", "answers": [{"answer": "Create a matrix", "correct": false, "feedback": "Incorrect."}, {"answer": "Create a vector with elements starting at 0 and increasing by 1", "correct": true, "feedback": "Correct."}, {"answer": "Create a vector with elements starting at 1 and increasing by 1", "correct": false, "feedback": "Incorrect."}, {"answer": "Create arbitrary grids of floating point numbers", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does shape (5, 4) mean?", "type": "multiple_choice", "answers": [{"answer": "There are 5 rows and 4 columns", "correct": true, "feedback": "Correct."}, {"answer": "There are 4 rows and 5 columns", "correct": false, "feedback": "Incorrect."}]}, {"question": "Suppose you have a list of length 8 that needs to reshaped into a 3 dimensional           array. The code you would use is:", "type": "multiple_choice", "answers": [{"answer": "reshaped_array = your_list.reshape(2,2,2)", "correct": false, "feedback": "Incorrect."}, {"answer": "reshaped_array = np.array(your_list).reshape(2,2,4)", "correct": false, "feedback": "Incorrect."}, {"answer": "reshaped_array = np.array(your_list).reshape(2,1,4)", "correct": true, "feedback": "Correct."}]}, {"question": "Suppose you have an array with shape (3,3). Then your_array.repeat(3)         will return:", "type": "multiple_choice", "answers": [{"answer": "A three dimensional array of shape (3,3,3)", "correct": false, "feedback": "Incorrect."}, {"answer": "A one dimensional array of shape (27,)", "correct": true, "feedback": "Correct."}, {"answer": "A two dimensional array of shape (9,9)", "correct": false, "feedback": "Incorrect."}, {"answer": "A two dimensional array of shape (9,3)", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1533,8 +1542,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("laosawRcigXb")) {
-            show_questions(questionslaosawRcigXb,  laosawRcigXb); 
+          if(document.getElementById("bPTZuNlzGDEb")) {
+            show_questions(questionsbPTZuNlzGDEb,  bPTZuNlzGDEb); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1543,8 +1552,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("laosawRcigXb");
-        // console.log(document.getElementById("laosawRcigXb"));
+        //console.log("bPTZuNlzGDEb");
+        // console.log(document.getElementById("bPTZuNlzGDEb"));
 
         try_show();
         }
