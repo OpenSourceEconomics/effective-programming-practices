@@ -1,3 +1,4 @@
+(plotting)=
 # Plotting
 
 ```{tableofcontents}

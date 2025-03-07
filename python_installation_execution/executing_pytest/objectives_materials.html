@@ -6,7 +6,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Running Python code via pytest &#8212; Effective Programming Practices for Economists: Topics</title>
   
@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -65,7 +65,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Environment files and environments" href="../environments/objectives_materials.html" />
+    <link rel="next" title="Modifying Pixi environments" href="../pixi_modifying_environments/objectives_materials.html" />
     <link rel="prev" title="Running Python code via pytask" href="../executing_pytask/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -194,17 +194,26 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Python: Installation and Execution</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../installation_linux/instructions.html">Installing Python on Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation_mac/instructions.html">Installing Python on Mac</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation_windows/instructions.html">Installing Python on Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation_executing_py_shell/objectives_materials.html">Installation and introduction to Pixi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_py_vscode/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files in VS Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../executing_notebook_vscode/objectives_materials.html">Executing Jupyter notebooks in VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../executing_pytask/objectives_materials.html">Running Python code via pytask</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Running Python code via pytest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../environments/objectives_materials.html">Environment files and environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pixi_modifying_environments/objectives_materials.html">Modifying Pixi environments</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../python_installation_execution_via_conda/index.html">Python: Installation and Execution (via conda)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/installation_linux/instructions.html">Installing Python on Linux (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/installation_mac/instructions.html">Installing Python on Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/installation_windows/instructions.html">Installing Python on Windows (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/installation_wsl/instructions.html">Installing Python with Windows Subsystem for Linux (WSL2) (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/executing_notebook_browser/objectives_materials.html">Executing notebooks in a browser (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/executing_notebook_vscode/objectives_materials.html">Executing jupyter notebooks in VS Code (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/executing_py_shell/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files from the shell (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/executing_py_vscode/objectives_materials.html">Executing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files in VS Code (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/executing_pytask/objectives_materials.html">Running Python code via pytask (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/executing_pytest/objectives_materials.html">Running Python code via pytest (conda/mamba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_installation_execution_via_conda/environments/objectives_materials.html">Environment files and environments (conda/mamba)</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../python_basics/index.html">Python Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -509,7 +518,7 @@
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
 <iframe
-  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=31bef7c1-79cf-4281-98a8-3187d0ea9bdc"
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=1fb969da-31a1-4dfe-b9e4-37440c9322c2"
   width="640"
   height="360"
   frameborder="0"
@@ -520,13 +529,13 @@
 interface</a></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="eurgCwdXGoyo" data-shufflequestions="False"
+<div class="output text_html"><div id="NiuBzzTvEOOR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#eurgCwdXGoyo {
+#NiuBzzTvEOOR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -727,7 +736,7 @@ interface</a></p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionseurgCwdXGoyo=[{"question": "In contrast to other ways of executing Python code", "type": "multiple_choice", "answers": [{"answer": "Pytest runs multiple .py files at once", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytest runs functions instead of entire `.py` files", "correct": true, "feedback": "Correct."}, {"answer": "Pytest works for notebooks and `.py` files", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytests automatically install all dependencies for you", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsNiuBzzTvEOOR=[{"question": "In contrast to other ways of executing Python code", "type": "multiple_choice", "answers": [{"answer": "Pytest runs multiple .py files at once", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytest runs functions instead of entire `.py` files", "correct": true, "feedback": "Correct."}, {"answer": "Pytest works for notebooks and `.py` files", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytests automatically install all dependencies for you", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1534,8 +1543,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("eurgCwdXGoyo")) {
-            show_questions(questionseurgCwdXGoyo,  eurgCwdXGoyo); 
+          if(document.getElementById("NiuBzzTvEOOR")) {
+            show_questions(questionsNiuBzzTvEOOR,  NiuBzzTvEOOR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1544,8 +1553,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("eurgCwdXGoyo");
-        // console.log(document.getElementById("eurgCwdXGoyo"));
+        //console.log("NiuBzzTvEOOR");
+        // console.log(document.getElementById("NiuBzzTvEOOR"));
 
         try_show();
         }
@@ -1594,11 +1603,11 @@ if (typeof version == 'undefined') {
       </div>
     </a>
     <a class="right-next"
-       href="../environments/objectives_materials.html"
+       href="../pixi_modifying_environments/objectives_materials.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Environment files and environments</p>
+        <p class="prev-next-title">Modifying Pixi environments</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
