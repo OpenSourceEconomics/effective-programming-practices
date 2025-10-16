@@ -524,13 +524,24 @@
 </section>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>Git often comes pre-installed on Linux and MacOS. If on Linux, we assume you know what you are doing. If on the Mac, see the section below.</p>
-<p>Some of the specifics in the video might be a bit dated, but basically it
-is a matter of going to <a class="reference external" href="https://git-scm.com/">git-scm.com</a> and following the instructions.</p>
+<ul>
+<li><p>Git often comes pre-installed on Linux and MacOS.</p></li>
+<li><p>If on Linux, we assume you know what you are doing.</p></li>
+<li><p>If on the Mac, see the section below.</p></li>
+<li><p>If on Windows, note that some of the specifics in the video might be a bit dated.
+Basically, however, it is a matter of going to <a class="reference external" href="https://git-scm.com/">git-scm.com</a> and
+following the instructions.</p>
+<p>Following the instructions will involve the use of a shell / terminal. In case you
+have never seen one before, first go through <a class="reference internal" href="../../tools/windows_navigation/objectives_materials.html#navigation-in-the-windows-shell"><span class="std std-ref">Navigation in the windows shell</span></a></p>
+</li>
+</ul>
 <section id="macos-specifics">
 <h3>MacOS specifics<a class="headerlink" href="#macos-specifics" title="Link to this heading">#</a></h3>
-<p>Make sure you have the <a class="reference external" href="https://mac.install.guide/commandlinetools/">Xcode Command Line Tools</a> installed, which already includes git.<br />
-Check if they are already installed by running in the Terminal:</p>
+<p>Make sure you have the
+<a class="reference external" href="https://mac.install.guide/commandlinetools/">Xcode Command Line Tools</a> installed, which
+already includes git. Check if these tools are already installed by running in the
+Terminal (see <a class="reference internal" href="../../tools/unix_navigation/objectives_materials.html#navigation-in-the-unix-shell"><span class="std std-ref">Navigation in the unix shell</span></a> if you do
+not understand what we mean):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>xcode-select<span class="w"> </span>-p
 </pre></div>
 </div>
@@ -547,10 +558,9 @@ Check if they are already installed by running in the Terminal:</p>
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Git is typically installed already on Linux and MacOS.</p></li>
 <li><p>Setting the username and email is not optional!</p></li>
-<li><p>You can skip the command line intro if you have seen the shell screencasts</p></li>
-<li><p>The videos recommends some outdated programs. Stick to what we recommended</p></li>
+<li><p>You can skip the command line intro if you have seen the shell screencasts.</p></li>
+<li><p>The video recommends some outdated programs. Stick to what we recommended.</p></li>
 </ul>
 </section>
 <section id="additional-configuration">
@@ -572,8 +582,8 @@ to vscode with the following command:</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="aCMefYpNkYGV" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#aCMefYpNkYGV {
+<div class="output text_html"><div id="kCYZxDvXzzis" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#kCYZxDvXzzis {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -790,7 +800,7 @@ to vscode with the following command:</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsaCMefYpNkYGV=[{"question": "Why do you have to configure your         username and email address for git?", "type": "multiple_choice", "answers": [{"answer": "To sign up for the git newsletter", "correct": false, "feedback": "Incorrect."}, {"answer": "To link your GitHub account to                 your local git installation", "correct": false, "feedback": "Incorrect."}, {"answer": "It makes transparent who made                 a change to the source code", "correct": true, "feedback": "Correct."}, {"answer": "Git will complain if you                 don't do it", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionskCYZxDvXzzis=[{"question": "Why do you have to configure your         username and email address for git?", "type": "multiple_choice", "answers": [{"answer": "To sign up for the git newsletter", "correct": false, "feedback": "Incorrect."}, {"answer": "To link your GitHub account to                 your local git installation", "correct": false, "feedback": "Incorrect."}, {"answer": "It makes transparent who made                 a change to the source code", "correct": true, "feedback": "Correct."}, {"answer": "Git will complain if you                 don't do it", "correct": true, "feedback": "Correct."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1853,8 +1863,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("aCMefYpNkYGV")) {
-    show_questions(questionsaCMefYpNkYGV, aCMefYpNkYGV);
+  if (document.getElementById("kCYZxDvXzzis")) {
+    show_questions(questionskCYZxDvXzzis, kCYZxDvXzzis);
   } else {
     setTimeout(try_show, 200);
   }
