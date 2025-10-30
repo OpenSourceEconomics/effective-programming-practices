@@ -533,8 +533,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="zlIhYfdCIcdb" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#zlIhYfdCIcdb {
+<div class="output text_html"><div id="QuaAZfVJNgSS" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#QuaAZfVJNgSS {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -751,7 +751,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionszlIhYfdCIcdb=[{"question": "How can unit testing avoid debugging?", "type": "multiple_choice", "answers": [{"answer": "A tested function is likely correct. It can be skipped while debugging", "correct": true, "feedback": "Correct."}, {"answer": "Tests will discover if the function is called with invalid inputs", "correct": false, "feedback": "Incorrect."}, {"answer": "If you write test there can never be a bug in your code", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can error handling avoid debugging", "type": "multiple_choice", "answers": [{"answer": "Error handling makes sure that the results of functions are correct", "correct": false, "feedback": "Incorrect."}, {"answer": "Error handling alerts you about invalid inputs to a function", "correct": true, "feedback": "Correct."}, {"answer": "When doing proper error handling there can never be a bug in your code", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsQuaAZfVJNgSS=[{"question": "How can unit testing avoid debugging?", "type": "multiple_choice", "answers": [{"answer": "A tested function is likely correct. It can be skipped while debugging", "correct": true, "feedback": "Correct."}, {"answer": "Tests will discover if the function is called with invalid inputs", "correct": false, "feedback": "Incorrect."}, {"answer": "If you write test there can never be a bug in your code", "correct": false, "feedback": "Incorrect."}]}, {"question": "How can error handling avoid debugging", "type": "multiple_choice", "answers": [{"answer": "Error handling makes sure that the results of functions are correct", "correct": false, "feedback": "Incorrect."}, {"answer": "Error handling alerts you about invalid inputs to a function", "correct": true, "feedback": "Correct."}, {"answer": "When doing proper error handling there can never be a bug in your code", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1814,8 +1814,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("zlIhYfdCIcdb")) {
-    show_questions(questionszlIhYfdCIcdb, zlIhYfdCIcdb);
+  if (document.getElementById("QuaAZfVJNgSS")) {
+    show_questions(questionsQuaAZfVJNgSS, QuaAZfVJNgSS);
   } else {
     setTimeout(try_show, 200);
   }

@@ -494,6 +494,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-installation-steps-for-macos">Pre-installation steps for macOS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-for-windows-linux-macos">Installation for Windows, Linux &amp; MacOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-windows">Troubleshooting (Windows)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
@@ -541,6 +542,29 @@ You can che what the output means <a class="reference external" href="https://ma
 <li><p>In case you have any trouble, ask for help in the course Zulip</p></li>
 </ul>
 </section>
+<section id="troubleshooting-windows">
+<h3>Troubleshooting (Windows)<a class="headerlink" href="#troubleshooting-windows" title="Link to this heading">#</a></h3>
+<p>Sometimes there can be problems with the execution policies of Windows. You may get the
+following error when you try to activate a pixi shell:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">xxx</span>\<span class="n">local</span>\<span class="n">Temp</span>\<span class="o">.</span><span class="n">xyz</span><span class="o">.</span><span class="n">ps1</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">loaded</span> <span class="n">because</span>
+<span class="n">the</span> <span class="n">execution</span> <span class="n">of</span> <span class="n">scripts</span> <span class="ow">is</span> <span class="n">disabled</span> <span class="n">on</span> <span class="n">this</span> <span class="n">system</span><span class="o">.</span> <span class="o">...</span>
+    <span class="o">*</span> <span class="n">CategoryInfo</span>          <span class="p">:</span> <span class="n">SecurityError</span> <span class="o">...</span>
+    <span class="o">*</span> <span class="n">FullyQualifiedErrorId</span> <span class="p">:</span> <span class="n">UnauthorizedAccess</span>
+</pre></div>
+</div>
+<p>To fix this, we will have to change the execution policy.</p>
+<ol class="arabic">
+<li><p>Open a Powershell via the Windows Start menu as administrator. To open it as administrator you need to right
+click on it and select “Open as administrator”.</p></li>
+<li><p>Now write</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Set-ExecutionPolicy<span class="w"> </span>RemoteSigned
+</pre></div>
+</div>
+</li>
+<li><p>Finally, close the Powershell, open a new, regular one (i.e., without administrator
+rights), and run <code class="docutils literal notranslate"><span class="pre">pixi</span> <span class="pre">shell</span></code> again.</p></li>
+</ol>
+</section>
 </section>
 <section id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
@@ -558,8 +582,8 @@ You can che what the output means <a class="reference external" href="https://ma
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qsblfClGfzjf" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#qsblfClGfzjf {
+<div class="output text_html"><div id="kyNuwpiRpXpr" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#kyNuwpiRpXpr {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -776,7 +800,7 @@ You can che what the output means <a class="reference external" href="https://ma
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqsblfClGfzjf=[{"question": "Your project's folder contains the following files: pyproject.toml,             exercise_1.py, a folder called data, and a folder called results. Your             shell is currently in the data folder. Which of the following commands             would you use to run the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'pixi run python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'pixi run python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ../exercise_1.py'", "correct": false, "feedback": "This may work when you have some Python installed system-                    wide, but it will not pick up the Python executable installed via                     pixi."}, {"answer": "'pixi run python ~/exercise_1.py'", "correct": false, "feedback": "This would only work if your project folder was your home                     folder (hopefully that is not the case!)."}, {"answer": "'cd ..' and then 'pixi run python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
+</style></div><script type="application/javascript">var questionskyNuwpiRpXpr=[{"question": "Your project's folder contains the following files: pyproject.toml,             exercise_1.py, a folder called data, and a folder called results. Your             shell is currently in the data folder. Which of the following commands             would you use to run the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'pixi run python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'pixi run python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ../exercise_1.py'", "correct": false, "feedback": "This may work when you have some Python installed system-                    wide, but it will not pick up the Python executable installed via                     pixi."}, {"answer": "'pixi run python ~/exercise_1.py'", "correct": false, "feedback": "This would only work if your project folder was your home                     folder (hopefully that is not the case!)."}, {"answer": "'cd ..' and then 'pixi run python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1839,8 +1863,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("qsblfClGfzjf")) {
-    show_questions(questionsqsblfClGfzjf, qsblfClGfzjf);
+  if (document.getElementById("kyNuwpiRpXpr")) {
+    show_questions(questionskyNuwpiRpXpr, kyNuwpiRpXpr);
   } else {
     setTimeout(try_show, 200);
   }
@@ -1923,6 +1947,7 @@ function try_show() {
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-installation-steps-for-macos">Pre-installation steps for macOS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-for-windows-linux-macos">Installation for Windows, Linux &amp; MacOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-windows">Troubleshooting (Windows)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
