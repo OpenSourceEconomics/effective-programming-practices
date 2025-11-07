@@ -268,11 +268,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Scientific Computing</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -531,8 +530,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ymyQNxqUaFHo" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#ymyQNxqUaFHo {
+<div class="output text_html"><div id="cNUygliVNvAl" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#cNUygliVNvAl {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -749,7 +748,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsymyQNxqUaFHo=[{"question": "Why can numpy be fast", "type": "many_choice", "answers": [{"answer": "Data is stored in a very efficient format in memory", "correct": true, "feedback": "Correct."}, {"answer": "It is written in C and anything written in C is always super fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It is a compiler that compiles your Python code to machine code", "correct": true, "feedback": "Correct."}]}, {"question": "What is the best strategy for using numba", "type": "multiple_choice", "answers": [{"answer": "Identify bottlenecks and only use numba on those functions", "correct": true, "feedback": "Correct."}, {"answer": "Use `njit` on all functions`", "correct": false, "feedback": "Incorrect."}, {"answer": "Vectorize your code using numpy, then compile them for extra speed", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following is True", "type": "many_choice", "answers": [{"answer": "Loops are always slow but numba can make them a bit faster", "correct": false, "feedback": "Incorrect."}, {"answer": "A loop that is compiled with numba can be as fast as a loop in Julia", "correct": true, "feedback": "Correct."}, {"answer": "Numba works best if you write out everything as loop", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionscNUygliVNvAl=[{"question": "Why can numpy be fast", "type": "many_choice", "answers": [{"answer": "Data is stored in a very efficient format in memory", "correct": true, "feedback": "Correct."}, {"answer": "It is written in C and anything written in C is always super fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It is a compiler that compiles your Python code to machine code", "correct": true, "feedback": "Correct."}]}, {"question": "What is the best strategy for using numba", "type": "multiple_choice", "answers": [{"answer": "Identify bottlenecks and only use numba on those functions", "correct": true, "feedback": "Correct."}, {"answer": "Use `njit` on all functions`", "correct": false, "feedback": "Incorrect."}, {"answer": "Vectorize your code using numpy, then compile them for extra speed", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following is True", "type": "many_choice", "answers": [{"answer": "Loops are always slow but numba can make them a bit faster", "correct": false, "feedback": "Incorrect."}, {"answer": "A loop that is compiled with numba can be as fast as a loop in Julia", "correct": true, "feedback": "Correct."}, {"answer": "Numba works best if you write out everything as loop", "correct": true, "feedback": "Correct."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1812,8 +1811,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("ymyQNxqUaFHo")) {
-    show_questions(questionsymyQNxqUaFHo, ymyQNxqUaFHo);
+  if (document.getElementById("cNUygliVNvAl")) {
+    show_questions(questionscNUygliVNvAl, cNUygliVNvAl);
   } else {
     setTimeout(try_show, 200);
   }

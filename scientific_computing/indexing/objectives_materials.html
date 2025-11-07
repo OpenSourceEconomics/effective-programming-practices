@@ -268,11 +268,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Scientific Computing</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -536,8 +535,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="KFBavMssIDgm" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#KFBavMssIDgm {
+<div class="output text_html"><div id="pOcqUimSGRIy" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#pOcqUimSGRIy {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -754,7 +753,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsKFBavMssIDgm=[{"question": "The purpose of indexing is:", "type": "multiple_choice", "answers": [{"answer": "Select subsets of an array", "correct": true, "feedback": "Correct."}, {"answer": "Create numpy arrays from lists", "correct": false, "feedback": "Incorrect."}, {"answer": "Reshape numpy arrays", "correct": false, "feedback": "Incorrect."}, {"answer": "Create copies of arrays", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are differences between numpy arrays and lists?", "type": "many_choice", "answers": [{"answer": "Arrays support boolean indexing", "correct": true, "feedback": "Correct."}, {"answer": "In arrays, the index `-1` selects the last element", "correct": false, "feedback": "Incorrect."}, {"answer": "List indexing is more flexible but array indexing is faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Array indexing generalizes to higher dimensions", "correct": true, "feedback": "Correct."}]}, {"question": "If you have a two dimensional array, then your_array[4] returns", "type": "many_choice", "answers": [{"answer": "An error message unless your array has 4 rows", "correct": true, "feedback": "Correct."}, {"answer": "The forth column", "correct": false, "feedback": "Incorrect."}, {"answer": "The forth element of the first row", "correct": false, "feedback": "Incorrect."}, {"answer": "The forth row", "correct": true, "feedback": "Correct."}]}, {"question": "For reshaping an array, in addition to the the .reshape attribute, you can:", "type": "multiple_choice", "answers": [{"answer": "There no other reasonable ways of reshaping an array", "correct": true, "feedback": "Correct."}, {"answer": "You can slice the array", "correct": false, "feedback": "Incorrect."}, {"answer": "You can use boolean indexing", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionspOcqUimSGRIy=[{"question": "The purpose of indexing is:", "type": "multiple_choice", "answers": [{"answer": "Select subsets of an array", "correct": true, "feedback": "Correct."}, {"answer": "Create numpy arrays from lists", "correct": false, "feedback": "Incorrect."}, {"answer": "Reshape numpy arrays", "correct": false, "feedback": "Incorrect."}, {"answer": "Create copies of arrays", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are differences between numpy arrays and lists?", "type": "many_choice", "answers": [{"answer": "Arrays support boolean indexing", "correct": true, "feedback": "Correct."}, {"answer": "In arrays, the index `-1` selects the last element", "correct": false, "feedback": "Incorrect."}, {"answer": "List indexing is more flexible but array indexing is faster", "correct": false, "feedback": "Incorrect."}, {"answer": "Array indexing generalizes to higher dimensions", "correct": true, "feedback": "Correct."}]}, {"question": "If you have a two dimensional array, then your_array[4] returns", "type": "many_choice", "answers": [{"answer": "An error message unless your array has 4 rows", "correct": true, "feedback": "Correct."}, {"answer": "The forth column", "correct": false, "feedback": "Incorrect."}, {"answer": "The forth element of the first row", "correct": false, "feedback": "Incorrect."}, {"answer": "The forth row", "correct": true, "feedback": "Correct."}]}, {"question": "For reshaping an array, in addition to the the .reshape attribute, you can:", "type": "multiple_choice", "answers": [{"answer": "There no other reasonable ways of reshaping an array", "correct": true, "feedback": "Correct."}, {"answer": "You can slice the array", "correct": false, "feedback": "Incorrect."}, {"answer": "You can use boolean indexing", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1817,8 +1816,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("KFBavMssIDgm")) {
-    show_questions(questionsKFBavMssIDgm, KFBavMssIDgm);
+  if (document.getElementById("pOcqUimSGRIy")) {
+    show_questions(questionspOcqUimSGRIy, pOcqUimSGRIy);
   } else {
     setTimeout(try_show, 200);
   }

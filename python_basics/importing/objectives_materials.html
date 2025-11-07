@@ -268,11 +268,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -542,8 +541,8 @@ Reference.</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="UsKcTyjIIxSe" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#UsKcTyjIIxSe {
+<div class="output text_html"><div id="pveSwCLpnRpN" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#pveSwCLpnRpN {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -760,7 +759,7 @@ Reference.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsUsKcTyjIIxSe=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
+</style></div><script type="application/javascript">var questionspveSwCLpnRpN=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1823,8 +1822,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("UsKcTyjIIxSe")) {
-    show_questions(questionsUsKcTyjIIxSe, UsKcTyjIIxSe);
+  if (document.getElementById("pveSwCLpnRpN")) {
+    show_questions(questionspveSwCLpnRpN, pveSwCLpnRpN);
   } else {
     setTimeout(try_show, 200);
   }

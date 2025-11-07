@@ -268,11 +268,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -527,8 +526,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="RsCnUyRHvnyO" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#RsCnUyRHvnyO {
+<div class="output text_html"><div id="CUzAQzRGCNUv" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#CUzAQzRGCNUv {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -745,7 +744,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsRsCnUyRHvnyO=[{"question": "What is GitHub?", "type": "multiple_choice", "answers": [{"answer": "A safe backup for your repository                     in the cloud", "correct": true, "feedback": "Correct."}, {"answer": "A safe place to store sensitive data.", "correct": false, "feedback": "Correct."}, {"answer": "A webpage to share code with others", "correct": true, "feedback": "Correct."}, {"answer": "A way to collaborate efficiently                 with your coauthors", "correct": true, "feedback": "Correct."}]}, {"question": "How can you create synced repositories             between your local computer and GitHub?", "type": "multiple_choice", "answers": [{"answer": "Use `git init`, create a GitHub                     repo, copy its URL and use `git remote add`", "correct": true, "feedback": "Correct."}, {"answer": "Create a GitHub repo and clone                     it to your computer", "correct": true, "feedback": "Correct."}, {"answer": "Create a GitHub repo and download                     it as a zip file from the webpage", "correct": false, "feedback": "Incorrect."}]}, {"question": "You just finished editing a local file         'file.tex' in a repository managed by git. What do you         have to do to update the remote repository?", "type": "multiple_choice", "answers": [{"answer": "git commit, git pull, git rm file.tex", "correct": false, "feedback": "Incorrect."}, {"answer": "git stash, git stash, git stash", "correct": false, "feedback": "Incorrect."}, {"answer": "git add file.tex, git commit -m 'Add                 a paragraph on nonsense.', git push", "correct": true, "feedback": "Correct."}, {"answer": "Google for a GUI that does it for you", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsCUzAQzRGCNUv=[{"question": "What is GitHub?", "type": "multiple_choice", "answers": [{"answer": "A safe backup for your repository                     in the cloud", "correct": true, "feedback": "Correct."}, {"answer": "A safe place to store sensitive data.", "correct": false, "feedback": "Correct."}, {"answer": "A webpage to share code with others", "correct": true, "feedback": "Correct."}, {"answer": "A way to collaborate efficiently                 with your coauthors", "correct": true, "feedback": "Correct."}]}, {"question": "How can you create synced repositories             between your local computer and GitHub?", "type": "multiple_choice", "answers": [{"answer": "Use `git init`, create a GitHub                     repo, copy its URL and use `git remote add`", "correct": true, "feedback": "Correct."}, {"answer": "Create a GitHub repo and clone                     it to your computer", "correct": true, "feedback": "Correct."}, {"answer": "Create a GitHub repo and download                     it as a zip file from the webpage", "correct": false, "feedback": "Incorrect."}]}, {"question": "You just finished editing a local file         'file.tex' in a repository managed by git. What do you         have to do to update the remote repository?", "type": "multiple_choice", "answers": [{"answer": "git commit, git pull, git rm file.tex", "correct": false, "feedback": "Incorrect."}, {"answer": "git stash, git stash, git stash", "correct": false, "feedback": "Incorrect."}, {"answer": "git add file.tex, git commit -m 'Add                 a paragraph on nonsense.', git push", "correct": true, "feedback": "Correct."}, {"answer": "Google for a GUI that does it for you", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1808,8 +1807,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("RsCnUyRHvnyO")) {
-    show_questions(questionsRsCnUyRHvnyO, RsCnUyRHvnyO);
+  if (document.getElementById("CUzAQzRGCNUv")) {
+    show_questions(questionsCUzAQzRGCNUv, CUzAQzRGCNUv);
   } else {
     setTimeout(try_show, 200);
   }

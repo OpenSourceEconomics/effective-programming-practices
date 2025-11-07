@@ -268,11 +268,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Scientific Computing</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -536,8 +535,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="EKTScCrGcMBc" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#EKTScCrGcMBc {
+<div class="output text_html"><div id="eTTrjtBYapjQ" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#eTTrjtBYapjQ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -754,7 +753,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsEKTScCrGcMBc=[{"question": "To set a good seed which of the following lines of code would you use?", "type": "multiple_choice", "answers": [{"answer": "np.random.seed", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng(6943)", "correct": true, "feedback": "Correct."}]}, {"question": "Why a seed is needed when dealing with random generated numbers?", "type": "multiple_choice", "answers": [{"answer": "A seed is nice to have, but not essential", "correct": false, "feedback": "Incorrect."}, {"answer": "For the purpose of reproducible research", "correct": true, "feedback": "Correct."}, {"answer": "To help obtain nicer results", "correct": false, "feedback": "Incorrect."}, {"answer": "To make sure that two random extractions will             not yield the same outcome", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following applies to seeds?", "type": "many_choice", "answers": [{"answer": "You should never use similar seeds as they yield correlated numbers.", "correct": false, "feedback": "Incorrect."}, {"answer": "They are numbers between 0 and 2 ** 32", "correct": true, "feedback": "Correct."}, {"answer": "You should always check that your conclusions do not depend on the seed", "correct": true, "feedback": "Correct."}, {"answer": "It's ok to always use 123.", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionseTTrjtBYapjQ=[{"question": "To set a good seed which of the following lines of code would you use?", "type": "multiple_choice", "answers": [{"answer": "np.random.seed", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng(6943)", "correct": true, "feedback": "Correct."}]}, {"question": "Why a seed is needed when dealing with random generated numbers?", "type": "multiple_choice", "answers": [{"answer": "A seed is nice to have, but not essential", "correct": false, "feedback": "Incorrect."}, {"answer": "For the purpose of reproducible research", "correct": true, "feedback": "Correct."}, {"answer": "To help obtain nicer results", "correct": false, "feedback": "Incorrect."}, {"answer": "To make sure that two random extractions will             not yield the same outcome", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following applies to seeds?", "type": "many_choice", "answers": [{"answer": "You should never use similar seeds as they yield correlated numbers.", "correct": false, "feedback": "Incorrect."}, {"answer": "They are numbers between 0 and 2 ** 32", "correct": true, "feedback": "Correct."}, {"answer": "You should always check that your conclusions do not depend on the seed", "correct": true, "feedback": "Correct."}, {"answer": "It's ok to always use 123.", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1817,8 +1816,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("EKTScCrGcMBc")) {
-    show_questions(questionsEKTScCrGcMBc, EKTScCrGcMBc);
+  if (document.getElementById("eTTrjtBYapjQ")) {
+    show_questions(questionseTTrjtBYapjQ, eTTrjtBYapjQ);
   } else {
     setTimeout(try_show, 200);
   }

@@ -268,11 +268,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -528,8 +527,8 @@
 <p>Download the <a class="reference download internal" download="" href="../../_downloads/625f517e924ac315b36bcb80e89f8e0b/python_basics-comprehensions.pdf"><span class="xref download myst">slides</span></a>.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="zfICrBknCoxe" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#zfICrBknCoxe {
+<div class="output text_html"><div id="mmyGEhBYEFEA" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#mmyGEhBYEFEA {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -746,7 +745,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionszfICrBknCoxe=[{"question": "Which of the following statements are correct?", "type": "many_choice", "answers": [{"answer": "Using comprehensions solves the problem that loops are slow in Python", "correct": false, "feedback": "Incorrect."}, {"answer": "Code becomes better if you replace all loops with comprehensions", "correct": false, "feedback": "Incorrect."}, {"answer": "Comprehensions are a way to write loops in a more compact way", "correct": true, "feedback": "Correct."}, {"answer": "Comprehensions can make your code more readable", "correct": true, "feedback": "Correct."}]}, {"question": "What are reasons to choose a loop over comprehensions?", "type": "many_choice", "answers": [{"answer": "The comprehension would not fit on one line", "correct": true, "feedback": "Correct."}, {"answer": "You need several if conditions in your loop", "correct": true, "feedback": "Correct."}, {"answer": "You do not care about speed", "correct": false, "feedback": "Incorrect."}, {"answer": "You find the loop more readable in your specific case", "correct": true, "feedback": "Correct."}]}, {"question": "What are reasons to choose a comprehension over a loop?", "type": "multiple_choice", "answers": [{"answer": "The comprehension is one line shorter than the loop", "correct": false, "feedback": "Incorrect."}, {"answer": "You are doing high performance computing and need the speed", "correct": false, "feedback": "Incorrect."}, {"answer": "You find the comprehension is more readable in your specific case", "correct": true, "feedback": "Correct."}, {"answer": "Loops are slow.", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsmmyGEhBYEFEA=[{"question": "Which of the following statements are correct?", "type": "many_choice", "answers": [{"answer": "Using comprehensions solves the problem that loops are slow in Python", "correct": false, "feedback": "Incorrect."}, {"answer": "Code becomes better if you replace all loops with comprehensions", "correct": false, "feedback": "Incorrect."}, {"answer": "Comprehensions are a way to write loops in a more compact way", "correct": true, "feedback": "Correct."}, {"answer": "Comprehensions can make your code more readable", "correct": true, "feedback": "Correct."}]}, {"question": "What are reasons to choose a loop over comprehensions?", "type": "many_choice", "answers": [{"answer": "The comprehension would not fit on one line", "correct": true, "feedback": "Correct."}, {"answer": "You need several if conditions in your loop", "correct": true, "feedback": "Correct."}, {"answer": "You do not care about speed", "correct": false, "feedback": "Incorrect."}, {"answer": "You find the loop more readable in your specific case", "correct": true, "feedback": "Correct."}]}, {"question": "What are reasons to choose a comprehension over a loop?", "type": "multiple_choice", "answers": [{"answer": "The comprehension is one line shorter than the loop", "correct": false, "feedback": "Incorrect."}, {"answer": "You are doing high performance computing and need the speed", "correct": false, "feedback": "Incorrect."}, {"answer": "You find the comprehension is more readable in your specific case", "correct": true, "feedback": "Correct."}, {"answer": "Loops are slow.", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1809,8 +1808,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("zfICrBknCoxe")) {
-    show_questions(questionszfICrBknCoxe, zfICrBknCoxe);
+  if (document.getElementById("mmyGEhBYEFEA")) {
+    show_questions(questionsmmyGEhBYEFEA, mmyGEhBYEFEA);
   } else {
     setTimeout(try_show, 200);
   }

@@ -268,11 +268,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/selection/objectives_materials.html">Selecting rows and columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/inspecting_and_summarizing/objectives_materials.html">Inspecting and summarizing data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/creating_variables/objectives_materials.html">Creating variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/rules/objectives_materials.html">Rules for data management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/merging/objectives_materials.html">Merging datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_fundamentals/objectives_materials.html">Functional data management: Fundamental rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/objectives_materials.html">Functional data management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional/functional_pandas.html">Functional data management: Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -532,8 +531,8 @@ a task</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="IXsjmzgatSwc" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#IXsjmzgatSwc {
+<div class="output text_html"><div id="tRVzbnqHyFRB" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#tRVzbnqHyFRB {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -750,7 +749,7 @@ a task</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsIXsjmzgatSwc=[{"question": "For long running tasks you should loop over tasks, not products. Why?", "type": "many_choice", "answers": [{"answer": "So pytask can run your tasks in parallel", "correct": true, "feedback": "Correct."}, {"answer": "If one task fails, only the failing task has to be executed again", "correct": true, "feedback": "Correct."}, {"answer": "It makes your code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask has a runtime limit for individual tasks.", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you loop over tasks?", "type": "multiple_choice", "answers": [{"answer": "You define the task function within a for loop using the task decorator", "correct": true, "feedback": "Correct."}, {"answer": "You use a for loop within the task function", "correct": false, "feedback": "Incorrect."}, {"answer": "You use the `pytask.loop` decorator", "correct": false, "feedback": "Incorrect."}, {"answer": "`produces` is a dictionary that you generate in a loop", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential drawbacks of looping over tasks instead of products?", "type": "multiple_choice", "answers": [{"answer": "You get many more tasks and might lose the overview", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks is slower", "correct": false, "feedback": "Incorrect."}, {"answer": "Both are bad, loops are always bad, Python should not have loops", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks is less readable", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of looping over tasks instead of products?", "type": "many_choice", "answers": [{"answer": "More granular caching of results can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "More granular parallelization can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks in more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks in always preferable", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionstRVzbnqHyFRB=[{"question": "For long running tasks you should loop over tasks, not products. Why?", "type": "many_choice", "answers": [{"answer": "So pytask can run your tasks in parallel", "correct": true, "feedback": "Correct."}, {"answer": "If one task fails, only the failing task has to be executed again", "correct": true, "feedback": "Correct."}, {"answer": "It makes your code more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask has a runtime limit for individual tasks.", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you loop over tasks?", "type": "multiple_choice", "answers": [{"answer": "You define the task function within a for loop using the task decorator", "correct": true, "feedback": "Correct."}, {"answer": "You use a for loop within the task function", "correct": false, "feedback": "Incorrect."}, {"answer": "You use the `pytask.loop` decorator", "correct": false, "feedback": "Incorrect."}, {"answer": "`produces` is a dictionary that you generate in a loop", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential drawbacks of looping over tasks instead of products?", "type": "multiple_choice", "answers": [{"answer": "You get many more tasks and might lose the overview", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks is slower", "correct": false, "feedback": "Incorrect."}, {"answer": "Both are bad, loops are always bad, Python should not have loops", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks is less readable", "correct": false, "feedback": "Incorrect."}]}, {"question": "What are potential advantages of looping over tasks instead of products?", "type": "many_choice", "answers": [{"answer": "More granular caching of results can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "More granular parallelization can reduce runtime", "correct": true, "feedback": "Correct."}, {"answer": "Looping over tasks in more readable", "correct": false, "feedback": "Incorrect."}, {"answer": "Looping over tasks in always preferable", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1813,8 +1812,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("IXsjmzgatSwc")) {
-    show_questions(questionsIXsjmzgatSwc, IXsjmzgatSwc);
+  if (document.getElementById("tRVzbnqHyFRB")) {
+    show_questions(questionstRVzbnqHyFRB, tRVzbnqHyFRB);
   } else {
     setTimeout(try_show, 200);
   }
