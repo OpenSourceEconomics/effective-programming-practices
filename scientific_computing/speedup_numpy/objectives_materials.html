@@ -6,7 +6,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Writing fast code with numpy &#8212; Effective Programming Practices for Economists: Topics</title>
   
@@ -530,8 +530,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="bRoWNuDtAZDI" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#bRoWNuDtAZDI {
+<div class="output text_html"><div id="rfFIIYKCSySq" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#rfFIIYKCSySq {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -748,7 +748,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsbRoWNuDtAZDI=[{"question": "Why can numpy be fast", "type": "many_choice", "answers": [{"answer": "Data is stored in a very efficient format in memory", "correct": true, "feedback": "Correct."}, {"answer": "Numpy functions are highly optimized for speed", "correct": true, "feedback": "Correct."}, {"answer": "It is written in C and anything written in C is always super fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It is a compiler that compiles your Python code to machine code", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following statements on vectorized code are true", "type": "multiple_choice", "answers": [{"answer": "With vectorized code, Python overhead is incurred once per array, not once per number", "correct": true, "feedback": "Correct."}, {"answer": "Vectorized code is always faster than non-vectorized code", "correct": false, "feedback": "Incorrect."}, {"answer": "If you cant't vectorize everything, at least use array operations inside your loop", "correct": false, "feedback": "Incorrect."}, {"answer": "Vectorized code can never be as readable as loops", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsrfFIIYKCSySq=[{"question": "Why can numpy be fast", "type": "many_choice", "answers": [{"answer": "Data is stored in a very efficient format in memory", "correct": true, "feedback": "Correct."}, {"answer": "Numpy functions are highly optimized for speed", "correct": true, "feedback": "Correct."}, {"answer": "It is written in C and anything written in C is always super fast", "correct": false, "feedback": "Incorrect."}, {"answer": "It is a compiler that compiles your Python code to machine code", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following statements on vectorized code are true", "type": "multiple_choice", "answers": [{"answer": "With vectorized code, Python overhead is incurred once per array, not once per number", "correct": true, "feedback": "Correct."}, {"answer": "Vectorized code is always faster than non-vectorized code", "correct": false, "feedback": "Incorrect."}, {"answer": "If you cant't vectorize everything, at least use array operations inside your loop", "correct": false, "feedback": "Incorrect."}, {"answer": "Vectorized code can never be as readable as loops", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1811,8 +1811,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("bRoWNuDtAZDI")) {
-    show_questions(questionsbRoWNuDtAZDI, bRoWNuDtAZDI);
+  if (document.getElementById("rfFIIYKCSySq")) {
+    show_questions(questionsrfFIIYKCSySq, rfFIIYKCSySq);
   } else {
     setTimeout(try_show, 200);
   }

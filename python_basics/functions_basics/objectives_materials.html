@@ -6,7 +6,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Defining Functions &#8212; Effective Programming Practices for Economists: Topics</title>
   
@@ -536,8 +536,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="OxcScdvpKErZ" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#OxcScdvpKErZ {
+<div class="output text_html"><div id="znzyLJRLxYQo" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#znzyLJRLxYQo {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -754,7 +754,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsOxcScdvpKErZ=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
+</style></div><script type="application/javascript">var questionsznzyLJRLxYQo=[{"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10, b = 5, c = 3, and d= 7", "code": "def f(a, d, c, b):\n    x = a ** 2\n    y = b * c / d\n    return x + y\n", "type": "many_choice", "answers": [{"code": "f(10, 5, 3, 7)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(10, 7, 3, 5)", "correct": true}, {"code": "f(10, 7, 5, 3)", "correct": false, "feedback": "Careful with the order!"}, {"code": "f(a=10, d=7, c=3, b=5)", "correct": true}, {"code": "f(a=10, b=5, c=3, d=7)", "correct": true}, {"code": "f(a=7, b=10, c=5, d=3)", "correct": false, "feedback": "Should be easy to see that a and be are swapped!"}]}, {"question": "Tick all boxes that allow you to call the following function so that in the function body, a = 10 and b = 5", "code": "def f(a, b=5):\n    return a / b\n", "type": "many_choice", "answers": [{"code": "f(10)", "correct": true, "feedback": "b is has the correct default"}, {"code": "f(10, 5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(a=10, b=5)", "correct": true, "feedback": "Passing b explicitly is also fine."}, {"code": "f(b=5)", "correct": false, "feedback": "a is required"}, {"code": "f(a=10, 5)", "correct": false, "feedback": "positional arguments must not follow keyword arguments"}, {"code": "f(a=10)", "correct": true, "feedback": "b is has the correct default"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1817,8 +1817,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("OxcScdvpKErZ")) {
-    show_questions(questionsOxcScdvpKErZ, OxcScdvpKErZ);
+  if (document.getElementById("znzyLJRLxYQo")) {
+    show_questions(questionsznzyLJRLxYQo, znzyLJRLxYQo);
   } else {
     setTimeout(try_show, 200);
   }

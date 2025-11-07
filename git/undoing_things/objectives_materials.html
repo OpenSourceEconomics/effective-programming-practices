@@ -6,7 +6,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Undoing things &#8212; Effective Programming Practices for Economists: Topics</title>
   
@@ -561,8 +561,8 @@ GitHub. Instead of removing commits you will rather add new commits that undo ch
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qMNOWzGIXarr" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#qMNOWzGIXarr {
+<div class="output text_html"><div id="RhZvZLQrjqBC" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#RhZvZLQrjqBC {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -779,7 +779,7 @@ GitHub. Instead of removing commits you will rather add new commits that undo ch
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqMNOWzGIXarr=[{"question": "What do you need to checkout a             previous commit?", "type": "multiple_choice", "answers": [{"answer": "The unique id (hash number)                     of the commit", "correct": true, "feedback": "Correct."}, {"answer": "The commit message", "correct": false, "feedback": "Incorrect."}, {"answer": "The timestamp of the commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "Checking out a previous commit puts             you in a detached head mode. How can you             go back?", "type": "multiple_choice", "answers": [{"answer": "Use `git checkout main` or                 `git checkout SOME_BRANCH`", "correct": true, "feedback": "Correct."}, {"answer": "Panic and type random git commands", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git revert` do?", "type": "multiple_choice", "answers": [{"answer": "Delete a commit from the commit history", "correct": false, "feedback": "Incorrect."}, {"answer": "Add a new commit to the commit                 history that undoes the changes of a previous                 commit", "correct": true, "feedback": "Correct."}, {"answer": "Undo all commits that come                 after the specified commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git reset --hard` do?", "type": "many_choice", "answers": [{"answer": "Delete all commits after the                 specified commit and reset the local files                 to the specified commit", "correct": true, "feedback": "Correct."}, {"answer": "Permanently delete things that                 were in your commit history", "correct": true, "feedback": "Correct."}, {"answer": "Let you safely browse an                 earlier version of your files", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsRhZvZLQrjqBC=[{"question": "What do you need to checkout a             previous commit?", "type": "multiple_choice", "answers": [{"answer": "The unique id (hash number)                     of the commit", "correct": true, "feedback": "Correct."}, {"answer": "The commit message", "correct": false, "feedback": "Incorrect."}, {"answer": "The timestamp of the commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "Checking out a previous commit puts             you in a detached head mode. How can you             go back?", "type": "multiple_choice", "answers": [{"answer": "Use `git checkout main` or                 `git checkout SOME_BRANCH`", "correct": true, "feedback": "Correct."}, {"answer": "Panic and type random git commands", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git revert` do?", "type": "multiple_choice", "answers": [{"answer": "Delete a commit from the commit history", "correct": false, "feedback": "Incorrect."}, {"answer": "Add a new commit to the commit                 history that undoes the changes of a previous                 commit", "correct": true, "feedback": "Correct."}, {"answer": "Undo all commits that come                 after the specified commit", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does `git reset --hard` do?", "type": "many_choice", "answers": [{"answer": "Delete all commits after the                 specified commit and reset the local files                 to the specified commit", "correct": true, "feedback": "Correct."}, {"answer": "Permanently delete things that                 were in your commit history", "correct": true, "feedback": "Correct."}, {"answer": "Let you safely browse an                 earlier version of your files", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1842,8 +1842,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("qMNOWzGIXarr")) {
-    show_questions(questionsqMNOWzGIXarr, qMNOWzGIXarr);
+  if (document.getElementById("RhZvZLQrjqBC")) {
+    show_questions(questionsRhZvZLQrjqBC, RhZvZLQrjqBC);
   } else {
     setTimeout(try_show, 200);
   }
