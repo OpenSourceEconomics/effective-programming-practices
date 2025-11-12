@@ -272,6 +272,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Imperative data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_why/objectives_materials.html">Functional data cleaning: The Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../complex_data_structures/objectives_materials.html">Managing data with a complex structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../management_advanced/objectives_materials.html">Data management: Tips, tricks, and advanced topics</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -327,7 +330,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And a prerequisite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
@@ -523,7 +526,7 @@ past. It is just to connect your prior experience to what we will suggest in the
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
 <p>Video:</p>
 <iframe
-  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=d2681a2e-ccf3-4a88-a974-e23074270e49"
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=95ed8bf5-ab42-4dc9-8867-436df059cc90"
   width="640"
   height="360"
   frameborder="0"
@@ -533,41 +536,10 @@ past. It is just to connect your prior experience to what we will suggest in the
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">epp_topics.quiz_utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">display_quiz</span>
-
-<span class="n">content</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;What are characteristics of imperative data cleaning?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Variables are modified in place repeatedly&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Each variable is created exactly once&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;The code uses many functions&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Helper variables clutter the namespace&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;The DataFrame remains unchanged throughout&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;Which patterns are common in imperative data management code?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Using for loops to process multiple similar variables&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Comments to structure the code&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Each step creates a new DataFrame&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Pure functions that return new data&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Reusing the same variable names for different states&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;What are problems with the imperative approach to data cleaning?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Invalid intermediate states of the DataFrame&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Difficult to reuse parts of the code&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Hard to execute code in the wrong order&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Code is too fast&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;No way to test individual operations easily&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="p">},</span>
-<span class="p">}</span>
-
-<span class="n">display_quiz</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="hDqVoXHJgpyO" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#hDqVoXHJgpyO {
+<div class="output text_html"><div id="oKLCayjQeKVw" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#oKLCayjQeKVw {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -784,7 +756,7 @@ past. It is just to connect your prior experience to what we will suggest in the
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionshDqVoXHJgpyO=[{"question": "What are characteristics of imperative data cleaning?", "type": "many_choice", "answers": [{"answer": "Variables are modified in place repeatedly", "correct": true, "feedback": "Correct."}, {"answer": "Each variable is created exactly once", "correct": false, "feedback": "Incorrect."}, {"answer": "The code uses many functions", "correct": false, "feedback": "Incorrect."}, {"answer": "Helper variables clutter the namespace", "correct": true, "feedback": "Correct."}, {"answer": "The DataFrame remains unchanged throughout", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which patterns are common in imperative data management code?", "type": "many_choice", "answers": [{"answer": "Using for loops to process multiple similar variables", "correct": true, "feedback": "Correct."}, {"answer": "Comments to structure the code", "correct": true, "feedback": "Correct."}, {"answer": "Each step creates a new DataFrame", "correct": false, "feedback": "Incorrect."}, {"answer": "Pure functions that return new data", "correct": false, "feedback": "Incorrect."}, {"answer": "Reusing the same variable names for different states", "correct": true, "feedback": "Correct."}]}, {"question": "What are problems with the imperative approach to data cleaning?", "type": "many_choice", "answers": [{"answer": "Invalid intermediate states of the DataFrame", "correct": true, "feedback": "Correct."}, {"answer": "Difficult to reuse parts of the code", "correct": true, "feedback": "Correct."}, {"answer": "Hard to execute code in the wrong order", "correct": false, "feedback": "Incorrect."}, {"answer": "Code is too fast", "correct": false, "feedback": "Incorrect."}, {"answer": "No way to test individual operations easily", "correct": true, "feedback": "Correct."}]}];
+</style></div><script type="application/javascript">var questionsoKLCayjQeKVw=[{"question": "What are characteristics of imperative data cleaning?", "type": "many_choice", "answers": [{"answer": "Variables are modified in place repeatedly", "correct": true, "feedback": "Correct."}, {"answer": "Each variable is created exactly once", "correct": false, "feedback": "Incorrect."}, {"answer": "The code uses many functions", "correct": false, "feedback": "Incorrect."}, {"answer": "Helper variables clutter the namespace", "correct": true, "feedback": "Correct."}, {"answer": "The DataFrame remains unchanged throughout", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which patterns are common in imperative data management code?", "type": "many_choice", "answers": [{"answer": "Using for loops to process multiple similar variables", "correct": true, "feedback": "Correct."}, {"answer": "Comments to structure the code", "correct": true, "feedback": "Correct."}, {"answer": "Each step creates a new DataFrame", "correct": false, "feedback": "Incorrect."}, {"answer": "Pure functions that return new data", "correct": false, "feedback": "Incorrect."}, {"answer": "Reusing the same variable names for different states", "correct": true, "feedback": "Correct."}]}, {"question": "What are problems with the imperative approach to data cleaning?", "type": "many_choice", "answers": [{"answer": "Invalid intermediate states of the DataFrame", "correct": true, "feedback": "Correct."}, {"answer": "Difficult to reuse parts of the code", "correct": true, "feedback": "Correct."}, {"answer": "Hard to execute code in the wrong order", "correct": false, "feedback": "Incorrect."}, {"answer": "Code is too fast", "correct": false, "feedback": "Incorrect."}, {"answer": "No way to test individual operations easily", "correct": true, "feedback": "Correct."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1847,8 +1819,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("hDqVoXHJgpyO")) {
-    show_questions(questionshDqVoXHJgpyO, hDqVoXHJgpyO);
+  if (document.getElementById("oKLCayjQeKVw")) {
+    show_questions(questionsoKLCayjQeKVw, oKLCayjQeKVw);
   } else {
     setTimeout(try_show, 200);
   }

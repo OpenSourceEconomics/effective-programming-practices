@@ -65,7 +65,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Scientific Computing" href="../../scientific_computing/index.html" />
+    <link rel="next" title="Functional data cleaning: The Why" href="../functional_why/objectives_materials.html" />
     <link rel="prev" title="Imperative data cleaning" href="../imperative_data_cleaning/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -272,6 +272,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Functional data cleaning: The How</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_why/objectives_materials.html">Functional data cleaning: The Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../complex_data_structures/objectives_materials.html">Managing data with a complex structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../management_advanced/objectives_materials.html">Data management: Tips, tricks, and advanced topics</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -327,7 +330,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And a prerequisite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
@@ -526,7 +529,7 @@ notebooks</p></li>
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
 <p>Video:</p>
 <iframe
-  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=a232905b-c438-41da-9ded-0567154be580"
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=c90828c2-92af-4197-9698-c94e3887066d"
   width="560"
   height="311"
   frameborder="0"
@@ -536,81 +539,10 @@ notebooks</p></li>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">epp_topics.quiz_utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">display_quiz</span>
-
-<span class="n">content</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;What does &#39;start with an empty DataFrame&#39; mean in functional data cleaning?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Create a new DataFrame with only an index, then add cleaned columns one by&quot;</span>
-        <span class="s2">&quot; one&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Create a DataFrame by copying all columns from the raw data&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Create an empty DataFrame with no index&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Start with a DataFrame containing all raw columns&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;What does &#39;touch every variable just once&#39; mean?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Each variable from the raw data should be processed exactly once when creating&quot;</span>
-        <span class="s2">&quot; the cleaned DataFrame&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Each variable should only be accessed once in the entire script&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Each variable should be modified in place only once&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Each variable should be saved to disk only once&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;What is a pure function in the context of data cleaning?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;A function that has no side effects and returns the same output for the same&quot;</span>
-        <span class="s2">&quot; input&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;A function that modifies the input DataFrame in place&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;A function that reads from external files&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;A function that prints debugging information&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;According to the three rules, how should you structure your data cleaning code?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Create an empty DataFrame, then assign each cleaned variable using a pure&quot;</span>
-        <span class="s2">&quot; function (which could be the identity function)&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Modify the raw DataFrame in place by cleaning each column&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Create multiple DataFrames and merge them at the end&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Copy the raw DataFrame and modify columns as needed&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;What is the identity function in the context of pure functions?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;A function that returns its input unchanged (doing nothing)&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;A function that checks if two values are equal&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;A function that returns the index of a DataFrame&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;A function that creates a new DataFrame&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;When you just need to rename a variable without any cleaning, what should you do&quot;</span>
-    <span class="s2">&quot; according to the rules?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Assign the raw column directly to the column in the cleaned DataFrame&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Since we always need to call a function, we create a function that just&quot;</span>
-        <span class="s2">&quot; returns the input column unchanged&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Copy the column and modify it slightly&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Skip the variable entirely&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;How do the three rules for cleaning apply differently in Python scripts vs. &quot;</span>
-    <span class="s2">&quot;Jupyter notebooks?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;In a script, you keep all operations on one line each in the global&quot;</span>
-        <span class="s2">&quot; namespace&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Scripts require all three rules, notebooks only need two&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;The rules do not apply to notebooks&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;There is no difference in how the rules apply&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;In a notebook, you typically keep all operations in the global namespace, with&quot;</span>
-        <span class="s2">&quot; one cell per operation or function definition&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;In a script, you put all cleaning operations in a pure function&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;In the functional approach, what should you do if you need to clean a variable&quot;</span>
-    <span class="s2">&quot; that requires multiple steps?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Create a pure function that performs all the cleaning steps and returns the&quot;</span>
-        <span class="s2">&quot; cleaned result&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Modify the variable multiple times in the main function&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Create multiple intermediate DataFrames&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Skip cleaning that variable&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-<span class="p">}</span>
-
-<span class="n">display_quiz</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="BUgPvVHiWyZi" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#BUgPvVHiWyZi {
+<div class="output text_html"><div id="QoIQWzWmJWya" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#QoIQWzWmJWya {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -827,7 +759,7 @@ notebooks</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsBUgPvVHiWyZi=[{"question": "What does 'start with an empty DataFrame' mean in functional data cleaning?", "type": "multiple_choice", "answers": [{"answer": "Create a new DataFrame with only an index, then add cleaned columns one by one", "correct": true, "feedback": "Correct."}, {"answer": "Create a DataFrame by copying all columns from the raw data", "correct": false, "feedback": "Incorrect."}, {"answer": "Create an empty DataFrame with no index", "correct": false, "feedback": "Incorrect."}, {"answer": "Start with a DataFrame containing all raw columns", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does 'touch every variable just once' mean?", "type": "multiple_choice", "answers": [{"answer": "Each variable from the raw data should be processed exactly once when creating the cleaned DataFrame", "correct": true, "feedback": "Correct."}, {"answer": "Each variable should only be accessed once in the entire script", "correct": false, "feedback": "Incorrect."}, {"answer": "Each variable should be modified in place only once", "correct": false, "feedback": "Incorrect."}, {"answer": "Each variable should be saved to disk only once", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a pure function in the context of data cleaning?", "type": "multiple_choice", "answers": [{"answer": "A function that has no side effects and returns the same output for the same input", "correct": true, "feedback": "Correct."}, {"answer": "A function that modifies the input DataFrame in place", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that reads from external files", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that prints debugging information", "correct": false, "feedback": "Incorrect."}]}, {"question": "According to the three rules, how should you structure your data cleaning code?", "type": "multiple_choice", "answers": [{"answer": "Create an empty DataFrame, then assign each cleaned variable using a pure function (which could be the identity function)", "correct": true, "feedback": "Correct."}, {"answer": "Modify the raw DataFrame in place by cleaning each column", "correct": false, "feedback": "Incorrect."}, {"answer": "Create multiple DataFrames and merge them at the end", "correct": false, "feedback": "Incorrect."}, {"answer": "Copy the raw DataFrame and modify columns as needed", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the identity function in the context of pure functions?", "type": "multiple_choice", "answers": [{"answer": "A function that returns its input unchanged (doing nothing)", "correct": true, "feedback": "Correct."}, {"answer": "A function that checks if two values are equal", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that returns the index of a DataFrame", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that creates a new DataFrame", "correct": false, "feedback": "Incorrect."}]}, {"question": "When you just need to rename a variable without any cleaning, what should you do according to the rules?", "type": "multiple_choice", "answers": [{"answer": "Assign the raw column directly to the column in the cleaned DataFrame", "correct": true, "feedback": "Correct."}, {"answer": "Since we always need to call a function, we create a function that just returns the input column unchanged", "correct": false, "feedback": "Incorrect."}, {"answer": "Copy the column and modify it slightly", "correct": false, "feedback": "Incorrect."}, {"answer": "Skip the variable entirely", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do the three rules for cleaning apply differently in Python scripts vs. Jupyter notebooks?", "type": "many_choice", "answers": [{"answer": "In a script, you keep all operations on one line each in the global namespace", "correct": false, "feedback": "Incorrect."}, {"answer": "Scripts require all three rules, notebooks only need two", "correct": false, "feedback": "Incorrect."}, {"answer": "The rules do not apply to notebooks", "correct": false, "feedback": "Incorrect."}, {"answer": "There is no difference in how the rules apply", "correct": false, "feedback": "Incorrect."}, {"answer": "In a notebook, you typically keep all operations in the global namespace, with one cell per operation or function definition", "correct": true, "feedback": "Correct."}, {"answer": "In a script, you put all cleaning operations in a pure function", "correct": true, "feedback": "Correct."}]}, {"question": "In the functional approach, what should you do if you need to clean a variable that requires multiple steps?", "type": "multiple_choice", "answers": [{"answer": "Create a pure function that performs all the cleaning steps and returns the cleaned result", "correct": true, "feedback": "Correct."}, {"answer": "Modify the variable multiple times in the main function", "correct": false, "feedback": "Incorrect."}, {"answer": "Create multiple intermediate DataFrames", "correct": false, "feedback": "Incorrect."}, {"answer": "Skip cleaning that variable", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsQoIQWzWmJWya=[{"question": "What does 'start with an empty DataFrame' mean in functional data cleaning?", "type": "multiple_choice", "answers": [{"answer": "Create a new DataFrame with only an index, then add cleaned columns one by one", "correct": true, "feedback": "Correct."}, {"answer": "Create a DataFrame by copying all columns from the raw data", "correct": false, "feedback": "Incorrect."}, {"answer": "Create an empty DataFrame with no index", "correct": false, "feedback": "Incorrect."}, {"answer": "Start with a DataFrame containing all raw columns", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does 'touch every variable just once' mean?", "type": "multiple_choice", "answers": [{"answer": "Each variable from the raw data should be processed exactly once when creating the cleaned DataFrame", "correct": true, "feedback": "Correct."}, {"answer": "Each variable should only be accessed once in the entire script", "correct": false, "feedback": "Incorrect."}, {"answer": "Each variable should be modified in place only once", "correct": false, "feedback": "Incorrect."}, {"answer": "Each variable should be saved to disk only once", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is a pure function in the context of data cleaning?", "type": "multiple_choice", "answers": [{"answer": "A function that has no side effects and returns the same output for the same input", "correct": true, "feedback": "Correct."}, {"answer": "A function that modifies the input DataFrame in place", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that reads from external files", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that prints debugging information", "correct": false, "feedback": "Incorrect."}]}, {"question": "According to the three rules, how should you structure your data cleaning code?", "type": "multiple_choice", "answers": [{"answer": "Create an empty DataFrame, then assign each cleaned variable using a pure function (which could be the identity function)", "correct": true, "feedback": "Correct."}, {"answer": "Modify the raw DataFrame in place by cleaning each column", "correct": false, "feedback": "Incorrect."}, {"answer": "Create multiple DataFrames and merge them at the end", "correct": false, "feedback": "Incorrect."}, {"answer": "Copy the raw DataFrame and modify columns as needed", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the identity function in the context of pure functions?", "type": "multiple_choice", "answers": [{"answer": "A function that returns its input unchanged (doing nothing)", "correct": true, "feedback": "Correct."}, {"answer": "A function that checks if two values are equal", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that returns the index of a DataFrame", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that creates a new DataFrame", "correct": false, "feedback": "Incorrect."}]}, {"question": "When you just need to rename a variable without any cleaning, what should you do according to the rules?", "type": "multiple_choice", "answers": [{"answer": "Assign the raw column directly to the column in the cleaned DataFrame", "correct": true, "feedback": "Correct."}, {"answer": "Since we always need to call a function, we create a function that just returns the input column unchanged", "correct": false, "feedback": "Incorrect."}, {"answer": "Copy the column and modify it slightly", "correct": false, "feedback": "Incorrect."}, {"answer": "Skip the variable entirely", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do the three rules for cleaning apply differently in Python scripts vs. Jupyter notebooks?", "type": "many_choice", "answers": [{"answer": "In a script, you keep all operations on one line each in the global namespace", "correct": false, "feedback": "Incorrect."}, {"answer": "Scripts require all three rules, notebooks only need two", "correct": false, "feedback": "Incorrect."}, {"answer": "The rules do not apply to notebooks", "correct": false, "feedback": "Incorrect."}, {"answer": "There is no difference in how the rules apply", "correct": false, "feedback": "Incorrect."}, {"answer": "In a notebook, you typically keep all operations in the global namespace, with one cell per operation or function definition", "correct": true, "feedback": "Correct."}, {"answer": "In a script, you put all cleaning operations in a pure function", "correct": true, "feedback": "Correct."}]}, {"question": "In the functional approach, what should you do if you need to clean a variable that requires multiple steps?", "type": "multiple_choice", "answers": [{"answer": "Create a pure function that performs all the cleaning steps and returns the cleaned result", "correct": true, "feedback": "Correct."}, {"answer": "Modify the variable multiple times in the main function", "correct": false, "feedback": "Incorrect."}, {"answer": "Create multiple intermediate DataFrames", "correct": false, "feedback": "Incorrect."}, {"answer": "Skip cleaning that variable", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1890,8 +1822,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("BUgPvVHiWyZi")) {
-    show_questions(questionsBUgPvVHiWyZi, BUgPvVHiWyZi);
+  if (document.getElementById("QoIQWzWmJWya")) {
+    show_questions(questionsQoIQWzWmJWya, QoIQWzWmJWya);
   } else {
     setTimeout(try_show, 200);
   }
@@ -1946,11 +1878,11 @@ function try_show() {
       </div>
     </a>
     <a class="right-next"
-       href="../../scientific_computing/index.html"
+       href="../functional_why/objectives_materials.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Scientific Computing</p>
+        <p class="prev-next-title">Functional data cleaning: The Why</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

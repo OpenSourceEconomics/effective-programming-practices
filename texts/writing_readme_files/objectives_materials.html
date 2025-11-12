@@ -272,6 +272,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_why/objectives_materials.html">Functional data cleaning: The Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/complex_data_structures/objectives_materials.html">Managing data with a complex structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_advanced/objectives_materials.html">Data management: Tips, tricks, and advanced topics</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -327,7 +330,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And a prerequisite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
@@ -530,8 +533,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="mVPrjzFutobr" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#mVPrjzFutobr {
+<div class="output text_html"><div id="dyHAOjDRFBKa" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#dyHAOjDRFBKa {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -748,7 +751,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsmVPrjzFutobr=[{"question": "Readme files should be written in ...", "type": "multiple_choice", "answers": [{"answer": "... plain text because it is universal.", "correct": false, "feedback": "Any text-based format is somewhat universal."}, {"answer": "... markdown because GitHub renders it nicely, so nobody ever needs to read the source.", "correct": false, "feedback": "We definitely want to read the source, too!"}, {"answer": "... markdown because it is readable in source form and can be rendered nicely in many different forms.", "correct": true, "feedback": "Precisely!"}, {"answer": "... ReStructuredText because it is the more powerful than the other options.", "correct": false, "feedback": "We don't need that power for a Readme file."}]}, {"question": "Readme files should contain the following information.", "type": "many_choice", "answers": [{"answer": "How to run the project.", "correct": true, "feedback": "Most definitely."}, {"answer": "The assumptions made about the system for the project to run.", "correct": true, "feedback": "This may save others huge amounts of time."}, {"answer": "The basic purpose of the project.", "correct": true, "feedback": "How should one know whether continue looking otherwise?"}, {"answer": "A detailed description of the public-facing functions.", "correct": false, "feedback": "In very rare cases, this might be helpful. But typically, this will be part of a dedicated documentation."}, {"answer": "A dependency tree with all nodes and tasks of the project.", "correct": false, "feedback": "Even for trivial projects, this would quickly become too large."}]}];
+</style></div><script type="application/javascript">var questionsdyHAOjDRFBKa=[{"question": "Readme files should be written in ...", "type": "multiple_choice", "answers": [{"answer": "... plain text because it is universal.", "correct": false, "feedback": "Any text-based format is somewhat universal."}, {"answer": "... markdown because GitHub renders it nicely, so nobody ever needs to read the source.", "correct": false, "feedback": "We definitely want to read the source, too!"}, {"answer": "... markdown because it is readable in source form and can be rendered nicely in many different forms.", "correct": true, "feedback": "Precisely!"}, {"answer": "... ReStructuredText because it is the more powerful than the other options.", "correct": false, "feedback": "We don't need that power for a Readme file."}]}, {"question": "Readme files should contain the following information.", "type": "many_choice", "answers": [{"answer": "How to run the project.", "correct": true, "feedback": "Most definitely."}, {"answer": "The assumptions made about the system for the project to run.", "correct": true, "feedback": "This may save others huge amounts of time."}, {"answer": "The basic purpose of the project.", "correct": true, "feedback": "How should one know whether continue looking otherwise?"}, {"answer": "A detailed description of the public-facing functions.", "correct": false, "feedback": "In very rare cases, this might be helpful. But typically, this will be part of a dedicated documentation."}, {"answer": "A dependency tree with all nodes and tasks of the project.", "correct": false, "feedback": "Even for trivial projects, this would quickly become too large."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1811,8 +1814,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("mVPrjzFutobr")) {
-    show_questions(questionsmVPrjzFutobr, mVPrjzFutobr);
+  if (document.getElementById("dyHAOjDRFBKa")) {
+    show_questions(questionsdyHAOjDRFBKa, dyHAOjDRFBKa);
   } else {
     setTimeout(try_show, 200);
   }

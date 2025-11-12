@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Why plotly? And some prerequisites. &#8212; Effective Programming Practices for Economists: Topics</title>
+    <title>Why plotly? And a prerequisite &#8212; Effective Programming Practices for Economists: Topics</title>
   
   
   
@@ -272,6 +272,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_why/objectives_materials.html">Functional data cleaning: The Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/complex_data_structures/objectives_materials.html">Managing data with a complex structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_advanced/objectives_materials.html">Data management: Tips, tricks, and advanced topics</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -327,7 +330,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Plotting</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../what_to_plot/objectives_materials.html">Practical Approach</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Why plotly? And some prerequisites.</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Why plotly? And a prerequisite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quick_plots/quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
@@ -480,7 +483,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Why plotly? And some prerequisites.</h1>
+    <h1>Why plotly? And a prerequisite</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -504,8 +507,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="why-plotly-and-some-prerequisites">
-<h1>Why plotly? And some prerequisites.<a class="headerlink" href="#why-plotly-and-some-prerequisites" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="why-plotly-and-a-prerequisite">
+<h1>Why plotly? And a prerequisite<a class="headerlink" href="#why-plotly-and-a-prerequisite" title="Link to this heading">#</a></h1>
 <section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
 <p>After working through this topic, you should be able to:</p>
@@ -520,7 +523,7 @@ library</p></li>
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
 <p>Video:</p>
 <iframe
-  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=60f62e0a-9bf8-4dbf-9283-6d3e3912e655"
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=041cdc96-3fec-49e5-961d-901190ad5be3"
   width="640"
   height="360"
   frameborder="0"
@@ -532,8 +535,8 @@ library</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="JMDIdkATLITL" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#JMDIdkATLITL {
+<div class="output text_html"><div id="TAcgHFWgyqYU" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#TAcgHFWgyqYU {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -750,7 +753,7 @@ library</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsJMDIdkATLITL=[{"question": "The main advantages of plotly are:", "type": "many_choice", "answers": [{"answer": "It produce interactive graphs", "correct": true, "feedback": "Correct. Interactive graphs are very helpful                     to direct more formal analyses"}, {"answer": "It is available for additional statistical softwares", "correct": true, "feedback": "Correct. It's available also in Julia and R."}, {"answer": "Supports relevant output formats", "correct": true, "feedback": "Correct. E.g. dashboards, HTML, static formats"}, {"answer": "It produces particularly nice graphs", "correct": false, "feedback": "Incorrect. The graphs produced by different                     libraries are comparable."}]}, {"question": "Static and interactive plots are hardly ever                 integrated in a single library because:", "type": "multiple_choice", "answers": [{"answer": "Dynamic plots are typically based on JavaSript                     while static graphs do not need it", "correct": true, "feedback": "Correct. In plotly, Kaleido tries to bridge                     this difference by running a browser in the background                     and downloading a static graph."}, {"answer": "The library would be too big", "correct": false, "feedback": "Incorrect. The size of a library normally is not a limit."}, {"answer": "Once dynamic plots were introduced, libraries                     for static plots were already well developed", "correct": false, "feedback": "Incorrect. While the statement is true, this is                     not the reason                     why the different types of graphs are not integrated in a                     single library."}]}];
+</style></div><script type="application/javascript">var questionsTAcgHFWgyqYU=[{"question": "The main advantages of plotly are:", "type": "many_choice", "answers": [{"answer": "It produce interactive graphs", "correct": true, "feedback": "Correct. Interactive graphs are very helpful                     to direct more formal analyses"}, {"answer": "It is available for additional statistical softwares", "correct": true, "feedback": "Correct. It's available also in Julia and R."}, {"answer": "Supports relevant output formats", "correct": true, "feedback": "Correct. E.g. dashboards, HTML, static formats"}, {"answer": "It produces particularly nice graphs", "correct": false, "feedback": "Incorrect. The graphs produced by different                     libraries are comparable."}]}, {"question": "Static and interactive plots are hardly ever                 integrated in a single library because:", "type": "multiple_choice", "answers": [{"answer": "Dynamic plots are typically based on JavaSript                     while static graphs do not need it", "correct": true, "feedback": "Correct. In plotly, Kaleido tries to bridge                     this difference by running a browser in the background                     and downloading a static graph."}, {"answer": "The library would be too big", "correct": false, "feedback": "Incorrect. The size of a library normally is not a limit."}, {"answer": "Once dynamic plots were introduced, libraries                     for static plots were already well developed", "correct": false, "feedback": "Incorrect. While the statement is true, this is                     not the reason                     why the different types of graphs are not integrated in a                     single library."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1813,8 +1816,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("JMDIdkATLITL")) {
-    show_questions(questionsJMDIdkATLITL, JMDIdkATLITL);
+  if (document.getElementById("TAcgHFWgyqYU")) {
+    show_questions(questionsTAcgHFWgyqYU, TAcgHFWgyqYU);
   } else {
     setTimeout(try_show, 200);
   }

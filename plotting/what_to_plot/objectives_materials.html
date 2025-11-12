@@ -65,7 +65,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Why plotly? And some prerequisites." href="../why_plotly_prerequisites/objectives_materials.html" />
+    <link rel="next" title="Why plotly? And a prerequisite" href="../why_plotly_prerequisites/objectives_materials.html" />
     <link rel="prev" title="Goals and Workflow" href="../goals_workflow/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -272,6 +272,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_why/objectives_materials.html">Functional data cleaning: The Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/complex_data_structures/objectives_materials.html">Managing data with a complex structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_advanced/objectives_materials.html">Data management: Tips, tricks, and advanced topics</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -327,7 +330,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Plotting</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Practical Approach</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../why_plotly_prerequisites/objectives_materials.html">Why plotly? And a prerequisite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quick_plots/quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
@@ -552,8 +555,8 @@ on tables.</p></li>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="KCZfQYHzvmQa" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#KCZfQYHzvmQa {
+<div class="output text_html"><div id="EvcqMnzSUrut" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#EvcqMnzSUrut {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -770,7 +773,7 @@ on tables.</p></li>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsKCZfQYHzvmQa=[{"question": "One thing you should clearly have in mind                 when thinking about plotting a graph is", "type": "many_choice", "answers": [{"answer": "Which type of data you are handling", "correct": true, "feedback": "Correct. If you carefully performed                     data management, this should be included in                     the variables dtypes."}, {"answer": "How to clearly show the data", "correct": true, "feedback": "Correct. This is one of the most                     important features of a graph."}, {"answer": "Which types of graphs you like the most", "correct": false, "feedback": "Inorrect. The appropriate graph is                     independent from our personal taste.                     Additionally, fancy graphs are often less effective                     than standard ones."}, {"answer": "Which colours you will use", "correct": false, "feedback": "Inorrect. Since many researchers look at                     graphs in scales of gray, you should start thinking                     about your graph in accordingly."}]}];
+</style></div><script type="application/javascript">var questionsEvcqMnzSUrut=[{"question": "One thing you should clearly have in mind                 when thinking about plotting a graph is", "type": "many_choice", "answers": [{"answer": "Which type of data you are handling", "correct": true, "feedback": "Correct. If you carefully performed                     data management, this should be included in                     the variables dtypes."}, {"answer": "How to clearly show the data", "correct": true, "feedback": "Correct. This is one of the most                     important features of a graph."}, {"answer": "Which types of graphs you like the most", "correct": false, "feedback": "Inorrect. The appropriate graph is                     independent from our personal taste.                     Additionally, fancy graphs are often less effective                     than standard ones."}, {"answer": "Which colours you will use", "correct": false, "feedback": "Inorrect. Since many researchers look at                     graphs in scales of gray, you should start thinking                     about your graph in accordingly."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1833,8 +1836,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("KCZfQYHzvmQa")) {
-    show_questions(questionsKCZfQYHzvmQa, KCZfQYHzvmQa);
+  if (document.getElementById("EvcqMnzSUrut")) {
+    show_questions(questionsEvcqMnzSUrut, EvcqMnzSUrut);
   } else {
     setTimeout(try_show, 200);
   }
@@ -1893,7 +1896,7 @@ function try_show() {
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Why plotly? And some prerequisites.</p>
+        <p class="prev-next-title">Why plotly? And a prerequisite</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

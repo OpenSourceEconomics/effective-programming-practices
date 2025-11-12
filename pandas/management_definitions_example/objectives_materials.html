@@ -272,6 +272,9 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Data management: Definitions and example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_why/objectives_materials.html">Functional data cleaning: The Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../complex_data_structures/objectives_materials.html">Managing data with a complex structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../management_advanced/objectives_materials.html">Data management: Tips, tricks, and advanced topics</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -327,7 +330,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And a prerequisite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
@@ -518,7 +521,7 @@
 <h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
 <p>Video:</p>
 <iframe
-  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=0fbfeac7-2c79-4c72-a199-191da7610b67"
+  src="https://electure.uni-bonn.de/paella7/ui/watch.html?id=77b76b0a-3bfb-4b6b-85d6-86e5e844a84c"
   width="640"
   height="360"
   frameborder="0"
@@ -528,39 +531,10 @@
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">epp_topics.quiz_utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">display_quiz</span>
-
-<span class="n">content</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;What do we mean by data cleaning, as opposed to data management?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Data cleaning is a strict subset of data management&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Data management is a strict subset of data cleaning&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Data cleaning and data management are the same thing&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Data cleaning is only about handling missing values&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Data cleaning is about bringing complicated data structures into a simple,&quot;</span>
-        <span class="s2">&quot; standardised form.&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Data cleaning is all about the internal structure of variables (i.e., columns&quot;</span>
-        <span class="s2">&quot; of a DataFrame)&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Data cleaning involves renaming variables, handling missing data, and setting&quot;</span>
-        <span class="s2">&quot; proper data types&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;What are key features of the example data?&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;Numerical codes for missing values&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Data types do not match the variable content&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s2">&quot;Missing values are encoded in the PyArrow-format&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Categorical data types are used where appropriate&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s2">&quot;Using complex machine learning algorithms&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="p">},</span>
-<span class="p">}</span>
-
-<span class="n">display_quiz</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="UcHpXzPFxMhx" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#UcHpXzPFxMhx {
+<div class="output text_html"><div id="nyKZCIddFZOw" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#nyKZCIddFZOw {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -777,7 +751,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsUcHpXzPFxMhx=[{"question": "What do we mean by data cleaning, as opposed to data management?", "type": "many_choice", "answers": [{"answer": "Data cleaning is a strict subset of data management", "correct": true, "feedback": "Correct."}, {"answer": "Data management is a strict subset of data cleaning", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning and data management are the same thing", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is only about handling missing values", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is about bringing complicated data structures into a simple, standardised form.", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is all about the internal structure of variables (i.e., columns of a DataFrame)", "correct": true, "feedback": "Correct."}, {"answer": "Data cleaning involves renaming variables, handling missing data, and setting proper data types", "correct": true, "feedback": "Correct."}]}, {"question": "What are key features of the example data?", "type": "many_choice", "answers": [{"answer": "Numerical codes for missing values", "correct": true, "feedback": "Correct."}, {"answer": "Data types do not match the variable content", "correct": true, "feedback": "Correct."}, {"answer": "Missing values are encoded in the PyArrow-format", "correct": false, "feedback": "Incorrect."}, {"answer": "Categorical data types are used where appropriate", "correct": false, "feedback": "Incorrect."}, {"answer": "Using complex machine learning algorithms", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsnyKZCIddFZOw=[{"question": "What do we mean by data cleaning, as opposed to data management?", "type": "many_choice", "answers": [{"answer": "Data cleaning is a strict subset of data management", "correct": true, "feedback": "Correct."}, {"answer": "Data management is a strict subset of data cleaning", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning and data management are the same thing", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is only about handling missing values", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is about bringing complicated data structures into a simple, standardised form.", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is all about the internal structure of variables (i.e., columns of a DataFrame)", "correct": true, "feedback": "Correct."}, {"answer": "Data cleaning involves renaming variables, handling missing data, and setting proper data types", "correct": true, "feedback": "Correct."}]}, {"question": "What are key features of the example data?", "type": "many_choice", "answers": [{"answer": "Numerical codes for missing values", "correct": true, "feedback": "Correct."}, {"answer": "Data types do not match the variable content", "correct": true, "feedback": "Correct."}, {"answer": "Missing values are encoded in the PyArrow-format", "correct": false, "feedback": "Incorrect."}, {"answer": "Categorical data types are used where appropriate", "correct": false, "feedback": "Incorrect."}, {"answer": "Using complex machine learning algorithms", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1840,8 +1814,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("UcHpXzPFxMhx")) {
-    show_questions(questionsUcHpXzPFxMhx, UcHpXzPFxMhx);
+  if (document.getElementById("nyKZCIddFZOw")) {
+    show_questions(questionsnyKZCIddFZOw, nyKZCIddFZOw);
   } else {
     setTimeout(try_show, 200);
   }

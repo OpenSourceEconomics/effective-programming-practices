@@ -272,6 +272,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_why/objectives_materials.html">Functional data cleaning: The Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/complex_data_structures/objectives_materials.html">Managing data with a complex structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_advanced/objectives_materials.html">Data management: Tips, tricks, and advanced topics</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -327,7 +330,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../plotting/index.html">Plotting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/what_to_plot/objectives_materials.html">Practical Approach</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../plotting/why_plotly_prerequisites/objectives_materials.html">Why plotly? And a prerequisite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/objectives_materials.html">Quick plots with plotly express</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/quick_plots/quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../plotting/tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
@@ -522,8 +525,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="GHUBzSrcBrTt" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#GHUBzSrcBrTt {
+<div class="output text_html"><div id="gBbxgKlMDwRh" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#gBbxgKlMDwRh {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -740,7 +743,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsGHUBzSrcBrTt=[{"question": "What does `git init` do?", "type": "many_choice", "answers": [{"answer": "It creates a project structure for a website", "correct": false, "feedback": "Incorrect."}, {"answer": "It creates a `.git` folder", "correct": true, "feedback": "Correct."}, {"answer": "It converts a normal folder into a git repo", "correct": true, "feedback": "Correct."}, {"answer": "It uploads a folder to GitHub", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsgBbxgKlMDwRh=[{"question": "What does `git init` do?", "type": "many_choice", "answers": [{"answer": "It creates a project structure for a website", "correct": false, "feedback": "Incorrect."}, {"answer": "It creates a `.git` folder", "correct": true, "feedback": "Correct."}, {"answer": "It converts a normal folder into a git repo", "correct": true, "feedback": "Correct."}, {"answer": "It uploads a folder to GitHub", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1803,8 +1806,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("GHUBzSrcBrTt")) {
-    show_questions(questionsGHUBzSrcBrTt, GHUBzSrcBrTt);
+  if (document.getElementById("gBbxgKlMDwRh")) {
+    show_questions(questionsgBbxgKlMDwRh, gBbxgKlMDwRh);
   } else {
     setTimeout(try_show, 200);
   }

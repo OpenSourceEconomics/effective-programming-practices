@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Quick plots with plotly express: Example Notebook" href="quick_plots_example.html" />
-    <link rel="prev" title="Why plotly? And some prerequisites." href="../why_plotly_prerequisites/objectives_materials.html" />
+    <link rel="prev" title="Why plotly? And a prerequisite" href="../why_plotly_prerequisites/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -272,6 +272,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/management_definitions_example/objectives_materials.html">Data management: Definitions and example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/imperative_data_cleaning/objectives_materials.html">Imperative data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_how/objectives_materials.html">Functional data cleaning: The How</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/functional_why/objectives_materials.html">Functional data cleaning: The Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/complex_data_structures/objectives_materials.html">Managing data with a complex structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pandas/management_advanced/objectives_materials.html">Data management: Tips, tricks, and advanced topics</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../scientific_computing/index.html">Scientific Computing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -327,7 +330,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Plotting</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../goals_workflow/objectives_materials.html">Goals and Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../what_to_plot/objectives_materials.html">Practical Approach</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../why_plotly_prerequisites/objectives_materials.html">Why plotly? And some prerequisites.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../why_plotly_prerequisites/objectives_materials.html">Why plotly? And a prerequisite</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Quick plots with plotly express</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quick_plots_example.html">Quick plots with plotly express: Example Notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tweak_px/objectives_materials.html">Customise plots created with plotly express</a></li>
@@ -539,8 +542,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="EOtRafHpURhg" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#EOtRafHpURhg {
+<div class="output text_html"><div id="uaFwFvGiLnUh" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#uaFwFvGiLnUh {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -757,7 +760,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsEOtRafHpURhg=[{"question": "Which of the following applies to plotly.express?", "type": "many_choice", "answers": [{"answer": "It only supports static plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating figures is faster than in plotly.graph_objects", "correct": true, "feedback": "Correct."}, {"answer": "It is a good choice for exploratory plots", "correct": true, "feedback": "Correct."}, {"answer": "It is useless for creating publication-ready plots", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the main use of plotly.express?", "type": "multiple_choice", "answers": [{"answer": "Creating plots with a high degree of customization", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating interactive plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating static plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating exploratory plots", "correct": true, "feedback": "Correct."}]}, {"question": "Which of the following lines of code allows you to use         plotly.express through pandas.DataFrame?", "type": "multiple_choice", "answers": [{"answer": "import plotly.express as px", "correct": false, "feedback": "Incorrect."}, {"answer": "import plotly.graph_objects as go", "correct": false, "feedback": "Incorrect."}, {"answer": "import plotly.express as pd", "correct": false, "feedback": "Incorrect."}, {"answer": "pd.options.plotting.backend = 'plotly'", "correct": true, "feedback": "Correct."}]}, {"question": "What would you run to get the \"spaghetti plot\" of         beer_consumption in each day in November (stored in variable day),        for various cities in Germany (stored in Stadt)?", "type": "multiple_choice", "answers": [{"answer": "df.plot(x = 'day', y='beer_consumption', color='Stadt')", "correct": true, "feedback": "Correct."}, {"answer": "df.plot(x = 'day', y='beer_consumption', facet_col='Stadt')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot(x = 'day', y='beer_consumption', facet_row='Stadt')", "correct": false, "feedback": "Incorrect."}]}, {"question": "You need to plot the distribution of beer_consumption     in each day in November (stored in variable day) for the     whole North Rhine-Westphalia (stored in variable Bundesland).    What would you run?", "type": "multiple_choice", "answers": [{"answer": "df.plot.bar(x = 'day', y='beer_consumption',             color='Bundesland')", "correct": true, "feedback": "Correct."}, {"answer": "df.plot.bar(x = 'day', y='beer_consumption',             facet_col='Bundesland')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot.bar(x = 'day', y='beer_consumption',             color='Bundesland', kind='hist')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot(x = 'day', y='beer_consumption', color='Bundesland')", "correct": false, "feedback": "Incorrect."}]}, {"question": "Can you produce good quality (publication-ready)     plots with plotly.express?", "type": "multiple_choice", "answers": [{"answer": "Yes, you have to tweak the figure after creating it", "correct": true, "feedback": "Correct."}, {"answer": "No, it is impossible and you should always use             plotly.graph_objects instead", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsuaFwFvGiLnUh=[{"question": "Which of the following applies to plotly.express?", "type": "many_choice", "answers": [{"answer": "It only supports static plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating figures is faster than in plotly.graph_objects", "correct": true, "feedback": "Correct."}, {"answer": "It is a good choice for exploratory plots", "correct": true, "feedback": "Correct."}, {"answer": "It is useless for creating publication-ready plots", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the main use of plotly.express?", "type": "multiple_choice", "answers": [{"answer": "Creating plots with a high degree of customization", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating interactive plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating static plots", "correct": false, "feedback": "Incorrect."}, {"answer": "Creating exploratory plots", "correct": true, "feedback": "Correct."}]}, {"question": "Which of the following lines of code allows you to use         plotly.express through pandas.DataFrame?", "type": "multiple_choice", "answers": [{"answer": "import plotly.express as px", "correct": false, "feedback": "Incorrect."}, {"answer": "import plotly.graph_objects as go", "correct": false, "feedback": "Incorrect."}, {"answer": "import plotly.express as pd", "correct": false, "feedback": "Incorrect."}, {"answer": "pd.options.plotting.backend = 'plotly'", "correct": true, "feedback": "Correct."}]}, {"question": "What would you run to get the \"spaghetti plot\" of         beer_consumption in each day in November (stored in variable day),        for various cities in Germany (stored in Stadt)?", "type": "multiple_choice", "answers": [{"answer": "df.plot(x = 'day', y='beer_consumption', color='Stadt')", "correct": true, "feedback": "Correct."}, {"answer": "df.plot(x = 'day', y='beer_consumption', facet_col='Stadt')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot(x = 'day', y='beer_consumption', facet_row='Stadt')", "correct": false, "feedback": "Incorrect."}]}, {"question": "You need to plot the distribution of beer_consumption     in each day in November (stored in variable day) for the     whole North Rhine-Westphalia (stored in variable Bundesland).    What would you run?", "type": "multiple_choice", "answers": [{"answer": "df.plot.bar(x = 'day', y='beer_consumption',             color='Bundesland')", "correct": true, "feedback": "Correct."}, {"answer": "df.plot.bar(x = 'day', y='beer_consumption',             facet_col='Bundesland')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot.bar(x = 'day', y='beer_consumption',             color='Bundesland', kind='hist')", "correct": false, "feedback": "Incorrect."}, {"answer": "df.plot(x = 'day', y='beer_consumption', color='Bundesland')", "correct": false, "feedback": "Incorrect."}]}, {"question": "Can you produce good quality (publication-ready)     plots with plotly.express?", "type": "multiple_choice", "answers": [{"answer": "Yes, you have to tweak the figure after creating it", "correct": true, "feedback": "Correct."}, {"answer": "No, it is impossible and you should always use             plotly.graph_objects instead", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1820,8 +1823,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("EOtRafHpURhg")) {
-    show_questions(questionsEOtRafHpURhg, EOtRafHpURhg);
+  if (document.getElementById("uaFwFvGiLnUh")) {
+    show_questions(questionsuaFwFvGiLnUh, uaFwFvGiLnUh);
   } else {
     setTimeout(try_show, 200);
   }
@@ -1872,7 +1875,7 @@ function try_show() {
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Why plotly? And some prerequisites.</p>
+        <p class="prev-next-title">Why plotly? And a prerequisite</p>
       </div>
     </a>
     <a class="right-next"
