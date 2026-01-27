@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -538,8 +543,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="rREnnUcBZdIJ" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#rREnnUcBZdIJ {
+<div class="output text_html"><div id="VECWHqayGlah" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#VECWHqayGlah {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -756,7 +761,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsrREnnUcBZdIJ=[{"question": "To set a good seed which of the following lines of code would you use?", "type": "multiple_choice", "answers": [{"answer": "np.random.seed", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng(6943)", "correct": true, "feedback": "Correct."}]}, {"question": "Why a seed is needed when dealing with random generated numbers?", "type": "multiple_choice", "answers": [{"answer": "A seed is nice to have, but not essential", "correct": false, "feedback": "Incorrect."}, {"answer": "For the purpose of reproducible research", "correct": true, "feedback": "Correct."}, {"answer": "To help obtain nicer results", "correct": false, "feedback": "Incorrect."}, {"answer": "To make sure that two random extractions will             not yield the same outcome", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following applies to seeds?", "type": "many_choice", "answers": [{"answer": "You should never use similar seeds as they yield correlated numbers.", "correct": false, "feedback": "Incorrect."}, {"answer": "They are numbers between 0 and 2 ** 32", "correct": true, "feedback": "Correct."}, {"answer": "You should always check that your conclusions do not depend on the seed", "correct": true, "feedback": "Correct."}, {"answer": "It's ok to always use 123.", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsVECWHqayGlah=[{"question": "To set a good seed which of the following lines of code would you use?", "type": "multiple_choice", "answers": [{"answer": "np.random.seed", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng", "correct": false, "feedback": "Incorrect."}, {"answer": "np.random.default_rng(6943)", "correct": true, "feedback": "Correct."}]}, {"question": "Why a seed is needed when dealing with random generated numbers?", "type": "multiple_choice", "answers": [{"answer": "A seed is nice to have, but not essential", "correct": false, "feedback": "Incorrect."}, {"answer": "For the purpose of reproducible research", "correct": true, "feedback": "Correct."}, {"answer": "To help obtain nicer results", "correct": false, "feedback": "Incorrect."}, {"answer": "To make sure that two random extractions will             not yield the same outcome", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following applies to seeds?", "type": "many_choice", "answers": [{"answer": "You should never use similar seeds as they yield correlated numbers.", "correct": false, "feedback": "Incorrect."}, {"answer": "They are numbers between 0 and 2 ** 32", "correct": true, "feedback": "Correct."}, {"answer": "You should always check that your conclusions do not depend on the seed", "correct": true, "feedback": "Correct."}, {"answer": "It's ok to always use 123.", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1819,8 +1824,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("rREnnUcBZdIJ")) {
-    show_questions(questionsrREnnUcBZdIJ, rREnnUcBZdIJ);
+  if (document.getElementById("VECWHqayGlah")) {
+    show_questions(questionsVECWHqayGlah, VECWHqayGlah);
   } else {
     setTimeout(try_show, 200);
   }

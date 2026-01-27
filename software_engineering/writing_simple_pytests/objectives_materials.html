@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -538,8 +543,8 @@ of test functions, no reuse of input parameters).</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="UvNIecUhWVfo" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#UvNIecUhWVfo {
+<div class="output text_html"><div id="wNunEDNkuByC" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#wNunEDNkuByC {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -756,7 +761,7 @@ of test functions, no reuse of input parameters).</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsUvNIecUhWVfo=[{"question": "Which functions are recognized as tests by pytest?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytest.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `test`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tests are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytest", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytest again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}, {"question": "A simple test is likely to contain:", "type": "many_choice", "answers": [{"answer": "An assertion", "correct": true, "feedback": "Correct."}, {"answer": "Some expected results", "correct": true, "feedback": "Correct."}, {"answer": "An explanation of possible error messages that one could obtain", "correct": false, "feedback": "Incorrect."}, {"answer": "A call to the function we want to test", "correct": false, "feedback": "Incorrect."}]}, {"question": "A good name for a test is:", "type": "multiple_choice", "answers": [{"answer": "test_analyses", "correct": false, "feedback": "Incorrect."}, {"answer": "test_functionX", "correct": false, "feedback": "Incorrect."}, {"answer": "test_function_X_returns_dtype_Y", "correct": true, "feedback": "Correct."}, {"answer": "test_for_dtypes", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionswNunEDNkuByC=[{"question": "Which functions are recognized as tests by pytest?", "type": "multiple_choice", "answers": [{"answer": "Functions whose name starts with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Functions whose name does not start with an underscore", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that are registered in the pytest.ini file", "correct": false, "feedback": "Incorrect."}, {"answer": "Functions that have the argument `test`", "correct": false, "feedback": "Incorrect."}]}, {"question": "What would you do if zero tests are collected in your project?", "type": "many_choice", "answers": [{"answer": "Check for typos in file names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "Check for typos in function names and make sure they start with `test_`", "correct": true, "feedback": "Correct."}, {"answer": "File a bug report, it must clearly be a bug in pytest", "correct": false, "feedback": "Incorrect."}, {"answer": "Run pytest again. It will probably work the second time", "correct": false, "feedback": "Incorrect."}]}, {"question": "A simple test is likely to contain:", "type": "many_choice", "answers": [{"answer": "An assertion", "correct": true, "feedback": "Correct."}, {"answer": "Some expected results", "correct": true, "feedback": "Correct."}, {"answer": "An explanation of possible error messages that one could obtain", "correct": false, "feedback": "Incorrect."}, {"answer": "A call to the function we want to test", "correct": false, "feedback": "Incorrect."}]}, {"question": "A good name for a test is:", "type": "multiple_choice", "answers": [{"answer": "test_analyses", "correct": false, "feedback": "Incorrect."}, {"answer": "test_functionX", "correct": false, "feedback": "Incorrect."}, {"answer": "test_function_X_returns_dtype_Y", "correct": true, "feedback": "Correct."}, {"answer": "test_for_dtypes", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1819,8 +1824,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("UvNIecUhWVfo")) {
-    show_questions(questionsUvNIecUhWVfo, UvNIecUhWVfo);
+  if (document.getElementById("wNunEDNkuByC")) {
+    show_questions(questionswNunEDNkuByC, wNunEDNkuByC);
   } else {
     setTimeout(try_show, 200);
   }

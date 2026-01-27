@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -540,8 +545,8 @@ fixtures</a></p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="FLtJuATrGRjq" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#FLtJuATrGRjq {
+<div class="output text_html"><div id="hYoSBYBuesTp" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#hYoSBYBuesTp {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -758,7 +763,7 @@ fixtures</a></p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsFLtJuATrGRjq=[{"question": "What is the purpose of pytest parametrize?", "type": "multiple_choice", "answers": [{"answer": "It is used to repeat the same test with different         implementations (inputs)", "correct": true, "feedback": "Correct."}, {"answer": "It is used to check if a function is working properly", "correct": false, "feedback": "Incorrect."}, {"answer": "It is used to produce different test outputs", "correct": false, "feedback": "Incorrect."}, {"answer": "It searches for the best parameters for testing", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the advantage of using pytest parametrize?", "type": "many_choice", "answers": [{"answer": "It allows to test different inputs with the same test", "correct": true, "feedback": "Correct."}, {"answer": "It allows to test different expected outputs with the same test", "correct": true, "feedback": "Correct."}, {"answer": "It makes for a more readable code", "correct": true, "feedback": "Correct."}, {"answer": "It automatically generates test cases", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionshYoSBYBuesTp=[{"question": "What is the purpose of pytest parametrize?", "type": "multiple_choice", "answers": [{"answer": "It is used to repeat the same test with different         implementations (inputs)", "correct": true, "feedback": "Correct."}, {"answer": "It is used to check if a function is working properly", "correct": false, "feedback": "Incorrect."}, {"answer": "It is used to produce different test outputs", "correct": false, "feedback": "Incorrect."}, {"answer": "It searches for the best parameters for testing", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the advantage of using pytest parametrize?", "type": "many_choice", "answers": [{"answer": "It allows to test different inputs with the same test", "correct": true, "feedback": "Correct."}, {"answer": "It allows to test different expected outputs with the same test", "correct": true, "feedback": "Correct."}, {"answer": "It makes for a more readable code", "correct": true, "feedback": "Correct."}, {"answer": "It automatically generates test cases", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1821,8 +1826,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("FLtJuATrGRjq")) {
-    show_questions(questionsFLtJuATrGRjq, FLtJuATrGRjq);
+  if (document.getElementById("hYoSBYBuesTp")) {
+    show_questions(questionshYoSBYBuesTp, hYoSBYBuesTp);
   } else {
     setTimeout(try_show, 200);
   }

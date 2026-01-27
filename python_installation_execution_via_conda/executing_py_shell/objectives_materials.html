@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -556,8 +561,8 @@ and select the <code class="docutils literal notranslate"><span class="pre">epp<
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="CZRzowJIbWeP" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#CZRzowJIbWeP {
+<div class="output text_html"><div id="wFXKZEmzOMJs" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#wFXKZEmzOMJs {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -774,7 +779,7 @@ and select the <code class="docutils literal notranslate"><span class="pre">epp<
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsCZRzowJIbWeP=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
+</style></div><script type="application/javascript">var questionswFXKZEmzOMJs=[{"question": "Your project's folder contains the following files: exercise_1.py,             a folder called data, and a folder called results. Your shell is currently             in the data folder. Which of the following commands would you use to run             the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ~/exercise_1.py'", "correct": false, "feedback": "This would work if you were in your home folder (on a                     Mac system)."}, {"answer": "'cd ..' and then 'python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1837,8 +1842,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("CZRzowJIbWeP")) {
-    show_questions(questionsCZRzowJIbWeP, CZRzowJIbWeP);
+  if (document.getElementById("wFXKZEmzOMJs")) {
+    show_questions(questionswFXKZEmzOMJs, wFXKZEmzOMJs);
   } else {
     setTimeout(try_show, 200);
   }

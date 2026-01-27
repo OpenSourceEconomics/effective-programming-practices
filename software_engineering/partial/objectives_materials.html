@@ -65,7 +65,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Data management with pandas" href="../../pandas/index.html" />
+    <link rel="next" title="Why Type Hints?" href="../type_hints_intro/objectives_materials.html" />
     <link rel="prev" title="When to use custom containers?" href="../deciding_containers/objectives_materials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -531,8 +536,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="UaIBEoUOQPuS" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#UaIBEoUOQPuS {
+<div class="output text_html"><div id="uudQpeuPbMJt" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#uudQpeuPbMJt {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -749,7 +754,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsUaIBEoUOQPuS=[{"question": "What is a higher order function?", "type": "multiple_choice", "answers": [{"answer": "A function that takes a function as an argument and returns a function", "correct": true, "feedback": "Correct."}, {"answer": "A function that uses polynomials larger than 2", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that calls another function", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does partial do", "type": "many_choice", "answers": [{"answer": "Take a function and return a function with fewer arguments", "correct": true, "feedback": "Correct."}, {"answer": "Take the partial defrivitive of a function", "correct": false, "feedback": "Incorrect."}, {"answer": "Inject data into a function", "correct": true, "feedback": "Correct."}, {"answer": "Take a function and return a function with more arguments", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsuudQpeuPbMJt=[{"question": "What is a higher order function?", "type": "multiple_choice", "answers": [{"answer": "A function that takes a function as an argument and returns a function", "correct": true, "feedback": "Correct."}, {"answer": "A function that uses polynomials larger than 2", "correct": false, "feedback": "Incorrect."}, {"answer": "A function that calls another function", "correct": false, "feedback": "Incorrect."}]}, {"question": "What does partial do", "type": "many_choice", "answers": [{"answer": "Take a function and return a function with fewer arguments", "correct": true, "feedback": "Correct."}, {"answer": "Take the partial defrivitive of a function", "correct": false, "feedback": "Incorrect."}, {"answer": "Inject data into a function", "correct": true, "feedback": "Correct."}, {"answer": "Take a function and return a function with more arguments", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1812,8 +1817,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("UaIBEoUOQPuS")) {
-    show_questions(questionsUaIBEoUOQPuS, UaIBEoUOQPuS);
+  if (document.getElementById("uudQpeuPbMJt")) {
+    show_questions(questionsuudQpeuPbMJt, uudQpeuPbMJt);
   } else {
     setTimeout(try_show, 200);
   }
@@ -1868,11 +1873,11 @@ function try_show() {
       </div>
     </a>
     <a class="right-next"
-       href="../../pandas/index.html"
+       href="../type_hints_intro/objectives_materials.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data management with pandas</p>
+        <p class="prev-next-title">Why Type Hints?</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

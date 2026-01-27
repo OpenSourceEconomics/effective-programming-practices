@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -584,8 +589,8 @@ rights), and run <code class="docutils literal notranslate"><span class="pre">pi
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="YyxfpYeFPqtn" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#YyxfpYeFPqtn {
+<div class="output text_html"><div id="aBmeuhdQnlfY" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#aBmeuhdQnlfY {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -802,7 +807,7 @@ rights), and run <code class="docutils literal notranslate"><span class="pre">pi
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsYyxfpYeFPqtn=[{"question": "Your project's folder contains the following files: pyproject.toml,             exercise_1.py, a folder called data, and a folder called results. Your             shell is currently in the data folder. Which of the following commands             would you use to run the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'pixi run python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'pixi run python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ../exercise_1.py'", "correct": false, "feedback": "This may work when you have some Python installed system-                    wide, but it will not pick up the Python executable installed via                     pixi."}, {"answer": "'pixi run python ~/exercise_1.py'", "correct": false, "feedback": "This would only work if your project folder was your home                     folder (hopefully that is not the case!)."}, {"answer": "'cd ..' and then 'pixi run python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
+</style></div><script type="application/javascript">var questionsaBmeuhdQnlfY=[{"question": "Your project's folder contains the following files: pyproject.toml,             exercise_1.py, a folder called data, and a folder called results. Your             shell is currently in the data folder. Which of the following commands             would you use to run the exercise_1.py script?", "type": "many_choice", "answers": [{"answer": "'pixi run python exercise_1.py'", "correct": false, "feedback": "This would work if you were in the folder containing                 exercise_1.py."}, {"answer": "'pixi run python ../exercise_1.py'", "correct": true, "feedback": "This works because ../ moves you up one folder,                     and then you can run the script from there."}, {"answer": "'python ../exercise_1.py'", "correct": false, "feedback": "This may work when you have some Python installed system-                    wide, but it will not pick up the Python executable installed via                     pixi."}, {"answer": "'pixi run python ~/exercise_1.py'", "correct": false, "feedback": "This would only work if your project folder was your home                     folder (hopefully that is not the case!)."}, {"answer": "'cd ..' and then 'pixi run python exercise_1.py'", "correct": true, "feedback": "This works because cd .. moves you up one folder,                     and then you can run the script from there."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1865,8 +1870,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("YyxfpYeFPqtn")) {
-    show_questions(questionsYyxfpYeFPqtn, YyxfpYeFPqtn);
+  if (document.getElementById("aBmeuhdQnlfY")) {
+    show_questions(questionsaBmeuhdQnlfY, aBmeuhdQnlfY);
   } else {
     setTimeout(try_show, 200);
   }

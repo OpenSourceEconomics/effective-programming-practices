@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -544,8 +549,8 @@ Reference.</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="XTOeRfaiUjUe" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#XTOeRfaiUjUe {
+<div class="output text_html"><div id="jaFfurcyBpRV" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#jaFfurcyBpRV {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -762,7 +767,7 @@ Reference.</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXTOeRfaiUjUe=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
+</style></div><script type="application/javascript">var questionsjaFfurcyBpRV=[{"question": "Python is being so widely used because ...", "type": "multiple_choice", "answers": [{"answer": "its built-in functionality encompasses all possible use cases.", "correct": false, "feedback": "While the core of Python is Turing-complete, meaning you can do everything with it that you could possibly do with any other programming language, you would have to put it a lot of work re-implementing things others have solved."}, {"answer": "... many libraries extend its functionality. Thanks to namespaces, they do not need to get into each others' way.", "correct": true}, {"answer": "the execution speed of its standard library for large-scale numerical computations is comparable to Fortran.", "correct": false, "feedback": "Not even close, but many libraries allow combining the best of both worlds."}]}, {"question": "Knowing that numpy implements a logarithm function 'log', how could you call it following this import statement?", "code": "import numpy as np", "type": "multiple_choice", "answers": [{"code": "np.log(10)", "correct": true, "feedback": "We import the numpy library and give it the alias 'np'."}, {"code": "log(10)", "correct": false, "feedback": "This function could come from anywhere. Why would you assume it comes from the numpy library?"}, {"code": "numpy.log(10)", "correct": false, "feedback": "We import the numpy library and give it the alias 'np'. This means we can only access its namespace via 'np'."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1825,8 +1830,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("XTOeRfaiUjUe")) {
-    show_questions(questionsXTOeRfaiUjUe, XTOeRfaiUjUe);
+  if (document.getElementById("jaFfurcyBpRV")) {
+    show_questions(questionsjaFfurcyBpRV, jaFfurcyBpRV);
   } else {
     setTimeout(try_show, 200);
   }

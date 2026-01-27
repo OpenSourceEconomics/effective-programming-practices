@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Data management with pandas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -533,8 +538,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="LlvxJvYmiKdG" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#LlvxJvYmiKdG {
+<div class="output text_html"><div id="ghRGhqdAshbV" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#ghRGhqdAshbV {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -751,7 +756,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsLlvxJvYmiKdG=[{"question": "What do we mean by data cleaning, as opposed to data management?", "type": "many_choice", "answers": [{"answer": "Data cleaning is a strict subset of data management", "correct": true, "feedback": "Correct."}, {"answer": "Data management is a strict subset of data cleaning", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning and data management are the same thing", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is only about handling missing values", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is about bringing complicated data structures into a simple, standardised form.", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is all about the internal structure of variables (i.e., columns of a DataFrame)", "correct": true, "feedback": "Correct."}, {"answer": "Data cleaning involves renaming variables, handling missing data, and setting proper data types", "correct": true, "feedback": "Correct."}]}, {"question": "What are key features of the example data?", "type": "many_choice", "answers": [{"answer": "Numerical codes for missing values", "correct": true, "feedback": "Correct."}, {"answer": "Data types do not match the variable content", "correct": true, "feedback": "Correct."}, {"answer": "Missing values are encoded in the PyArrow-format", "correct": false, "feedback": "Incorrect."}, {"answer": "Categorical data types are used where appropriate", "correct": false, "feedback": "Incorrect."}, {"answer": "Using complex machine learning algorithms", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsghRGhqdAshbV=[{"question": "What do we mean by data cleaning, as opposed to data management?", "type": "many_choice", "answers": [{"answer": "Data cleaning is a strict subset of data management", "correct": true, "feedback": "Correct."}, {"answer": "Data management is a strict subset of data cleaning", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning and data management are the same thing", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is only about handling missing values", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is about bringing complicated data structures into a simple, standardised form.", "correct": false, "feedback": "Incorrect."}, {"answer": "Data cleaning is all about the internal structure of variables (i.e., columns of a DataFrame)", "correct": true, "feedback": "Correct."}, {"answer": "Data cleaning involves renaming variables, handling missing data, and setting proper data types", "correct": true, "feedback": "Correct."}]}, {"question": "What are key features of the example data?", "type": "many_choice", "answers": [{"answer": "Numerical codes for missing values", "correct": true, "feedback": "Correct."}, {"answer": "Data types do not match the variable content", "correct": true, "feedback": "Correct."}, {"answer": "Missing values are encoded in the PyArrow-format", "correct": false, "feedback": "Incorrect."}, {"answer": "Categorical data types are used where appropriate", "correct": false, "feedback": "Incorrect."}, {"answer": "Using complex machine learning algorithms", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1814,8 +1819,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("LlvxJvYmiKdG")) {
-    show_questions(questionsLlvxJvYmiKdG, LlvxJvYmiKdG);
+  if (document.getElementById("ghRGhqdAshbV")) {
+    show_questions(questionsghRGhqdAshbV, ghRGhqdAshbV);
   } else {
     setTimeout(try_show, 200);
   }

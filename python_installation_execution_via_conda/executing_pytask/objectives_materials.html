@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -541,8 +546,8 @@ using <strong>pixi</strong> instead, see the <a class="reference internal" href=
 </ul>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="PtKYRzpomgjK" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#PtKYRzpomgjK {
+<div class="output text_html"><div id="CjpNjyYbdXPL" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#CjpNjyYbdXPL {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -759,7 +764,7 @@ using <strong>pixi</strong> instead, see the <a class="reference internal" href=
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPtKYRzpomgjK=[{"question": "In contrast to other ways of executing Python code", "type": "multiple_choice", "answers": [{"answer": "Pytask runs multiple .py files at once", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask runs functions instead of entire `.py` files", "correct": true, "feedback": "Correct."}, {"answer": "Pytask works for notebooks and `.py` files", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytasks automatically install all dependencies for you", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following is true?", "type": "many_choice", "answers": [{"answer": "Pytask saves runtime by executing only tasks that need to be executed", "correct": true, "feedback": "Correct."}, {"answer": "Pytask only works if you define functions", "correct": true, "feedback": "Correct."}, {"answer": "If you use pytask, you don't need git", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask requires a very specific directory structure", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsCjpNjyYbdXPL=[{"question": "In contrast to other ways of executing Python code", "type": "multiple_choice", "answers": [{"answer": "Pytask runs multiple .py files at once", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask runs functions instead of entire `.py` files", "correct": true, "feedback": "Correct."}, {"answer": "Pytask works for notebooks and `.py` files", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytasks automatically install all dependencies for you", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which of the following is true?", "type": "many_choice", "answers": [{"answer": "Pytask saves runtime by executing only tasks that need to be executed", "correct": true, "feedback": "Correct."}, {"answer": "Pytask only works if you define functions", "correct": true, "feedback": "Correct."}, {"answer": "If you use pytask, you don't need git", "correct": false, "feedback": "Incorrect."}, {"answer": "Pytask requires a very specific directory structure", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1822,8 +1827,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("PtKYRzpomgjK")) {
-    show_questions(questionsPtKYRzpomgjK, PtKYRzpomgjK);
+  if (document.getElementById("CjpNjyYbdXPL")) {
+    show_questions(questionsCjpNjyYbdXPL, CjpNjyYbdXPL);
   } else {
     setTimeout(try_show, 200);
   }

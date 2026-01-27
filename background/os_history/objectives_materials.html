@@ -257,6 +257,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/defining_containers/objectives_materials.html">Defining custom containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/deciding_containers/objectives_materials.html">When to use custom containers?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../software_engineering/partial/objectives_materials.html">Partialling arguments to functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_intro/objectives_materials.html">Why Type Hints?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_syntax/objectives_materials.html">Basic Type Hint Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_collections/objectives_materials.html">Collections and Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_dataclasses/objectives_materials.html">Dataclasses and Typed Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software_engineering/type_hints_advanced/objectives_materials.html">Advanced Type Patterns</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../pandas/index.html">Data management with pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -549,8 +554,8 @@ system, file system and philosophy. Watching it is purely optional!</p>
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="HgOQnoOgavJB" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#HgOQnoOgavJB {
+<div class="output text_html"><div id="SZBknwfBrHEW" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#SZBknwfBrHEW {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -767,7 +772,7 @@ system, file system and philosophy. Watching it is purely optional!</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsHgOQnoOgavJB=[{"question": "Which are the two broad lines from which\n                modern operating systems originated?", "type": "many_choice", "answers": [{"answer": "Unix", "correct": true, "feedback": "Correct."}, {"answer": "Linux", "correct": false, "feedback": "This operating system is Unix-inspired."}, {"answer": "MacOS", "correct": false, "feedback": "This operating system is Unix-based."}, {"answer": "Windows", "correct": true, "feedback": "Correct."}]}, {"question": "There are signs of convergence between\n                Unix-based/inspired and Windows operating systems.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "For example, most of Microsoft's cloud services\n                    seem to be running Linux."}, {"answer": "False", "correct": false, "feedback": "For example, most of Microsoft's cloud services\n                    seem to be running Linux."}]}, {"question": "If some lines of code work on a Windows operating system,\n                then they must work on a MacOS operating system.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "The two operating systems differ in many ways."}, {"answer": "False", "correct": true, "feedback": "The two operating systems differ in many ways."}]}];
+</style></div><script type="application/javascript">var questionsSZBknwfBrHEW=[{"question": "Which are the two broad lines from which\n                modern operating systems originated?", "type": "many_choice", "answers": [{"answer": "Unix", "correct": true, "feedback": "Correct."}, {"answer": "Linux", "correct": false, "feedback": "This operating system is Unix-inspired."}, {"answer": "MacOS", "correct": false, "feedback": "This operating system is Unix-based."}, {"answer": "Windows", "correct": true, "feedback": "Correct."}]}, {"question": "There are signs of convergence between\n                Unix-based/inspired and Windows operating systems.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "For example, most of Microsoft's cloud services\n                    seem to be running Linux."}, {"answer": "False", "correct": false, "feedback": "For example, most of Microsoft's cloud services\n                    seem to be running Linux."}]}, {"question": "If some lines of code work on a Windows operating system,\n                then they must work on a MacOS operating system.", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "The two operating systems differ in many ways."}, {"answer": "False", "correct": true, "feedback": "The two operating systems differ in many ways."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1830,8 +1835,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("HgOQnoOgavJB")) {
-    show_questions(questionsHgOQnoOgavJB, HgOQnoOgavJB);
+  if (document.getElementById("SZBknwfBrHEW")) {
+    show_questions(questionsSZBknwfBrHEW, SZBknwfBrHEW);
   } else {
     setTimeout(try_show, 200);
   }
