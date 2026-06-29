@@ -540,8 +540,8 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="sKAieRaurDTp" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#sKAieRaurDTp {
+<div class="output text_html"><div id="frNjHhELueMt" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#frNjHhELueMt {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -758,7 +758,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionssKAieRaurDTp=[{"question": "How do you annotate a list of integers?", "type": "multiple_choice", "answers": [{"answer": "list[int]", "correct": true, "feedback": "Correct."}, {"answer": "list(int)", "correct": false, "feedback": "Incorrect."}, {"answer": "int[]", "correct": false, "feedback": "Incorrect."}, {"answer": "[int]", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you annotate a dictionary with string keys and float values?", "type": "multiple_choice", "answers": [{"answer": "dict[str, float]", "correct": true, "feedback": "Correct."}, {"answer": "dict[str: float]", "correct": false, "feedback": "Incorrect."}, {"answer": "dict{str, float}", "correct": false, "feedback": "Incorrect."}, {"answer": "dictionary[str, float]", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the difference between tuple[int, str] and tuple[int, ...]?", "type": "multiple_choice", "answers": [{"answer": "First is exactly two elements, second is any number of ints", "correct": true, "feedback": "Correct."}, {"answer": "They are the same", "correct": false, "feedback": "Incorrect."}, {"answer": "tuple[int, ...] is invalid syntax", "correct": false, "feedback": "Incorrect."}, {"answer": "tuple[int, str] allows any number of ints and strs", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you define a generic function in Python 3.12+?", "type": "multiple_choice", "answers": [{"answer": "def first[T](items: list[T]) -> T:", "correct": true, "feedback": "Correct."}, {"answer": "def first(items: list[T]) -> T:", "correct": false, "feedback": "Incorrect."}, {"answer": "def first<T>(items: list[T]) -> T:", "correct": false, "feedback": "Incorrect."}, {"answer": "generic def first(items: list[T]) -> T:", "correct": false, "feedback": "Incorrect."}]}];
+</style></div><script type="application/javascript">var questionsfrNjHhELueMt=[{"question": "How do you annotate a list of integers?", "type": "multiple_choice", "answers": [{"answer": "list[int]", "correct": true, "feedback": "Correct."}, {"answer": "list(int)", "correct": false, "feedback": "Incorrect."}, {"answer": "int[]", "correct": false, "feedback": "Incorrect."}, {"answer": "[int]", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you annotate a dictionary with string keys and float values?", "type": "multiple_choice", "answers": [{"answer": "dict[str, float]", "correct": true, "feedback": "Correct."}, {"answer": "dict[str: float]", "correct": false, "feedback": "Incorrect."}, {"answer": "dict{str, float}", "correct": false, "feedback": "Incorrect."}, {"answer": "dictionary[str, float]", "correct": false, "feedback": "Incorrect."}]}, {"question": "What is the difference between tuple[int, str] and tuple[int, ...]?", "type": "multiple_choice", "answers": [{"answer": "First is exactly two elements, second is any number of ints", "correct": true, "feedback": "Correct."}, {"answer": "They are the same", "correct": false, "feedback": "Incorrect."}, {"answer": "tuple[int, ...] is invalid syntax", "correct": false, "feedback": "Incorrect."}, {"answer": "tuple[int, str] allows any number of ints and strs", "correct": false, "feedback": "Incorrect."}]}, {"question": "How do you define a generic function in Python 3.12+?", "type": "multiple_choice", "answers": [{"answer": "def first[T](items: list[T]) -> T:", "correct": true, "feedback": "Correct."}, {"answer": "def first(items: list[T]) -> T:", "correct": false, "feedback": "Incorrect."}, {"answer": "def first<T>(items: list[T]) -> T:", "correct": false, "feedback": "Incorrect."}, {"answer": "generic def first(items: list[T]) -> T:", "correct": false, "feedback": "Incorrect."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1821,8 +1821,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("sKAieRaurDTp")) {
-    show_questions(questionssKAieRaurDTp, sKAieRaurDTp);
+  if (document.getElementById("frNjHhELueMt")) {
+    show_questions(questionsfrNjHhELueMt, frNjHhELueMt);
   } else {
     setTimeout(try_show, 200);
   }
